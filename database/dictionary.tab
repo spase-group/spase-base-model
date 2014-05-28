@@ -3,7 +3,7 @@
 2.2.3	1.3.5	ACElectricField	Item				Alternating electric field component of a wave.
 2.2.3	1.3.5	ACMagneticField	Item				Alternating magnetic field component of a wave.
 2.2.3	1.0.0	AccessInformation	Container				Attributes of the resource which pertain to how to accessing the resource, availability and storage format.
-2.2.3	1.0.0	AccessRights	Enumeration	Access Rights			Permissions granted or denied by the host of a product to allow other users to access and use the resource.
+2.2.3	1.0.0	AccessRights	Enumeration	AccessRights			Permissions granted or denied by the host of a product to allow other users to access and use the resource.
 2.2.3	1.0.0	AccessURL	Container				Attributes of the method for accessing a resource including a URL, name and description.
 2.2.3	1.0.0	Acknowledgement	Text				The individual, group or organization which should be acknowledged when the data is used in or contributes to a presentation or publication.
 2.2.3	1.3.0	Active	Item				Exerting an influence or producing a change or effect. An active measurement is one which produces a transmission or excitation as a part of the measurement cycle.
@@ -20,7 +20,7 @@
 2.2.3	1.3.1	Ancillary	Item				A complementary item which can be subordinate, subsidiary, auxiliary, supplementary to the primary item.
 2.2.3	1.2.1	Anisotropy	Item				Direction-dependent property.
 2.2.3	1.3.4	Annotation	Container				Information which is explanatory or descriptive which is associated with another resource.
-2.2.3	1.3.4	AnnotationType	Enumeration	Annotation Type			A classification for an annotation.
+2.2.3	1.3.4	AnnotationType	Enumeration	AnnotationType			A classification for an annotation.
 2.2.3	1.3.4	Anomaly	Item				An interval where measurements or observations may be adversely affected.
 2.2.3	1.0.0	Antenna	Item				A sensor used to measure electric potential.
 2.2.3	1.2.1	ArchiveSpecialist	Item				An individual who is an expert on a collection of resources and may also be knowledgeable of the phenomenon and related physics represented by the resources. This includes librarians, curators, archive scientists and other experts.
@@ -30,7 +30,7 @@
 2.2.3	1.0.0	ASCII	Item				A sequence of characters that adheres to American Standard Code for Information Interchange (ASCII) which is an 7-bit character-coding scheme.
 2.2.3	1.3.3	Association	Container				Attributes of a relationship a resource has with another resource.
 2.2.3	1.1.0	AssociationID	Text				The resource identifier for a resource with which this resource is closely associated.
-2.2.3	1.3.3	AssociationType	Enumeration	Association Type			A characterization of the role or purpose of an associated resource.
+2.2.3	1.3.3	AssociationType	Enumeration	AssociationType			A characterization of the role or purpose of an associated resource.
 2.2.3	1.2.0	Asteroid	Item				A small extraterrestrial body consisting mostly of rock and metal that is in orbit around the sun.
 2.2.3	1.1.0	Atmosphere	Item				The neutral gases surrounding a body that extends from the surface and is bound to the body by virtue of the gravitational attraction.
 2.2.3	1.3.6	Atom	Item				Matter consisting of a nucleus surrounded by electrons which has no net charge.
@@ -59,7 +59,7 @@
 2.2.3	1.0.0	Calibrated	Item				Data wherein sensor outputs have been convolved with instrument response function, often irreversibly, to yield data in physical units.
 2.2.3	1.2.1	Carrington	Item				A coordinate system which is centered at the Sun and is "fixed" with respect to the synodic rotation rate; the mean synodic value is about 27.2753 days. The Astronomical Almanac gives a value for Carrington longitude of 349.03 degrees at 0000 UT on 1 January 1995.
 2.2.3	1.0.0	Cartesian	Item				A representation in which a position vector or a measured vector (e.g., field or flow) is specified by its components along the base axes of the coordinate system.
-2.2.3	1.0.0	Catalog	Container				A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data. Catalogues include lists of events, files in a product, and data availability. A Catalog resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.
+2.2.3	1.0.0	Catalog	Container				A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data. Catalogs include lists of events, files in a product, and data availability. A Catalog resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.
 2.2.3	1.0.0	Caveats	Text				Information which may be important in the avoidance of the misuse of the resource, for instance instrument maladies, corruption or contamination.
 2.2.3	1.0.0	CDF	Item				Common Data Format (CDF). A binary storage format developed at Goddard Space Flight Center (GSFC).
 2.2.3	1.0.0	CEF	Item				Cluster Exchange Format (CEF) is a self-documenting ASCII format designed for the exchange of data. There are two versions of CEF which are not totally compatible.
@@ -73,7 +73,7 @@
 2.2.3	1.3.6	ChildEventOf	Item				A descendant or caused by another resource.
 2.2.3	1.0.0	Chromosphere	Item				The region of the Sun's (or a star's) atmosphere above the temperature minimum and below the Transition Region. The solar chromosphere is approximately 400 km to 2100 km above the photosphere, and characterized by temperatures from 4500 - 28000 K.
 2.2.3	1.0.0	Circular	Item				Relative to polarization, right-hand circularly polarized light is defined such that the electric field is rotating clockwise as seen by an observer towards whom the wave is moving. Left-hand circularly polarized light is defined such that the electric field is rotating counterclockwise as seen by an observer towards whom the wave is moving. The polarization of magnetohydrodynamic waves is specified with respect to the ambient mean magnetic field : right-hand polarized waves have a transverse electric field component which turns in a right-handed sense (that of the gyrating electrons) around the magnetic field.
-2.2.3	1.3.6	ClassificationMethod	Enumeration	Classification Method			The technique used to determine the characteristics of an object.
+2.2.3	1.3.6	ClassificationMethod	Enumeration	ClassificationMethod			The technique used to determine the characteristics of an object.
 2.2.3	1.0.0	CoInvestigator	Item				An individual who is a scientific peer and major participant in an investigation.
 2.2.3	2.2.0	ColorBar	Item				A spectrum or set of colors used to represent data values.
 2.2.3	1.3.4	Column	Item				A two-dimensional measure of a quantity. The column is the area over which the quantity is measured.
@@ -82,9 +82,9 @@
 2.2.3	1.3.4	ConfidenceRating	Enumeration	Confidence Rating			A classification of the certainty of an assertion.
 2.2.3	1.0.0	Contact	Container				The person or organization who may be able to provide special assistance or serve as a channel for communication for additional information about a resource.
 2.2.3	1.3.0	Contributor	Item				An entity responsible for making contributions to the content of the resource.
-2.2.3	1.0.0	CoordinateRepresentation	Enumeration	Coordinate Representation			The method or form for specifying a given point or vector in a given coordinate system.
+2.2.3	1.0.0	CoordinateRepresentation	Enumeration	CoordinateRepresentation			The method or form for specifying a given point or vector in a given coordinate system.
 2.2.3	1.0.0	CoordinateSystem	Container				The specification of the orientation of a set of (typically) orthogonal base axes.
-2.2.3	1.0.0	CoordinateSystemName	Enumeration	Coordinate System Name			Identifies the coordinate system in which the position, direction or observation has been expressed.
+2.2.3	1.0.0	CoordinateSystemName	Enumeration	CoordinateSystemName			Identifies the coordinate system in which the position, direction or observation has been expressed.
 2.2.3	1.0.0	Corona	Item				The outermost atmospheric region of the Sun or a star, characterized by ionization temperatures above 10^5 K. The solar corona starts at about 2100 km above the photosphere; there is no generally defined upper limit.
 2.2.3	1.3.0	CoronalHole	Item				An extended region of the corona, exceptionally low in density and associated with unipolar photospheric regions. A coronal hole can be an "open" magnetic field in the corona and (perhaps) inner heliosphere which has a faster than average outflow (wind); A region of lower than "quiet" ion and electron density in the corona; or a region of lower peak electron temperature in the corona than in the "quiet" corona.
 2.2.3	1.0.0	CoronalMassEjection	Item				A solar event (CME) that involves a burst of plasma ejected into the interplanetary medium. CME's may be observed remotely relatively near the sun or in situ in the interplanetary medium. The latter type of observations are often referred to as Interplanetary CME's (ICME's).
@@ -105,14 +105,14 @@
 2.2.3	1.0.0	Deviation	Item				The difference between an observed value and the expected value of a quantity.
 2.2.3	1.1.0	Differential	Item				A measurement within a narrow range of energy and/or solid angle.
 2.2.3	1.3.5	Direction	Item				The spatial relation between an object and another object, the orientation of the object or the course along which the object points or moves.
-2.2.3	1.3.4	DirectionAngle	Enumeration	Direction Angle			The angle between a position vector or measured vector (or one of its projections onto a plane) and one of the base axes of the coordinate system.
+2.2.3	1.3.4	DirectionAngle	Enumeration	DirectionAngle			The angle between a position vector or measured vector (or one of its projections onto a plane) and one of the base axes of the coordinate system.
 2.2.3	2.2.0	Directional	Item				A measurement within a narrow range of solid angle.
 2.2.3	1.0.0	DisplayCadence	Duration				The time interval between the successive display elements.
 2.2.3	1.0.0	DisplayData	Container				A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.. Examples are line plots and spectrograms. A Display Data resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.
-2.2.3	1.3.1	DisplayType	Enumeration	Display Type			The general styling or type of plot that is suitable for the variable.
+2.2.3	1.3.1	DisplayType	Enumeration	DisplayType			The general styling or type of plot that is suitable for the variable.
 2.2.3	1.0.0	DM	Item				Dipole Meridian - A coordinate system centered at the observation point. Z axis is parallel to the Earth's dipole axis, positive northward. X is in the plane defined by Z and the line linking the observation point with the Earth's center. Y is positive eastward. See <http://cdpp.cnes.fr/00428.pdf>
 2.2.3	1.3.0	Document	Container				A set of information designed and presented as an individual entity. A document may contain plain or formatted text, in-line graphics, sound, other multimedia data, or hypermedia references. A Document resource is intended for use on digital objects that have no other identifier (e.g., DOI or ISBN). 
-2.2.3	1.3.0	DocumentType	Enumeration	Document Type			A characterization of the content, purpose, or style of the document. 
+2.2.3	1.3.0	DocumentType	Enumeration	DocumentType			A characterization of the content, purpose, or style of the document. 
 2.2.3	1.3.5	DopplerFrequency	Item				Change in the frequency of a propagating wave due to motion of the source, the observer, the reflector, or the propagation medium.
 2.2.3	1.0.0	Dopplergram	Item				A map or image depicting the spatial distribution of line-of-sight velocities of the observed object.
 2.2.3	1.0.0	DoubleSphere	Item				A dipole antenna of which the active (sensor) elements are small spheres located at the ends of two wires deployed in the equatorial plane, on opposite sides of a spinning spacecraft.
@@ -158,7 +158,7 @@
 2.2.3	1.3.4	Feature	Item				A prominent or distinctive characteristic that occurs at a location or persists over a period of time.
 2.2.3	1.0.0	Field	Container				The space around a radiating body within which its electromagnetic attributes can exert force on another similar body that is not in direct contact.
 2.2.3	1.3.6	FieldAligned	Item				The component of a quantity which is oriented in the same direction of a field.
-2.2.3	1.1.0	FieldQuantity	Enumeration	Field Quantity			The physical attribute of the field.
+2.2.3	1.1.0	FieldQuantity	Enumeration	FieldQuantity			The physical attribute of the field.
 2.2.3	1.2.0	FillValue	Text				A value that indicates that a quantity is undefined.
 2.2.3	2.2.0	Film	Item				An image recording medium on which usually a "negative" analog image is registered. A "positive" image can be recovered or reproduced from film, which is usually made of flexible materials for ease of storage and transportation.
 2.2.3	1.0.0	Fit	Item				Values that make an model agree with the data.
@@ -193,7 +193,7 @@
 2.2.3	2.2.1	Halo	Item				The part of an object or distribution surrounding some central body or distribution.  For example, the particles above the core energies that show enhancements above the thermal population.  Typically, a "power law tail" shows a break from the core Maxwellian at a particular energy.
 2.2.3	1.0.0	HardXrays	Item				Photons with a wavelength range: 0.001 to 0.1 nm and an energy range of 12 keV to 120 keV
 2.2.3	2.2.0	Hardcopy	Enumeration	Hardcopy			A permanent reproduction, or copy in the form of a physical object, of any media suitable for direct use by a person.
-2.2.3	1.2.0	HashFunction	Enumeration	Hash Function			A function or algorithm that converts a digital data object into a hash value. Typically the hash value is small and concise when compared to the digital data object.
+2.2.3	1.2.0	HashFunction	Enumeration	HashFunction			A function or algorithm that converts a digital data object into a hash value. Typically the hash value is small and concise when compared to the digital data object.
 2.2.3	1.2.0	HashValue	Text				The value calculated by a hash function, e.g. the message digest of a digital data object.
 2.2.3	2.2.0	HCC	Item				Heliocentric Cartesian - A 3-D orthonormal coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The Z axis points toward the observer. The Y axis lies in the plane defined by the solar spin vector and the Z axis, positive northward. The X axis is perpendicular to the Y and Z axes, positive toward solar west. Standard representation for this system is via the point's x and y values, expressed either as physical distances or as fractions of the solar disk radius.
 2.2.3	1.2.1	HCI	Item				Heliographic Carrington Inertial.
@@ -237,7 +237,7 @@
 2.2.3	1.0.0	InstrumentID	Text				The identifier of an Instrument resource.
 2.2.3	2.0.2	InstrumentMode	Item				An indication of a state (mode) in which the instrument is operating. How a mode influences the interpretation and representation of data is described in instrument related documentation.
 2.2.3	1.2.0	InstrumentStatus	Item				A quantity directly related to the operation or function of an instrument.
-2.2.3	1.0.0	InstrumentType	Enumeration	Instrument Type			A characterization of an integrated collection of software and hardware containing one or more sensors and associated controls used to produce data on an environment.
+2.2.3	1.0.0	InstrumentType	Enumeration	InstrumentType			A characterization of an integrated collection of software and hardware containing one or more sensors and associated controls used to produce data on an environment.
 2.2.3	1.1.0	Integral	Enumeration	Integral			A flux measurement in a broad range of energy and solid angle.
 2.2.3	1.0.0	Intensity	Item				The measurement of radiant or wave energy per unit detector area per unit bandwidth per unit solid angle per unit time.
 2.2.3	1.2.1	Interferometer	Item				An instrument to study the properties of two or more waves from the pattern of interference created by their superposition.
@@ -298,7 +298,7 @@
 2.2.3	1.1.0	MATLAB_7	Item				MATLAB Workspace save set, version 7. MAT-files are double-precision, binary, MATLAB format files. Version 7 includes data compression and Unicode encoding. MATLAB is a proprietary product of The MathWorks.
 2.2.3	2.2.0	Maximum	Item				The largest value of a batch or sample or the upper bound of a probability distribution.
 2.2.3	1.2.0	MD5	Item				Message Digest 5 (MD5) is a 128-bit message digest algorithm created in 1991 by Professor Ronald Rivest.
-2.2.3	1.0.0	MeasurementType	Enumeration	Measurement Type			A characterization of the quantitative assessment of a phenomenon.
+2.2.3	1.0.0	MeasurementType	Enumeration	MeasurementType			A characterization of the quantitative assessment of a phenomenon.
 2.2.3	2.2.0	Median	Item				The measure of central tendency of a set of n. values computed by ordering the values and taking the value at position (n.  + 1) / 2 when n. is odd or the arithmetic mean of the values at positions n.  / 2 and (n. / 2) + 1 when n.  is even.
 2.2.3	1.2.0	Mercury	Item				The first planet from the sun in our solar system.
 2.2.3	1.2.0	Mesosphere	Item				The layer of the atmosphere that extends from the Stratosphere to a range of 80 km to 85 km, temperature decreasing with height.
@@ -313,7 +313,7 @@
 2.2.3	2.2.0	Minimum	Item				The smallest value of a batch or sample or the lower bound of a probability distribution.
 2.2.3	1.3.1	MirrorURL	URL				A Uniform Resource Locator (URL) to an alternate location of a resource.
 2.2.3	1.0.0	Mixed	Container				A parameter derived from more than one of the type of parameter. For example, plasma beta, the ratio of plasma particle energy density to the energy density of the magnetic field permeating the plasma, is "mixed."
-2.2.3	1.3.5	MixedQuantity	Enumeration	Mixed Quantity			A characterization of the combined attributes of a quantity.
+2.2.3	1.3.5	MixedQuantity	Enumeration	MixedQuantity			A characterization of the combined attributes of a quantity.
 2.2.3	1.0.0	ModeAmplitude	Item				In helioseismology the magnitude of oscillation of waves of a particular geometry.
 2.2.3	1.0.0	Molecule	Item				A group of atoms so united and combined by chemical affinity that they form a complete, integrated whole, being the smallest portion of any particular compound that can exist in a free state
 2.2.3	1.0.0	Moment	Item				Parameters determined by integration over a distribution function convolved with a power of velocity.
@@ -324,7 +324,7 @@
 2.2.3	1.0.0	Name	Text				A language unit by which a person or thing is known.
 2.2.3	1.1.0	NCAR	Item				The National Center for Atmospheric Research (NCAR) format. A complete description of that standard is given in appendix C of the "Report on Establishment & Operation of the Incoherent- Scatter Data Base", dated August 23, 1984, obtainable from NCAR, P.O. Box 3000 Boulder, Colorado 80307-3000.
 2.2.3	1.1.0	NearEarth	Item				The heliospheric region near the Earth which extends to and includes the area near the L1 and L2 Lagrange point.
-2.2.3	1.0.0	NearSurface	Enumeration	Near Surface			The gaseous and possibly ionized environment of a body extending from the surface to some specified altitude. For the Earth, this altitude is 2000 km.
+2.2.3	1.0.0	NearSurface	Enumeration	NearSurface			The gaseous and possibly ionized environment of a body extending from the surface to some specified altitude. For the Earth, this altitude is 2000 km.
 2.2.3	1.2.0	Neptune	Item				The seventh planet from the sun in our solar system.
 2.2.3	1.0.0	NetCDF	Item				Unidata Program Center's Network Common Data Form (NetCDF). A self-describing portable data format for array-oriented data access. See <http://my.unidata.ucar.edu/content/software/netcdf>
 2.2.3	1.2.1	NeutralAtomImager	Item				An instrument which measures the quantity and properties of neutral particles over a range of angles. Measured properties can include mass and energy.
@@ -361,9 +361,9 @@
 2.2.3	1.0.0	Particle	Container				A description of the types of particles observed in the measurement. This includes both direct observations and inferred observations.
 2.2.3	1.0.0	ParticleCorrelator	Item				An instrument which correlates particle flux to help identify wave/particle interactions.
 2.2.3	1.0.0	ParticleDetector	Item				An instrument which detects particle flux!!!
-2.2.3	1.1.0	ParticleQuantity	Enumeration	Particle Quantity			A characterization of the physical properties of the particle.
+2.2.3	1.1.0	ParticleQuantity	Enumeration	ParticleQuantity			A characterization of the physical properties of the particle.
 2.2.3	2.2.2	ParticleRadius	Item				The mean radius for a Gaussian distribution of particles with an axial ratio of 2 and a distribution width that varies as 0.5 radius. A value of zero means no cloud was detected.
-2.2.3	1.0.0	ParticleType	Enumeration	Particle Type			A characterization of the kind of particle observed by the measurement.
+2.2.3	1.0.0	ParticleType	Enumeration	ParticleType			A characterization of the kind of particle observed by the measurement.
 2.2.3	1.3.4	Passive	Item				Movement or effect produced by outside influence. A passive measurement is one which does not produce a transmission or excitation as a part of the measurement cycle.
 2.2.3	1.0.0	PDF	Item				A document expressed in the Portable Document Format (PDF) as defined by Adobe.
 2.2.3	1.0.0	Peak	Item				The maximum value for the quantity in question, over a period of time which is usually equal to the cadence.
@@ -376,7 +376,7 @@
 2.2.3	1.3.6	Phase	Item				A point or portion in a recurring series of changes.
 2.2.3	1.2.1	PhaseAngle	Item				Phase difference between two or more waves, normally expressed in degrees.
 2.2.3	1.0.0	PhaseSpaceDensity	Item				The number of particles per unit volume in the six-dimensional space of position and velocity.
-2.2.3	1.0.0	PhenomenonType	Enumeration	Phenomenon Type			The characteristics or categorization of an event type.
+2.2.3	1.0.0	PhenomenonType	Enumeration	PhenomenonType			The characteristics or categorization of an event type.
 2.2.3	1.0.0	PhoneNumber	Text				The symbols and numerals required to contact an individual by telephone. The string may contain punctuation marks such as dash (-) or dot (.) to separate fields within the string.
 2.2.3	2.2.0	Photograph	Item				An image (positive or negative) registered on a piece of photo-sensitive paper
 2.2.3	2.2.0	PhotographicPlate	Item				A rigid (typically glass) medium that functions like film. Its rigidity is for guarding against image distortion due to medium deformation (caused by heat and humidity). Photographic plates are often used for astronomical photography.
@@ -409,7 +409,7 @@
 2.2.3	2.2.0	Print	Item				A sheet of any written or printed material which may include notes or graphics. Multiple printed pages may be bound into a manuscript or book.
 2.2.3	1.2.0	PriorID	Text				The resource identifier for a resource that is superseded or replaced by a resource.
 2.2.3	1.3.4	Probable	Item				Likely given the available evidence. Considered in the range of 4-7 on a scale of 0-10.
-2.2.3	1.2.0	ProcessingLevel	Enumeration	Processing Level			The standard classification of the processing performed on the product.
+2.2.3	1.2.0	ProcessingLevel	Enumeration	ProcessingLevel			The standard classification of the processing performed on the product.
 2.2.3	1.0.0	Profile	Item				Measurements of a quantity as a function of height above an object such as the limb of a body.
 2.2.3	1.1.0	ProjectScientist	Item				An individual who is an expert in the phenomenon and related physics explored by the project. A project scientist may also have a managerial role within the project.
 2.2.3	1.3.4	Projection	Enumeration	Projection			A measure of the length of a position or measured vector as projected into a plane of the coordinate system.
@@ -437,7 +437,7 @@
 2.2.3	1.1.0	RelativeStopDate	Duration				An indication of the nominal end date relative to the present.
 2.2.3	1.1.0	ReleaseDate	DateTime				The date and time when a resource is made available. The availability of a resource coincides with the release of a resource description. If the Release Date is specified as a future date then it indicates that resource should not be made available until that time. However, this is only advisory and in practice the Release Date should be the actual date the resource description was published.
 2.2.3	1.1.0	Remote1AU	Item				A roughly toroidal region that includes the Earth's orbit, but exclusive of the region near the Earth.
-2.2.3	2.2.0	RenderingAxis	Enumeration	Rendering Axis			A reference component of a plot or rendering of data. A plot typically is a 2-dimensional rendering with a horizontal and verticle axis. A third dimension can be introduced with a color coding of the rendered data.
+2.2.3	2.2.0	RenderingAxis	Enumeration	RenderingAxis			A reference component of a plot or rendering of data. A plot typically is a 2-dimensional rendering with a horizontal and verticle axis. A third dimension can be introduced with a color coding of the rendered data.
 2.2.3	1.3.1	RenderingHints	Container				Attributes to aid in the rendering of parameter.
 2.2.3	2.2.2	Report	Item				A document which describes the findings of some individual or group.
 2.2.3	1.1.0	Repository	Container				A location or facility where resources are stored.
@@ -459,7 +459,7 @@
 2.2.3	1.2.0	Scalar	Item				A quantity that is completely specified by its magnitude and has no direction.
 2.2.3	1.3.1	ScaleMax	Numeric				The maximum value that the variable is expected to attain. Used, for example, by automated plotting software.
 2.2.3	1.3.1	ScaleMin	Numeric				The minimum value that the variable is expected to attain. Used, for example, by automated plotting software.
-2.2.3	1.3.1	ScaleType	Enumeration	Scale Type			The scaling to apply to an axis. If this attribute is not present, linear scale should be assumed.
+2.2.3	1.3.1	ScaleType	Enumeration	ScaleType			The scaling to apply to an axis. If this attribute is not present, linear scale should be assumed.
 2.2.3	1.0.0	Scientist	Item				An individual who is an expert in the phenomenon and related physics represented by the resource.
 2.2.3	1.2.1	ScintillationDetector	Item				An instrument which detects flouresences of a material which is excited by high energy (ionizing) electromagnetic or charged particle radiation.
 2.2.3	1.0.0	SE	Item				Solar Ecliptic - A heliocentric coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis is positive towards the first point of Aries (from Earth to Sun at vernal equinox). Same as HAE above. See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>
@@ -480,7 +480,7 @@
 2.2.3	2.0.1	SoundSpeed	Item				The speed at which sound travels through a medium.
 2.2.3	1.2.1	Sounder	Item				An instrument which measures the radiances from an object. A sounder may measure radiances at multiple spectral ranges.
 2.2.3	1.3.1	Source	Container				The location and attributes of an object.
-2.2.3	1.3.1	SourceType	Enumeration	Source Type			A characterization of the function or purpose of the source.
+2.2.3	1.3.1	SourceType	Enumeration	SourceType			A characterization of the function or purpose of the source.
 2.2.3	1.2.0	SouthAtlanticAnomalyRegion	Item				The region where the Earth's inner van Allen radiation belt makes its closest approach to the planet's surface. The result is that, for a given altitude, the radiation intensity is higher over this region than elsewhere.
 2.2.3	1.2.1	SpacecraftOrbitPlane	Item				A coordinate system where X lies in the plane normal to and in the direction of motion of the spacecraft, Z is normal to this plane and Y completes the triad in a right-handed coordinate system.
 2.2.3	1.0.0	SpacecraftPotentialControl	Item				An instrument to control the electric potential of a spacecraft with respect to the ambient plasma by emitting a variable current of positive ions.
@@ -488,7 +488,7 @@
 2.2.3	2.2.2	Specification	Item				A detailed description of the requirements and other aspects of an object or component that may be used to develop an implementation.
 2.2.3	1.3.6	Spectral	Item				Characterized as a range or continuum of frequencies
 2.2.3	1.0.0	SpectralPowerReceiver	Item				A radio receiver which determines the power spectral density of the electric or magnetic field, or both, at one or more frequencies.
-2.2.3	1.1.0	SpectralRange	Enumeration	Spectral Range			The general term used to describe wavelengths or frequencies within a given span of values for those quantities.
+2.2.3	1.1.0	SpectralRange	Enumeration	SpectralRange			The general term used to describe wavelengths or frequencies within a given span of values for those quantities.
 2.2.3	1.3.5	Spectrogram	Item				The characterization of signal strengths as a function of frequency (or energy) and time.
 2.2.3	1.0.0	Spectrometer	Item				An instrument that measures the component wavelengths of light (or other electromagnetic radiation) by splitting the light up into its component wavelengths.
 2.2.3	1.0.0	Spectrum	Item				The distribution of a characteristic of a physical system or phenomenon, such as the energy emitted by a radiant source, arranged in the order of wavelengths.
@@ -512,7 +512,7 @@
 2.2.3	1.2.0	Substorm	Item				A process by which plasma in the magnetotail becomes energized at a fast rate.
 2.2.3	1.0.0	Sun	Enumeration	Sun			The star upon which our solar system is centered.
 2.2.3	1.0.0	Support	Container				Information useful in understanding the context of an observation, typically observed or measured coincidentally with a physical observation.
-2.2.3	1.0.0	SupportQuantity	Enumeration	Support Quantity			A characterization of the support information.
+2.2.3	1.0.0	SupportQuantity	Enumeration	SupportQuantity			A characterization of the support information.
 2.2.3	2.2.1	Superhalo	Item				The part of an object or distribution surrounding some central body or distribution evident in a second break in the distribution function (e.g., a different power law).  It consists of a population at a higher energies than for a halo.
 2.2.3	1.0.0	Surface	Item				The outermost area of a solid object.
 2.2.3	1.3.1	Symmetric	Item				Equal distribution about one or more axes.
@@ -564,8 +564,8 @@
 2.2.3	1.1.0	VOTable	Item				A proposed IVOA standard designed as a flexible storage and exchange format for tabular data.
 2.2.3	1.3.5	Wave	Container				Periodic or quasi-periodic (AC) variations of physical quantities in time and space, capable of propagating or being trapped within particular regimes.
 2.2.3	1.3.5	WaveForm	Item				Spatial or temporal variations of wave amplitude over wave-period timescales.
-2.2.3	1.3.5	WaveQuantity	Enumeration	Wave Quantity			A characterization of the physical properties of a wave.
-2.2.3	1.3.5	WaveType	Enumeration	Wave Type			A characterization of the carrier or phenomenon of wave information observed by the measurement.
+2.2.3	1.3.5	WaveQuantity	Enumeration	WaveQuantity			A characterization of the physical properties of a wave.
+2.2.3	1.3.5	WaveType	Enumeration	WaveType			A characterization of the carrier or phenomenon of wave information observed by the measurement.
 2.2.3	1.0.0	WaveformReceiver	Item				A radio receiver which outputs the value of one or more components of the electric and/or magnetic field as a function of time.
 2.2.3	1.3.5	Wavelength	Item				The peak-to-peak distance over one wave period.
 2.2.3	1.3.0	WavelengthRange	Container				The range of possible values for the observed wavelength.
