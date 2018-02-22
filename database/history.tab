@@ -274,3 +274,14 @@
 273	2.2.3	2012-05-10	T.King	Modified definitions of "GEI", "Azimuth Angle", "Elevation Angle" and "Polar Angle" as suggested by J.Merka; Add definition for "ENP and add to "Coordinate System Name" enumeration as suggested by J. Merka; Add definitions of "Photomultiplier Tube" and "Solid State Detector" to dictionary and "Intrument Type" as suggested by B. Weigel.	Decided during the telecon on 2012-05-10
 274	2.2.3	2012-05-24	T.King	Add definition of "Moon" and add to "Earth" enumeration as suggested by T. Narock.	Decided during the telecon on 2012-05-24
 275	2.2.3	2014-05-22	T.King	Released.	Decided during the telecon on 2014-05-22.
+276	2.2.4	2015-05-28	T.King	Add coordinate systems MSO, VSO, KSO, KSM, JSO, JSM to dictionary and CoordinateSystemName, Add SolarUVFlux and IMFClockAngle to dictionary and MixedQuantity.	
+277	2.2.4	2015-05-31	T.King	Released.	Coordinated with SPASE Simulation Extension release
+278	2.2.5	2015-06-12	T.King	Add moons and magnetosphere to planets. Only the larger moons which are typically encountered or simulated were added.	Decided at telecon on 2015-05-11
+279	2.2.5	2015-06-12	T.King	Add coordinate systems to enumeration.	Decided at telecon on 2015-05-11
+280	2.2.6	2015-09-09	T.King	Released.	Decided during the telecon on 2015-09-09.
+281	2.2.7	2016-07-21	T.King	Change occurrence of Particle->ParticalType from + to * and Wave->WaveType from 1 to 0.	Decided during the telecon on 2016-05-05.
+282	2.2.7	2016-07-21	T.King	Add JSON and CSV to the dictionary and to Format enumeration.	Decided during the telecon on 2016-07-21.
+283	2.2.8	2016-07-21	T.King	Released.	Decided during the telecon on 2016-09-08.
+284	2.2.9	2017-02-09	T.King	Add CadenceMin, CadenceMax, ExposureMin, ExposureMax, PartiallyRestricted, Confidence, ProviderName, MassRange, PitchAngleRange; Change occurrence of Observatory/OperatingSpan from 1 to +.	Decided during the telecon on 2017-02-09.
+285	2.2.9	2017-09-07	T.King	Add HGRTN, HERTN to dictionary and to CoordinateSystemName. Add Entropy to dictionary and ParticleQuantity. 	Decided during the telecon on 2017-09-14.
+286	2.2.9	2017-11-14	T.King	Released.	Decided during the telecon on 2017-11-14.

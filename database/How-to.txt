@@ -6,30 +6,45 @@ the different forms of documentation and representation.
 From the folder with the "tab" files:
 
 %> cd ../sqlite
-%> bash ./clear-version.sh x.x.x
-%> bash ./load-tables.sh
+%> bash ./clear-version.sh x.x.x spase-model
+%> bash ./load-tables.sh spase-model
 
 Then copy the "spase-model.db" file into the webapp for the root web site.
 
 %> copy spase-model.db  "..\..\..\webapp\root\data\"
 
-From the folder containig the "model-tools/bin":
+The copy doclet files used in the generation of references and guides.
 
-%> cd ..\..\..\java\model-tools\bin
+%> cd ../doclet
+%> mkdir ..\..\..\webapp\root\data\doclet\Version_x_x_x
+%> copy /Y * "..\..\..\webapp\root\data\doclet\Version_x_x_x"
+
+From the folder containing the "model-tools/build/bin":
+
+%> cd ..\..\..\java\model-tools\build\bin
 %> bash ./makeall.sh x.x.x
 
-and then run the shema generation script to use Oxygen to generate
+and then run the schema generation script to use Oxygen to generate
 some of the documentation. Instructions on how to run the command
 are displayed when "makeall.sh" completes.
 
+If a draft version run
+%> bash ./makedraft.sh x.x.x
+
+If a previous draft exists and this is a release, clear the old draft versions
+
+%> bash ./cleardraft.sh x.x.x
+
 Commit the website to the git repository
 
-%> cd ..\..\..\webapp\root
+%> cd ..\..\..\..\webapp\root
 %> git add .
-%> git commit -a -m "Update web site with new version of metadata model."
+%> git commit -a -m "Update web site to version x.x.x. of metadata model."
+%> git tag -a x.x.x -m "x.x.x"
 %> git push
+%> git push --tags
 
-Login to to web server and pull web site
+Login to the web server and pull web site
 
 %> cd /var/www/spase/site/root
 %> git pull
