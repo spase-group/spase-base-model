@@ -285,3 +285,12 @@
 284	2.2.9	2017-02-09	T.King	Add CadenceMin, CadenceMax, ExposureMin, ExposureMax, PartiallyRestricted, Confidence, ProviderName, MassRange, PitchAngleRange; Change occurrence of Observatory/OperatingSpan from 1 to +.	Decided during the telecon on 2017-02-09.
 285	2.2.9	2017-09-07	T.King	Add HGRTN, HERTN to dictionary and to CoordinateSystemName. Add Entropy to dictionary and ParticleQuantity. 	Decided during the telecon on 2017-09-14.
 286	2.2.9	2017-11-14	T.King	Released.	Decided during the telecon on 2017-11-14.
+287	2.3.0	2018-02-08	T.King	Add DOI to dictionary and to ResourceHeader.	Decided during the telecon on 2018-02-08.
+288	2.3.0	2018-05-04	T.King	Add PublicationInfo, PublicationDate, Authors, Funding, Agency, Project, Award, ORCIdentifier to dictionary and to the model.	Decided (mostly) during the telecon on 2018-03-19.
+289	2.3.0	2018-05-08	T.King	Add File, HAPI, Listing, Search, Template, Overview, WebService to dictionary and as values for Style enumeration.; Add Style to dictionary and AccessURL	Decided (partially) during the telecon on 2018-03-19.
+290	2.3.0	2018-05-31	T.King	Released.	Decided during the telecon on 2018-05-31.
+291	2.3.1	2018-06-18	T.King	Add Eccentric Dipole (ECD) to dictionary and CoordinateSystem list. 	Decided by email on 2018-05-18.
+292	2.3.1	2018-11-01	T.King	Add Positron to dictionary and ParticleType list. 	Decided at telecon on 2018-11-01.
+293	2.3.1	2019-02-25	T.King	Add Developer, HostContact and User to dictionary and Role list. 	Decided by email 2019-02-20.
+294	2.3.1	2019-06-13	T.King	Add StartDate, StopDate and Note to Contact.  	Decided (partially) during telecon on 2019-05-30.
+295	2.3.1	2019-06-13	T.King	Add RevisionHistory, RevisionEvent to dictionary and add RevisionHistory to ResourceHeader; Add IonGauge to dictionary and to InstrumentType.	Decided during telecon on 2019-06-13.

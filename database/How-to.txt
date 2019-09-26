@@ -3,6 +3,8 @@ The metadata model is maintained in a database.
 This database is accessed by other tools to generate all
 the different forms of documentation and representation.
 
+===> Skip to "makeall.sh"
+
 From the folder with the "tab" files:
 
 %> cd ../sqlite
@@ -11,13 +13,15 @@ From the folder with the "tab" files:
 
 Then copy the "spase-model.db" file into the webapp for the root web site.
 
-%> copy spase-model.db  "..\..\..\webapp\root\data\"
+%> copy /Y spase-model.db  "..\..\..\webapp\website\site\ROOT\data"
 
-The copy doclet files used in the generation of references and guides.
+If a new version, copy doclet files used in the generation of references and guides.
 
 %> cd ../doclet
-%> mkdir ..\..\..\webapp\root\data\doclet\Version_x_x_x
-%> copy /Y * "..\..\..\webapp\root\data\doclet\Version_x_x_x"
+%> mkdir ..\..\..\webapp\website\site\ROOT\data\doclet\Version_x_x_x
+%> copy /Y * "..\..\..\webapp\website\site\ROOT\data\doclet\Version_x_x_x"
+
+===> Start here
 
 From the folder containing the "model-tools/build/bin":
 
@@ -35,11 +39,26 @@ If a previous draft exists and this is a release, clear the old draft versions
 
 %> bash ./cleardraft.sh x.x.x
 
+# Copy files into the VM
+#
+# %> bash copytovm.sh
+#
+#
+# Commit the VM website to the git repository
+#
+# %> cd /projects-vm/spase/website/
+# %> git add .
+# %> git commit -a -m "Update web site to version x.x.x. of metadata model."
+# %> git tag -a x.x.x -m "x.x.x"
+# %> git push
+# %> git push --tags
+#
+
 Commit the website to the git repository
 
-%> cd ..\..\..\..\webapp\root
+%> cd ..\..\..\..\webapp\website
 %> git add .
-%> git commit -a -m "Update web site to version x.x.x. of metadata model."
+%> git commit -a -m "Update web site to version x.x.x of metadata model."
 %> git tag -a x.x.x -m "x.x.x"
 %> git push
 %> git push --tags
