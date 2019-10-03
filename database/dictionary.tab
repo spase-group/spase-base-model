@@ -10,6 +10,7 @@
 2.3.1	1.3.0	ActiveRegion	Item				A localized, transient volume of the solar atmosphere in which PLAGEs, SUNSPOTS, FACULAe, FLAREs, etc. may be observed.
 2.3.1	1.0.0	ActivityIndex	Item				An indication, derived from one or more measurements, of the level of activity of an object or region, such as sunspot number, F10.7 flux, Dst, or the Polar Cap Indices.
 2.3.1	1.0.0	Address	Text				Directions for finding some location; written on letters or packages that are to be delivered to that location.
+2.3.1	2.3.1	AdiabaticInvariant	Enumeration	AdiabaticInvariant			A property of a physical system usually related to periodic phenomena that remains constant under slowly varying conditions.
 2.3.1	1.0.0	Aerosol	Item				A suspension of fine solid or liquid particles in a gas.
 2.3.1	2.3.0	Agency	Text				The name of an organization that provides a service or funding for specific projects.
 2.3.1	1.3.5	AkasofuEpsilon	Item				A measure of the magnetopause energy flux and an indicator of the solar wind power available for subsequent magnetospheric energization. Defined as: V*B^2*l^2sin(theta/2)^4 where B is the IMF, l is an empirical scaling parameter equal to 7 RE, and theta = tan(BY /BZ)^-1 the IMF clock angle.
@@ -55,6 +56,7 @@
 2.3.1	1.1.0	Base64	Item				A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in Internet e-mail. The only characters used are the upper- and lower-case Roman alphabet characters (A-Z, a-z), the numerals (0-9), and the "+" and "/" symbols, with the "=" symbol as a special suffix (padding) code.
 2.3.1	1.0.0	Binary	Item				A direct representation of the bits which may be stored in memory on a computer.
 2.3.1	1.1.0	Bin	Container				A grouping of observations according to a band or window of a common attribute.
+2.3.1	2.3.1	BounceMotion	Item				The second adiabatic invariant is associated with periodic bounce motion of charged particles trapped between two magnetic mirrors on a magnetic field line. The second invariant, termed J, is defined by using the integral J = m  &int; v • ds where m is the mass of the charged particle, v is the particle velocity along the field line, and ds represents elemental arc lengths along the field line. The second adiabatic invariant is conserved as long as changes in the background magnetic field occur at time scales much longer than the bounce time of the charged particles. 
 2.3.1	1.0.0	BowShockCrossing	Item				A crossing of the boundary between the undisturbed (except for foreshock effects) solar wind and the shocked, decelerated solar wind of the magnetosheath.
 2.3.1	1.3.1	Browse	Item				A representation of an image which is suitable to reveal most or all of the details of the image.
 2.3.1	1.0.0	BZIP2	Item				An open standard algorithm by Julian Seward using Burrows-Wheeler block sorting and Huffman coding. See <http://www.bzip.org/>
@@ -108,6 +110,7 @@
 2.3.1	1.2.0	DataExtent	Container				The area of storage in a file system required to store the contents of a resource. The default units for data extent is bytes.
 2.3.1	1.3.1	Data	Item				A collection of organized information, usually the results of experience, observation or experiment, or a set of premises. This may consist of numbers, words, or images, particularly as measurements or observations of a set of variables.
 2.3.1	1.0.0	DataProducer	Item				An individual who generated the resource and is familiar with its provenance.
+2.3.1	2.3.1	DataQuality	Item				 The standard or degree of accuracy, trustworthiness, or usefulness of another parameter.
 2.3.1	2.2.5	Deimos	Item				The smaller and outer most moon of Mars.
 2.3.1	1.2.0	DeputyPI	Item				An individual who is an administrative or scientific leader for an investigation operating under the supervision of a Principal Investigator.
 2.3.1	1.3.3	DerivedFrom	Item				A transformed or altered version of a resource instance.
@@ -115,9 +118,10 @@
 2.3.1	1.0.0	Deviation	Item				The difference between an observed value and the expected value of a quantity.
 2.3.1	1.1.0	Differential	Item				A measurement within a narrow range of energy and/or solid angle.
 2.3.1	2.2.5	Dione	Item				The forth-largest moon of Saturn.
-2.3.1	2.2.0	Directional	Item				A measurement within a narrow range of solid angle.
-2.3.1	1.3.4	DirectionAngle	Enumeration	DirectionAngle			The angle between a position vector or measured vector (or one of its projections onto a plane) and one of the base axes of the coordinate system.
 2.3.1	1.3.5	Direction	Item				The spatial relation between an object and another object, the orientation of the object or the course along which the object points or moves.
+2.3.1	2.2.0	Directional	Item				A measurement within a narrow range of solid angle.
+2.3.1	2.3.1	DirectionAngle	Enumeration	DirectionAngle			The angle between a position vector or measured vector (or one of its projections onto a plane) and one of the base axes of the coordinate system.
+2.3.1	1.3.5	DirectionCosine	Enumeration	DirectionCosine			The cosine of the angle between two vectors usually between a vector and one of the basis axes defining a coordinate system. Three angles and thus three direction cosines are required to define a vector direction in a three dimensional Euclidean space.
 2.3.1	1.0.0	DisplayCadence	Duration				The time interval between the successive display elements.
 2.3.1	1.0.0	DisplayData	Container				A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.. Examples are line plots and spectrograms. A Display Data resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.
 2.3.1	1.3.1	DisplayType	Enumeration	DisplayType			The general styling or type of plot that is suitable for the variable.
@@ -129,6 +133,7 @@
 2.3.1	1.0.0	Dopplergram	Item				A map or image depicting the spatial distribution of line-of-sight velocities of the observed object.
 2.3.1	1.0.0	DoubleSphere	Item				A dipole antenna of which the active (sensor) elements are small spheres located at the ends of two wires deployed in the equatorial plane, on opposite sides of a spinning spacecraft.
 2.3.1	1.2.0	DRegion	Item				The layer of the ionosphere that exists approximately 50 to 95 km above the surface of the Earth. One of several layers in the ionosphere.
+2.3.1	2.3.1	DriftMotion	Item				The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&Phi; where q is the particle charge and &Phi; is the magnetic flux enclosed within the particle drift path. 
 2.3.1	1.3.1	DustDetector	Item				An instrument which determines the mass and speed of ambient dust particles.
 2.3.1	1.0.0	Dust	Item				Free microscopic particles of solid material.
 2.3.1	1.1.0	Earth	Enumeration	Earth			The third planet from the sun in our solar system.
@@ -203,6 +208,7 @@
 2.3.1	1.0.0	GeneralContact	Item				An individual who can provide information on a range of subjects or who can direct you to a domain expert.
 2.3.1	1.0.0	GEO	Item				Geographic - geocentric corotating - A coordinate system where the Z axis is along Earth's spin vector, positive northward. X axis lies in Greenwich meridian, positive towards Greenwich. See Russell, 1971.
 2.3.1	1.0.0	GeomagneticStorm	Item				A magnetospheric disturbance typically defined by variations in the horizontal component of the Earth's surface magnetic field. The variation typically starts with a field enhancement associated with a solar wind pressure pulse and continues with a field depression associated with an enhancement of the diamagnetic magnetospheric ring current.
+2.3.1	2.3.1	GeometricFactor	Item				A measure of the gathering power of a particle detector. The geometric factor can be used to correct particle measurements by accounting for the fact that only a fraction of source particles are able to gain entry through the aperture of a detector. For an isotopic source distribution, the geometric factor corresponds to the solid angle subtended by the aperture. In practice, determination of the geometric factor requires numerical modeling and depends on detector design and the characteristics of the source.
 2.3.1	1.0.0	GIF	Item				Graphic Interchange Format (GIF) first introduced in 1987 by CompuServe. GIF uses LZW compression and images are limited to 256 colours.
 2.3.1	2.2.5	GPHIO	Item				Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.
 2.3.1	1.1.0	Granule	Container				An accessible portion of another resource. A Granule may be composed of one or more physical pieces (files) which are considered inseparable. For example, a data storage format that maintains metadata and binary data in separate, but tightly coupled files. Granules should not be used to group files that have simple relationships or which are associated through a parent resource. For example, each file containing a time interval data for a Numerical Data resource would each be considered a Granule. The ParentID of a Granule resource must be a NumericalData resource. The attributes of a Granule supersede the corresponding attributes in the NumericalData resource.
@@ -311,11 +317,13 @@
 2.3.1	1.3.4	LogScale	Item				Intervals which are spaced proportionally to the logarithms of the values being represented.
 2.3.1	1.2.0	Longitude	Numeric				The angular distance measured west (positive) or east (negative) from a north-south line called the Prime Meridian.
 2.3.1	1.0.0	LongWire	Item				A dipole antenna whose active (sensor) elements are two wires deployed in the equatorial plane on opposite sides of a spinning spacecraft, and whose length is several times greater than the spacecraft diameter.
+2.3.1	2.3.1	LowerHybridFrequency	Item				 Lower hybrid oscillations involve longitudinal motions of electrons and ions in a magnetized plasma. The propagation of lower hybrid waves must be close to perpendicular to the background magnetic field in so that electrons cannot move along field lines thus preventing wave growth. The lower hybrid frequency, &Phi;<sub>LH</sub>, can be calculated by using &Phi;<sub>LH</sub> = [(&Omega;<sub>ce</sub>&Omega;<sub>ci</sub>)<sup>-1</sup> + &Phi;<sub>pi</sub><sup>-2</sup>]<sup>-1/2</sup> where &Omega;<sub>ce</sub> and &Omega;<sub>ci</sub> are the electron and ion cyclotron frequencies, respectively, and Phi;<sub>LH</sub> is the ion plasma frequency.
 2.3.1	1.1.0	Low	Numeric				The smallest value within a range of possible values.
 2.3.1	1.0.0	MAG	Item				Geomagnetic - geocentric. Z axis is parallel to the geomagnetic dipole axis, positive north. X is in the plane defined by the Z axis and the Earth's rotation axis. If N is a unit vector from the Earth's center to the north geographic pole, the signs of the X and Y axes are given by Y = N x Z, X = Y x Z.. See Russell, 1971, and <http://cdpp.cnes.fr/00428.pdf>
+2.3.1	1.0.0	Magnetic	Item				The physical attribute attributed to a magnet or its equivalent.
 2.3.1	1.3.0	MagneticCloud	Item				A transient event observed in the solar wind characterized as a region of enhanced magnetic field strength, smooth rotation of the magnetic field vector and low proton density and temperature.
 2.3.1	1.0.0	MagneticField	Item				A region of space near a magnetized body where magnetic forces can be detected (as measured by methods such as Zeeman splitting, etc.).
-2.3.1	1.0.0	Magnetic	Item				The physical attribute attributed to a magnet or its equivalent.
+2.3.1	2.3.1	MagneticMoment	Item				A constant of motion related to the gyromotion of a particle in a magnetic field that is either static or slowly varying with respect to the gyroperiod. The magnetic moment is usually denoted by using the lower case Greek letter for mu, µ, and can be calculated by using µ = m u^2/2B where m is the particle mass, u is the velocity of the particle perpendicular to the  constant or average magnetic field direction, and B is the magnitude of the magnetic field strength. 
 2.3.1	1.0.0	Magnetogram	Item				Measurements of the vector or line-of-sight magnetic field determined from remote sensing measurements of the detailed structure of spectral lines, including their splitting and polarization. ("Magnetogram.")
 2.3.1	2.2.3	Magnetograph	Item				A special type of magnetometer that records a time plot of the local magnetic field near the instrument; or a telescope capable of determining the magnetic field strength and/or direction on a distant object such as the Sun, using the Zeeman splitting or other spectral signatures of magnetization.
 2.3.1	1.0.0	Magnetometer	Item				An instrument which measures the ambient magnetic field.
@@ -397,6 +405,7 @@
 2.3.1	1.0.0	Optical	Item				Photons with a wavelength range: 380 to 760 nm
 2.3.1	2.3.0	ORCIdentifier	Text				A Open Researcher Contributor (ORC) identifier which is a unique alphanumeric string assigned by a registration agency (https://orcid.org/) to identify an individual. It has the format xxxx-xxxx-xxxx-xxxx
 2.3.1	1.0.0	OrganizationName	Text				A unit within a company or other entity (e.g., Government agency or branch of service) within which many projects are managed as a whole.
+2.3.1	2.3.1	Orientation	Item				 The specification of the directional alignment of an object or measurement in a reference coordinate system. The orientation such as a spacecraft spin axis attitude is usually expressed as one or more angles relative to the basis axes of some specified physical space usually together with the date/time of the observation.
 2.3.1	1.0.0	Other	Item				Not classified with more specific terms. The context of its usage may be described in related text.
 2.3.1	1.0.0	Outer	Item				The region of the heliosphere extending radially outward from just outside 1 AU to the heliospheric termination shock.
 2.3.1	2.3.0	Overview	Item				A web page that provides and overview of available data and links.
@@ -549,7 +558,10 @@
 2.3.1	1.0.0	SpacecraftPotentialControl	Item				An instrument to control the electric potential of a spacecraft with respect to the ambient plasma by emitting a variable current of positive ions.
 2.3.1	1.0.0	Spase	Container				Space Physics Archive Search and Extract (SPASE). The outermost container or envelope for SPASE metadata. This indicates the start of the SPASE metadata.
 2.3.1	2.2.2	Specification	Item				A detailed description of the requirements and other aspects of an object or component that may be used to develop an implementation.
-2.3.1	1.3.6	Spectral	Item				Characterized as a range or continuum of frequencies
+2.3.1	1.3.6	Spectral	Item				Characterized as a range or continuum of frequencies.
+2.3.1	2.3.1	SpinPeriod	Item				The time required for an object such as a spacecraft or planet to perform one full rotation in a given frame of reference.
+2.3.1	2.3.1	SpinPhase	Item				An angular based or normalized parameter that specifies the spin state of an object such as a spacecraft or planet in a specific coordinate system usually together with the date/time of the observation.
+2.3.1	2.3.1	SpinRate	Item				 The angular rate of change of the spin angle of an object such as a spacecraft or planet.
 2.3.1	1.0.0	SpectralPowerReceiver	Item				A radio receiver which determines the power spectral density of the electric or magnetic field, or both, at one or more frequencies.
 2.3.1	1.1.0	SpectralRange	Enumeration	SpectralRange			The general term used to describe wavelengths or frequencies within a given span of values for those quantities.
 2.3.1	1.3.5	Spectrogram	Item				The characterization of signal strengths as a function of frequency (or energy) and time.
@@ -620,6 +632,7 @@
 2.3.1	1.0.0	UnitsConversion	Text				The multiplicative factor for converting a unit into International System of Units (SI) units. The factor is expressed in the form "number > x", where "number" is a numerical value and "x" is the appropriate SI units. The basic SI units are Enumerated: m (meter), N (newton), kg (kilogram), Pa (pascal), s (second), Hz (hertz), A (ampere), V (volt), K (kelvin), W (watt), rad (radian), J (joule), sr (steradian), C (coulomb), T (tesla), ohm (ohm), mho (mho or seimens), H (henry), and F (farad). Two useful units which are not SI units are: degree (angle), and unitless (no units). An example is: "1.0E-9>T" which converts the units, presumable nT, to Tesla. Another example is: "1.0e+3>m/s" which converts a velocity expressed in kilometers per second to meters per second.
 2.3.1	1.0.0	Units	Text				A description of the standardized measurement increments in which a value is specified. The description is represented as a mathematical phrase. Units should be represented by widely accepted representation. For example, units should conform to the International System of Units (SI) which is maintained by BIPM (Bureau International des Poids et Mesures (see <http://www.bipm.fr/> ) when appropriate or use tokens like "Re" to represent units of the Radius of the Earth. Within a phrase the circumflex (^) is used to indicate a power, a star (*) is used to indicate multiplication and a slash (/) division. When symbols are not separated by a mathematical operator, multiplication is assumed. Symbols for base units can be found at: <http://www.bipm.fr/en/si/si_brochure/chapter2/2-1/#symbols> and those for common derived units can be found at: <http://www.bipm.fr/en/si/derived_units/2-2-2.html>
 2.3.1	1.3.6	Unlikely	Item				Not likely given the available evidence. Considered in the range of 0 on a scale of 0-10.
+2.3.1	2.3.1	UpperHybridFrequency	Item				Upper hybrid oscillations involve longitudinal motions of electrons perpendicular to the magnetic field. The upper hybrid frequency, &Phi;<sub>UH</sub>, is governed by the relationship&Phi;<sub>UH</sub>^2 = &Phi;<sub>pe</sub>^2 + &Theta;<sub>ce</sub>^2 where &Phi;<sub>pe</sub> is electron plasma frequency and &Theta;<sub>ce</sub> is the electron cyclotron frequency.
 2.3.1	1.2.1	Unspecified	Item				A value which is not provided.
 2.3.1	1.2.0	Uranus	Enumeration	Uranus			The eighth planet from the sun in our solar system.
 2.3.1	1.0.0	URL	Text				Uniform Resource Locator (URL) is the global address of documents and other resources on the World Wide Web. The first part of the address indicates what protocol to use, and the second part specifies the IP address or the domain name where the resource is located followed by the pathname of the resource. A URL is specified in the form protocol://server.domain.name:port/pathname. Example protocols are HTTP or FTP, server domain name is the Internet name.

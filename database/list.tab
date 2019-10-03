@@ -1,5 +1,6 @@
 #Version	Since	Name	Type	Reference	Description
 2.3.1	1.0.0	AccessRights	Closed		Identifiers for permissions granted or denied by the host of a product to allow other users to access and use the resource.
+2.3.1	2.3.1	AdiabaticInvariant	Closed		Identifiers for properties of a physical system related to periodic phenomena that remains constant under slowly varying conditions.
 2.3.1	1.3.4	AnnotationType	Closed		Identifiers for an classification of an annotation.
 2.3.1	1.3.3	AssociationType	Closed		Identifiers for resource associations.
 2.3.1	1.0.0	Availability	Closed		Identifiers for indicating the method or service which may be used to access the resource.
@@ -9,6 +10,7 @@
 2.3.1	1.0.0	CoordinateRepresentation	Closed		Identifiers of the method or form for specifying a given point or vector in a given coordinate system.
 2.3.1	1.0.0	CoordinateSystemName	Closed		Identifiers of the origin and orientation of a set of typically orthogonal axes.
 2.3.1	1.3.4	DirectionAngle	Closed		Identifiers for the angle between a vector and a base axis.
+2.3.1	2.3.1	DirectionCosine	Closed		Identifiers for the cosine of the angle between two vectors in a three dimensional Euclidean space.
 2.3.1	1.3.1	DisplayType	Closed		Identifiers for types or classes of rendered data.
 2.3.1	1.3.0	DocumentType	Closed		Identifiers for the characterization of the content or purpose of a document.
 2.3.1	1.1.0	Earth	Closed		Identifiers for the regions surrounding the Earth.
