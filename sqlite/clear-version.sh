@@ -1,7 +1,7 @@
 # Remove all entries for a given version number
 
 version=$1
-dbname=${2:-spase-model}
+dbname=${2:-spase-base-model}
 
 # Create SQL commands
 echo "delete from dictionary where Version = '$version';" > temp.sqlite

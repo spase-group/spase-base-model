@@ -1,0 +1,228 @@
+Version	Since	Object	Element	Order	Occurrence	Group	Type
+1.3.0	1.1.0	Access Information	Repository ID	1	1		
+1.3.0	1.1.0	Access Information	Availability	2	0		
+1.3.0	1.1.0	Access Information	Access Rights	4	0		
+1.3.0	1.1.0	Access Information	Access URL	5	+		
+1.3.0	1.1.0	Access Information	Format	7	1		
+1.3.0	1.1.0	Access Information	Encoding	8	0		
+1.3.0	1.2.0	Access Information	Data Extent	9	0		
+1.3.0	1.1.0	Access Information	Acknowledgement	10	0		
+1.3.0	1.1.0	Access URL	Name	1	0		
+1.3.0	1.1.0	Access URL	URL	2	1		
+1.3.0	1.1.0	Access URL	Description	3	0		
+1.3.0	1.3.0	Access URL	Language	4	0		
+1.3.0	1.1.0	Azimuthal Angle Range	Low	1	1		
+1.3.0	1.1.0	Azimuthal Angle Range	High	2	1		
+1.3.0	1.1.0	Azimuthal Angle Range	Units	3	1		
+1.3.0	1.1.0	Azimuthal Angle Range	Bin	4	*		
+1.3.0	1.3.0	Bin	Band Name	1	0		
+1.3.0	1.1.0	Bin	Low	2	1		
+1.3.0	1.1.0	Bin	High	3	1		
+1.3.0	1.1.0	Catalog	Resource ID	1	1		
+1.3.0	1.1.0	Catalog	Resource Header	2	1		
+1.3.0	1.1.0	Catalog	Access Information	3	+		
+1.3.0	1.1.0	Catalog	Provider Resource Name	4	0		
+1.3.0	1.1.0	Catalog	Provider Version	5	0		
+1.3.0	1.1.0	Catalog	Instrument ID	6	*		
+1.3.0	1.1.0	Catalog	Phenomenon Type	7	+		
+1.3.0	1.1.0	Catalog	Time Span	8	0		
+1.3.0	1.1.0	Catalog	Caveats	9	0		
+1.3.0	1.1.0	Catalog	Keyword	10	*		
+1.3.0	1.1.0	Catalog	Input Resource ID	12	*		
+1.3.0	1.3.0	Catalog	Physical Parameter	13	*		
+1.3.0	1.3.0	Catalog	Extension	14	*		
+1.3.0	1.2.0	Checksum	Hash Value	1	1		
+1.3.0	1.2.0	Checksum	Hash Function	2	1		
+1.3.0	1.1.0	Contact	Person ID	1	1		
+1.3.0	1.1.0	Contact	Role	2	+		
+1.3.0	1.1.0	Coordinate System	Coordinate Representation	1	0		
+1.3.0	1.1.0	Coordinate System	Coordinate System Name	2	0		
+1.3.0	1.3.0	Data Extent	Quantity	1	1		
+1.3.0	1.2.0	Data Extent	Units	2	0		
+1.3.0	1.2.0	Data Extent	Per	3	0		
+1.3.0	1.1.0	Display Data	Resource ID	1	1		
+1.3.0	1.1.0	Display Data	Resource Header	2	1		
+1.3.0	1.1.0	Display Data	Access Information	3	+		
+1.3.0	1.1.0	Display Data	Processing Level	4	0		
+1.3.0	1.1.0	Display Data	Provider Resource Name	5	0		
+1.3.0	1.1.0	Display Data	Provider Processing Level	6	0		
+1.3.0	1.1.0	Display Data	Provider Version	7	0		
+1.3.0	1.1.0	Display Data	Instrument ID	8	*		
+1.3.0	1.1.0	Display Data	Measurement Type	9	+		
+1.3.0	1.1.0	Display Data	Temporal Description	10	0		
+1.3.0	1.1.0	Display Data	Spectral Range	11	*		
+1.3.0	1.1.0	Display Data	Display Cadence	12	0		
+1.3.0	1.1.0	Display Data	Observed Region	13	*		
+1.3.0	1.1.0	Display Data	Caveats	15	0		
+1.3.0	1.1.0	Display Data	Keyword	16	*		
+1.3.0	1.1.0	Display Data	Input Resource ID	17	*		
+1.3.0	1.3.0	Display Data	Physical Parameter	18	*		
+1.3.0	1.3.0	Display Data	Extension	19	*		
+1.3.0	1.3.0	Document	Resource ID	1	1		
+1.3.0	1.3.0	Document	Resource Header	2	1		
+1.3.0	1.3.0	Document	Access Information	3	+		
+1.3.0	1.3.0	Document	Keyword	4	*		
+1.3.0	1.3.0	Document	Document Type	5	1		
+1.3.0	1.3.0	Document	Input Resource ID	6	*		
+1.3.0	1.2.0	Element	Name	1	1		
+1.3.0	1.2.0	Element	Component	2	0		
+1.3.0	1.2.0	Element	Index	3	1		
+1.3.0	1.2.0	Element	Parameter Key	4	0		
+1.3.0	1.3.0	Element	Units	5	0		
+1.3.0	1.3.0	Element	Units Conversion	6	0		
+1.3.0	1.3.0	Element	ValidMin	7	0		
+1.3.0	1.3.0	Element	ValidMax	8	0		
+1.3.0	1.3.0	Element	FillValue	9	0		
+1.3.0	1.3.0	Energy Range	Spectral Range	1	0		
+1.3.0	1.1.0	Energy Range	Low	2	1		
+1.3.0	1.1.0	Energy Range	High	3	1		
+1.3.0	1.1.0	Energy Range	Units	4	1		
+1.3.0	1.1.0	Energy Range	Bin	5	*		
+1.3.0	1.1.0	Field	Field Qualifier	1	*		
+1.3.0	1.1.0	Field	Field Quantity	2	1		
+1.3.0	1.1.0	Field	Frequency Range	3	0		
+1.3.0	1.3.0	Frequency Range	Spectral Range	1	0		
+1.3.0	1.1.0	Frequency Range	Low	2	1		
+1.3.0	1.1.0	Frequency Range	High	3	1		
+1.3.0	1.1.0	Frequency Range	Units	4	1		
+1.3.0	1.1.0	Frequency Range	Bin	5	*		
+1.3.0	1.1.0	Granule	Resource ID	1	1		
+1.3.0	1.1.0	Granule	Release Date	2	1		
+1.3.0	1.2.0	Granule	Expiration Date	3	0		
+1.3.0	1.1.0	Granule	Parent ID	4	1		
+1.3.0	1.1.0	Granule	Prior ID	5	*		
+1.3.0	1.1.0	Granule	URL	6	+		
+1.3.0	1.1.0	Granule	Start Date	7	1		
+1.3.0	1.1.0	Granule	Stop Date	8	1		
+1.3.0	1.2.0	Granule	Checksum	9	0		
+1.3.0	1.2.0	Granule	Data Extent	10	0		
+1.3.0	1.3.0	Granule	Extension	11	*		
+1.3.0	1.1.0	Information URL	Name	1	0		
+1.3.0	1.1.0	Information URL	URL	2	1		
+1.3.0	1.1.0	Information URL	Description	3	0		
+1.3.0	1.1.0	Instrument	Resource ID	1	1		
+1.3.0	1.1.0	Instrument	Resource Header	2	1		
+1.3.0	1.1.0	Instrument	Instrument Type	3	+		
+1.3.0	1.1.0	Instrument	Investigation Name	4	1		
+1.3.0	1.1.0	Instrument	Observatory ID	5	1		
+1.3.0	1.1.0	Instrument	Caveats	6	0		
+1.3.0	1.3.0	Instrument	Extension	7	*		
+1.3.0	1.2.0	Location	Observatory Region	1	+		
+1.3.0	1.2.0	Location	Coordinate System Name	2	0		
+1.3.0	1.2.0	Location	Latitude	3	0		
+1.3.0	1.2.0	Location	Longitude	4	0		
+1.3.0	1.2.0	Location	Elevation	5	0		
+1.3.0	1.1.0	Measured	Field	1	1	MeasuredEntity	
+1.3.0	1.1.0	Measured	Particle	2	1	MeasuredEntity	
+1.3.0	1.1.0	Measured	Photon	3	1	MeasuredEntity	
+1.3.0	1.1.0	Measured	Mixed	4	1	MeasuredEntity	
+1.3.0	1.1.0	Numerical Data	Resource ID	1	1		
+1.3.0	1.1.0	Numerical Data	Resource Header	2	1		
+1.3.0	1.1.0	Numerical Data	Access Information	3	+		
+1.3.0	1.1.0	Numerical Data	Processing Level	4	0		
+1.3.0	1.1.0	Numerical Data	Provider Resource Name	5	0		
+1.3.0	1.1.0	Numerical Data	Provider Processing Level	6	0		
+1.3.0	1.1.0	Numerical Data	Provider Version	7	0		
+1.3.0	1.1.0	Numerical Data	Instrument ID	8	*		
+1.3.0	1.1.0	Numerical Data	Measurement Type	9	+		
+1.3.0	1.1.0	Numerical Data	Temporal Description	10	0		
+1.3.0	1.1.0	Numerical Data	Spectral Range	11	*		
+1.3.0	1.1.0	Numerical Data	Observed Region	12	*		
+1.3.0	1.1.0	Numerical Data	Caveats	14	0		
+1.3.0	1.1.0	Numerical Data	Keyword	15	*		
+1.3.0	1.1.0	Numerical Data	Input Resource ID	16	*		
+1.3.0	1.1.0	Numerical Data	Physical Parameter	17	*		
+1.3.0	1.3.0	Numerical Data	Extension	18	*		
+1.3.0	1.1.0	Observatory	Resource ID	1	1		
+1.3.0	1.1.0	Observatory	Resource Header	2	1		
+1.3.0	1.1.0	Observatory	Observatory Group	3	*		
+1.3.0	1.1.0	Observatory	Location	4	1		
+1.3.0	1.3.0	Observatory	Extension	5	*		
+1.3.0	1.1.0	Offline	Medium	1	0		
+1.3.0	1.1.0	Particle	Particle Type	1	+		
+1.3.0	1.1.0	Particle	Particle Qualifier	2	*		
+1.3.0	1.1.0	Particle	Particle Quantity	3	1		
+1.3.0	1.1.0	Particle	Atomic Number	4	*		
+1.3.0	1.1.0	Particle	Energy Range	5	0		
+1.3.0	1.1.0	Particle	Azimuthal Angle Range	6	0		
+1.3.0	1.1.0	Particle	Polar Angle Range	8	0		
+1.3.0	1.1.0	Person	Resource ID	1	1		
+1.3.0	1.1.0	Person	Release Date	2	0		
+1.3.0	1.1.0	Person	Person Name	3	0		
+1.3.0	1.1.0	Person	Organization Name	4	1		
+1.3.0	1.1.0	Person	Address	5	0		
+1.3.0	1.1.0	Person	Email	6	*		
+1.3.0	1.1.0	Person	Phone Number	7	*		
+1.3.0	1.3.0	Person	Extension	8	*		
+1.3.0	1.3.0	Person	Fax Number	9	0		
+1.3.0	1.1.0	Photon	Photon Qualifier	1	*		
+1.3.0	1.1.0	Photon	Photon Quantity	2	1		
+1.3.0	1.3.0	Photon	Energy Range	3	0		
+1.3.0	1.3.0	Photon	Wavelength Range	4	0		
+1.3.0	1.1.0	Photon	Frequency Range	5	0		
+1.3.0	1.1.0	Physical Parameter	Name	1	1		
+1.3.0	1.1.0	Physical Parameter	Parameter Key	2	0		
+1.3.0	1.1.0	Physical Parameter	Description	3	0		
+1.3.0	1.1.0	Physical Parameter	Caveats	4	0		
+1.3.0	1.1.0	Physical Parameter	Cadence	5	0		
+1.3.0	1.1.0	Physical Parameter	Units	6	0		
+1.3.0	1.1.0	Physical Parameter	Units Conversion	7	0		
+1.3.0	1.1.0	Physical Parameter	Coordinate System	8	0		
+1.3.0	1.1.0	Physical Parameter	Structure	9	0		
+1.3.0	1.2.0	Physical Parameter	ValidMin	10	0		
+1.3.0	1.2.0	Physical Parameter	ValidMax	11	0		
+1.3.0	1.2.0	Physical Parameter	FillValue	12	0		
+1.3.0	1.1.0	Physical Parameter	Measured	13	1	ParameterEntity	
+1.3.0	1.1.0	Physical Parameter	Support	14	1	ParameterEntity	
+1.3.0	1.1.0	Polar Angle Range	Low	1	1		
+1.3.0	1.1.0	Polar Angle Range	High	2	1		
+1.3.0	1.1.0	Polar Angle Range	Units	3	1		
+1.3.0	1.1.0	Polar Angle Range	Bin	4	*		
+1.3.0	1.1.0	Registry	Resource ID	1	1		
+1.3.0	1.1.0	Registry	Resource Header	2	1		
+1.3.0	1.3.0	Registry	Extension	3	*		
+1.3.0	1.1.0	Repository	Resource ID	1	1		
+1.3.0	1.1.0	Repository	Resource Header	2	1		
+1.3.0	1.3.0	Repository	Extension	3	*		
+1.3.0	1.1.0	Resource Header	Resource Name	1	1		
+1.3.0	1.1.0	Resource Header	Alternate Name	2	*		
+1.3.0	1.1.0	Resource Header	Release Date	4	1		
+1.3.0	1.2.0	Resource Header	Expiration Date	5	0		
+1.3.0	1.1.0	Resource Header	Description	6	1		
+1.3.0	1.1.0	Resource Header	Acknowledgement	7	0		
+1.3.0	1.1.0	Resource Header	Contact	8	+		
+1.3.0	1.1.0	Resource Header	Information URL	9	*		
+1.3.0	1.1.0	Resource Header	Association ID	10	*		
+1.3.0	1.1.0	Resource Header	Prior ID	11	*		
+1.3.0	1.1.0	Service	Resource ID	1	1		
+1.3.0	1.1.0	Service	Resource Header	2	1		
+1.3.0	1.1.0	Service	Access URL	3	1		
+1.3.0	1.3.0	Service	Extension	13	*		
+1.3.0	1.1.0	Spase	Version	1	1		
+1.3.0	1.1.0	Spase	Catalog	2	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Display Data	3	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Numerical Data	4	*	ResourceEntity	
+1.3.0	1.3.0	Spase	Document	5	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Granule	6	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Instrument	7	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Observatory	8	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Person	9	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Registry	10	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Repository	11	*	ResourceEntity	
+1.3.0	1.1.0	Spase	Service	12	*	ResourceEntity	
+1.3.0	1.2.0	Structure	Size	2	0		
+1.3.0	1.2.0	Structure	Description	3	0		
+1.3.0	1.2.0	Structure	Element	4	*		
+1.3.0	1.3.0	Support	Support Quantity	1	1		
+1.3.0	1.1.0	Temporal Description	Time Span	1	1		
+1.3.0	1.1.0	Temporal Description	Cadence	2	0		
+1.3.0	1.1.0	Temporal Description	Exposure	3	0		
+1.3.0	1.1.0	Time Span	Start Date	1	1		
+1.3.0	1.1.0	Time Span	Stop Date	2	1	StopDateEntity	
+1.3.0	1.1.0	Time Span	Relative Stop Date	3	1	StopDateEntity	
+1.3.0	1.2.0	Time Span	Note	4	*		
+1.3.0	1.3.0	Wavelength Range	Spectral Range	1	0		
+1.3.0	1.3.0	Wavelength Range	Low	2	1		
+1.3.0	1.3.0	Wavelength Range	High	3	1		
+1.3.0	1.3.0	Wavelength Range	Units	4	1		
+1.3.0	1.3.0	Wavelength Range	Bin	5	*		

@@ -1,0 +1,3 @@
+#Version	Since	Name	Type	Reference	Description
+2.4.0	2.4.0	ApplicationType	Closed		Identifiers for the type of application the software implements.
+2.4.0	2.4.0	ApplicationInterface	Closed		Identifiers for the type of interface for the application.

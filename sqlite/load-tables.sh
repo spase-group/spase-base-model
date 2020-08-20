@@ -1,7 +1,7 @@
 # Run a set of sqlite3 commands on the database containing SPASE data model.
 # $1: Database file name.
 
-dbname=${1:-spase-model}
+dbname=${1:-spase-base-model}
 
 # Create tables (if needed)
 cat CreateTables.sqlite | sqlite3 $dbname".db"
