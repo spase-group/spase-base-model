@@ -169,7 +169,7 @@ Version	Since	List	Term
 2.3.0	1.1.0	InstrumentType	FaradayCup
 2.3.0	1.1.0	InstrumentType	FluxFeedback
 2.3.0	1.1.0	InstrumentType	FourierTransformSpectrograph
-2.3.0	1.2.1	InstrumentType	Geiger-MuellerTube
+2.3.0	1.2.1	InstrumentType	GeigerMuellerTube
 2.3.0	1.1.0	InstrumentType	Imager
 2.3.0	1.2.1	InstrumentType	ImagingSpectrometer
 2.3.0	1.2.1	InstrumentType	Interferometer
@@ -292,7 +292,7 @@ Version	Since	List	Term
 2.3.0	1.1.0	ParticleQuantity	NumberDensity
 2.3.0	1.1.0	ParticleQuantity	NumberFlux
 2.3.0	2.2.2	ParticleQuantity	ParticleRadius
-2.3.0	1.1.0	ParticleQuantity	Phase-SpaceDensity
+2.3.0	1.1.0	ParticleQuantity	PhaseSpaceDensity
 2.3.0	1.2.1	ParticleQuantity	PlasmaFrequency
 2.3.0	1.1.0	ParticleQuantity	Pressure
 2.3.0	1.1.0	ParticleQuantity	SonicMachNumber
@@ -348,7 +348,7 @@ Version	Since	List	Term
 2.3.0	1.3.5	Qualifier	Direction
 2.3.0	1.3.4	Qualifier	DirectionAngle
 2.3.0	1.3.0	Qualifier	Directional
-2.3.0	1.1.0	Qualifier	Field-Aligned
+2.3.0	1.1.0	Qualifier	FieldAligned
 2.3.0	1.1.0	Qualifier	Fit
 2.3.0	1.1.0	Qualifier	Group
 2.3.0	2.2.1	Qualifier	Halo
@@ -400,11 +400,11 @@ Version	Since	List	Term
 2.3.0	2.2.0	RenderingAxis	Horizontal
 2.3.0	2.2.0	RenderingAxis	Vertical
 2.3.0	1.2.1	Role	ArchiveSpecialist
-2.3.0	1.1.0	Role	Co-Investigator
+2.3.0	1.1.0	Role	CoInvestigator
 2.3.0	1.3.0	Role	Contributor
 2.3.0	1.1.0	Role	DataProducer
-2.3.0	1.1.0	Role	Deputy-PI
-2.3.0	2.0.3	Role	Former-PI
+2.3.0	1.1.0	Role	DeputyPI
+2.3.0	2.0.3	Role	FormerPI
 2.3.0	1.1.0	Role	GeneralContact
 2.3.0	1.2.0	Role	MetadataContact
 2.3.0	1.1.0	Role	PrincipalInvestigator

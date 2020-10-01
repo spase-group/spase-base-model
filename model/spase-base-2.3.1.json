@@ -1,9 +1,11 @@
 {
    "name": "SPASE Base Model",
-   "release": "2.3.1",
+   "version": "2.3.1",
+   "released": "2019-11-14",
    "description": "SPASE Base Model",
    "namespace": "spase",
    "schemaurl": "https://spase-group.org/data/schema",
+   "extend": "",
    "history": [
       {
          "id": "1",
@@ -4080,6 +4082,18 @@
          "usedBy": [],
          "allowedValues": []
       },
+      "Deimos": {
+         "version": "2.3.1",
+         "since": "2.2.5",
+         "term": "Deimos",
+         "type": "Item",
+         "list": "",
+         "element": "",
+         "attributes": "",
+         "definition": "The smaller and outermost of the two natural satellites of Mars.",
+         "usedBy": [],
+         "allowedValues": []
+      },
       "DeputyPI": {
          "version": "2.3.1",
          "since": "1.2.0",
@@ -6325,7 +6339,7 @@
             "FaradayCup",
             "FluxFeedback",
             "FourierTransformSpectrograph",
-            "Geiger-MuellerTube",
+            "GeigerMuellerTube",
             "Imager",
             "ImagingSpectrometer",
             "Interferometer",
@@ -8415,7 +8429,7 @@
             "NumberDensity",
             "NumberFlux",
             "ParticleRadius",
-            "Phase-SpaceDensity",
+            "PhaseSpaceDensity",
             "PlasmaFrequency",
             "Pressure",
             "SonicMachNumber",
@@ -9466,7 +9480,7 @@
             "Directional",
             "DirectionAngle",
             "DirectionCosine",
-            "Field-Aligned",
+            "FieldAligned",
             "Fit",
             "Group",
             "Halo",
@@ -10752,10 +10766,10 @@
          ],
          "allowedValues": []
       },
-      "Stoke's Parameters": {
+      "StokesParameters": {
          "version": "2.3.1",
          "since": "1.0.0",
-         "term": "Stoke's Parameters",
+         "term": "StokesParameters",
          "type": "Item",
          "list": "",
          "element": "",
@@ -13536,11 +13550,11 @@
             "list": "InstrumentType",
             "item": "FourierTransformSpectrograph"
          },
-         "Geiger-MuellerTube": {
+         "GeigerMuellerTube": {
             "version": "2.3.1",
             "since": "1.2.1",
             "list": "InstrumentType",
-            "item": "Geiger-MuellerTube"
+            "item": "GeigerMuellerTube"
          },
          "Imager": {
             "version": "2.3.1",
@@ -14338,11 +14352,11 @@
             "list": "ParticleQuantity",
             "item": "ParticleRadius"
          },
-         "Phase-SpaceDensity": {
+         "PhaseSpaceDensity": {
             "version": "2.3.1",
             "since": "1.1.0",
             "list": "ParticleQuantity",
-            "item": "Phase-SpaceDensity"
+            "item": "PhaseSpaceDensity"
          },
          "PlasmaFrequency": {
             "version": "2.3.1",
@@ -14696,11 +14710,11 @@
             "list": "Qualifier",
             "item": "DirectionCosine"
          },
-         "Field-Aligned": {
+         "FieldAligned": {
             "version": "2.3.1",
             "since": "1.1.0",
             "list": "Qualifier",
-            "item": "Field-Aligned"
+            "item": "FieldAligned"
          },
          "Fit": {
             "version": "2.3.1",

@@ -112,6 +112,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.3.1	1.3.1	Data	Item				A collection of organized information, usually the results of experience, observation or experiment, or a set of premises. This may consist of numbers, words, or images, particularly as measurements or observations of a set of variables.
 2.3.1	1.0.0	DataProducer	Item				An individual who generated the resource and is familiar with its provenance.
 2.3.1	2.3.1	DataQuality	Item				An ancillary parameter that denotes the standard or degree of accuracy, trustworthiness, or usefulness of another parameter.
+2.3.1	2.2.5	Deimos	Item				The smaller and outermost of the two natural satellites of Mars.
 2.3.1	1.2.0	DeputyPI	Item				An individual who is an administrative or scientific leader for an investigation operating under the supervision of a Principal Investigator.
 2.3.1	1.3.3	DerivedFrom	Item				A transformed or altered version of a resource instance.
 2.3.1	1.0.0	Description	Text				A narrative explanation with detail appropriate for the item it describes. For example a description of data resource should include discussions of the main quantities in the resource, possible uses and search terms. A description should also include whether any corrections (i.e, geometry, inertial) have been applied to the resource.
@@ -580,7 +581,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.3.1	1.2.0	StandardDeviation	Item				The square root of the average of the squares of deviations about the mean of a set of data. Standard deviation is a statistical measure of spread or variability.
 2.3.1	1.0.0	StartDate	DateTime				The specification of a starting point in time.
 2.3.1	1.3.6	StartLocation	Text				The initial position in space.
-2.3.1	1.0.0	Stoke's Parameters	Item				A set of four parameters (usually called I,Q, U and V) which describe the polarization state of an electromagnetic wave propagating through space.
+2.3.1	1.0.0	StokesParameters	Item				A set of four parameters (usually called I,Q, U and V) which describe the polarization state of an electromagnetic wave propagating through space.
 2.3.1	1.0.0	StopDate	DateTime				The specification of a stopping point in time.
 2.3.1	1.3.6	StopLocation	Text				The final position in space.
 2.3.1	2.2.1	Strahl	Item				A distribution of particles concentrated in a narrow energy band. The band may be may be aligned with a secondary feature. For example, it may occur in a narrow cone aligned with the mean magnetic field direction. 
