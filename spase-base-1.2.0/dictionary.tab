@@ -228,6 +228,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.2.0	1.0.0	Offline	Text				Not directly accessible electronically. This includes resources which may to be moved to an online status in response to a given request.
 1.2.0	1.0.0	Online	Item				Directly accessible electronically.
 1.2.0	1.0.0	Open	Item				Access is granted to everyone.
+1.2.0	1.0.0	Open List	Item				An enumeration list that is open so that any text string is a valid member of the list.  In context of the SPASE schema, ObservatoryGroup, ObservatoryName and RepositoryName are the only enumeration lists that are designated as open!!!
 1.2.0	1.0.0	Optical	Item				Photons with a wavelength range: 380 to 760 nm
 1.2.0	1.0.0	Organization Name	Text				A unit within a company or other entity (e.g., Government agency or branch of service) within which many projects are managed as a whole.
 1.2.0	1.0.0	Other	Item				Values, such as flags, that are not time tags, location data or measured or derived parameters.
@@ -291,11 +292,13 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.2.0	1.0.0	Radio Frequency	Item				Photons with a wavelength range: 100,000 to 1.00x10^11 nm
 1.2.0	1.0.0	Radio Soundings	Item				Measurements of plasma density, magnetic field and possibly other parameters of the space environment by active probing of the plasma by radio waves.
 1.2.0	1.1.0	Ratio	Item				The relative magnitudes of two quantities.
+1.2.0	1.0.0	Raw	Item				Data in its original state with no processing to account for calibration.
 1.2.0	1.1.0	Registry	Container				A location or facility where resources are cataloged.
 1.2.0	1.1.0	Relative End Date	Duration				An indication of the nominal end date relative to the present. 
 1.2.0	1.1.0	Release Date	DateTime				The point in time when an item is made available.
 1.2.0	1.1.0	Remote 1AU	Item				The heliospheric region near the Earth's orbit, but exclusive of the region near the Earth.
 1.2.0	1.1.0	Repository	Container				A location or facility where resources are stored.
+1.2.0	1.0.0	Repository ID	Text				The identifier of an Repository resource.
 1.2.0	1.0.0	Resonance Sounder	Item				A combination of a radio receiver and a pulsed transmitter used to study the plasma surrounding a spacecraft by identifying resonances or cut-offs (of the wave dispersion relation), whose frequencies are related to the ambient plasma density and magnetic field. When the transmitter is off it is essentially a high frequency-resolution spectral power receiver.
 1.2.0	1.0.0	Resource Header	Container				Attributes of a resource which pertain to the provider of the resource and descriptive information about the resource.
 1.2.0	1.0.0	Resource ID	Text				A Resource ID is a URI that has the form scheme://authority/path where scheme is spase for those resources administered through the SPASE framework, authority is the unique identifier for the resource provider registered within the SPASE framework and path is the unique identifier of the resource within the context of the authority. The resource ID must be unique within the SPASE framework.
@@ -309,7 +312,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.2.0	1.2.0	Scalar	Item				A quantity that is completely specified by its magnitude and has no direction.
 1.2.0	1.0.0	Scientist	Item				An individual who is an expert in the phenomenon and related physics represented by the resource.
 1.2.0	1.0.0	SE	Item				Solar Ecliptic - A heliocentric coordinate system where the Z axis is normal to the ecliptic plane, positive northward. X axis is positive towards the first point of Aries (from Earth to Sun at vernal equinox). Same as HAE above. See <http://nssdc.gsfc.nasa.gov/space/helios/coor_des.html>
-1.2.0	1.0.0	Search coil	Item				A loop of wire used to determine the time variation of the magnetic flux threading the loop by measurement of the electric potential difference induced between the ends of the wire.
+1.2.0	1.0.0	Search Coil	Item				A loop of wire used to determine the time variation of the magnetic flux threading the loop by measurement of the electric potential difference induced between the ends of the wire.
 1.2.0	1.1.0	Service	Container				A location or facility that can perform a well defined task.
 1.2.0	1.0.0	SGI	Item				Binary data compatible with Silicon Graphic platforms.
 1.2.0	1.2.0	SHA1	Item				Secure Hash Algorithm (SHA), a 160-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1. 
@@ -322,7 +325,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.2.0	1.0.0	Sonic Mach Number	Item				The ratio of the bulk flow speed to the speed of sound in the medium.
 1.2.0	1.2.0	South Atlantic Anomaly Region	Item				The region where Earth's inner van Allen radiation belt makes its closest approach to the planet's surface. The result is that, for a given altitude, the radiation intensity is higher over this region than elsewhere.
 1.2.0	1.0.0	Spacecraft Potential Control	Item				An instrument to control the electric potential of a spacecraft with respect to the ambient plasma by emitting a variable current of positive ions.
-1.2.0	1.0.0	SPASE	Container				Space Physics Archive Search and Extract (SPASE). The outermost container or envelope for SPASE metadata. This indicates the start of the SPASE metadata.
+1.2.0	1.0.0	Spase	Container				Space Physics Archive Search and Extract (SPASE). The outermost container or envelope for SPASE metadata. This indicates the start of the SPASE metadata.
 1.2.0	1.0.0	Spatial Range	Item				A description, in an appropriate coordinate system, of the positions of the elements of an image; may be done using a reference and relative positions, or with bins giving the description of a 2-D grid.
 1.2.0	1.0.0	Spectral Power Receiver	Item				A radio receiver which determines the power spectral density of the electric or magnetic field, or both, at one or more frequencies.
 1.2.0	1.1.0	Spectral Range	Enumeration	Spectral Range			The general term used to describe wavelengths or frequencies within a given span of values for those quantities.
@@ -334,6 +337,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.2.0	1.0.0	SSE	Item				Spacecraft Solar Ecliptic - A coordinate system used for deep space spacecraft, for example Helios. - X axis from spacecraft to Sun. Z axis normal to ecliptic plane, positive northward. Note: Angle between normals to ecliptic and to Helios orbit plane ~ 0.25 deg.
 1.2.0	1.2.0	Standard Deviation	Item				The square root of the average of the squares of deviations about the mean of a set of data. Standard deviation is a statistical measure of spread or variability.
 1.2.0	1.0.0	Start Date	DateTime				The specification of a starting point in time.
+1.2.0	1.0.0	Stop Date	DateTime				The specification of a stopping point in time.
 1.2.0	1.0.0	Stoke's Parameters	Item				The four coordinates (usually called I, Q, U, and V) relative to a particular basis for the representation of the polarization state of an electromagnetic wave propagating through space.
 1.2.0	1.2.0	Stratosphere	Item				The layer of the atmosphere that extends from the troposphere to about 30 km, temperature increases with height. The stratosphere contains the ozone layer. 
 1.2.0	1.2.0	Structure	Container				The organization and relationship of individual values within a quantity.
@@ -342,6 +346,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.2.0	1.0.0	Sun	Enumeration	Sun			The star upon which our solar system is centered.
 1.2.0	1.0.0	Support	Enumeration	Support			Information useful in understanding the context of an observation, typically observed or measured coincidentally with a physical observation.
 1.2.0	1.0.0	Surface	Item				The outermost area of a solid object.
+1.2.0	1.0.0	Team Leader	Item				An individual who is the designated leader of an investigation.
 1.2.0	1.0.0	Team Member	Item				An individual who is a major participant in an investigation.
 1.2.0	1.0.0	Technical Contact	Item				An individual who can provide specific information with regard to the resource or supporting software
 1.2.0	1.0.0	Temperature	Item				A measure of the kinetic energy of random motion with respect to the average. Temperature is properly defined only for an equilibrium particle distribution (Maxwellian distribution).

@@ -6,7 +6,6 @@ Version	Since	Name	Type	Reference	Description
 1.2.1	1.0.0	Coordinate System Name	Closed		Identifiers for coordinate systems in which the position, direction or observation has been expressed.
 1.2.1	1.1.0	Earth	Closed		Identifiers for the regions surrounding the Earth.
 1.2.1	1.0.0	Encoding	Closed		Identifier for unambiguous rules that establishes the representation of information within a file.
-1.2.1	1.1.0	Field Component	Closed		Identifiers for components of a coordinate system which can be associated with a Field Quantity.
 1.2.1	1.0.0	Field Qualifier	Closed		Identifiers for terms which can be associated with a Field Quantity.
 1.2.1	1.0.0	Field Quantity	Closed		Identifiers for the physical attribute of the field.
 1.2.1	1.0.0	Format	Closed		Identifiers for data organized according to preset specifications.
@@ -15,7 +14,6 @@ Version	Since	Name	Type	Reference	Description
 1.2.1	1.0.0	Instrument Type	Closed		Identifiers for the type of experiment the instrument performs. This is the technique of observation.
 1.2.1	1.0.0	Magnetosphere	Closed		Identifiers for the region of space above the atmosphere or surface of the planet, and bounded by the magnetopause, that is under the direct influence of planet's magnetic field.
 1.2.1	1.0.0	Measurement Type	Closed		Identifiers for the method of making an estimated value of a quantity that forms the basis of an observaton.
-1.2.1	1.0.0	Near Earth	Closed		Identifiers for heliospheric regions near the earth or within the earth's orbit
 1.2.1	1.0.0	Near Surface	Closed		Identifiers for regions of the gaseous and possibly ionized environment of a body extending from the surface to some specified altitude.
 1.2.1	1.0.0	Observatory Group	Open	Identifiers for programmatically related observatories. The value is taken from an approved list of observatory group names. See <http://www.igpp.ucla.edu/spase/> for the list.	
 1.2.1	1.0.0	Observatory Name	Open	Identifiers for a location or platform. An observatory may be part of an observatory group. The value is taken from an approved list of observatory names. See <http://www.igpp.ucla.edu/spase/> for the list.	

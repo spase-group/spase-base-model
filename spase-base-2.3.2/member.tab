@@ -441,6 +441,7 @@ Version	Since	List	Item
 2.3.2	2.0.3	Role	FormerPI
 2.3.2	1.1.0	Role	GeneralContact
 2.3.2	2.3.1	Role	HostContact
+2.3.2	2.3.2	Role	InstrumentLead
 2.3.2	1.2.0	Role	MetadataContact
 2.3.2	2.3.2	Role	MissionManager
 2.3.2	2.3.2	Role	MissionPrincipalInvestigator

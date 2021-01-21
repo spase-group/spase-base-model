@@ -91,7 +91,7 @@
 90	1.1.0	2006-08-31	T.King	Add Statistics to Phenomenon Type.	
 91	1.1.0	2006-08-31	T.King	Released.	
 92	1.1.1		T.King	Changed InstrumentID and Bin to multiple occurrence.	
-93	1.1.1		T.King	Removed enumeration of Component.	
+93	1.1.1		T.King 	Removed enumeration of Component.	
 94	1.1.1		T.King	Modified definition of Units.	
 95	1.1.1		T.King	Changed AccessURL to type container.	
 96	1.2.0	2007-05-22	T.King	Added Aurora and Substorm under Phenomenon Type.	
@@ -298,5 +298,7 @@
 297	2.3.1	2019-09-27	T.King	Add DirectionCosine, GeometricFactor, AdiabaticInvariant, MagneticMoment, BounceMotion, DriftMotion, DataQuality, Orientation, SpinPeriod, SpinPhase, SpinRate, LowerHybridFrequency and UpperHybridFrequency to dictionary.; Create DirectionCosine enumeration with I,J,K as members; Create AdiabaticInvariant enumeration with MagneticMoment, BounceMotion and DriftMotion as members.; Add DirectionCosine to Qualifier list.;Add GeometericFactor, AdiabaticInvariant to ParticleQuantities; Add DataQuality, Orientation, SpinPeriod, SpinPhase and SpinRate to SupportQuantity.; Add LowerHybridFrequency and UpperHybridFrequency to WaveQuantity.	Suggested by L. Bargatze. Decided during telecon on 2019-09-20.
 298	2.3.1	2019-10-31	T.King	Add CoPI, MidLatitudeRegion, SubAuroralRegion, ProjectEngineer, and ProjectManager to dictionary; Add CoPI, ProjectEngineer, ProjectManager to Role enumeration; Add Plasmasphere, RingCurrent, and MidLatitudeRegion to Magnetosphere enumeration.; Add MidLatitudeRegion, and ProjectManager to NearSurface enumeration.; Fix typo with Role values with dashes.   	Decided during telecon on 2019-10-31.
 299	2.3.1	2019-11-14	T.King	Released.	Decided during the telecon on 2019-11-14.
-300	2.3.2	2020-09-10	T.King	Add Housekeeping, Telemetry, RotationMatrix, EncodedParameter, AutoSpectrum, Coherence, ImaginaryPart, RealPart, PowerSpectralDensity, ChargeFlux, DynamicPressure, EnergyPerCharge, ParticleRigidity, MassPerCharge, LShell, MissionPrincipalInvestigator, ProgramManager, ProgramScientist, VolumeEmissionRate, SPICE, MissionManager to dictionary and to appropriate enumerations as suggested by L. Bargatze; Add PDS4 and PDS3 to dictionary and to FOrmat enumeration as suggest by A. Masson.	Decided during the telecon on 2020-08-06.
-300	2.3.2	2020-09-30	T.King	Add InstrumentGroupID and Experiment to dictionary; Add InstrumentGroupID to Instrument and Experiment to InstrumentType.	Decided during the telecon on 2020-09-24.
+300	2.3.2	2020-09-10	T.King	Add Housekeeping, Telemetry, RotationMatrix, EncodedParameter, AutoSpectrum, Coherence, ImaginaryPart, RealPart, PowerSpectralDensity, ChargeFlux, DynamicPressure, EnergyPerCharge, ParticleRigidity, MassPerCharge, LShell, MissionPrincipalInvestigator, ProgramManager, ProgramScientist, VolumeEmissionRate, SPICE, MissionManager to dictionary and to appropriate enumerations as suggested by L. Bargatze; Add PDS4 and PDS3 to dictionary and to Format enumeration as suggest by A. Masson.	Decided during the telecon on 2020-08-06.
+301	2.3.2	2020-09-30	T.King	Add InstrumentGroupID and Experiment to dictionary; Add InstrumentGroupID to Instrument and Experiment to InstrumentType.	Decided during the telecon on 2020-09-24.
+302	2.3.2	2020-10-08	T.King	Add InstrumentLead to dictionary and to Role.	Decided during the telecon on 2020-10-08.
+303	2.3.2	2020-10-15	T.King	Released.	Decided during the telecon on 2020-10-15.

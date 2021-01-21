@@ -70,7 +70,7 @@ Version	Since	List	Term
 1.2.1	1.1.0	Field Quantity	Electric
 1.2.1	1.2.1	Field Quantity	Gyrofrequency
 1.2.1	1.1.0	Field Quantity	Magnetic
-1.2.1	1.2.1	Field Quantity	Plasmafrequency
+1.2.1	1.2.1	Field Quantity	Plasma Frequency
 1.2.1	1.1.0	Field Quantity	Potential
 1.2.1	1.1.0	Field Quantity	Poynting Flux
 1.2.1	1.1.0	Format	AVI
@@ -86,7 +86,7 @@ Version	Since	List	Term
 1.2.1	1.1.0	Format	HDF 5
 1.2.1	1.1.0	Format	HTML
 1.2.1	1.1.0	Format	IDFS
-1.2.1	1.1.0	Format	IDL 
+1.2.1	1.1.0	Format	IDL
 1.2.1	1.1.0	Format	JPEG
 1.2.1	1.1.0	Format	MATLAB_4
 1.2.1	1.1.0	Format	MATLAB_6
@@ -128,7 +128,7 @@ Version	Since	List	Term
 1.2.1	1.1.0	Instrument Type	Langmuir Probe
 1.2.1	1.1.0	Instrument Type	Long Wire
 1.2.1	1.1.0	Instrument Type	Magnetometer
-1.2.1	1.1.0	Instrument Type	Mass Spectrometer 
+1.2.1	1.1.0	Instrument Type	Mass Spectrometer
 1.2.1	1.1.0	Instrument Type	Microchannel Plate
 1.2.1	1.2.1	Instrument Type	Multispectral Imager
 1.2.1	1.2.1	Instrument Type	Neutral Atom Imager
@@ -149,7 +149,7 @@ Version	Since	List	Term
 1.2.1	1.1.0	Instrument Type	Spacecraft Potential Control
 1.2.1	1.1.0	Instrument Type	Spectral Power Receiver
 1.2.1	1.1.0	Instrument Type	Spectrometer
-1.2.1	1.2.1	Instrument Type	Time-of-flight
+1.2.1	1.2.1	Instrument Type	Time Of Flight
 1.2.1	1.2.1	Instrument Type	Unspecified
 1.2.1	1.1.0	Instrument Type	Waveform Receiver
 1.2.1	1.2.0	Ionosphere	D-Region
@@ -227,7 +227,7 @@ Version	Since	List	Term
 1.2.1	1.1.0	Particle Quantity	Number Flux
 1.2.1	1.1.0	Particle Quantity	Phase-Space Density
 1.2.1	1.1.0	Particle Quantity	Plasma Beta
-1.2.1	1.2.1	Particle Quantity	Plasmafrequency
+1.2.1	1.2.1	Particle Quantity	Plasma Frequency
 1.2.1	1.1.0	Particle Quantity	Pressure
 1.2.1	1.1.0	Particle Quantity	Sonic Mach Number
 1.2.1	1.1.0	Particle Quantity	Temperature
@@ -270,7 +270,7 @@ Version	Since	List	Term
 1.2.1	1.1.0	Photon Quantity	Line Depth
 1.2.1	1.1.0	Photon Quantity	Magnetic Field
 1.2.1	1.1.0	Photon Quantity	Mode Amplitude
-1.2.1	1.2.1	Photon Quantity	Plasmafrequency
+1.2.1	1.2.1	Photon Quantity	Plasma Frequency
 1.2.1	1.1.0	Photon Quantity	Polarization
 1.2.1	1.1.0	Photon Quantity	Stoke's Parameters
 1.2.1	1.1.0	Photon Quantity	Velocity
@@ -315,9 +315,9 @@ Version	Since	List	Term
 1.2.1	1.2.1	Spectral Range	Na-D
 1.2.1	1.2.1	Spectral Range	Ni-6768
 1.2.1	1.1.0	Spectral Range	Optical
-1.2.1	1.1.0	Spectral Range	Radio Frequency 
+1.2.1	1.1.0	Spectral Range	Radio Frequency
 1.2.1	1.1.0	Spectral Range	Ultraviolet
-1.2.1	1.2.1	Spectral Range	White-light
+1.2.1	1.2.1	Spectral Range	White-Light
 1.2.1	1.1.0	Spectral Range	X-Rays
 1.2.1	1.2.0	Structure Type	Array
 1.2.1	1.2.0	Structure Type	Scalar

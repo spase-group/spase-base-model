@@ -1,3 +1,0 @@
-<h1>Appendix A - Comparison of Spectrum Domains</h1>
-
-<img src=spectrum.png>

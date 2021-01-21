@@ -1,6 +1,0 @@
-
-
-
-<center>A Space and Solar Physics Data Model</center>
-
-<center>from the SPASE Consortium</center>

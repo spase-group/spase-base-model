@@ -1,0 +1,74 @@
+html, body {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+	padding: 0px;
+	/*this disables the scrollbars of page thus making the available with the same on both renders*/
+	/*this is needed to have the TOC page at the same position than the main template.*/
+	overflow: hidden;
+}
+
+.toc-title {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 24px;
+	font-family: arial;
+}
+
+.toc-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	border-bottom: 1px dashed rgb(200, 200, 200);
+}
+
+.toc page {
+	font-size: 16px;
+	text-align: right;
+}
+
+.toc li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
+.toc ul {
+	font-size: 20px;
+	font-family: arial;
+}
+
+.toc ul ul,
+.toc ul ul span {
+	font-size: 0.8em;
+}
+
+.toc ul {
+	padding-left: 0em;
+}
+
+.toc ul ul {
+	padding-left: 15px;
+}
+
+.toc a {
+	text-decoration: none;
+	color: black;
+}
+
+.toc-no-border {
+	border-bottom-color: transparent;
+}
+
+.toc-hidden {
+	visibility: hidden;
+}
+.toc-dash {
+	width: 100%;
+	padding-right: 1em;
+	align-items: baseline;
+	border-bottom: 1px dashed rgb(200, 200, 200);
+}
+.toc-nowrap {
+	white-space: nowrap;
+}

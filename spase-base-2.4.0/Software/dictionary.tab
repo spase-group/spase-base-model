@@ -1,0 +1,15 @@
+#Version	Since	Term	Type	List	Elements	Attributes	Definition
+2.4.0	2.4.0	ApplicationType	Enumeration	ApplicationType			The type of application the software implements.
+2.4.0	2.4.0	ApplicationInterface	Enumeration	ApplicationInterface			The type of interface for the application. 
+2.4.0	2.4.0	Repository	Item				A location in which the resource is stored and managed.
+2.4.0	2.4.0	Installer	Item				A piece of software that installs a program or package on a system.
+2.4.0	2.4.0	Prerequisites	Text				A thing that is required to be installed on your computer in order to run or compile the software.
+2.4.0	2.4.0	Platform	Container				A compulsory or necessary condition.
+2.4.0	2.4.0	OperatingSystem	Enumeration	OperatingSystem			The software that supports a computer's basic functions, such as scheduling tasks, executing applications, and controlling peripherals.
+2.4.0	2.4.0	Storage	Text				The component of your computer that allows you to store and access data on a long-term basis. Indicate units with standard byte scales such as KB, MB, GB, TB and PB. 
+2.4.0	2.4.0	Memory	Text				The component of your computer that allows you to store and access data on a short-term basis, typically the amount of RAM. Indicate units with standard byte scales such as KB, MB, GB, TB and PB. 
+2.4.0	2.4.0	Cores	Numeric				An application processor. 
+2.4.0	2.4.0	CLI	Item				A command-line interface (CLI) is a form of interface where input to an application is provided as lines of text typically within a shell. 
+2.4.0	2.4.0	GUI	Item				A graphical user interface (GUI) is a form of user interface that allows users to interact with an application through graphical icons, forms  and other elements with both a keyboard and a pointing device. 
+2.4.0	2.4.0	API	Item				An application programming interface (API) is a form of interface that allows applications to access the features or data of an operating system, application, or other service. An API may have a required protocol or set of principles. Some examples of protocols are SOAP, XML-RPC and JSON-RPC. An example of an API with a set of principles is REST.
+2.4.0	2.4.0	CodeLanguage	Text				A formal language, which comprises a set of instructions that produce various kinds of output.  

@@ -1,0 +1,21 @@
+2.4.0	2.4.0	Software	ResourceID	01	1		
+2.4.0	2.4.0	Software	ResourceHeader	02	1		
+2.4.0	2.4.0	Software	Versions	03	0		
+2.4.0	2.4.0	Software	ApplicationType	04	1		
+2.4.0	2.4.0	Software	ApplicationInterface	05	*		
+2.4.0	2.4.0	Software	CodeLanguage	06	0		
+2.4.0	2.4.0	Software	Prerequisites	07	+		
+2.4.0	2.4.0	Software	Platform	08	+		
+2.4.0	2.4.0	Software	InputProperty	09	*		Property
+2.4.0	2.4.0	Software	OutputProperty	10	*		Property
+2.4.0	2.4.0	Platform	OperatingSystem	01	1		
+2.4.0	2.4.0	Platform	Cores	02	0		
+2.4.0	2.4.0	Platform	Storage	03	0		
+2.4.0	2.4.0	Platform	Memory	04	0		
+2.4.0	2.4.0	Property	Name	01	0		
+2.4.0	2.4.0	Property	Description	02	0		
+2.4.0	2.4.0	Property	Caveats	03	0		
+2.4.0	2.4.0	Property	Type	04	0		
+2.4.0	2.4.0	Property	Units	05	0		
+2.4.0	2.4.0	Property	ValidMin	06	0		
+2.4.0	2.4.0	Property	ValidMax	07	0		

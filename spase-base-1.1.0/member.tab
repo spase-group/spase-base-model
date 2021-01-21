@@ -73,7 +73,7 @@ Version	Since	List	Term
 1.1.0	1.1.0	Format	HDF 5
 1.1.0	1.1.0	Format	HTML
 1.1.0	1.1.0	Format	IDFS
-1.1.0	1.1.0	Format	IDL 
+1.1.0	1.1.0	Format	IDL
 1.1.0	1.1.0	Format	JPEG
 1.1.0	1.1.0	Format	MATLAB_4
 1.1.0	1.1.0	Format	MATLAB_6
@@ -106,9 +106,8 @@ Version	Since	List	Term
 1.1.0	1.1.0	Instrument Type	Langmuir Probe
 1.1.0	1.1.0	Instrument Type	Long Wire
 1.1.0	1.1.0	Instrument Type	Magnetometer
-1.1.0	1.1.0	Instrument Type	Mass Spectrometer 
+1.1.0	1.1.0	Instrument Type	Mass Spectrometer
 1.1.0	1.1.0	Instrument Type	Microchannel Plate
-1.1.0	1.1.0	Instrument Type	Monopole
 1.1.0	1.1.0	Instrument Type	Particle Correlator
 1.1.0	1.1.0	Instrument Type	Quadrispherical Analyser
 1.1.0	1.1.0	Instrument Type	Radar
@@ -187,7 +186,6 @@ Version	Since	List	Term
 1.1.0	1.1.0	Particle Type	Molecule
 1.1.0	1.1.0	Particle Type	Neutral
 1.1.0	1.1.0	Particle Type	Proton
-1.1.0	1.1.0	Phenomenon Type	Aurora
 1.1.0	1.1.0	Phenomenon Type	Bow Shock Crossing
 1.1.0	1.1.0	Phenomenon Type	Coronal Mass Ejection
 1.1.0	1.1.0	Phenomenon Type	Energetic Solar Particle Event
@@ -197,7 +195,6 @@ Version	Since	List	Term
 1.1.0	1.1.0	Phenomenon Type	Magnetopause Crossing
 1.1.0	1.1.0	Phenomenon Type	Solar Flare
 1.1.0	1.1.0	Phenomenon Type	Solar Wind Extreme
-1.1.0	1.1.0	Phenomenon Type	Statistics
 1.1.0	1.1.0	Photon Qualifier	Average
 1.1.0	1.1.0	Photon Qualifier	Circular
 1.1.0	1.1.0	Photon Qualifier	Line of Sight
@@ -237,7 +234,7 @@ Version	Since	List	Term
 1.1.0	1.1.0	Spectral Range	Infrared
 1.1.0	1.1.0	Spectral Range	Microwave
 1.1.0	1.1.0	Spectral Range	Optical
-1.1.0	1.1.0	Spectral Range	Radio Frequency 
+1.1.0	1.1.0	Spectral Range	Radio Frequency
 1.1.0	1.1.0	Spectral Range	Ultraviolet
 1.1.0	1.1.0	Spectral Range	X-Rays
 1.1.0	1.1.0	Sun	Chromosphere

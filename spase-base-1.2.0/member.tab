@@ -78,7 +78,7 @@ Version	Since	List	Term
 1.2.0	1.1.0	Format	HDF 5
 1.2.0	1.1.0	Format	HTML
 1.2.0	1.1.0	Format	IDFS
-1.2.0	1.1.0	Format	IDL 
+1.2.0	1.1.0	Format	IDL
 1.2.0	1.1.0	Format	JPEG
 1.2.0	1.1.0	Format	MATLAB_4
 1.2.0	1.1.0	Format	MATLAB_6
@@ -116,7 +116,7 @@ Version	Since	List	Term
 1.2.0	1.1.0	Instrument Type	Langmuir Probe
 1.2.0	1.1.0	Instrument Type	Long Wire
 1.2.0	1.1.0	Instrument Type	Magnetometer
-1.2.0	1.1.0	Instrument Type	Mass Spectrometer 
+1.2.0	1.1.0	Instrument Type	Mass Spectrometer
 1.2.0	1.1.0	Instrument Type	Microchannel Plate
 1.2.0	1.1.0	Instrument Type	Particle Correlator
 1.2.0	1.1.0	Instrument Type	Quadrispherical Analyser
@@ -273,7 +273,7 @@ Version	Since	List	Term
 1.2.0	1.1.0	Spectral Range	Infrared
 1.2.0	1.1.0	Spectral Range	Microwave
 1.2.0	1.1.0	Spectral Range	Optical
-1.2.0	1.1.0	Spectral Range	Radio Frequency 
+1.2.0	1.1.0	Spectral Range	Radio Frequency
 1.2.0	1.1.0	Spectral Range	Ultraviolet
 1.2.0	1.1.0	Spectral Range	X-Rays
 1.2.0	1.2.0	Structure Type	Array
