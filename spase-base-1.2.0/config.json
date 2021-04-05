@@ -4,5 +4,5 @@
    "released": "2007-05-22",
    "description": "SPASE Base Model",
    "namespace": "spase",
-   "schemaurl": "https://spase-group.org/data/schema"
+   "schemaurl": "http://www.spase-group.org/data/schema"
 }

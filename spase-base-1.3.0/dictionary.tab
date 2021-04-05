@@ -28,7 +28,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.3.0	1.0.0	Azimuthal Angle	Item				The horizontal angular distance from a reference direction. For a vector (X,Y,Z) in any coordinate system, the azimuthal angle is arctan(Y/X).
 1.3.0	1.1.0	Azimuthal Angle Range	Container				The range of possible azimuthal angles for a group of energy observations.  Default units are degrees.
 1.3.0	1.3.0	Band Name	Text				A common or provider assigned name for a range of values.
-1.3.0	1.1.0	Base64	Item				A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in internet e-mail. The only characters used are the upper- and lower-case Roman alphabet characters (A–Z, a–z), the numerals (0–9), and the + and / symbols, with the = symbol as a special suffix (padding) code.
+1.3.0	1.1.0	Base64	Item				A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in internet e-mail. The only characters used are the upper- and lower-case Roman alphabet characters (A-Z, a-z), the numerals (0-9), and the + and / symbols, with the = symbol as a special suffix (padding) code.
 1.3.0	1.1.0	Bin	Container				A grouping of observations according to a band or window of a common attribute.
 1.3.0	1.0.0	Binary	Item				A direct representation of the bits which may be stored in memory on a computer.
 1.3.0	1.0.0	Bow Shock Crossing	Item				A crossing of the boundary between the undisturbed (except for foreshock effects) solar wind and the shocked, decelerated solar wind of the magnetosheath.
@@ -85,7 +85,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.3.0	1.2.0	D-Region	Item				The layer of the ionosphere that exists approximately 50 to 95 km above the surface of the Earth.  One of several layers in the ionosphere. 
 1.3.0	1.0.0	Dust	Item				Free microscopic particles of solid material.
 1.3.0	1.1.0	Earth	Enumeration	Earth			The third planet from the sun in our solar system.
-1.3.0	1.3.0	EIT Wave	Item				A wave in the corona of the Sun which produce shock waves on the Sun’s chromosphere (Moreton Waves). EIT Waves are produced by large solar flare and expand outward at about 1,000 km/s. It usually appears as a slowly moving diffuse arc of brightening in H-alpha, and may travel for several hundred thousand km.
+1.3.0	1.3.0	EIT Wave	Item				A wave in the corona of the Sun which produce shock waves on the Sun's chromosphere (Moreton Waves). EIT Waves are produced by large solar flare and expand outward at about 1,000 km/s. It usually appears as a slowly moving diffuse arc of brightening in H-alpha, and may travel for several hundred thousand km.
 1.3.0	1.0.0	Electric	Item				The physical attribute that exerts an electrical force.
 1.3.0	1.0.0	Electric Field	Item				Measurements of electric field vectors (sometimes not all components) as a time series.
 1.3.0	1.3.0	Electromagnetic	Item				The physical attribute that is or is caused by a mutual interaction of electric and magnetic fields.
@@ -125,7 +125,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.3.0	1.0.0	Forbush Decrease	Item				A rapid decrease in the observed galactic cosmic ray intensity following the passage of an outwardly convecting interplanetary magnetic field disturbance, such as those associated with large CME's, that sweep some galactic cosmic rays away from Earth.
 1.3.0	1.0.0	Format	Enumeration	Format			The organization of data according to preset specifications. The value is selected from a list of accepted names for known, well documented formats.
 1.3.0	1.0.0	Fourier Transform Spectrograph	Item				An instrument that determines the spectra of a radiative source, using time-domain measurements and a Fourier transform.
-1.3.0	1.2.0	F-Region	Item				A layer that contains ionized gases at a height of around 150–800 km above sea level, placing it in the thermosphere. the F region has the highest concentration of free electrons and ions anywhere in the atmosphere. It may be thought of as comprising two layers, the F1-and F2-layers.  One of several layers in the ionosphere. Also known as the Appleton layer.
+1.3.0	1.2.0	F-Region	Item				A layer that contains ionized gases at a height of around 150-800 km above sea level, placing it in the thermosphere. the F region has the highest concentration of free electrons and ions anywhere in the atmosphere. It may be thought of as comprising two layers, the F1-and F2-layers.  One of several layers in the ionosphere. Also known as the Appleton layer.
 1.3.0	1.0.0	Frequency	Item				(1) The number of occurrences within a given time period. (2) Vibrations per second of the photon field; may be given as a single number, multiple numbers, or as ranges.
 1.3.0	1.1.0	Frequency Range	Container				The range of possible values for the observed frequency.
 1.3.0	1.0.0	Gamma Rays	Item				Photons with a wavelength range: 0.00001 to 0.001 nm

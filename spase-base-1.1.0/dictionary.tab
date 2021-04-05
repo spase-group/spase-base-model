@@ -1,7 +1,7 @@
 Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.1.0	1.0.0	Access Information	Container				Attributes of the resource which pertain to how to acquire the resource, availability and storage format.
 1.1.0	1.0.0	Access Rights	Enumeration	Access Rights			Permissions granted or denied by the host of a product to allow other users to access and use the resource.
-1.1.0	1.0.0	Access URL	Text				Attributes of the method of acquiring a resource including a URL, name and description.
+1.1.0	1.0.0	Access URL	Container				Attributes of the method of acquiring a resource including a URL, name and description.
 1.1.0	1.0.0	Acknowledgement	Text				The individual, group or organization which should be acknowledged when the data is used in or contributes to a presentation or publication.
 1.1.0	1.0.0	Activity Index	Item				An indication, derived from one or more measurements, of the level of activity of an object or region, such as sunspot number, F10.7 flux, Dst, or the Polar Cap Indices.
 1.1.0	1.0.0	Address	Text				Directions for finding some location; written on letters or packages that are to be delivered to that location.
@@ -21,7 +21,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 1.1.0	1.0.0	AVI	Item				Audio Video Interleave (AVI) a digital format for movies that conforms to the Microsoft Windows Resource Interchange File Format (RIFF).
 1.1.0	1.0.0	Azimuthal Angle	Item				The horizontal angular distance from a reference direction. For a vector (X,Y,Z) in any coordinate system, the azimuthal angle is arctan(Y/X).
 1.1.0	1.1.0	Azimuthal Angle Range	Container				The range of possible azimuthal angles for a group of energy observations.  Default units are degrees.
-1.1.0	1.1.0	Base64	Item				A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in internet e-mail. The only characters used are the upper- and lower-case Roman alphabet characters (A–Z, a–z), the numerals (0–9), and the + and / symbols, with the = symbol as a special suffix (padding) code.
+1.1.0	1.1.0	Base64	Item				A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in internet e-mail. The only characters used are the upper- and lower-case Roman alphabet characters (A-Z, a-z), the numerals (0-9), and the + and / symbols, with the = symbol as a special suffix (padding) code.
 1.1.0	1.1.0	Bin	Container				A grouping of observations according to a band or window of a common attribute.
 1.1.0	1.0.0	Binary	Item				A direct representation of the bits which may be stored in memory on a computer.
 1.1.0	1.0.0	Bow Shock Crossing	Item				A crossing of the boundary between the undisturbed (except for foreshock effects) solar wind and the shocked, decelerated solar wind of the magnetosheath.

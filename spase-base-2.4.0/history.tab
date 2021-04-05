@@ -303,3 +303,4 @@
 302	2.3.2	2020-10-08	T.King	Add InstrumentLead to dictionary and to Role.	Decided during the telecon on 2020-10-08.
 303	2.3.2	2020-10-15	T.King	Released.	Decided during the telecon on 2020-10-15.
 304	2.4.0	2020-11-12	T.King	Add Software resource and related elements to the information model.	Discussed during prior telecons.
+305	2.4.0	2021-02-04	T.King	Change Version to SoftwareVersion in Software resource; add elements to InputProperty and OutputPorperty.	Discussed in email exchanges.
