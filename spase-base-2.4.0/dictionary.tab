@@ -43,7 +43,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	1.1.0	AtomicNumberDetected	Item				The number of protons in the nucleus of an atom as determined by a detector.
 2.4.0	1.2.0	Aurora	Item				An atmospheric phenomenon consisting of bands of light caused by charged solar particles following the earth's magnetic lines of force.
 2.4.0	1.1.0	AuroralRegion	Item				The region in the atmospheric where electrically-charged particles bombarding the upper atmosphere of a planet in the presence of a magnetic field produce an optical phenomenon.
-2.4.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared a work for publication. Separate multiple names with "";"". When an author is a persons use ""last,first[,middle]"" format. Including a middle name is optional.
+2.4.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared a work for publication. Separate multiple names with "";"". When an author is a persons use ""last,first[ middle]"" format. Including a middle name is optional.
 2.4.0	1.3.6	Automatic	Item				Determined by the analysis or assessment performed by a program or server.
 2.4.0	2.3.2	AutoSpectrum	Item				The Fourier transform of the auto correlation function for physical or empirical observations, which describes the general dependence of the time series data values at one instant on the time series data values at another instant.
 2.4.0	1.0.0	Availability	Enumeration	Availability			An indication of the method or service which may be used to access the resource.
@@ -67,7 +67,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	2.2.9	CadenceMax	Duration				The largest time interval between the start of successive measurements.
 2.4.0	2.2.9	CadenceMin	Duration				The smallest time interval between the start of successive measurements.
 2.4.0	1.2.1	CaK	Item				A spectrum with a wavelength of range centered near 393.5 nm. VSO nickname: Ca-K image with range of 391.9 nm to 395.2 nm.
-2.4.0	1.0.0	Calibrated	Item				Data wherein sensor outputs have been convolved with instrument response function, often irreversibly, to yield data in physical units.
+2.4.0	1.0.0	Calibrated	Item				Data wherein sensor outputs have been convolved with instrument response function, often irreversibly, to yield data in physical units. Similar to NASA Level 2.
 2.4.0	2.2.5	Callisto	Item				A second largest moon of Jupiter and the third-largest moon in the solar system.
 2.4.0	1.2.1	Carrington	Item				A coordinate system which is centered at the Sun and is ""fixed"" with respect to the synodic rotation rate; the mean synodic value is about 27.2753 days. The Astronomical Almanac gives a value for Carrington longitude of 349.03 degrees at 0000 UT on 1 January 1995.
 2.4.0	1.0.0	Cartesian	Item				A representation in which a position vector or a measured vector (e.g., field or flow) is specified by its components along the base axes of the coordinate system.
@@ -99,6 +99,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	1.3.4	ConfidenceRating	Enumeration	ConfidenceRating			A classification of the certainty of an assertion.
 2.4.0	1.0.0	Contact	Container				The person or organization who may be able to provide special assistance or serve as a channel for communication for additional information about a resource.
 2.4.0	1.3.0	Contributor	Item				An entity responsible for making contributions to the content of the resource.
+2.4.0	2.4.0	Convention	Item				A set of agreed, stipulated, or generally accepted approaches or methods of adopting a standard or implementing a approach. 
 2.4.0	1.0.0	CoordinateRepresentation	Enumeration	CoordinateRepresentation			The method or form for specifying a given point or vector in a given coordinate system.
 2.4.0	1.0.0	CoordinateSystem	Container				The specification of the orientation of a set of (typically) orthogonal base axes.
 2.4.0	1.0.0	CoordinateSystemName	Enumeration	CoordinateSystemName			Identifies the coordinate system in which the position, direction or observation has been expressed.
@@ -288,7 +289,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	2.4.0	InputProperty	Container				A container of attributes regarding an input property of an application.
 2.4.0	1.0.0	InputResourceID	Text				The resource identifier for a resource which was used to generate this resource.
 2.4.0	1.3.6	Inspection	Item				Determined by the analysis or assessment performed by a person.
-2.4.0	2.4.0	Installer	Item				A piece of software that installs a program or package on a system.
+2.4.0	2.4.0	Installer	Container				A piece of software that installs a program or package on a system.
 2.4.0	1.0.0	Instrument	Container				A device that makes measurements used to characterize a physical phenomenon, or a family of like devices.
 2.4.0	2.3.2	InstrumentGroupID	Text				The identifier of an Instrument resource which the referring resource is a member of.
 2.4.0	1.0.0	InstrumentID	Text				The identifier of an Instrument resource.
@@ -487,6 +488,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	1.3.4	PolarAngle	Item				The angle between the position or measured vector and the k-axis of the coordinate system. Mathematically defined as arctan([SQRT(i^2+j^2)]/k). This term could be also applied to angles between the vector and other components, for example the IMF cone angle defined as arccos(Bx/Bt).
 2.4.0	1.1.0	PolarAngleRange	Container				The range of possible polar angles for a group of energy observations. Defaults units are degrees.
 2.4.0	1.2.0	PolarCap	Item				The areas of the globe surrounding the poles and consisting of the region north of 60 degrees north latitude an the region south of 60 degrees south latitude.
+2.4.0	2.4.0	Policy	Item				A deliberate system of principles to guide decisions and achieve rational outcomes. A policy is a statement of intent, and is implemented as a procedure or protocol.
 2.4.0	1.0.0	Polarization	Item				Direction of the electric vector of an electromagnetic wave. The wave can be linearly polarized in any direction perpendicular to the direction of travel, circularly polarized (clockwise or counterclockwise), unpolarized, or mixtures of the above.
 2.4.0	1.0.0	Positional	Item				The specification of the location of an object or measurement within a reference coordinate system. The position is usually expressed as a set of values corresponding to the location along a set of orthogonal axes together with the date/time of the observation.
 2.4.0	2.3.1	Positron	Item				An elementary particle consisting of a charge of positive electricity equal to about 1.602 x 10^(-19) Coulomb and having a mass when at rest of about 9.109534 x 10^(-28) gram.
@@ -519,7 +521,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	2.2.5	Proteus	Item				The second largest moon of Neptune. 
 2.4.0	1.0.0	Proton	Item				An elementary particle that is a constituent of all atomic nuclei, that carries a positive charge numerically equal to the charge of an electron, and that has a mass of 1.673 x 10^(-24) gram.
 2.4.0	2.2.9	ProviderName	Text				The source, or original provider, of the data (for example, PDS PPI)
-2.4.0	1.0.0	ProviderProcessingLevel	Text				The provider specific classification of the processing performed on the product.
+2.4.0	1.0.0	ProviderProcessingLevel	Text				The provider specific information on the processing performed on the product. This should include the provider processing level designation and information about the intended use of the product. For example, if it is to be used for machine learning or other high level applications.
 2.4.0	1.0.0	ProviderResourceName	Text				A short textual description of a resource used by the provider which may be used to identify a resource.
 2.4.0	1.0.0	ProviderVersion	Text				Describes the release or edition of the product used by the provider. The formation rule may vary between providers. It is intended to aid in queries to the provider regarding the product.
 2.4.0	1.3.4	Pseudo	Item				Similar to or having the appearance of something else. Can be used to indicate an estimation or approximation of a particular quantity.
@@ -539,7 +541,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	1.0.0	RadioFrequency	Item				Photons with a wavelength range: 100,000 to 1.00x10^11 nm
 2.4.0	1.2.1	Radiometer	Item				An instrument for detecting or measuring radiant energy. Radiometers are commonly limited to infrared radiation.
 2.4.0	1.1.0	Ratio	Item				The relative magnitudes of two quantities.
-2.4.0	1.0.0	Raw	Item				Data in its original state with no processing to account for calibration!!!
+2.4.0	1.0.0	Raw	Item				Data in its original state with no processing to account for calibration. Similar to NASA Level 0.
 2.4.0	2.3.2	RealPart	Item				Any number z can in general be represented by its complex form with z = a + ib where i, which is defined as the square root of -1, signifies the imaginary component of the number z. The coefficient a is called the real part of the complex number z.
 2.4.0	1.1.0	Registry	Container				A location or facility where resources are cataloged.
 2.4.0	1.1.0	RelativeStopDate	Duration				An indication of the nominal end date relative to the present.
@@ -675,7 +677,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	1.0.0	UDF	Item				Universal Data Format (UDF). The Optical Technology Storage Association's Universal Disk Format, based on ISO 13346. See <http://www.osta.org/specs/index.htm>
 2.4.0	1.0.0	Ultraviolet	Item				Photons with a wavelength range: 10 to 400 nm.
 2.4.0	2.2.5	Umbriel	Item				The third largest and fourth most massive moon of Uranus.
-2.4.0	1.0.0	Uncalibrated	Item				Duplicate data are removed from the data stream and data are time ordered. Values are not adjusted for any potential biases or external factors.
+2.4.0	1.0.0	Uncalibrated	Item				Duplicate data are removed from the data stream and data are time ordered. Values are not adjusted for any potential biases or external factors. Similar to NASA Level 1.
 2.4.0	1.2.0	Uncertainty	Item				A statistically defined discrepancy between a measured quantity and the true value of that quantity that cannot be corrected by calculation or calibration.
 2.4.0	1.0.0	Unicode	Item				Text in multi-byte Unicode format.
 2.4.0	1.0.0	Units	Text				A description of the standardized measurement increments in which a value is specified. The description is represented as a mathematical phrase. Units should be represented by widely accepted representation. For example, units should conform to the International System of Units (SI) which is maintained by BIPM (Bureau International des Poids et Mesures (see <http://www.bipm.fr/> ) when appropriate or use tokens like ""Re"" to represent units of the Radius of the Earth. Within a phrase the circumflex (^) is used to indicate a power, a star (*) is used to indicate multiplication and a slash (/) division. When symbols are not separated by a mathematical operator, multiplication is assumed. Symbols for base units can be found at: <http://www.bipm.fr/en/si/si_brochure/chapter2/2-1/#symbols> and those for common derived units can be found at: <http://www.bipm.fr/en/si/derived_units/2-2-2.html>
@@ -688,6 +690,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	2.3.1	User	Item				An individual who utilizes a resource or service.
 2.4.0	1.2.0	ValidMax	Text				The largest legitimate value.
 2.4.0	1.2.0	ValidMin	Text				The smallest legitimate value.
+2.4.0	2.4.0	ValueAdded	Item				Calibrated data that has been mapped on uniform space-time grid scales with gaps, flags and out-of-range values replaced with appropriate values. Similar to NASA Level 3.
 2.4.0	1.3.1	ValueFormat	Text				A string defining the output format used when extracting data values out to a file or screen. The magnitude and the number of significant figures needed should be carefully considered. The output format string can be in either Fortran or C syntax.
 2.4.0	1.0.0	Variance	Item				A measure of dispersion of a set of data points around their mean value. The expectation value of the squared deviations from the mean.
 2.4.0	1.3.5	VCrossB	Item				The cross product of the charge velocity (V) and the magnetic field (B). It is the electric field exerted on a point charge by a magnetic field.

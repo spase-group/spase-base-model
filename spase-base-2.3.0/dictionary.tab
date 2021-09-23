@@ -40,7 +40,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.3.0	1.1.0	AtomicNumberDetected	Item				The number of protons in the nucleus of an atom as determined by a detector.
 2.3.0	1.2.0	Aurora	Item				An atmospheric phenomenon consisting of bands of light caused by charged solar particles following the earth's magnetic lines of force.
 2.3.0	1.1.0	AuroralRegion	Item				The region in the atmospheric where electrically-charged particles bombarding the upper atmosphere of a planet in the presence of a magnetic field produce an optical phenomenon.
-2.3.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared a work for publication. Separate multiple names with ;. When an author is a persons use last,first[,middle] format. Including a middle name is optional.
+2.3.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared a work for publication. Separate multiple names with ;. When an author is a persons use last,first[ middle] format. Including a middle name is optional.
 2.3.0	1.3.6	Automatic	Item				Determined by the analysis or assessment performed by a program or server.
 2.3.0	1.0.0	Availability	Enumeration	Availability			An indication of the method or service which may be used to access the resource.
 2.3.0	1.0.0	Average	Item				The statistical mean; the sum of a set of values divided by the number of values in the set.

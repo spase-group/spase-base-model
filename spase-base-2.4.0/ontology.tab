@@ -3,7 +3,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.4.0	1.1.0	AccessInformation	Availability	2	0		
 2.4.0	1.1.0	AccessInformation	AccessRights	3	0		
 2.4.0	1.1.0	AccessInformation	AccessURL	4	+		
-2.4.0	1.1.0	AccessInformation	Format	5	1		
+2.4.0	1.1.0	AccessInformation	Format	5	+		
 2.4.0	1.1.0	AccessInformation	Encoding	6	0		
 2.4.0	1.2.0	AccessInformation	DataExtent	7	0		
 2.4.0	1.1.0	AccessInformation	Acknowledgement	8	0		
@@ -128,6 +128,10 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.4.0	2.4.0	InputProperty	Units	05	0		
 2.4.0	2.4.0	InputProperty	ValidMin	06	0		
 2.4.0	2.4.0	InputProperty	ValidMax	07	0		
+2.4.0	2.4.0	Installer	Availability	1	0		
+2.4.0	2.4.0	Installer	AccessRights	2	0		
+2.4.0	2.4.0	Installer	Acknowledgement	3	0		
+2.4.0	2.4.0	Installer	URL	4	1		
 2.4.0	1.1.0	Instrument	ResourceID	1	1		
 2.4.0	1.1.0	Instrument	ResourceHeader	2	1		
 2.4.0	1.1.0	Instrument	InstrumentType	3	+		

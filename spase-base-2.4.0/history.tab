@@ -303,4 +303,8 @@
 302	2.3.2	2020-10-08	T.King	Add InstrumentLead to dictionary and to Role.	Decided during the telecon on 2020-10-08.
 303	2.3.2	2020-10-15	T.King	Released.	Decided during the telecon on 2020-10-15.
 304	2.4.0	2020-11-12	T.King	Add Software resource and related elements to the information model.	Discussed during prior telecons.
-305	2.4.0	2021-02-04	T.King	Change Version to SoftwareVersion in Software resource; add elements to InputProperty and OutputPorperty.	Discussed in email exchanges.
+305	2.4.0	2021-02-04	T.King	Change Version to SoftwareVersion in Software resource; Add elements to InputProperty and OutputProperty.	Discussed in email exchanges.
+306	2.4.0	2021-04-29	T.King	Add Policy and Convention to dictionary and to DocumentType enumeration	Decided during prior telecon.
+307	2.4.0	2021-04-29	T.King	Change Format in AccessInformation to have one or more occurrence.	Decided during telecon on 2021-04-29.
+308	2.4.0	2021-04-29	T.King	Add ValueAdded to the dictionary; Add ValueAdded to ProcessLevel.	Suggested during  subsequent telecons.
+309	2.4.0	2021-06-10	T.King	Released.	Decided during the telecon on 2021-06-10.

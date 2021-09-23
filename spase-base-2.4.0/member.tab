@@ -91,7 +91,9 @@ Version	Since	List	Item
 2.4.0	1.3.1	DisplayType	StackPlot
 2.4.0	1.3.1	DisplayType	TimeSeries
 2.4.0	1.3.5	DisplayType	WaveForm
+2.4.0	2.4.0	DocumentType	Convention
 2.4.0	1.3.0	DocumentType	Other
+2.4.0	2.4.0	DocumentType	Policy
 2.4.0	1.3.0	DocumentType	Poster
 2.4.0	1.3.0	DocumentType	Presentation
 2.4.0	1.3.0	DocumentType	Report
@@ -358,6 +360,7 @@ Version	Since	List	Item
 2.4.0	1.1.0	ProcessingLevel	Calibrated
 2.4.0	1.1.0	ProcessingLevel	Raw
 2.4.0	1.1.0	ProcessingLevel	Uncalibrated
+2.4.0	2.4.0	ProcessingLevel	ValueAdded
 2.4.0	1.3.4	Projection	IJ
 2.4.0	1.3.4	Projection	IK
 2.4.0	1.3.4	Projection	JK
