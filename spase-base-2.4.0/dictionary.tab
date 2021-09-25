@@ -502,7 +502,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.0	1.0.0	PrincipalInvestigator	Item				An individual who is the administrative and scientific lead for an investigation.
 2.4.0	2.2.0	Print	Item				A sheet of any written or printed material which may include notes or graphics. Multiple printed pages may be bound into a manuscript or book.
 2.4.0	2.4.0	Prerequisites	Text				A thing that is required to be installed on your computer in order to run or compile the software.
-2.4.0	2.4.0	Platform	Container				A compulsory or necessary condition.
+2.4.0	2.4.0	ExecutionEnvironment	Container				An execution platform for software which includes an operating system and necessary hardware.
 2.4.0	1.2.0	PriorID	Text				The resource identifier for a resource that is superseded or replaced by a resource.
 2.4.0	1.3.4	Probable	Item				Likely given the available evidence. Considered in the range of 4-7 on a scale of 0-10.
 2.4.0	1.2.0	ProcessingLevel	Enumeration	ProcessingLevel			The standard classification of the processing performed on the product.

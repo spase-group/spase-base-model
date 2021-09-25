@@ -236,11 +236,11 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.4.0	2.2.9	PitchAngleRange	High	2	1		
 2.4.0	2.2.9	PitchAngleRange	Units	3	1		
 2.4.0	2.2.9	PitchAngleRange	Bin	4	*		
-2.4.0	2.4.0	Platform	OperatingSystem	01	1		
-2.4.0	2.4.0	Platform	Installer	02	1		
-2.4.0	2.4.0	Platform	Cores	03	0		
-2.4.0	2.4.0	Platform	Storage	04	0		
-2.4.0	2.4.0	Platform	Memory	05	0		
+2.4.0	2.4.0	ExecutionEnvironment	OperatingSystem	01	1		
+2.4.0	2.4.0	ExecutionEnvironment	Installer	02	1		
+2.4.0	2.4.0	ExecutionEnvironment	Cores	03	0		
+2.4.0	2.4.0	ExecutionEnvironment	Storage	04	0		
+2.4.0	2.4.0	ExecutionEnvironment	Memory	05	0		
 2.4.0	2.4.0	PolarAngleRange	Low	1	1		
 2.4.0	2.4.0	PolarAngleRange	High	2	1		
 2.4.0	2.4.0	PolarAngleRange	Units	3	1		
@@ -291,7 +291,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.4.0	2.4.0	Software	ApplicationInterface	04	*		
 2.4.0	2.4.0	Software	CodeLanguage	05	0		
 2.4.0	2.4.0	Software	Prerequisites	06	+		
-2.4.0	2.4.0	Software	Platform	07	+		
+2.4.0	2.4.0	Software	ExecutionEnvironment	07	+		
 2.4.0	2.4.0	Software	InputProperty	08	*		Property
 2.4.0	2.4.0	Software	OutputProperty	09	*		Property
 2.4.0	1.3.1	Source	SourceType	1	1		
