@@ -1,0 +1,8 @@
+{
+   "name": "SPASE Base Model",
+   "version": "2.4.1-draft",
+   "released": "TBD",
+   "description": "SPASE Base Model",
+   "namespace": "spase",
+   "schemaurl": "http://www.spase-group.org/data/schema"
+}
