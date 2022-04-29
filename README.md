@@ -116,3 +116,17 @@ In a development environment with tool source nearby:
 
 `node ../../spase-model-tools-node/src/makepdf.js -b spase-base-2.3.2/template -d ../../model/spase-base-2.3.2.json -o ../../model/spase-base-2.3.2.pdf`
 
+## Handy scripts
+
+**build-all.sh**
+
+Run with no options will build all versions of the data model in the current directory. Output is written in the "build" folder.
+
+If a version number is given as the first option, it will build just that version number. 
+
+If "draft" is given as the second option, a draft version of the model will be built.
+
+Example: Build draft for version 2.5.0
+```
+bash build-all.sh 2.5.0 draft
+```

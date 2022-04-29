@@ -14,8 +14,8 @@ then
   shortname="spase"
 fi
 
-# If no version specified or a dash (-),  do all
-if [ -n "$versions" ] && [ "$versions" = "-" ]
+# If no version specified or a dash (-), do all. 
+if [ "$versions" = "-" ]
 then
 versions=""
 fi
@@ -23,7 +23,13 @@ fi
 if [ -z "$versions" ]
 then
 versions=(1.1.0 1.2.0 1.2.1 1.2.2 1.3.0 2.0.0 2.1.0 2.2.0 2.2.1 2.2.2 2.2.4 2.2.6 2.2.8 2.2.9 2.3.0 2.3.1 2.3.2 2.4.0)
-draft=(2.4.1)
+fi
+
+# If suffix is draft, only do specified draft version
+if [ "$suffix" = "draft" ]
+then
+draft=$versions
+versions=()
 fi
 
 # Create "build" folder if it doesn't exist
