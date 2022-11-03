@@ -156,6 +156,7 @@ Version	Since	List	Item
 2.4.1	2.4.1	Format	RINEX2
 2.4.1	2.4.1	Format	RINEX3
 2.4.1	1.1.0	Format	Text
+2.4.1	2.4.1	Format	TFCat
 2.4.1	1.1.0	Format	TIFF
 2.4.1	1.1.0	Format	UDF
 2.4.1	1.1.0	Format	VOTable
@@ -451,6 +452,7 @@ Version	Since	List	Item
 2.4.1	1.1.0	Role	GeneralContact
 2.4.1	2.3.1	Role	HostContact
 2.4.1	2.3.2	Role	InstrumentLead
+2.4.1	2.4.1	Role	InstrumentScientist
 2.4.1	1.2.0	Role	MetadataContact
 2.4.1	2.3.2	Role	MissionManager
 2.4.1	2.3.2	Role	MissionPrincipalInvestigator
@@ -522,6 +524,7 @@ Version	Since	List	Item
 2.4.1	2.3.1	SupportQuantity	Orientation
 2.4.1	1.2.0	SupportQuantity	Other
 2.4.1	1.2.0	SupportQuantity	Positional
+2.5.0	2.4.1	SupportQuantity	Remark
 2.4.1	2.3.2	SupportQuantity	RotationMatrix
 2.4.1	2.3.1	SupportQuantity	SpinPeriod
 2.4.1	2.3.1	SupportQuantity	SpinPhase
@@ -529,6 +532,8 @@ Version	Since	List	Item
 2.4.1	2.3.2	SupportQuantity	Telemetry
 2.4.1	1.2.0	SupportQuantity	Temporal
 2.4.1	1.3.1	SupportQuantity	Velocity
+2.4.1	2.4.1	SupportQuantity	WebResource
+2.4.1	2.3.0	SupportQuantity	WebService
 2.4.1	1.3.4	Text	ASCII
 2.4.1	1.3.4	Text	Unicode
 2.4.1	2.2.5	Uranus	Ariel

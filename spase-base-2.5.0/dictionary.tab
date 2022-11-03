@@ -44,7 +44,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.1.0	Author	Item				The composer of a literary work. This can include presentations, articles, books, white papers or any similar published work.
 2.5.0	1.2.0	Aurora	Item				An atmospheric phenomenon consisting of bands of light caused by charged solar particles following the earth's magnetic lines of force.
 2.5.0	1.1.0	AuroralRegion	Item				The region in the atmospheric where electrically-charged particles bombarding the upper atmosphere of a planet in the presence of a magnetic field produce an optical phenomenon.
-2.5.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared a work for publication. Separate multiple names with ";". When an author is a persons use "last,first[ middle]" format. Including a middle name is optional.
+2.5.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared the work (document, data, images or other types of resources). Separate multiple names with a semicolon. When an author is a persons use "last,first[,middle]" format. Including a middle name is optional.
 2.5.0	1.3.6	Automatic	Item				Determined by the analysis or assessment performed by a program or server.
 2.5.0	2.3.2	AutoSpectrum	Item				The Fourier transform of the auto correlation function for physical or empirical observations, which describes the general dependence of the time series data values at one instant on the time series data values at another instant.
 2.5.0	1.0.0	Availability	Enumeration	Availability			An indication of the method or service which may be used to access the resource.
@@ -78,6 +78,9 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.0.0	CEF	Item				Cluster Exchange Format (CEF) is a self-documenting ASCII format designed for the exchange of data. There are two versions of CEF which are not totally compatible.
 2.5.0	1.0.0	CEF1	Item				Cluster Exchange Format (CEF), version 1, is a self-documenting ASCII format designed for the exchange of data. The metadata contains information compatible with the ISTP recommendations for CDF.
 2.5.0	1.0.0	CEF2	Item				Cluster Exchange Format (CEF), version 2, is a self-documenting ASCII format designed for the exchange of data and introduced for Cluster Active Archive. Compared to version 1, the metadata description of vectors and tensors is different.
+2.5.0	2.4.2	CenterElevation	Text				The elevation in the center of a region above a surface (such as sea level or land) of a planet or natural satellite.
+2.5.0	2.4.2	CenterLatitude	Text				The latitude in the center of a region in a geographic coordinate system.
+2.5.0	2.4.2	CenterLongitude	Text				The longitude in the center of a region in a geographic coordinate system.
 2.5.0	1.0.0	CGM	Item				Corrected Geomagnetic - A coordinate system from a spatial point with GEO radial distance and geomagnetic latitude and longitude, follow the epoch-appropriate IGRF/DGRF model field vector through to the point where the field line crosses the geomagnetic dipole equatorial plane. Then trace the dipole magnetic field vector Earthward from that point on the equatorial plane, in the same hemisphere as the original point, until the initial radial distance is reached. Designate the dipole latitude and longitude at that point as the CGM latitude and longitude of the original point. See <http://nssdc.gsfc.nasa.gov/space/cgm/cgmm_des.html>
 2.5.0	1.0.0	Channeltron	Item				An instrument that detects electrons, ions, and UV-radiation, according to the principle of a secondary emission multiplier. It is typically used in electron spectroscopy and mass spectrometry.
 2.5.0	1.2.1	Characteristic	Item				A quantity which can be easily identified and measured in a given environment.
@@ -92,7 +95,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	2.4.0	CodeLanguage	Text				A formal language, which comprises a set of instructions that produce various kinds of output.  
 2.5.0	2.3.2	Coherence	Item				The coherence, Cxy, between two signals x(t) and y(t) is a real-valued function. The square of the coherence is defined by using: Cxy^2 = |Gxy(f)|^2 / Gxx(f)Gyy(f) where Gxy(f) is equal to the cross-spectral density between two time series denoted as x and y, respectively, and Gxx(f) and Gyy(f) are equal to the auto-spectral densities of the same two time series. Values of Cxy 2 always lie in the range between zero and one, 0 = Cxy 2 = 1, in accordance with the Cauchy-Schwarz inequality.
 2.5.0	1.0.0	CoInvestigator	Item				An individual who is a scientific peer and major participant in an investigation.
-2.5.0	2.5.0	Collection	Container				An aggregation of resources, which may encompass collections of one or more resource ty. A collection describes the group with the members described separately. An example is an experiment which uses the data from multiple instruments (or sensors). Another example is a research effort that uses a set of diplay images of the Sun and Energetic particle data from the corresponding times for the images, and FITS files of AIA images, etc. All the resources that are part of the research effort can be described as a Collection. Yet another example is a coordinated set of time series used for determining an index.
+2.5.0	2.5.0	Collection	Container				An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described. An example is an experiment which uses the data from multiple instruments (or sensors). Another example is a research effort that uses a set of display images of the Sun and Energetic particle data from the corresponding times for the images, and FITS files of AIA images, etc. All the resources that are part of the research effort can be described as a Collection. Yet another example is a coordinated set of time series used for determining an index.
 2.5.0	2.2.0	ColorBar	Item				A spectrum or set of colors used to represent data values.
 2.5.0	1.3.4	Column	Item				A two-dimensional measure of a quantity. The column is the area over which the quantity is measured.
 2.5.0	1.2.0	Comet	Item				A relatively small extraterrestrial body consisting of a frozen mass that travels around the sun in a highly elliptical orbit.
@@ -151,6 +154,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.3.1	DustDetector	Item				An instrument which determines the mass and speed of ambient dust particles.
 2.5.0	2.3.2	DynamicPressure	Item				Dynamic pressure is a measure of the kinetic energy per unit volume of a fluid. For instance, the solar wind dynamic pressure or ram pressure for a purely proton plasma is equal to m<sub>p</sub> n V<sup>2</sup> where m<sub>p</sub> is the proton mass, n the proton number density, and V the solar wind speed.
 2.5.0	1.1.0	Earth	Enumeration	Earth			The third planet from the sun in our solar system.
+2.5.0	2.4.2	EasternmostLongitude	Text				The longitude furthest to the east in a geographic coordinate system.
 2.5.0	2.3.1	ECD	Item				Eccentric Dipole (ECD) coordinate system that aligns with a dipole whose origin and orientation may be different from the physical center and spin axis of the containing body. The IGRF-12 coefficients for 2015 are used to determine the origin for the earth. The 2015 positions are North dip pole: latitude: 86.29, longitude -160.06. South dip pole latitide: -64.28, longitude: 136.59, North geometric pole latitude: 80.37, longitude: -72.63, South geomagnetic pole latitude: -80.37, longitude: 107.37ECD is defined in doi:10.1186/s40623-015-0228-9.
 2.5.0	2.2.3	ECEF	Item				The Earth-Centered, Earth-Fixed (ECEF) coordinate system has point (0,0,0) defined as the center of mass of the Earth. Its axes are aligned with the International Reference Pole (IRP) and International Reference Meridian (IRM). The x-axis intersects the sphere of the Earth at 0 degree latitude (Equator) and 0 degree longitude (Greenwich). The z-axis points north. The y-axis completes the right handed coordinate system.
 2.5.0	1.3.0	EITWave	Item				A wave in the corona of the Sun which produce shock waves on the Sun's chromosphere (Moreton Waves). EIT Waves are produced by large solar flare and expand outward at about 1,000 km/s. It usually appears as a slowly moving diffuse arc of brightening in H-alpha, and may travel for several hundred thousand km.
@@ -180,7 +184,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	2.2.3	ENP	Item				ENP (also called PEN) - The P vector component points northward, perpendicular to orbit plane which for a zero degree inclination orbit is parallel to Earth's spin axis. The E vector component is perpendicular to P and N and points earthward. The N component is perpendicular to P and E and is positive eastward.
 2.5.0	2.2.9	Entropy	Item				A function of thermodynamic quantity, such as temperature, pressure, or composition, that is a measure of the energy that is not available for work during a thermodynamic process. It is often interpreted as the degree of disorder or randomness in the system.
 2.5.0	1.2.0	Ephemeris	Item				The spatial coordinates of a body as a function of time. When used as an Instrument Type it represents the process or methods used to generate spatial coordinates.
-2.5.0	2.5.0	EPNTAP	Item				Europlanet (EPN) Table Access Protocol (TAP) is a framework, which is using TAP with the EPNcore metadata dictionary. The EPNcore metadata dictionary defines the core components that are necessary to perform data discovery in the Solar System related science fields. https://github.com/ivoa-std/EPNTAP
+2.5.0	2.4.1	EPNTAP	Item				Europlanet (EPN) Table Access Protocol (TAP) is a framework, which is using TAP with the EPNcore metadata dictionary. The EPNcore metadata dictionary defines the core components that are necessary to perform data discovery in the Solar System related science fields. https://github.com/ivoa-std/EPNTAP
 2.5.0	1.2.0	EquatorialRegion	Item				A region centered on the equator and limited in latitude by approximately 23 degrees north and south of the equator.
 2.5.0	1.0.0	EquivalentWidth	Item				The spectral width of a total absorption line having the amount of absorbed radiant energy being equivalent to that in an observed absorption line.
 2.5.0	1.2.0	ERegion	Item				A layer of ionised gas occurring at 90-150km above the ground. One of several layers in the ionosphere. Also called the The Kennelly-Heaviside layer.
@@ -228,7 +232,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.0.0	GeomagneticStorm	Item				A magnetospheric disturbance typically defined by variations in the horizontal component of the Earth's surface magnetic field. The variation typically starts with a field enhancement associated with a solar wind pressure pulse and continues with a field depression associated with an enhancement of the diamagnetic magnetospheric ring current.
 2.5.0	2.3.1	GeometricFactor	Item				 A measure of the gathering power of a particle detector. The geometric factor can be used to correct particle measurements by accounting for the fact that only a fraction of source particles are able to gain entry through the aperture of a detector. For an isotopic source distribution, the geometric factor corresponds to the solid angle subtended by the aperture. In practice, determination of the geometric factor requires numerical modeling and depends on detector design and the characteristics of the source.
 2.5.0	1.0.0	GIF	Item				Graphic Interchange Format (GIF) first introduced in 1987 by CompuServe. GIF uses LZW compression and images are limited to 256 colours.
-2.5.0	2.5.0	Git	Item				Git is a version control system for tracking changes in any set of files. It is known for its speed, data integrity, and support for distributed, non-linear workflows.
+2.5.0	2.4.1	Git	Item				Git is a version control system for tracking changes in any set of files. It is known for its speed, data integrity, and support for distributed, non-linear workflows.
 2.5.0	2.2.5	GPHIO	Item				Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.
 2.5.0	1.1.0	Granule	Container				An accessible portion of another resource. A Granule may be composed of one or more physical pieces (files) which are considered inseparable. For example, a data storage format that maintains metadata and binary data in separate, but tightly coupled files. Granules should not be used to group files that have simple relationships or which are associated through a parent resource. For example, each file containing a time interval data for a Numerical Data resource would each be considered a Granule. The ParentID of a Granule resource must be a NumericalData resource. The attributes of a Granule supersede the corresponding attributes in the NumericalData resource.
 2.5.0	1.3.6	Group	Item				An assemblage of values that a certain relation or common characteristic.
@@ -299,7 +303,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.0.0	InstrumentID	Text				The identifier of an Instrument resource.
 2.5.0	2.3.2	InstrumentLead	Item				An individual who is the designated leader of an instrument or intrument package.
 2.5.0	2.0.2	InstrumentMode	Item				An indication of a state (mode) in which the instrument is operating. How a mode influences the interpretation and representation of data is described in instrument related documentation.
-2.5.0	2.5.0	InstrumentScientist	Item				A scientist associated with a science instrument team with special familiarity and expertise on some aspects or all of the design and operations of the instrument and the responsibility of ensuring the instrument's measurement capability.
+2.5.0	2.4.1	InstrumentScientist	Item				A scientist associated with a science instrument team with special familiarity and expertise on specific aspects of the design and operations of the instrument and the responsibility of ensuring the instrument's measurement capability.
 2.5.0	1.2.0	InstrumentStatus	Item				A quantity directly related to the operation or function of an instrument.
 2.5.0	1.0.0	InstrumentType	Enumeration	InstrumentType			A characterization of an integrated collection of software and hardware containing one or more sensors and associated controls used to produce data on an environment.
 2.5.0	1.1.0	Integral	Enumeration	Integral			A flux measurement in a broad range of energy and solid angle.
@@ -330,6 +334,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.0.0	Keyword	Text				A word or phrase that is relevant to the resource but does not exist in other documentary information.
 2.5.0	2.2.4	KSM	Item				Kronian Solar Magnetospheric - A coordinate system related to Saturn where the X axis is anti-sunward, Z axis is northward in a plane containing the X axis and the Kronian dipole axis.
 2.5.0	2.2.4	KSO	Item				Kronian Solar Orbital - A coordinate system related to Saturn where X is anti-sunward, Y along the orbital velocity direction.
+2.5.0	2.4.2	LandingPageURL	URL				A Uniform Resource Locator (URL) to a page that provides a way to access the resource. A landing page should contain a full bibliographic citation so that a human can tell they have arrived at the correct resource, and additional information about the resouorce that might not be easily retrievable from the resource itself.
 2.5.0	1.0.0	LangmuirProbe	Item				A monopole antenna associated with an instrument. The instrument applies a potential to the antenna which is swept to determine the voltage/current characteristic. This provides information about the plasma surrounding the probe and spacecraft.
 2.5.0	1.3.0	Language	Text				The two character indicator of language selected from the ISO 639-1 codes for the representation of names of languages.
 2.5.0	1.2.0	Latitude	Numeric				The angular distance north (positive) or south (negative) from the equator, measured along the meridian passing through the point.
@@ -374,12 +379,12 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.1.0	MATLAB_6	Item				MATLAB Workspace save set, version 6. MAT-files are double-precision, binary, MATLAB format files. MATLAB is a proprietary product of The MathWorks.
 2.5.0	1.1.0	MATLAB_7	Item				MATLAB Workspace save set, version 7. MAT-files are double-precision, binary, MATLAB format files. Version 7 includes data compression and Unicode encoding. MATLAB is a proprietary product of The MathWorks.
 2.5.0	2.2.0	Maximum	Item				The largest value of a batch or sample or the upper bound of a probability distribution.
+2.5.0	2.4.2	MaximumElevation	Text				The highest vertical elevation of region above a surface (such as sea level or land) of a planet or natural satellite.
 2.5.0	1.2.0	MD5	Item				Message Digest 5 (MD5) is a 128-bit message digest algorithm created in 1991 by Professor Ronald Rivest.
-2.5.0	1.0.0	MeasurementType	Enumeration	MeasurementType			A characterization of the quantitative assessment of a phenomenon.
+2.5.0	1.0.0	MeasurementType	Enumeration	MeasurementType			The enumeration of the specific measurement target (e.g., energetic particles, ion composition, etc.), method of measurement (e.g., Interferometry), or the particular compilation of measurements (e.g., a composite dataset consisting of measurements from multiple instruments or platforms, such as Dopplergram, keogram, ElectronColumnDensity (TEC), etc.) that reflect a richer context (e.g., structure and dynamics) of the observational target.
 2.5.0	2.2.0	Median	Item				The measure of central tendency of a set of n. values computed by ordering the values and taking the value at position (n.  + 1) / 2 when n. is odd or the arithmetic mean of the values at positions n.  / 2 and (n. / 2) + 1 when n.  is even.
 2.5.0	2.4.0	Memory	Text				The component of your computer that allows you to store and access data on a short-term basis, typically the amount of RAM. Indicate units with standard byte scales such as KB, MB, GB, TB and PB. 
 2.5.0	2.5.0	Member	Container				A constituent part of a collection. A Member is of a one one of the supported resouorce types and in referenced by an identifier. Details about the member are part of its repective resource description.
-2.5.0	2.5.0	Members	Container				A set of one or more members.
 2.5.0	2.5.0	MemberID	Text				The identifier of an resource.
 2.5.0	1.2.0	Mercury	Enumeration	Mercury			The first planet from the sun in our solar system.
 2.5.0	1.2.0	Mesosphere	Item				The layer of the atmosphere that extends from the Stratosphere to a range of 80 km to 85 km, temperature decreasing with height.
@@ -394,6 +399,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	2.2.5	Mimas	Item				The smallest and least massive of the round moons of Saturn.
 2.5.0	2.2.2	MIMEType	Text				Multipurpose Internet Mail Extensions (MIME) type and sub-type which characterizes the format of a file. MIME media types are define in RFC memorandum RFC 2046. Current MIME types are maintained by Internet Assigned Numbers Authority (IANA) at http://www.iana.org/assignments/media-types/index.html. Commonly used MIME types are: application/vnd.ms-powerpoint (ppt, pptx), application/vnd.ms-excel (xls, xlsx), text/richtext (rtx), application/postscript (eps, ps), application/pdf (pdf), application/xml-dtd (dtd), text/html (htm, html), text/xml (xsl, xml, xsd), application/x-dvi (dvi). If a document is compressed the specified MIME type should be for the uncompressed document. 
 2.5.0	2.2.0	Minimum	Item				The smallest value of a batch or sample or the lower bound of a probability distribution.
+2.5.0	2.4.2	MinimumElevation	Text				The lowest vertical elevation of region above a surface (such as sea level or land) of a planet or natural satellite.
 2.5.0	2.2.5	Miranda	Item				The smallest and innermost round moon of Uranus.
 2.5.0	1.3.1	MirrorURL	URL				A Uniform Resource Locator (URL) to an alternate location of a resource.
 2.5.0	2.3.2	MissionManager	Item				A Mission Manager is a rolename used by the ESA. The Mission Manager corresponds to the Project Manager role used by NASA but the Mission Manager role only begins after the launch of the mission.
@@ -421,6 +427,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.3.6	Neutron	Item				An elementary particle that has no net charge and is a constituent of atomic nuclei, and that has a mass slightly large than a proton (1.673 x 10^(-24) gram.)
 2.5.0	1.2.1	Ni6768	Item				A spectrum with a wavelength range centered at 676.8 nm. VSO nickname: Ni-6768 dopplergram with a range of of 676.7 nm to 676.9 nm.
 2.5.0	1.0.0	None	Item				A lack or absence of anything.
+2.5.0	2.4.2	NorthernmostLatitude	Text				The latitude furthest to the north in a geographic coordinate system.
 2.5.0	1.2.0	Note	Text				Information which is useful or important for the understanding of a value or parameter.
 2.5.0	1.0.0	NumberDensity	Item				The number of particles per unit volume.
 2.5.0	1.2.1	NumberFlux	Item				The number of particles passing a unit area in unit time, possibly also per unit energy (or equivalent) and/or per unit look direction.
@@ -533,9 +540,9 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.0.0	ProviderResourceName	Text				A short textual description of a resource used by the provider which may be used to identify a resource.
 2.5.0	1.0.0	ProviderVersion	Text				Describes the release or edition of the product used by the provider. The formation rule may vary between providers. It is intended to aid in queries to the provider regarding the product.
 2.5.0	1.3.4	Pseudo	Item				Similar to or having the appearance of something else. Can be used to indicate an estimation or approximation of a particular quantity.
-2.5.0	2.3.0	PublicationDate	DateTime				The date that the work was first published.
-2.5.0	2.3.0	PublicationInfo	Container				Information related to the issuing of a book, journal, piece of music, or other work.
-2.5.0	2.3.0	PublishedBy	Text				The name or the company, organization or individual that published the work.
+2.5.0	2.3.0	PublicationDate	DateTime				The date that the work (document, data, images or other types of resources) was first issued.
+2.5.0	2.3.0	PublicationInfo	Container				Information required to mint a DOI for the resource being described in SPASE.
+2.5.0	2.3.0	PublishedBy	Text				The name or the company, organization or individual that issues the work (document, data, images or other types of resources).
 2.5.0	1.3.0	Publisher	Item				An individual, organization, institution or government department responsible for the production and dissemination of a document.
 2.5.0	2.2.5	Puck	Item				The largest inner spherical moon of Uranus.
 2.5.0	1.0.0	QuadrisphericalAnalyser	Item				An instrument used for the 3-D detection of plasma, energetic electrons and ions, and for positive-ion composition measurements.
@@ -554,7 +561,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.1.0	Registry	Container				A location or facility where resources are cataloged.
 2.5.0	1.1.0	RelativeStopDate	Duration				An indication of the nominal end date relative to the present.
 2.5.0	1.1.0	ReleaseDate	DateTime				The date and time when a resource is made available. The availability of a resource coincides with the release of a resource description. If the Release Date is specified as a future date then it indicates that resource should not be made available until that time. However, this is only advisory and in practice the Release Date should be the actual date the resource description was published.
-2.5.0	2.5.0	Remark	Item				A notice, comment, or observation.
+2.5.0	2.4.1	Remark	Item				A notice, comment, or observation.
 2.5.0	1.1.0	Remote1AU	Item				A roughly toroidal region that includes the Earth's orbit, but exclusive of the region near the Earth.
 2.5.0	2.2.0	RenderingAxis	Enumeration	RenderingAxis			A reference component of a plot or rendering of data. A plot typically is a 2-dimensional rendering with a horizontal and verticle axis. A third dimension can be introduced with a color coding of the rendered data.
 2.5.0	1.3.1	RenderingHints	Container				Attributes to aid in the rendering of parameter.
@@ -572,8 +579,8 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.3.3	RevisionOf	Item				A modified version of a resource instance.
 2.5.0	2.2.5	Rhea	Item				The second-largest moon of Saturn and the ninth-largest moon in the Solar System.
 2.5.0	2.3.1	RingCurrent	Item				One of the major current systems confined within planetary magnetospheres. The ring current circles in the magnetic equatorial plane of magnetospheres. It is generated by the longitudinal drift of energetic charged particles trapped on inner, dipole-like magnetospheric field lines. At the Earth, the ring current is carried by 10 to 200 keV charged particles typically located at L-shells between 3 and 6. The ring current is also the primary driver of the Sym H and Dst Indices of magnetic storm activity at the Earth.
-2.5.0	2.5.0	RINEX2	Item				Receiver Independent Exchange Format (RINEX) - version 2.*, is a data interchange format for raw satellite navigation system data. https://files.igs.org/pub/data/format/rinex211.txt
-2.5.0	2.5.0	RINEX3	Item				Receiver Independent Exchange Format (RINEX) - version 3.*, is a data interchange format for raw satellite navigation system data. https://files.igs.org/pub/data/format/rinex300.pdf
+2.5.0	2.4.1	RINEX2	Item				Receiver Independent Exchange Format (RINEX) - version 2.*, is a data interchange format for raw satellite navigation system data. https://files.igs.org/pub/data/format/rinex211.txt
+2.5.0	2.4.1	RINEX3	Item				Receiver Independent Exchange Format (RINEX) - version 3.*, is a data interchange format for raw satellite navigation system data. https://files.igs.org/pub/data/format/rinex300.pdf
 2.5.0	1.2.1	Riometer	Item				An instrument which measure the signal strength in various directions of the galactic radio signals. Variations in these signals are influenced by solar flare activity and geomagnetic storm and substorm processes.
 2.5.0	1.0.0	Role	Enumeration	Role			The assigned or assumed function or position of an individual.
 2.5.0	2.3.3	RORIdentifier	Text				The assigned Research Organization Registry (ROR) identifier. See https://ror.org/
@@ -612,19 +619,11 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.3.1	Source	Container				The location and attributes of an object.
 2.5.0	1.3.1	SourceType	Enumeration	SourceType			A characterization of the function or purpose of the source.
 2.5.0	1.2.0	SouthAtlanticAnomalyRegion	Item				The region where the Earth's inner van Allen radiation belt makes its closest approach to the planet's surface. The result is that, for a given altitude, the radiation intensity is higher over this region than elsewhere.
+2.5.0	2.4.2	SouthernmostLatitude	Text				The latitude furthest to the south in a geographic coordinate system.
 2.5.0	1.2.1	SpacecraftOrbitPlane	Item				A coordinate system where X lies in the plane normal to and in the direction of motion of the spacecraft, Z is normal to this plane and Y completes the triad in a right-handed coordinate system.
 2.5.0	1.0.0	SpacecraftPotentialControl	Item				An instrument to control the electric potential of a spacecraft with respect to the ambient plasma by emitting a variable current of positive ions.
 2.5.0	1.0.0	Spase	Container				Space Physics Archive Search and Extract (SPASE). The outermost container or envelope for SPASE metadata. This indicates the start of the SPASE metadata.
-2.5.0	2.5.0	SpatialCoverage	Container				A region of space defined by the latitude, longitude and altitude in a geographic coordinate system.
-2.5.0	2.5.0	NorthernmostLatitude	Text				The latitude furthest to the north in a geographic coordinate system.
-2.5.0	2.5.0	SouthernmostLatitude	Text				The latitude furthest to the south in a geographic coordinate system.
-2.5.0	2.5.0	EasternmostLongitude	Text				The longitude furthest to the east in a geographic coordinate system.
-2.5.0	2.5.0	WesternmostLongitude	Text				The longitude furthest to the west in a geographic coordinate system.
-2.5.0	2.5.0	CenterLatitude	Text				The latitude in the center of a region in a geographic coordinate system.
-2.5.0	2.5.0	CenterLongitude	Text				The longitude in the center of a region in a geographic coordinate system.
-2.5.0	2.5.0	CenterElevation	Text				The elevation in the center of a region above a surface (such as sea level or land) of a planet or natural satellite.
-2.5.0	2.5.0	MinimumElevation	Text				The lowest vertical elevation of region above a surface (such as sea level or land) of a planet or natural satellite.
-2.5.0	2.5.0	MaximumElevation	Text				The highest vertical elevation of region above a surface (such as sea level or land) of a planet or natural satellite.
+2.5.0	2.4.2	SpatialCoverage	Container				A region of space defined by the latitude, longitude and altitude in a geographic coordinate system.
 2.5.0	2.2.2	Specification	Item				A detailed description of the requirements and other aspects of an object or component that may be used to develop an implementation.
 2.5.0	1.3.6	Spectral	Item				Characterized as a range or continuum of frequencies.
 2.5.0	1.0.0	SpectralPowerReceiver	Item				A radio receiver which determines the power spectral density of the electric or magnetic field, or both, at one or more frequencies.
@@ -663,7 +662,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.0.0	SupportQuantity	Enumeration	SupportQuantity			A characterization of the support information.
 2.5.0	1.0.0	Surface	Item				The outermost area of a solid object.
 2.5.0	1.3.1	Symmetric	Item				Equal distribution about one or more axes.
-2.5.0	2.5.0	TAP	Item				The table access protocol (TAP) defines a service protocol for accessing general table data, including astronomical catalogs as well as general database tables. Access is provided for both database and table metadata as well as for actual table data. https://wiki.ivoa.net/twiki/bin/view/IVOA/TableAccess
+2.5.0	2.4.1	TAP	Item				The table access protocol (TAP) defines a service protocol for accessing general table data, including astronomical catalogs as well as general database tables. Access is provided for both database and table metadata as well as for actual table data. https://wiki.ivoa.net/twiki/bin/view/IVOA/TableAccess
 2.5.0	1.3.0	TAR	Item				A file format used to collate collections of files into one larger file, for distribution or archiving, while preserving file system information such as user and group permissions, dates, and directory structures. The format was standardized by POSIX.1-1988 and later POSIX.1-2001.
 2.5.0	1.0.0	TeamLeader	Item				An individual who is the designated leader of an investigation.
 2.5.0	1.0.0	TeamMember	Item				An individual who is a major participant in an investigation.
@@ -677,7 +676,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.2.0	Tensor	Item				A generalized linear "quantity" or "geometrical entity" that can be expressed as a multi-dimensional array relative to a choice of basis of the particular space on which it is defined.
 2.5.0	2.2.5	Tethys	Item				The third largest moon of Saturn.
 2.5.0	1.0.0	Text	Enumeration	Text			A sequence of characters which may have an imposed structure or organization.
-2.5.0	2.5.0	TFCat	Item				 Time-Frequency Catalogue (TFCat) is a catalogue model & transfer format for spectro-temporal features. https://gitlab.obspm.fr/maser/catalogues/catalogue-format
+2.5.0	2.4.1	TFCat	Item				 Time-Frequency Catalogue (TFCat) is a catalogue model & transfer format for spectro-temporal features. https://gitlab.obspm.fr/maser/catalogues/catalogue-format
 2.5.0	1.0.0	ThermalPlasma	Item				Measurements of the plasma in the energy regime where the most of the plasma occurs. May be the basic fluxes in the form of distribution functions or the derived bulk parameters (density, flow velocity, etc.).
 2.5.0	1.0.0	ThermalSpeed	Item				For a Maxwellian distribution, the difference between the mean speed and the speed within which ~69% (one sigma) of all the members of the speed distribution occur.
 2.5.0	1.2.0	Thermosphere	Item				The layer of the atmosphere that extends from the Mesosphere to 640+ km, temperature increasing with height.
@@ -689,6 +688,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.1.0	TimeSpan	Container				The duration of an interval in time.
 2.5.0	2.2.5	Titan	Item				The largest moon of Saturn and the second-largest moon in the Solar System.
 2.5.0	2.2.5	Titania	Item				The largest moon of Uranus and the eighth largest moon in the Solar System.
+2.5.0	2.4.2	Title	Text				The name of a published composition, set or data,  images or other work.
 2.5.0	1.2.0	Topside	Item				The region at the upper most areas of the ionosphere.
 2.5.0	1.3.6	Total	Item				The summation of quantities over all possible species.
 2.5.0	1.3.5	TotalPressure	Item				In an MHD fluid it is the number density (N) times Boltzmann constant times the temperature in Kelvin.
@@ -734,8 +734,9 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.5.0	1.3.4	Waves	Enumeration	Waves			Data resulting from observations of wave experiments and natural wave phenomena. Wave experiments are typically active and natural wave phenomena are passive. Examples of wave experiments include coherent/incoherent scatter radars, radio soundings, VLF propagation studies, ionospheric scintillation of beacon satellite signals, etc. Examples of natural wave phenomena include micropulsations, mesospheric gravity waves, auroral/plasmaspheric hiss, Langmuir waves, AKR, Jovian decametric radiation, solar radio bursts, etc.
 2.5.0	1.3.5	WaveType	Enumeration	WaveType			A characterization of the carrier or phenomenon of wave information observed by the measurement.
 2.5.0	1.3.6	Weak	Item				Slightly likely given the available evidence. Considered in the range of 1-4 on a scale of 0-10.
-2.5.0	2.5.0	WebResource	Item				A Web page or file based resource accessible by a URL.
+2.5.0	2.4.1	WebResource	Item				A Web page or file based resource accessible by a URL.
 2.5.0	2.3.0	WebService	Item				A Web-based service that uses SOAP, WSDL or UDDI open standards.
+2.5.0	2.4.2	WesternmostLongitude	Text				The longitude furthest to the west in a geographic coordinate system.
 2.5.0	1.2.0	WGS84	Item				The World Geodetic System (WGS) defines a reference frame for the earth, for use in geodesy and navigation. The WGS84 uses the zero meridian as defined by the Bureau International de l'Heure.
 2.5.0	1.0.0	WhiteLight	Item				Photons with a wavelength in the visible range for humans.
 2.5.0	2.2.2	WhitePaper	Item				An authoritative report giving information or proposals on an issue.

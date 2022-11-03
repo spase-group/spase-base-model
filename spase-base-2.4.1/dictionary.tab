@@ -44,7 +44,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.1	1.1.0	Author	Item				The composer of a literary work. This can include presentations, articles, books, white papers or any similar published work.
 2.4.1	1.2.0	Aurora	Item				An atmospheric phenomenon consisting of bands of light caused by charged solar particles following the earth's magnetic lines of force.
 2.4.1	1.1.0	AuroralRegion	Item				The region in the atmospheric where electrically-charged particles bombarding the upper atmosphere of a planet in the presence of a magnetic field produce an optical phenomenon.
-2.4.1	2.3.0	Authors	Text				A list of individuals or organizations who prepared a work for publication. Separate multiple names with ";". When an author is a persons use "last,first[ middle]" format. Including a middle name is optional.
+2.4.1	2.3.0	Authors	Text				A list of individuals or organizations who prepared the work (document, data, images or other types of resources). Separate multiple names with a semicolon. When an author is a persons use "last,first[,middle]" format. Including a middle name is optional.
 2.4.1	1.3.6	Automatic	Item				Determined by the analysis or assessment performed by a program or server.
 2.4.1	2.3.2	AutoSpectrum	Item				The Fourier transform of the auto correlation function for physical or empirical observations, which describes the general dependence of the time series data values at one instant on the time series data values at another instant.
 2.4.1	1.0.0	Availability	Enumeration	Availability			An indication of the method or service which may be used to access the resource.
@@ -298,6 +298,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.1	1.0.0	InstrumentID	Text				The identifier of an Instrument resource.
 2.4.1	2.3.2	InstrumentLead	Item				An individual who is the designated leader of an instrument or intrument package.
 2.4.1	2.0.2	InstrumentMode	Item				An indication of a state (mode) in which the instrument is operating. How a mode influences the interpretation and representation of data is described in instrument related documentation.
+2.4.1	2.4.1	InstrumentScientist	Item				A scientist associated with a science instrument team with special familiarity and expertise on specific aspects of the design and operations of the instrument and the responsibility of ensuring the instrument's measurement capability.
 2.4.1	1.2.0	InstrumentStatus	Item				A quantity directly related to the operation or function of an instrument.
 2.4.1	1.0.0	InstrumentType	Enumeration	InstrumentType			A characterization of an integrated collection of software and hardware containing one or more sensors and associated controls used to produce data on an environment.
 2.4.1	1.1.0	Integral	Enumeration	Integral			A flux measurement in a broad range of energy and solid angle.
@@ -373,7 +374,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.1	1.1.0	MATLAB_7	Item				MATLAB Workspace save set, version 7. MAT-files are double-precision, binary, MATLAB format files. Version 7 includes data compression and Unicode encoding. MATLAB is a proprietary product of The MathWorks.
 2.4.1	2.2.0	Maximum	Item				The largest value of a batch or sample or the upper bound of a probability distribution.
 2.4.1	1.2.0	MD5	Item				Message Digest 5 (MD5) is a 128-bit message digest algorithm created in 1991 by Professor Ronald Rivest.
-2.4.1	1.0.0	MeasurementType	Enumeration	MeasurementType			A characterization of the quantitative assessment of a phenomenon.
+2.4.1	1.0.0	MeasurementType	Enumeration	MeasurementType			The enumeration of the specific measurement target (e.g., energetic particles, ion composition, etc.), method of measurement (e.g., Interferometry), or the particular compilation of measurements (e.g., a composite dataset consisting of measurements from multiple instruments or platforms, such as Dopplergram, keogram, ElectronColumnDensity (TEC), etc.) that reflect a richer context (e.g., structure and dynamics) of the observational target.
 2.4.1	2.2.0	Median	Item				The measure of central tendency of a set of n. values computed by ordering the values and taking the value at position (n.  + 1) / 2 when n. is odd or the arithmetic mean of the values at positions n.  / 2 and (n. / 2) + 1 when n.  is even.
 2.4.1	2.4.0	Memory	Text				The component of your computer that allows you to store and access data on a short-term basis, typically the amount of RAM. Indicate units with standard byte scales such as KB, MB, GB, TB and PB. 
 2.4.1	1.2.0	Mercury	Enumeration	Mercury			The first planet from the sun in our solar system.
@@ -528,8 +529,8 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.1	1.0.0	ProviderResourceName	Text				A short textual description of a resource used by the provider which may be used to identify a resource.
 2.4.1	1.0.0	ProviderVersion	Text				Describes the release or edition of the product used by the provider. The formation rule may vary between providers. It is intended to aid in queries to the provider regarding the product.
 2.4.1	1.3.4	Pseudo	Item				Similar to or having the appearance of something else. Can be used to indicate an estimation or approximation of a particular quantity.
-2.4.1	2.3.0	PublicationDate	DateTime				The date that the work was first published.
-2.4.1	2.3.0	PublicationInfo	Container				Information related to the issuing of a book, journal, piece of music, or other work.
+2.4.1	2.3.0	PublicationDate	DateTime				The date that the work (document, data, images or other resource) was first published.
+2.4.1	2.3.0	PublicationInfo	Container				The information required to mint a DOI for the resource being described in SPASE.
 2.4.1	2.3.0	PublishedBy	Text				The name or the company, organization or individual that published the work.
 2.4.1	1.3.0	Publisher	Item				An individual, organization, institution or government department responsible for the production and dissemination of a document.
 2.4.1	2.2.5	Puck	Item				The largest inner spherical moon of Uranus.
@@ -549,6 +550,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.1	1.1.0	Registry	Container				A location or facility where resources are cataloged.
 2.4.1	1.1.0	RelativeStopDate	Duration				An indication of the nominal end date relative to the present.
 2.4.1	1.1.0	ReleaseDate	DateTime				The date and time when a resource is made available. The availability of a resource coincides with the release of a resource description. If the Release Date is specified as a future date then it indicates that resource should not be made available until that time. However, this is only advisory and in practice the Release Date should be the actual date the resource description was published.
+2.5.0	2.4.1	Remark	Item				A notice, comment, or observation.
 2.4.1	1.1.0	Remote1AU	Item				A roughly toroidal region that includes the Earth's orbit, but exclusive of the region near the Earth.
 2.4.1	2.2.0	RenderingAxis	Enumeration	RenderingAxis			A reference component of a plot or rendering of data. A plot typically is a 2-dimensional rendering with a horizontal and verticle axis. A third dimension can be introduced with a color coding of the rendered data.
 2.4.1	1.3.1	RenderingHints	Container				Attributes to aid in the rendering of parameter.
@@ -718,6 +720,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.4.1	1.3.4	Waves	Enumeration	Waves			Data resulting from observations of wave experiments and natural wave phenomena. Wave experiments are typically active and natural wave phenomena are passive. Examples of wave experiments include coherent/incoherent scatter radars, radio soundings, VLF propagation studies, ionospheric scintillation of beacon satellite signals, etc. Examples of natural wave phenomena include micropulsations, mesospheric gravity waves, auroral/plasmaspheric hiss, Langmuir waves, AKR, Jovian decametric radiation, solar radio bursts, etc.
 2.4.1	1.3.5	WaveType	Enumeration	WaveType			A characterization of the carrier or phenomenon of wave information observed by the measurement.
 2.4.1	1.3.6	Weak	Item				Slightly likely given the available evidence. Considered in the range of 1-4 on a scale of 0-10.
+2.4.1	2.4.1	WebResource	Item				A Web page or file based resource accessible by a URL.
 2.4.1	2.3.0	WebService	Item				A Web-based service that uses SOAP, WSDL or UDDI open standards.
 2.4.1	1.2.0	WGS84	Item				The World Geodetic System (WGS) defines a reference frame for the earth, for use in geodesy and navigation. The WGS84 uses the zero meridian as defined by the Bureau International de l'Heure.
 2.4.1	1.0.0	WhiteLight	Item				Photons with a wavelength in the visible range for humans.

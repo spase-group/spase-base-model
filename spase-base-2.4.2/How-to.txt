@@ -1,5 +1,3 @@
-*** These instructions are obsolete. Use script "build-all.sh" in parent folder ***
-
 -- SQLite method ---
 The metadata model is maintained in a database.
 This database is accessed by other tools to generate all

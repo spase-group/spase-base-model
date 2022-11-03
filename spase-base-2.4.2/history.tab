@@ -318,6 +318,3 @@
 317	2.4.2	2022-05-19	T.King	Add Title and LandingPageURL to dictionary; Add Title and LandingPageURL to PublicationInfo.	Decided during telecon on 2022-05-19.
 318	2.4.2	2022-07-07	T.King	Revise SpatialCoverage container.	Per L. Bargatze, and discussion during telecon on 2022-07-07.
 319	2.4.2	2022-07-21	T.King	Released.	Decided during the telecon on 2022-07-21.
-320	2.5.0	2022-07-21	T.King	Add Collection, Member, and MemberID to dictionary; Add Collection resouorce to model;	Per L. Bargatze, A. Roberts and T. King emails, and discussion during telecon on 2022-04-28.
-321	2.5.0	2022-08-29	T.King	Add AccessInformation to Collection;	Per Seiji and discussion during telecon on 2022-08-29.
-322	2.5.0	2022-08-29	T.King	Released.	Decided during the telecon on 2022-08-29.

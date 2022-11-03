@@ -90,10 +90,10 @@
 89	1.1.0	2006-08-31	T.King	Add Field Component container.	
 90	1.1.0	2006-08-31	T.King	Add Statistics to Phenomenon Type.	
 91	1.1.0	2006-08-31	T.King	Released.	
-92	1.1.1		T.King	Changed InstrumentID and Bin to multiple occurrence.	
-93	1.1.1		T.King	Removed enumeration of Component.	
-94	1.1.1		T.King	Modified definition of Units.	
-95	1.1.1		T.King	Changed AccessURL to type container.	
+92	1.1.1	2007-01-31	T.King	Changed InstrumentID and Bin to multiple occurrence.	
+93	1.1.1	2007-01-31	T.King	Removed enumeration of Component.	
+94	1.1.1	2007-01-31	T.King	Modified definition of Units.	
+95	1.1.1	2007-01-31	T.King	Changed AccessURL to type container.	
 96	1.2.0	2007-05-22	T.King	Added Aurora and Substorm under Phenomenon Type.	
 97	1.2.0	2007-05-22	T.King	Added Checksum, Hash Value, Hash Function, MD5 and SHA1, SHA256.	
 98	1.2.0	2007-05-22	T.King	Added Note as a term and added Note under Timespan.	
@@ -309,3 +309,8 @@
 308	2.4.0	2021-04-29	T.King	Add ValueAdded to the dictionary; Add ValueAdded to ProcessLevel.	Suggested during  subsequent telecons.
 309	2.4.0	2021-06-10	T.King	Released.	Decided during the telecon on 2021-06-10.
 310	2.4.1	2021-10-14	T.King	Add Git, TAP, EPNTAP to dictionary and to Style enumeration; add TFCat, RINEX2 and RINEX3 to dictionary and Format enumeration; Add Author to dictionary and to Role enumeration.	Decided during the IHDEA meeting 2021-10-01.
+311	2.4.1	2022-02-24	T.King	Make Annotation.PhenomenomType zero or more occurrences (*); Make Observatory.Location one or more occurrences (+)	Decided during the SMWT telecon on 2022-02-24.
+312	2.4.1	2022-04-20	T.King	Add InstrumentScientist to dictionary and to Role enumeration; fix definition of Longitude.	Per S. Fung email.
+313	2.4.1	2022-04-28	T.King	Add Remark and WebResource to dictionary; Add Remark, WebResource, WebService to SupportQuantity enumeration.	Per L. Bargatze led discussion during telecon on 2022-04-28.
+314	2.4.1	2022-05-05	T.King	Update definitions of MeasurementType, PublicationDate, PublicationInfo and PublishedBy.	Per S. Fung suggestions.
+315	2.4.1	2022-05-19	T.King	Released.	Decided during the telecon on 2022-05-19.

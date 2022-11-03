@@ -153,9 +153,10 @@ Version	Since	List	Item
 2.5.0	1.1.0	Format	PNG
 2.5.0	1.2.0	Format	Postscript
 2.5.0	1.1.0	Format	QuickTime
-2.5.0	2.5.0	Format	RINEX2
-2.5.0	2.5.0	Format	RINEX3
+2.5.0	2.4.1	Format	RINEX2
+2.5.0	2.4.1	Format	RINEX3
 2.5.0	1.1.0	Format	Text
+2.5.0	2.4.1	Format	TFCat
 2.5.0	1.1.0	Format	TIFF
 2.5.0	1.1.0	Format	UDF
 2.5.0	1.1.0	Format	VOTable
@@ -439,7 +440,7 @@ Version	Since	List	Item
 2.5.0	2.2.0	RenderingAxis	ColorBar
 2.5.0	2.2.0	RenderingAxis	Horizontal
 2.5.0	2.2.0	RenderingAxis	Vertical
-2.5.0	2.5.0	Role	Author
+2.5.0	2.4.1	Role	Author
 2.5.0	1.2.1	Role	ArchiveSpecialist
 2.5.0	1.1.0	Role	CoInvestigator
 2.5.0	2.3.1	Role	CoPI
@@ -451,7 +452,7 @@ Version	Since	List	Item
 2.5.0	1.1.0	Role	GeneralContact
 2.5.0	2.3.1	Role	HostContact
 2.5.0	2.3.2	Role	InstrumentLead
-2.5.0	2.5.0	Role	InstrumentScientist
+2.5.0	2.4.1	Role	InstrumentScientist
 2.5.0	1.2.0	Role	MetadataContact
 2.5.0	2.3.2	Role	MissionManager
 2.5.0	2.3.2	Role	MissionPrincipalInvestigator
@@ -502,13 +503,13 @@ Version	Since	List	Item
 2.5.0	1.1.0	SpectralRange	Ultraviolet
 2.5.0	1.2.1	SpectralRange	WhiteLight
 2.5.0	1.1.0	SpectralRange	XRays
-2.5.0	2.5.0	Style	EPNTAP
+2.5.0	2.4.1	Style	EPNTAP
 2.5.0	2.3.0	Style	File
-2.5.0	2.5.0	Style	Git
+2.5.0	2.4.1	Style	Git
 2.5.0	2.3.0	Style	HAPI
 2.5.0	2.3.0	Style	Listing
 2.5.0	2.3.0	Style	Search
-2.5.0	2.5.0	Style	TAP
+2.5.0	2.4.1	Style	TAP
 2.5.0	2.3.0	Style	Template
 2.5.0	2.3.0	Style	Overview
 2.5.0	2.3.0	Style	WebService
@@ -523,7 +524,7 @@ Version	Since	List	Item
 2.5.0	2.3.1	SupportQuantity	Orientation
 2.5.0	1.2.0	SupportQuantity	Other
 2.5.0	1.2.0	SupportQuantity	Positional
-2.5.0	2.5.0	SupportQuantity	Remark
+2.5.0	2.4.1	SupportQuantity	Remark
 2.5.0	2.3.2	SupportQuantity	RotationMatrix
 2.5.0	2.3.1	SupportQuantity	SpinPeriod
 2.5.0	2.3.1	SupportQuantity	SpinPhase
@@ -531,8 +532,8 @@ Version	Since	List	Item
 2.5.0	2.3.2	SupportQuantity	Telemetry
 2.5.0	1.2.0	SupportQuantity	Temporal
 2.5.0	1.3.1	SupportQuantity	Velocity
-2.5.0	2.5.0	SupportQuantity	WebResource
-2.5.0	2.5.0	SupportQuantity	WebService
+2.5.0	2.4.1	SupportQuantity	WebResource
+2.5.0	2.4.1	SupportQuantity	WebService
 2.5.0	1.3.4	Text	ASCII
 2.5.0	1.3.4	Text	Unicode
 2.5.0	2.2.5	Uranus	Ariel

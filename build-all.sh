@@ -22,7 +22,7 @@ fi
 
 if [ -z "$versions" ]
 then
-versions=(1.1.0 1.2.0 1.2.1 1.2.2 1.3.0 2.0.0 2.1.0 2.2.0 2.2.1 2.2.2 2.2.4 2.2.6 2.2.8 2.2.9 2.3.0 2.3.1 2.3.2 2.4.0)
+versions=(1.1.0 1.2.0 1.2.1 1.2.2 1.3.0 2.0.0 2.1.0 2.2.0 2.2.1 2.2.2 2.2.4 2.2.6 2.2.8 2.2.9 2.3.0 2.3.1 2.3.2 2.4.0 2.4.1)
 fi
 
 # If suffix is draft, only do specified draft version
@@ -50,7 +50,7 @@ fi
 for ver in "${versions[@]}"
 do
 	echo ${ver}${suffix}
-	node ../../spase-model-tools-node/src/makejson.js -b ${prefix}-${ver} -o ../build/${prefix}-${ver}${suffix}.json 
+	node ../../spase-model-tools-node/src/makejson.js -b ${prefix}-${ver} -o ../build/${prefix}-${ver}${suffix}.json -a ../build/${prefix}-history-${ver}${suffix}.json
 	node ../../spase-model-tools-node/src/makexsd.js -d build/${prefix}-${ver}${suffix}.json -o build/${prefix}-${ver}${suffix}.xsd
 	node ../../spase-model-tools-node/src/makepdf.js -b ${prefix}-${ver}/template -d ../../build/${prefix}-${ver}${suffix}.json -o ../../build/${prefix}-${ver}${suffix}.pdf
 	if [ -n "$shortname" ]	
@@ -68,7 +68,7 @@ suffix="-draft"
 for ver in "${draft[@]}"
 do
 	echo ${ver}${suffix}
-	node ../../spase-model-tools-node/src/makejson.js -b ${prefix}-${ver} -o ../build/${prefix}-${ver}${suffix}.json 
+	node ../../spase-model-tools-node/src/makejson.js -b ${prefix}-${ver} -o ../build/${prefix}-${ver}${suffix}.json -a ../build/${prefix}-history-${ver}${suffix}.json 
 	node ../../spase-model-tools-node/src/makexsd.js -d build/${prefix}-${ver}${suffix}.json -o build/${prefix}-${ver}${suffix}.xsd
 	node ../../spase-model-tools-node/src/makepdf.js -b ${prefix}-${ver}/template -d ../../build/${prefix}-${ver}${suffix}.json -o ../../build/${prefix}-${ver}${suffix}.pdf
 	if [ -n "$shortname" ]	
