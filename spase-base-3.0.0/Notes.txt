@@ -1,0 +1,20 @@
+Missing in Simulation Extensions
+- Not Defined:
+   2DCuts
+   3DCubes
+   Lines
+   Spectra
+   SpatialSeries
+   Planet
+   TestParticle
+   Yes
+   No
+   Test_Particle
+   CutsDescription
+   CubesDescription
+   
+- Change "Test_Particle" to "TestParticle" to be consistent with naming convention.
+
+- Use of CutsDescription and CubesDescription was changed slightly in schema. They were defined as a <Choice>, but the new JSON representation does not support this feature of XML so it was changed for each to be optional.
+
+- Favored the Simulation Extensions definition of Granule.
