@@ -503,7 +503,7 @@ iVersion	Since	List	Item
 2.6.0	2.6.0	SimulationType	MHD
 2.6.0	2.6.0	SimulationType	PIC
 2.6.0	2.6.0	SimulationType	Paraboloid
-2.6.0	2.6.0	SimulationType	Test_Particle
+2.6.0	2.6.0	SimulationType	TestParticle
 2.6.0	1.3.0	SourceType	Ancillary
 2.6.0	1.3.0	SourceType	Browse
 2.6.0	1.3.0	SourceType	Data

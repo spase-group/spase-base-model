@@ -1,4 +1,7 @@
 Version	Since	Term	Type	List	Elements	Attributes	Definition
+2.6.0	2.6.0	1P/Halley	Item				1P/Halley, is a short-period comet visible from Earth every 75¿Äì79 years. The comet was visited by the Halley Armada comprised of the ESA Giotto, Japanese Suisei and Sekigake, and Soviet Union Vega 1 and Vega 2 spacecraft in 1986.
+2.6.0	2.6.0	26P/Grigg-Skjellerup	Item				26P/Grigg¿ÄìSkjellerup is a periodic comet. It was visited by the ESA Giotto spacecraft in July 1992.
+2.6.0	2.6.0	67P/Churyumov-Gerasimenko	Item				67P/Churyumov¿ÄìGerasimenko is a Jupiter-family comet originally from the Kuiper belt. The ESA Rosetta spacecraft rendezvoused with Comet 67P on August 6, 2014 and then orbited the comet from September 10, 2014 to September 30, 2016. Philae, a lander carried by Rosetta, touched down on the comet surface on November 12, 2014.
 2.6.0	2.6.0	2DCuts	Item				TBD
 2.6.0	2.6.0	3DCubes	Item				TBD
 2.6.0	2.6.0	Lines	Item				TBD
@@ -141,6 +144,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.6.0	2.2.5	CSO	Item				Corrected Solar Orbital - A coordinate system related to Earth where X is anti-sunward, Y along the orbital velocity direction.
 2.6.0	2.2.7	CSV	Item				Comma Separated Value - A data exchange format defined by RFC 4180.
 2.6.0	1.2.1	Current	Item				The flow of electrons through a conductor caused by a potential difference.
+2.6.0	2.6.0	CurrentDensity	Item				The amount of current crossing unit cross sectional area perpendicular to the direction of the current.
 2.6.0	1.0.0	Cylindrical	Item				A coordinate representation of a position vector or measured vector (field or flow) by its k-component, the magnitude of its projection into the i-j plane, and the azimuthal angle of the i-j plane projection.
 2.6.0	1.3.1	Data	Item				A collection of organized information, usually the results of experience, observation or experiment, or a set of premises. This may consist of numbers, words, or images, particularly as measurements or observations of a set of variables.
 2.6.0	1.2.0	DataExtent	Container				The area of storage in a file system required to store the contents of a resource. The default units for data extent is bytes.
