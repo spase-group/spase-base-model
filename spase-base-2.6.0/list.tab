@@ -33,7 +33,7 @@ Version	Since	Name	Type	Reference	Description
 2.6.0	1.3.5	MixedQuantity	Closed		Identifiers for the combined attributes of a mixed parameter quantity.
 2.6.0	1.0.0	NearSurface	Closed		Identifiers for regions of the gaseous and possibly ionized environment of a body extending from the surface to some specified altitude.
 2.6.0	2.2.5	Neptune	Closed		Identifiers for the regions surrounding the planet Neptune.
-2.6.0	2.6.0	ParameterQuantity	Union	FieldQuantity, ParticleQuantity, MeasurementType, ParticleType, DirectionAngle, MixedQuantity, SpectralRange, WaveQuantity, WaveType, InstrumentType, ProcCoeffType, ProcessType, Product, SupportQuantity	Identifiers for all types of parameter quantities
+2.6.0	2.6.0	ParameterQuantity	Union	DirectionAngle,FieldQuantity,InstrumentType,MeasurementType,MixedQuantity,ParticleQuantity,ParticleType,ProcCoeffType,ProcessType,Product,SpectralRange,SupportQuantity,WaveQuantity,WaveType	Identifiers for all types of parameter quantities
 2.6.0	1.1.0	ParticleQuantity	Closed		Identifiers for the characterization of the physical properties of the particle.
 2.6.0	1.0.0	ParticleType	Closed		Identifiers for the characterization of the kind of particle observed by the measurement.
 2.6.0	1.0.0	PhenomenonType	Closed		Identifiers for the characteristics or categorization of an observation. Note: Joe King to provide.
@@ -47,9 +47,9 @@ Version	Since	Name	Type	Reference	Description
 2.6.0	2.2.0	RenderingAxis	Closed		Identifiers for the reference component of a plot or rendering of data.
 2.6.0	1.0.0	Role	Closed		Identifiers for the assigned or assumed function or position of an individual.
 2.6.0	2.2.5	Saturn	Closed		Identifiers for the regions surrounding the planet Saturn.
-2.6.0	2.6.0	SavedQuantity	Union	FieldQuantity, ParticleQuantity, MixedQuantity, WaveQuantity, Product	Quantities that are saved during a given diagnosis.
+2.6.0	2.6.0	SavedQuantity	Union	FieldQuantity,MixedQuantity,ParticleQuantity,Product,WaveQuantity	Quantities that are saved during a given diagnosis.
 2.6.0	1.3.1	ScaleType	Closed		Identifiers for scaling applied to a set of numbers.
-2.6.0	2.6.0	SimulatedRegion	Union	Region, SpecificSimulatedRegion	Identifiers for areas of the physical world which may be occupied or observed.
+2.6.0	2.6.0	SimulatedRegion	Union	Region,SpecificSimulatedRegion	Identifiers for areas of the physical world which may be occupied or observed.
 2.6.0	2.6.0	SimulationType	Closed		A characterization of the numerical scheme used in the simulation.
 2.6.0	1.3.1	SourceType	Closed		Identifiers for the characterization of the function or purpose of a source.
 2.6.0	2.6.0	SpecificSimulatedRegion	Closed		Identifiers for areas of the physical world which may be occupied or observed.
