@@ -1,4 +1,4 @@
-Version	Since	Type	Description
+#Version	Since	Type	Description
 2.6.0	2.6.0	Boundary	Parameters that define a region in space.
 2.6.0	1.1.0	Container	A container of other elements. If "Container" is specified the element must have sub-elements specified.
 2.6.0	1.1.0	Count	A whole number.
