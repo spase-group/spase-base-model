@@ -593,7 +593,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.6.0	1.2.0	PriorID	Text				The resource identifier for a resource that is superseded or replaced by a resource.
 2.6.0	1.3.4	Probable	Item				Likely given the available evidence. Considered in the range of 4-7 on a scale of 0-10.
 2.6.0	2.5.0	ProcessCoefficient	Text				Coefficient associated to a chemical process.
-2.6.0	2.5.0	ProcessCoeffType	Enumeration	ProcCoefType			Whether the simulation results are obtained from a stationary solution or are dynamically computed.
+2.6.0	2.5.0	ProcessCoeffType	Enumeration	ProcCoeffType			Whether the simulation results are obtained from a stationary solution or are dynamically computed.
 2.6.0	1.2.0	ProcessingLevel	Enumeration	ProcessingLevel			The standard classification of the processing performed on the product.
 2.6.0	2.5.0	ProcessModel	Text				Model used to describe a chemical process.
 2.6.0	2.5.0	ProcessType	Enumeration	ProcessType			Type of chemical process.
