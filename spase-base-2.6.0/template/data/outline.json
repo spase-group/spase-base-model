@@ -1,0 +1,43 @@
+{
+	"chapters": [
+		{ "id": "executive", "title": "1. Executive Summary" },
+		{ "id": "introduction", "title": "2. Introduction",
+			"chapters" : [
+				{ "id": "intro.development", "title": "2.1. History of Development" },
+				{ "id": "intro.purpose", "title": "2.2. Intended Purpose" },
+				{ "id": "intro.principles", "title": "2.3. Design Principles" },
+				{ "id": "intro.concept", "title": "2.4. Conceptual System" }
+			]
+		},
+		{ "id": "model", "title": "3. Model Overview",
+			"chapters" : [
+				{ "id": "model.types", "title": "3.1. Resource Types",
+					"chapters": [
+						{ "id": "model.types.data", "title": "3.2.1. Data Resources" },
+						{ "id": "model.types.origin", "title": "3.2.2. Origination Resources" },
+						{ "id": "model.types.infrastructure", "title": "3.2.3. Infrastructure Resources" },
+						{ "id": "model.types.ontology", "title": "3.2.4. Ontology Resources" }
+					]
+				},
+				{ "id": "model.id", "title": "3.2. Resource Identifiers" },
+				{ "id": "model.core", "title": "3.3. Core Attributes" },
+				{ "id": "model.markup", "title": "3.4. Text Markup",
+					"chapters": [
+						{ "id": "model.markup.normalization", "title": "3.4.1. Normalization Rules" },
+						{ "id": "model.markup.interpret", "title": "3.4.1. Interpretation Rules" }
+					]
+				},
+				{ "id": "model.extensions", "title": "3.5. Extensions" }
+			]
+		},
+		{ "id": "guidelines", "title": "4. Guidelines for Metadata Descriptions" },
+		{ "id": "examples", "title": "5. Examples" },
+		{ "id": "datatypes", "title": "6. Data Types" },
+		{ "id": "enumerations", "title": "7. Enumerations" },
+		{ "id": "tree", "title": "8. Data Model Tree"},
+		{ "id": "dictionary", "title": "9. Dictionary" },
+		{ "id": "history", "title": "10. History" },
+		{ "id": "biblio", "title": "11. Bibliography" },
+		{ "id": "appendix.a", "title": "12. Appendix A - Comparison of Spectrum Domains" }
+	]
+}
