@@ -1,7 +1,7 @@
 Version	Since	Term	Type	List	Elements	Attributes	Definition
-2.6.0	2.6.0	1P/Halley	Item				1P/Halley, is a short-period comet visible from Earth every 75¿Äì79 years. The comet was visited by the Halley Armada comprised of the ESA Giotto, Japanese Suisei and Sekigake, and Soviet Union Vega 1 and Vega 2 spacecraft in 1986.
-2.6.0	2.6.0	26P/Grigg-Skjellerup	Item				26P/Grigg¿ÄìSkjellerup is a periodic comet. It was visited by the ESA Giotto spacecraft in July 1992.
-2.6.0	2.6.0	67P/Churyumov-Gerasimenko	Item				67P/Churyumov¿ÄìGerasimenko is a Jupiter-family comet originally from the Kuiper belt. The ESA Rosetta spacecraft rendezvoused with Comet 67P on August 6, 2014 and then orbited the comet from September 10, 2014 to September 30, 2016. Philae, a lander carried by Rosetta, touched down on the comet surface on November 12, 2014.
+2.6.0	2.6.0	1P-Halley	Item				1P/Halley, is a short-period comet visible from Earth every 75¿Äì79 years. The comet was visited by the Halley Armada comprised of the ESA Giotto, Japanese Suisei and Sekigake, and Soviet Union Vega 1 and Vega 2 spacecraft in 1986.
+2.6.0	2.6.0	26P-Grigg-Skjellerup	Item				26P/Grigg¿ÄìSkjellerup is a periodic comet. It was visited by the ESA Giotto spacecraft in July 1992.
+2.6.0	2.6.0	67P-Churyumov-Gerasimenko	Item				67P/Churyumov¿ÄìGerasimenko is a Jupiter-family comet originally from the Kuiper belt. The ESA Rosetta spacecraft rendezvoused with Comet 67P on August 6, 2014 and then orbited the comet from September 10, 2014 to September 30, 2016. Philae, a lander carried by Rosetta, touched down on the comet surface on November 12, 2014.
 2.6.0	2.6.0	2DCuts	Item				TBD
 2.6.0	2.6.0	3DCubes	Item				TBD
 2.6.0	2.6.0	Lines	Item				TBD
