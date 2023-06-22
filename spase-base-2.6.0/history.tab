@@ -321,7 +321,7 @@
 320	2.5.0	2022-07-21	T.King	Add Collection, Member, and MemberID to dictionary; Add Collection resouorce to model;	Per L. Bargatze, A. Roberts and T. King emails, and discussion during telecon on 2022-04-28.
 321	2.5.0	2022-08-29	T.King	Add AccessInformation to Collection;	Per Seiji and discussion during telecon on 2022-08-29.
 322	2.5.0	2022-08-29	T.King	Released.	Decided during the telecon on 2022-08-29.
-323	2.6.0	2023-06-15	L.Bargatze	Merge the Simulation 1.0.0 SPASE Model Extensions with the SPASE 2.5.0 Base Model. Four simulation related SPASE resource types added: SimulationModel, SimulationRun, DisplayOutput, and NumericalOutput. Merged Bas annd Simulation definitions for Property.	Concensus to alloe add the Simulation Extensions to the SPASE Base Model
-324	2.6.0	2023-06-15	L.Bargatze	Update the Destription of Current under FieldQuantity and add Current under ParticleQuantity. Add CurrentDensiity under both FieldQuantity and ParticleQuantity.	Perr Shing F. Fung and Vincent Genot
+323	2.6.0	2023-06-15	L.Bargatze	Merge the Simulation 1.0.0 SPASE Model Extensions with the SPASE 2.5.0 Base Model. Four simulation related SPASE resource types added: SimulationModel, SimulationRun, DisplayOutput, and NumericalOutput. Merged Bas annd Simulation definitions for Property.	Concensus to add the Simulation Extensions to the SPASE Base Model
+324	2.6.0	2023-06-15	L.Bargatze	Update the Destription of Current under FieldQuantity and add Current under ParticleQuantity. Add CurrentDensiity under both FieldQuantity and ParticleQuantity.	Per Shing F. Fung and Vincent Genot
 325	2.6.0	2023-06-15	L.Bargatze	Add the Comet Enumeration List including three members	Per Daniele Boucon via Shing F. Fung
 326	2.6.0	2023-06-15	L.Bargatze	Add AccessInformtion to the Software SPASE resource type	Per Shing F. Fung
