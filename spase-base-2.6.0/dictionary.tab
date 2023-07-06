@@ -143,7 +143,7 @@ Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.6.0	1.0.0	CrossSpectrum	Item				The Fourier transform of the cross correlation of two physical or empirical observations.
 2.6.0	2.2.5	CSO	Item				Corrected Solar Orbital - A coordinate system related to Earth where X is anti-sunward, Y along the orbital velocity direction.
 2.6.0	2.2.7	CSV	Item				Comma Separated Value - A data exchange format defined by RFC 4180.
-2.6.0	1.2.1	Current	Item				The flow of electrons through a conductor caused by a potential difference.
+2.6.0	1.2.1	Current	Item				A vector measure of total net charge carried by electrons and ions moving in a given direction through a volume of space per unit time.
 2.6.0	2.6.0	CurrentDensity	Item				The amount of current crossing unit cross sectional area perpendicular to the direction of the current.
 2.6.0	1.0.0	Cylindrical	Item				A coordinate representation of a position vector or measured vector (field or flow) by its k-component, the magnitude of its projection into the i-j plane, and the azimuthal angle of the i-j plane projection.
 2.6.0	1.3.1	Data	Item				A collection of organized information, usually the results of experience, observation or experiment, or a set of premises. This may consist of numbers, words, or images, particularly as measurements or observations of a set of variables.
