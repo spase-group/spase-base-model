@@ -76,8 +76,8 @@ Do the same for the SPASE School.
 Managing the SPASE data model database.
 
 All database operations are performed with SQL commands.
-To run an SQL command first set the default directory to 
-the one containing the SQL scripts then login to the 
+To run an SQL command first set the default directory to
+the one containing the SQL scripts then login to the
 MySQL database server.
 
 %> cd tools/database
@@ -92,7 +92,7 @@ Then perform one of the following tasks.
 Loading data into the database, clearing existing definitions first.
 Note: You need to edit "clearversion.sql" to make sure it operates on
       the right version.
-      
+
 mysql> source clearversion.sql;
 mysql> source dataload.sql;
 

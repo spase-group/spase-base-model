@@ -524,7 +524,7 @@ iVersion	Since	List	Item
 2.6.0	1.1.0	SpectralRange	FarUltraviolet
 2.6.0	1.1.0	SpectralRange	GammaRays
 2.6.0	1.2.1	SpectralRange	Halpha
-2.6.0	1.1.0	SpectralRange	HardXrays
+2.6.0	1.1.0	SpectralRange	HardXRays
 2.6.0	1.2.1	SpectralRange	He10830
 2.6.0	1.1.0	SpectralRange	He304
 2.6.0	1.1.0	SpectralRange	Infrared

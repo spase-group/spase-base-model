@@ -1,902 +1,575 @@
 <html>
-    <head>
-        <style>{#asset ./css/main.css @encoding=utf8}</style>
-		<style>{#asset ./css/dictionary.css @encoding=utf8}</style>
-    </head>
-    <body>
-<!-- 
-    we render TOC template twice
-    the first in the main template - this is needed for inner pdf links
-    the second time it is rendered as merge operation in pdf utils - this is needed to for gettign page numbers in TOC
--->
-		{#child toc @template.recipe=html}
-		
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="executive">1. Executive Summary</h1> {{{pdfAddPageItem id="executive"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-Research in Heliophysics requires information from multiple sources 
-which includes data from and about spacecrafts, groundbased 
-observatories, models, simulations and more. The results from research 
-are also invaluable in building up a body of knowledge and need to be 
-available. All the different sources and types of information are 
-considered a "Resource". The Resources exist, are shared, exchanged and 
-used in a framework called the "data environment". The SPASE (Space 
-Physics Archive Search and Extract) group has defined a Data Model 
-which is a set of terms and values along with the relationships between 
-them that allow describing all the resources in a heliophysics data 
-environment.  It is the result of many years of effort by an 
-international collaboration of heliophysicists and information 
-scientists to unify and improve on existing Space and Solar Physics 
-data models.  The intent of this Data Model is to provide the means to 
-describe resources, most importantly scientifically useful data 
-products, in a uniform way so they may be easily registered, found, 
-accessed, and used.
-</p>
-<p>
-The Data Model provides enough detail to allow a scientist to understand 
-the content of Data Products (e.g., a set of files for 3 second 
-resolution Geotail magnetic field data for1992 to 2005), together with 
-essential retrieval and contact information. It also allows for the 
-incremental annotation of resources with expert assessments and the free 
-association of resources to create bundles or networks of resources. 
-Resource descriptions can be stored with the data or at remote 
-locations. Sites can harvest the resource descriptions to enable 
-services like a search engine or portal (Virtual Observatory). A typical 
-use would be to have a collection of descriptions stored in one or more 
-related internet-based registries of products; that can be queried with 
-specifically designed search engines and ultimately link users to the 
-data they need. The Data Model also provides constructs for describing 
-components of such a data delivery system. This includes repositories, 
-registries and services.
-</p>
-<p>
-The SPASE group website is located at https://www.spase-group.org/
-</p>
-<p>
-A PDF version of this document can be downloaded from the SPASE site.
-</p>
-</div> <!-- Chapter -->
 
-	<div style='page-break-before: always;'></div>
-	<div class="chapter">
-		<h1 id="introduction">2. Introduction</h1> {{{pdfAddPageItem id="introduction"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The SPASE (Space Physics Archive Search and Extract) Data Model is a set 
-of terms and values along with the relationships between them that allow 
-describing all the resources in a heliophysics data environment.  It is 
-the result of many years of effort by an international collaboration 
-(see https://spase-group.org) to unify and improve on existing Space and 
-Solar Physics data models. The intent of this Data Model is to provide 
-the means to describe resources, most importantly scientifically useful 
-data products, in a uniform way so they may be easily registered, found, 
-accessed, and used.
-</p>
-<p>
-The SPASE data model divides the heliophysics data environment into a 
-limited set of resources types.  A key resource type is Numerical Data. 
-This type of resource typically consists of a set of files containing 
-values of one or more physical variables and that differ from each other 
-only by the time span.   To fully describe a Numerical Data resource 
-requires other types of Resources, namely Observatory, Instrument, 
-Person, and Repository, whose names are self-explanatory, and each of 
-which has its own set of attributes.   Often, numerical data are 
-presented in prepared images (gif or jpeg), and such presentations are 
-referred to as Display Data resources.  The other data related resource 
-types are Catalog which are lists of events; Annotation which enable 
-expert comments on data products; and Granule which describe individual 
-files within another resource (i.e., Numerical  Data, Display Data or 
-Catalog). Other types of resources include Document which  can 
-contain narratives or supporting information; Service that provide 
-software to use data resources; Repository for storage locations; and 
-Registry for metadata collections. Resource descriptions and the links 
-in them are intended to make the Resource useful to scientific users.
-</p>
+   <head>
+      <style>{#asset ./css/main.css @encoding=utf8}</style>
+      <style>{#asset ./css/dictionary.css @encoding=utf8}</style>
+   </head>
 
-<h2 id="intro.development">2.1. History of Development</h2> {{{pdfAddPageItem id="intro.development"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The data model presented here has grown from the efforts begun in 2002 
-that became formalized in regular teleconferences of a group of 
-interested data providers, including scientific and technical 
-representatives of some of the largest data holdings in the US, Europe, 
-and Japan. As the effort to provide seamless access to distributed data 
-proceeded, it became clear that the data model efforts were central. The 
-SPASE Data Model was developed with an iterative process where additions 
-were made when unaddressed needs were discovered. The original impetus 
-occurred at an ISTP meeting in 1998 where a resolution was passed 
-calling to make data more accessible. Interoperability test beds were 
-constructed in 2001 and in 2002 a grassroots effort was undertaken to 
-define the needs of community. In March of 2003 a meeting of many of the 
-people in the Contributors list at the beginning of this document was 
-convened to begin the data model construction in earnest. The initial 
-effort involved collecting terms from CDPP, SWRI, NSSDC, ISTP, and other 
-sets to form a starting point. Two years of teleconferences, e-mailed 
-revisions, and occasional face-to-face efforts, along with the 
-application of the terms to specific cases, led to the release of 
-version 1.0 of the data model in November 2005. Following the release of 
-version 1.0 many existing data products were described and lead to 
-further improvements of the data model. Version1.1 was released in 
-August 2006. At this time NASA established the Heliophysics VxOs and 
-after an extended period of use and improvements version 1.2.2 was 
-released in August of 2008. The version of the data model described in 
-this document is an extension of this earlier release.
-</p>
+   <body>
 
-<h2 id="intro.purpose">2.2. Intended Purpose</h2> {{{pdfAddPageItem id="intro.purpose"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The design of the SPASE data model is based on a core set of principles 
-related to the intended purpose of descriptive information (metadata), 
-the data environment, and the operational environment.  The overall goal 
-of the Data Model is to be able to describe resources using a taxonomy 
-of terms familiar to the heliophysics domain. This taxonomy should 
-provide sufficient scientific context and data content information for 
-an individual to assess the applicability of the resource (data and 
-metadata) to a research question. A data model is the cornerstone of an 
-information system and one purpose for the SPASE Data Model to enable 
-the creation of "Virtual Observatories" that will link the broad range 
-of heliophysics resources which may be available in a loosely coupled 
-distributed environment. Additional goals of the data model are to:
-</p>
+      <!-- We render TOC template twice. The first time in the main template - this is needed for inner pdf links. The second time it is rendered as merge operation in pdf utils - this is needed to for gettign page numbers in TOC. -->
 
-<ol>
-<li>Provide a way of registering products using a standard set of 
-terms that allow the products to be found with simple searches and 
-described so that users can determine their utility for a specific 
-purpose;</li>
+      {#child toc @template.recipe=html}
 
-<li class="top-pad">Allow searching for products containing particular physical 
-quantities (e.g., magnetic field; spectral irradiance) that are 
-variously represented in a diverse array of data products; and </li>
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="executive">1. Executive Summary</h1> {{{pdfAddPageItem id="executive"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Research in Heliophysics requires information from multiple sources which includes data from and about spacecraft, ground-based observatories, models, simulations and more. The results from research are also invaluable in building up a body of knowledge and need to be available. All the different sources and types of information are considered a "Resource". The Resources exist, are shared, exchanged and used in a framework called the "data environment". The SPASE (Space Physics Archive Search and Extract) group has defined a Data Model which is a set of terms and values along with the relationships between them that allow describing all the resources in a heliophysics data environment. It is the result of many years of effort by an international collaboration of heliophysicists and information scientists to unify and improve on existing Space and Solar Physics data models. The intent of this Data Model is to provide the means to describe resources, most importantly scientifically useful data products, in a uniform way so they may be easily registered, found, accessed, and used.</p>
+         <p>The Data Model provides enough detail to allow a scientist to understand the content of Data Products (e.g., a set of files for 3 s resolution Geotail magnetic field data for1992 to 2005), together with essential retrieval and contact information. It also allows for the incremental annotation of resources with expert assessments and the free association of resources to create bundles or networks of resources. Resource descriptions can be stored with the data or at remote locations. Sites can harvest the resource descriptions to enable services like a search engine or portal (Virtual Observatory). A typical use would be to have a collection of descriptions stored in one or more related internet-based registries of products; that can be queried with specifically designed search engines and ultimately link users to the data they need. The Data Model also provides constructs for describing components of such a data delivery system. This includes repositories, registries and services.</p>
+         <p>The SPASE group website is located at <a href=https://www.spase-group.org/>https://www.spase-group.org/</a>. A PDF version of this document can be downloaded from the SPASE site <a href=https://spase-group.org/data/model/spase-2.6.0-draft.pdf>https://spase-group.org/data/model/spase-2.6.0-draft.pdf</a>.</p>
+      </div> <!-- Chapter -->
 
-<li class="top-pad">Facilitate a means of mapping comparable variables from many 
-products onto a common set of terms so that visualization, analysis, and 
-higher-order query tools and services can be used on all of them without 
-regard to the origin of the data. 
-</li>
-</ol>
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="introduction">2. Introduction</h1> {{{pdfAddPageItem id="introduction"}}} <!-- Used for getting page numbers in TOC -->
 
-<p>
-The content of a resource description based on the data model should 
-enable services (either at the provider or in a VxO) to discover and 
-access individual resources. The service layer can contain services for 
-a variety of purposes. The basic functionality of the service layer is 
-to provide the links necessary to connect user applications and search-
-and-retrieval front ends to data repositories. Ultimately, the data 
-environment based on the data model will involve a number of software 
-tools and services linked together as an internet-based environment. The 
-data along with software tools and documentation associated with 
-products will be directly accessible using standard web protocols (http, 
-ftp). This "system" has the potential to provide capabilities that can 
-aid even expert users of a particular dataset (e.g., on-the-fly 
-coordinate transformations, the ability to merge datasets from different 
-instruments, easy reference to related indices or other data), in 
-addition to providing the broad access needed to investigate emerging 
-questions in heliophysics.
-</p>
+         <p>The SPASE (Space Physics Archive Search and Extract) Data Model is a set of terms and values along with the relationships between them that allow describing all the resources in a heliophysics data environment. It is the result of many years of effort by an international collaboration (see https://spase-group.org) to unify and improve on existing Space and Solar Physics data models. The intent of this Data Model is to provide the means to describe resources, most importantly scientifically useful data products, in a uniform way so they may be easily registered, found, accessed, and used.</p>
 
-<h2 id="intro.principles">2.3. Design Principles</h2>  {{{pdfAddPageItem id="intro.principles"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The design of the SPASE data model begins with a few basic principles. These 
-principles are:
-</p>
+         <p>The SPASE data model divides the heliophysics data environment into a limited set of resources types. A key resource type is Numerical Data. This type of resource typically consists of a set of files containing values of one or more physical variables and that differ from each other only by the time span. To fully describe a Numerical Data resource requires other types of Resources, namely Observatory, Instrument, Person, and Repository, whose names are self-explanatory, and each of which has its own set of attributes. Often, numerical data are presented in prepared images (gif or jpeg), and such presentations are referred to as Display Data resources. The other data related resource types are Catalog which are lists of events; Annotation which enable expert comments on data products; and Granule which describe individual files within another resource (i.e., Numerical Data, Display Data or Catalog). Other types of resources include Document which can contain narratives or supporting information; Service that provide software to use data resources; Repository for storage locations; and Registry for metadata collections. Resource descriptions and the links in them are intended to make the Resource useful to scientific users.</p>
+         <h2 id="intro.development">2.1. History of Development</h2> {{{pdfAddPageItem id="intro.development"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The data model presented here has grown from the efforts begun in 2002 that became formalized in regular teleconferences of a group of interested data providers, including scientific and technical representatives of some of the largest data holdings in the US, Europe, and Japan. As the effort to provide seamless access to distributed data proceeded, it became clear that the data model efforts were central. The SPASE Data Model was developed with an iterative process where additions were made when unaddressed needs were discovered. The original impetus occurred at an ISTP meeting in 1998 where a resolution was passed calling to make data more accessible. Interoperability test beds were constructed in 2001 and in 2002 a grassroots effort was undertaken to define the needs of community. In March of 2003 a meeting of many of the people in the Contributors list at the beginning of this document was convened to begin the data model construction in earnest. The initial effort involved collecting terms from CDPP, SWRI, NSSDC, ISTP, and other sets to form a starting point. Two years of teleconferences, e-mailed revisions, and occasional face-to-face efforts, along with the application of the terms to specific cases, led to the release of version 1.0 of the data model in November 2005. Following the release of version 1.0 many existing data products were described and lead to further improvements of the data model. Version1.1 was released in August 2006. At this time NASA established the Heliophysics VxOs and after an extended period of use and improvements version 1.2.2 was released in August of 2008. Later versions of the data model, that is up until version 2.5.0, are each extensions of this earlier release.</p>
+         <p>Starting with version 2.5.0, the SPASE base model has been expanded by incorporation of the SPASE Simulation Extensions. The basis for the SPASE Simulation Extensions were originally developed by the Integrated Medium for Planetary Exploration (IMPEx) project, a European Union (EU) Seventh Framework Programme sponsored project. The SPASE Simulation Extensions, version 1.0.0, were released 2014-05-19 with no subsequent revisions. The Resource Types currently in the simulation extensions are:</p>
+         <p>SimulationRun - Description of a simulation run, including the code ID, the run spatial and temporal description, and all the relevant inputs.</p>
+         <p>SimulationModel - Descriptor of a simulation model: type of numerical scheme, model versions, etc.</p>
+         <p>NumericalOutput - Numerical data generated from a simulation run.</p>
+         <p>DisplayOutput - A graphical representation of data generated from a simulation run.</p>
+         <p>The simulation extensions also override the following Granule and Particle in the base model. The elements within SimulationRun, SimulationModel, NumericalOutput, DisplayOutput are broken down into sub-elements that provide sufficient detail for adequate description of simulation models and of the data sets derived from simulation rruns. The merging of the SPASE Base Model with the SPASE Simulation Extension allows greater interoperability and eases the development of tools such as the SPASE editor <a href=http://xmleditor.spase-group.org>http://xmleditor.spase-group.org</a>, which is a web-based editor for generating SPASE descriptions.</p>
+         <h2 id="intro.purpose">2.2. Intended Purpose</h2> {{{pdfAddPageItem id="intro.purpose"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The design of the SPASE data model is based on a core set of principles related to the intended purpose of descriptive information (metadata), the data environment, and the operational environment. The overall goal of the Data Model is to be able to describe resources using a taxonomy of terms familiar to the heliophysics domain. This taxonomy should provide sufficient scientific context and data content information for an individual to assess the applicability of the resource (data and metadata) to a research question. A data model is the cornerstone of an information system and one purpose for the SPASE Data Model to enable the creation of "Virtual Observatories" that will link the broad range of heliophysics resources which may be available in a loosely coupled distributed environment. Additional goals of the data model are to:</p>
+         <ol>
+            <li>Provide a way of registering products using a standard set of terms that allow the products to be found with simple searches and described so that users can determine their utility for a specific purpose;</li>
+            <li class="top-pad">Allow searching for products containing particular physical quantities (e.g., magnetic field; spectral irradiance) that are variously represented in a diverse array of data products; and</li>
+            <li class="top-pad">Facilitate a means of mapping comparable variables from many products onto a common set of terms so that visualization, analysis, and higher-order query tools and services can be used on all of them without regard to the origin of the data.</li>
+         </ol>
+         <p>The content of a resource description based on the data model should enable services (either at the provider or in a VxO) to discover and access individual resources. The service layer can contain services for a variety of purposes. The basic functionality of the service layer is to provide the links necessary to connect user applications and search-and-retrieval front ends to data repositories. Ultimately, the data environment based on the data model will involve a number of software tools and services linked together as an internet-based environment. The data along with software tools and documentation associated with products will be directly accessible using standard web protocols (http, ftp). This "system" has the potential to provide capabilities that can aid even expert users of a particular dataset (e.g., on-the-fly coordinate transformations, the ability to merge datasets from different instruments, easy reference to related indices or other data), in addition to providing the broad access needed to investigate emerging questions in heliophysics.</p>
+         <h2 id="intro.principles">2.3. Design Principles</h2> {{{pdfAddPageItem id="intro.principles"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The design of the SPASE data model begins with a few basic principles. These principles are:</p>
+         <div class="indent">
+            <div class="bold top-pad">1. Data is self-documented.</div>
+            <div class="indent">
+               <p>Data resources have internal schema or structures for storing values. The physical structure is determined by the storage format. Each retrievable entity on the format is assigned a key or tag which can be used to retrieve the entity.</p>
+               <p>The SPASE Data Model does not attempt to describe the physical storage of the parameters, for example, the byte offsets, record format or data encoding in the data resource. Instead, the SPASE Data Model describes the scientific attributes of the parameter and links this to the parameter by a key or tag used by the storage format. Applications can use the SPASE descriptions to locate a parameter and the appropriate format-specific reader to extract parameters.</p>
+               <p>Not all data in the Heliophysics data environment is stored in self-documented formats. For example, data stored as ASCII tables. The method of assigning a key or tag name for each field in the ASCII table is external to the SPASE data model. This method must be part of an "format" specification which may be as simple as the first row of the table containing the tag name of the field.</p>
+            </div>
+            <div class="bold top-pad">2. Resources are distributed.</div>
+            <div class="indent">
+               <p>There are many providers of resources and these providers can be located anywhere in the world.</p>
+               <p>Each provider operates independently and activities are not necessarily coordinated. The SPASE data model assumes that providers have local autonomy and may operate under local rules or jurisdictions.</p>
+            </div>
+            <div class="bold top-pad">3. Online Resources have Universal Resource Locators (URL)</div>
+            <div class="indent">
+               <p>If a resource is online, it can be accessed and retrieved using Universal Resource Locators (URL).</p>
+            </div>
+            <div class="bold top-pad">4. The data environment is continuously evolving.</div>
+            <div class="indent">
+               <p>New resources are actively generated either as part of an on-going experiment or as a result of analysis and assessment.</p>
+               <p>These new resources may be directly related to other resources. As new resources are generated or new associations defined the network or collections formed will expand over time.</p>
+            </div>
+         </div>
+         <h2 id="intro.concept">2.4. Conceptual System Environment</h2> {{{pdfAddPageItem id="intro.concept"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The data model is intended to enable the sharing of knowledge through structured metadata (SPASE Descriptions) which can be exchanged in queries and responses between systems. The operational environment this occurs in is the current Internet where systems and users are loosely coupled and highly distributed. Special services or portals may harvest (collect) the SPASE descriptions from multiple sources to create an enriched capability for the user. For example, a search engine may provide a comprehensive search for a particular scientific discipline. The web site https://hpde.gsfc.nasa.gov gives a guide to many currently active projects and a great deal of background information. Of particular interest there is the document entitled, "A Framework for Space and Solar Physics Virtual Observatories."</p>
+         <p>Figure 1 illustrates a conceptual architecture in a distributed environment. In this environment multiple communities have resources to share. The storage location of a resource is called a repository. Some of these repositories (boxes) have local SPASE descriptions which are available through a local registry service (balls). The contents of other repositories are described at external, possibly independent, locations which make the descriptions available through remote registries. Gateways (rings) can harvest and aggregate the resources from multiple registries or perform federated searches which provide a single access point to multiple registries. Applications access the registries to discover resources, determine their location and retrieve them from the repositories.</p>
+         <img class="full-center" src="{#asset ./images/arch.png @encoding=dataURI}">
+         <div style='page-break-before: always;'></div>
+         <h1 id="model">3. SPASE Data Model</h1> {{{pdfAddPageItem id="model"}}} <!-- Used for getting page numbers in TOC -->
+         <h2 id="model.types">3.1. Resource Types</h2> {{{pdfAddPageItem id="model.types"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The top-level entity in the SPASE data model is a Resource. There are 12 different types of resources. Each resource type consists of a set of attributes that characterize the resource. The resource types can be divided into three categories: Data Resources, Origination Resources and Infrastructure Resources.</p>
+         <p>This section provides an overview of the resource types. Complete details for each resource can be found in Section 4.</p>
+         <h3 id="model.types.data">3.1.1. Data Resources</h3> {{{pdfAddPageItem id="model.types.data"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Data Resources describe one or more data products. A "data product" is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be high-level entities such as event catalogs. Data products can be images (Display Data), sample or observation values (Numerical Data), event lists (Catalog). Included in the Data Resource category are the resources used to describe individual files (Granule) which are part of data product sets and assessments of a resource (Annotations). The complete list of Data Resources is:</p>
+         <div class="indent top-pad">
+            Numerical Data,<br>
+            Display Data,<br>
+            Catalog,<br>
+            Annotation,<br>
+            Document, and<br>
+            Granule
+         </div>
+         <h3 id="model.types.origin">3.1.2. Origination Resources</h3> {{{pdfAddPageItem id="model.types.origin"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Origination Resources describe the generators or sources of data. Included in a Data Resource description is information about the origination of the data. A Data Resource will refer to one or more Origination Resource. The complete list of Origination Resources is:</p>
+         <div class="indent top-pad">
+            Observatory,<br>
+            Instrument, and<br>
+            Person
+         </div>
+         <h3 id="model.types.infrastructure">3.1.3. Infrastructure Resources</h3> {{{pdfAddPageItem id="model.types.infrastructure"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Infrastructure Resources describe system components that are part of the exchange and use of data. This includes storage locations for data (Repository), metadata (Registry) and functions (Service). The complete list of Infrastructure Resources is:</p>
+         <div class="indent top-pad">
+            Registry,<br>
+            Repository, and<br>
+            Service
+         </div>
+         <h3 id="model.types.ontology">3.1.4. Ontology</h3> {{{pdfAddPageItem id="model.types.ontology"}}} <!-- Used for getting page numbers in TOC -->
+         <p>In the SPASE data model there can be associations between pairs of resources. Some associations are specific and are required in order to fully describe a resource. For example, an Instrument resource is always associated with an Observatory resource. The specific associations form an ontology which is illustrated in Figure 2. The SPASE data model also allows associations of resources which are not explicitly defined in the ontology. These associations are described and assigned a relationship type using generic association attributes.</p>
+         <img class="full-center" src="{#asset ./images/ontology.png @encoding=dataURI}">
+         <br>
+         <br>
+         <br>
+         <h2 id="model.id">3.2. Resource Identifiers</h2> {{{pdfAddPageItem id="model.id"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Every resource has a unique identifier so that it can be tracked and referenced within a system. This identifier is defined by the naming authority for the resource. The entity which acts as the naming authority is determined by the agency or group who provides the resource. Each resource identifier is a URI that has the form:</p>
+         <p>
+            <dd>scheme://authority/path</dd>
+         </p>
+         <p>where "scheme" is "spase" for those resources administered through the SPASE framework, "authority" is the unique identifier for the naming authority within the data environment and "path" is the unique local identifier of the resource within the context of the "authority". The resource ID must be unique within the data environment.</p>
+         <p>To illustrate the definition of a resource identifier consider that there is a registered "authority" called "SMWG" which maintains information for spacecraft (Observatory) resources. One such spacecraft is GOES8. Now "SMWG" decides that the "path" to the GOES8 resource description should include the Resource Type as part of the path and that the observatory "name" will be "GOES8". So, the resource identifier would be:</p>
+         <p>
+            <dd>spase://SMWG/Observatory/GOES8</dd>
+         </p>
+         <p>The Resource ID is used to formally or informally associate one resource with another. For example, an Instrument resource must be formally associated with an Observatory. A Numerical Data resource may be formally associated with an Instrument resource and informally associated with other Numerical Data resources. The free association of resources allows networks or collections to be formed from distributed resources and allows for new associations to be formed as needed without affecting existing associations.</p>
+         <h2 id="model.core">3.3. Core Attributes</h2> {{{pdfAddPageItem id="model.core"}}} <!-- Used for getting page numbers in TOC -->
+         <p>With the exception of Granule and Person, every resource has a common set of core attributes. The core attributes provide textual descriptions of the resource and the capability to reference external sources of information (Information URL). It also describes the context of the resource in the larger data environment. This context consists of associations with other resources (Association) and with previous versions (Prior ID). These attributes are grouped in a Resource Header and consists of:</p>
+         <div class="indent top-pad">
+            Resource Name<br>
+            Alternate Name<br>
+            Release Date<br>
+            Expiration Date<br>
+            Description<br>
+            Acknowledgement<br>
+            Contact<br>
+            Information URL<br>
+            Association<br>
+            Prior ID
+         </div>
+         <h2 id="model.markup">3.4. Text Mark-up</h2> {{{pdfAddPageItem id="model.markup"}}} <!-- Used for getting page numbers in TOC -->
+         <p>While descriptive text may be brief, some formatting of the text may be necessary to convey the necessary information, for example, multiple paragraphs or nested lists. To ensure system portability text values in SPASE are sequences of alphanumeric one-byte UTF-8 (US_ASCII) characters with white space preserved. When text is displayed in some applications (a web browser is the best example) a strict preservation of white space may not result in a desirable presentation. Also, to make the metadata more human readable (for example in XML) additional white space may be introduced in the form of indentation. If strictly preserved, this could result in an undesirable presentation. To allow an author to express a preferred layout for the text, a special set of text "mark-up" rules are defined. The layout can then be determined by normalizing the text and applying a simple set of interpretation rules.</p>
+         <h3 id="text.markup.normalization">3.4.1 Normalization Rules</h3> {{{pdfAddPageItem id="model.markup.normalization"}}} <!-- Used for getting page numbers in TOC -->
+         <p>To aid in determining the layout or structural intent of the author the following rules are to be applied to text to create a normalized form:</p>
+         <ol>
+            <li>All lines are to end with a newline character.</li>
+            <li>All text is left justified. No line has leading whitespace.</li>
+         </ol>
+         <h3 id="model.markup.interpret">Text Interpretation Rules</h3> {{{pdfAddPageItem id="model.markup.interpret"}}} <!-- Used for getting page numbers in TOC -->
+         <p>After normalization of text the following rules can be used to interpret the layout intent of the author.</p>
+         <ol>
+            <li>Blank lines indicate paragraph breaks.</li>
+            <li>Lists
+               <ol>
+                  <li>Must be preceded by a blank line.</li>
+                  <li>Items are indicated by a line beginning with a reserved character followed by a space. Three levels of lists are supported. The reserved characters are:
+                     <div class="top-pad">
+                        * : First level list<br>
+                        - : Second level list (must appear within a first level context)<br>
+                        . : Third level list (must appear within a second level context)
+                     </div>
+                  </li>
+                  <li>End with a blank line.</li>
+               </ol>
+            </li>
+            <li>Tables
+               <ol>
+                   <li>Begin and end with a line that starts with "+--".</li>
+                   <li>The first "row" of a table is the field headings.</li>
+                   <li>Fields in a table are separated with a vertical bar ("|").</li>
+                   <li>Visual row separators are lines which begin with "|--".</li>
+               </ol>
+            </li>
+         </ol>
+         <h2 id="model.extensions">3.5. Extensions</h2> {{{pdfAddPageItem id="model.extensions"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The SPASE Data Model allows for additional metadata to be embedded within a SPASE description. Every Resource Type has an "Extension" element which can contain metadata compliant with other data models. The "Extension" element has a SPASE data model type of "Text", but is not limited to alphanumeric characters and may contain tagged information.</p>
+      </div> <!-- Chapter -->
 
-<div class="indent">
-<div class="bold top-pad">1. Data is self-documented.</div>
-<div class="indent">
-<p>
-Data resources have internal schema or structures for storing values. 
-The physical structure is determined by the storage format. Each 
-retrievable entity on the format is assigned a key or tag which can be 
-used to retrieve the entity. 
-</p>
-<p>
-The SPASE Data Model does not attempt to describe the physical storage 
-of the parameters, for example, the byte offsets, record format or data 
-encoding in the data resource. Instead, the SPASE Data Model describes 
-the scientific attributes of the parameter and links this to the 
-parameter by a key or tag used by the storage format. Applications can 
-use the SPASE descriptions to locate a parameter and the appropriate 
-format-specific reader to extract parameters.
-</p>
-<p>
-Not all data in the Heliophysics data environment is stored in self-
-documented formats. For example, data stored as ASCII tables. The method 
-of assigning a key or tag name for each field in the ASCII table is 
-external to the SPASE data model. This method must be part of an 
-"format" specification which may be as simple as the first row of the 
-table containing the tag name of the field.
-</p>
-</div>
+      <div style='page-break-before: always;'></div>
+      <div class="guidelines">
+         <h1 id="guidelines">4. Guidelines for Metadata Descriptions</h1> {{{pdfAddPageItem id="guidelines"}}} <!-- Used for getting page numbers in TOC -->
+         <p>The following sections describe the details of the SPASE Data Model, especially the metadata used to describe data. There is a richness in the available metadata that allows very detailed descriptions of products. Many of the types of metadata may not apply in your case or you may not need much detail to adequately describe your data holdings. But it must be remembered that the better data are described, the easier they will be to use.</p>
+         <p>To determine what level of detail is needed, we recommend considering not only what the user needs to find the correct data, but also what is necessary to know if the data will be useful for the requestor's purpose. The user might get this information by contacting you, but if the data were moved somewhere else and only the data description were available to determine the utility of the data, consider if the user would have sufficient information to know if this is the right data set and what problems might be associated with the use of these data. Also consider if additional documentation is necessary. If so, create n Document resource and associate it with the data resource. An "InformationURL" may also be used to provide links to more detailed information.</p>
+         <p>In summary, products need not be described in minute detail, but users will need, at minimum, information for assessing what the data products represent and where to find them. Of course, it is also useful to include information on how the data can be applied and common pitfalls in their use, but the first need is to make the products usefully visible.</p>
+      </div> <!-- Chapter -->
 
-<div class="bold top-pad">2. Resources are distributed.</div>
-<div class="indent">
-<p>
-There are many providers of resources and these providers can be located 
-anywhere in the world.
-</p>
-<p>
-Each provider operates independently and activities are not necessarily 
-coordinated. The SPASE data model assumes that providers have local 
-autonomy and may operate under local rules or jurisdictions.
-</p>
-</div>
-
-<div class="bold top-pad">3. Online Resources have Universal Resource Locators (URL)</div>
-<div class="indent">
-<p>
-If a resource is on-line it can be accessed and retrieved using 
-Universal Resource Locators (URL).
-</p>
-</div>
-
-<div class="bold top-pad">4. The data environment is continuously evolving.</div>
-<div class="indent">
-<p>
-New resources are actively generated either as part of an on-going 
-experiment or as a result of analysis and assessment.
-</p>
-<p>
-These new resources may be directly related to other resources. As new 
-resources are generated or new associations defined the network or 
-collections formed will expand over time.
-</p>
-</div>
-</div>
-
-<h2 id="intro.concept">2.4. Conceptual System Environment</h2> {{{pdfAddPageItem id="intro.concept"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The data model is intended to enable the sharing of knowledge through 
-structured metadata (SPASE Descriptions) which can be exchanged in 
-queries and responses between systems. The operational environment this 
-occurs in is the current Internet where systems and users are loosely 
-coupled and highly distributed. Special services or portals may harvest 
-(collect) the SPASE descriptions from multiple sources to create an 
-enriched capability for the user. For example, a search engine may 
-provide a comprehensive search for a particular scientific discipline. 
-The web site https://hpde.gsfc.nasa.gov gives a guide to many currently 
-active projects and a great deal of background information. Of 
-particular interest there is the document entitled, "A Framework for 
-Space and Solar Physics Virtual Observatories." 
-</p>
-<p>
-Figure 1 illustrates a conceptual architecture in a distributed 
-environment. In this environment multiple communities have resources to 
-share. The storage location of a resource is called a repository. Some 
-of these repositories (boxes) have local SPASE descriptions which are 
-available through a local registry service (balls). The contents of 
-other repositories are described at external, possibly independent, 
-locations which make the descriptions available through remote 
-registries. Gateways (rings) can harvest and aggregate the resources 
-from multiple registries or perform federated searches which provide a 
-single access point to multiple registries. Applications access the 
-registries to discover resources, determine their location and retrieve 
-them from the repositories.
-</p>
-<img class="full-center" src="{#asset ./images/arch.png @encoding=dataURI}">
-
-<div style='page-break-before: always;'></div>
-<h1 id="model">3. SPASE Data Model</h1> {{{pdfAddPageItem id="model"}}} <!-- Used for getting page numbers in TOC -->
-<h2 id="model.types">3.1. Resource Types</h2>  {{{pdfAddPageItem id="model.types"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The top level entity in the SPASE data model is a Resource. There are 12 
-different types of resources. Each resource type consists of a set of 
-attributes that characterize the resource. The resource types can be 
-divided into three categories: Data Resources, Origination Resources and 
-Infrastructure Resources.
-</p>
-<p>
-This section provides an overview of the 
-resource types. Complete details for each resource can be found in 
-Section 4.
-</p>
-
-<h3 id="model.types.data">3.1.1. Data Resources</h3>  {{{pdfAddPageItem id="model.types.data"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-Data Resources describe one or more data products. 
-A "data product" is a set of data that is uniformly processed and formatted, 
-from one or more instruments, typically spanning the full duration of the 
-observations of the relevant instrument(s). A data product may consist of a 
-collection of granules of successive time spans, but may be high-level 
-entities such as event catalogs.
-Data products can be images (Display Data), sample or observation values 
-(Numerical Data), event lists (Catalog). Included in the Data Resource 
-category are the resources used to describe individual files (Granule) 
-which are part of data product sets and assessments of a resource 
-(Annotations). The complete list of Data Resources is:
-</p>
-
-<div class="indent top-pad">
-	Numerical Data,<br>
-	Display Data,<br>
-	Catalog,<br>
-	Annotation,<br>
-	Document, and<br>
-	Granule
-</div>
-
-<h3 id="model.types.origin">3.1.2. Origination Resources</h3>  {{{pdfAddPageItem id="model.types.origin"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-Origination Resources describe the generators or sources of data. 
-Included in a Data Resource description is information about the 
-origination of the data. A Data Resource will refer to one or more 
-Origination Resource. The complete list of Origination Resources is:
-</p>
-
-<div class="indent top-pad">
-	Observatory,<br>
-	Instrument, and<br>
-	Person
-</div>
-
-<h3 id="model.types.infrastructure">3.1.3. Infrastructure Resources</h3>  {{{pdfAddPageItem id="model.types.infrastructure"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-Infrastructure Resources describe system components that are part of the 
-exchange and use of data. This includes storage locations for data 
-(Repository), metadata (Registry) and functions (Service). The complete 
-list of Infrastructure Resources is:
-</p>
-
-<div class="indent top-pad">
-	Registry,<br>
-	Repository, and<br>
-	Service
-</div>
-
-<h3 id="model.types.ontology">3.1.4. Ontology</h3>  {{{pdfAddPageItem id="model.types.ontology"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-In the SPASE data model there can be associations between 
-pairs of resources. Some associations are specific and are required
-in order to fully describe a resource. For example, an Instrument
-resource is always associated with an Observatory resource.
-The specific associations form an ontology which is illustrated 
-in Figure 2. The SPASE data model also allows associations of
-resources which are not explicitly defined in the ontology. These
-associations are described and assigned a relationship type using
-generic association attributes.
-</p>
-
-<img class="full-center" src="{#asset ./images/ontology.png @encoding=dataURI}">
-
-<h2 id="model.id">3.2. Resource Identifiers</h2>  {{{pdfAddPageItem id="model.id"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-Every resource has a unique identifier so that it can be tracked and 
-referenced within a system. This identifier is defined by the naming 
-authority for the resource. The entity which acts as the naming 
-authority is determined by the agency or group who provides the 
-resource. Each resource identifier is a URI that has the form 
-</p>
-
-<p>
-<dd>
-scheme://authority/path
-</dd>
-</p>
-
-<p>
-where "scheme" is "spase" for those resources administered through the 
-SPASE framework, "authority" is the unique identifier for the naming 
-authority within the data environment and "path" is the unique local 
-identifier of the resource within the context of the "authority". The 
-resource ID must be unique within the data environment.
-</p>
-<p>
-To illustrate the definition of a resource identifier consider that 
-there is a registered "authority" called "SMWG" which maintains 
-information for spacecraft (Observatory) resources. One such spacecraft 
-is GOES8. Now "SMWG" decides that the "path" to the GOES8 resource description
-should  include the Resource Type as part of the path and that the observatory "name"
-will be "GOES8". So, the resource identifier would be:
-</p>
-
-<p>
-<dd>
-spase://SMWG/Observatory/GOES8
-</dd>
-</p>
-
-<p>
-The Resource ID is used to formally or informally associate one resource 
-with another. For example an Instrument resource must be formally 
-associated with an Observatory. A Numerical Data resource may be 
-formally associated with an Instrument resource and informally 
-associated with other Numerical Data resources. The free association of 
-resources allows networks or collections to be formed from distributed 
-resources and allows for new associations to be formed as needed without 
-affecting existing associations.
-</p>
-
-<p>
-<h2 id="model.core">3.3. Core Attributes</h2> {{{pdfAddPageItem id="model.core"}}} <!-- Used for getting page numbers in TOC -->
-With the exception of Granule and Person, every resource has a common 
-set of core attributes.  The core attributes provide textual 
-descriptions of the resource and the capability to reference external 
-sources of information (Information URL). It also describes the context 
-of the resource in the larger data environment. This context consists of 
-associations with other resources (Association) and with previous 
-versions (Prior ID). These attributes are grouped in a Resource Header 
-and consists of:
-</p>
-
-<div class="indent top-pad">
-	Resource Name<br>
-	Alternate Name<br>
-	Release Date<br>
-	Expiration Date<br>
-	Description<br>
-	Acknowledgement<br>
-	Contact<br>
-	Information URL<br>
-	Association<br>
-	Prior ID
-</div>
-
-<h2 id="model.markup">3.4. Text Mark-up</h2> {{{pdfAddPageItem id="model.markup"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-While descriptive text may be brief, some formatting of the text may be 
-necessary to convey the necessary information, for example, multiple 
-paragraphs or nested lists. To ensure system portability text values in 
-SPASE are sequences of alphanumeric one byte UTF-8 (US_ASCII) characters 
-with white space preserved. When text is displayed in some applications 
-(a web browser is the best example) a strict preservation of white space 
-may not result in a desirable presentation. Also, to make the metadata 
-more human readable (for example in XML) additional white space may be 
-introduced in the form of indentation. If strictly preserved, this could 
-result in an undesirable presentation. To allow an author to express a 
-preferred layout for the text, a special set of text "mark-up" rules are 
-defined. The layout can then be determined by normalizing the text and 
-applying a simple set of interpretation rules.
-</p>
-
-<h3 id="text.markup.normalization">3.4.1 Normalization Rules</h3>  {{{pdfAddPageItem id="model.markup.normalization"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-To aid in determining the layout or structural intent of the author the 
-following rules are to be applied to text to create a normalized form:
-</p>
-
-<ol>
-<li>All lines are to end with a newline character.</li>
-<li>All text is left justified. No line has leading whitespace.</li>
-</ol>
-
-<h3 id="model.markup.interpret">Text Interpretation Rules</h3>  {{{pdfAddPageItem id="model.markup.interpret"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-After normalization of text the following rules can be used to interpret 
-the layout intent of the author.
-</p>
-
-<ol>
-<li>Blank lines indicate paragraph breaks.</li>
-<li>Lists
-	<ol>
-	<li>Must be preceded by a blank line.</li>
-	<li>Items are indicated by a line beginning with a reserved character 
-		followed by a space. Three levels of lists are supported. The reserved 
-		characters are:
-		<div class="top-pad">
-			* : First level list<br>
-			- : Second level list (must appear within a first level context)<br>
-			. : Third level list (must appear within a second level context)
-		</div>
-	</li>
-	<li>End with a blank line.</li>
-	</ol>
-</li>
-<li>Tables 
-	<ol>
-		<li>Begin and end with a line that starts with "+--".</li>
-		<li>The first "row" of a table is the field headings.</li>
-		<li>Fields in a table are separated with a vertical bar ("|").</li>
-		<li>Visual row separators are lines which begin with "|--".</li>
-	</ol>
-</li>
-</ol>
-
-<h2 id="model.extensions">3.5. Extensions</h2> {{{pdfAddPageItem id="model.extensions"}}} <!-- Used for getting page numbers in TOC -->
-<p>
-The SPASE Data Model allows for additional metadata to be embedded 
-within a SPASE description. Every Resource Type has an "Extension" 
-element which can contain metadata compliant with other data models. The 
-"Extension" element has a SPASE data model type of "Text", but is not 
-limited to alphanumeric characters and may contain tagged information.
-</p>
-
-</div> <!-- chapter -->
-
-<div style='page-break-before: always;'></div>
-<div class="guidelines">
-<h1 id="guidelines">4. Guidelines for Metadata Descriptions</h1> {{{pdfAddPageItem id="guidelines"}}} <!-- Used for getting page numbers in TOC -->
-
-<p>
-The following sections describe the details of the SPASE Data Model, 
-especially the metadata used to describe data. There is a richness in 
-the available metadata that allows very detailed descriptions of 
-products. Many of the types of metadata may not apply in your case or 
-you may not need much detail to adequately describe your data holdings. 
-But it must be remembered that the better data are described, the easier 
-they will be to use.
-</p>
-<p>
-To determine what level of detail is needed, we recommend considering 
-not only what the user needs to find the correct data, but also what is 
-necessary to know if the data will be useful for the requestor's purpose. 
-The user might get this information by contacting you, but if the data 
-were moved somewhere else and only the data description were available 
-to determine the utility of the data, consider if the user would have sufficient 
-information to know if this is the right data set and what problems 
-might be associated with the use of these data. Also consider if 
-additional documentation is neccesary and if so create an Document
-resource and associate it with the data resource.
-An "Information URL" may also be used to provide links to more 
-detailed information. 
-</p>
-<p>
-In summary, products need not be described in minute detail, but users 
-will need, at minimum, information for assessing what the data products 
-represent and where to find them. Of course it is also useful to 
-include information on how the data can be applied and common 
-pitfalls in their use, but the first need is to make the products 
-usefully visible.
-</p>
-
-</div> <!-- chapter -->
-
-<div style='page-break-before: always;'></div>
-<div class="examples">
-<h1 id="examples">5. Examples</h1> {{{pdfAddPageItem id="examples"}}} <!-- Used for getting page numbers in TOC -->
-
-<p>
-As an example let us describe a person using SPASE metadata. This person is "John Smith" 
-from Smith Foundation. 
-While the SPASE data model is implementation neutral, XML representation is preferred. 
-This example uses the SPASE XML form.
-</p>
-<p>
-<pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; 
- &lt;Spase&gt;
-   &lt;Version&gt;2.0.0&lt;/Version&gt;
-    &lt;Person&gt;
-      &lt;ResourceID&gt;spase://person/jsmith@smith.org&lt;/ResourceID&gt;
+      <div style='page-break-before: always;'></div>
+      <div class="examples">
+         <h1 id="examples">5. Examples</h1> {{{pdfAddPageItem id="examples"}}} <!-- Used for getting page numbers in TOC -->
+         <p>As an example, let us describe a person using SPASE metadata. This person is "John Smith" from Smith Foundation. While the SPASE data model is implementation neutral, XML representation is preferred. This example uses the SPASE XML form.</p>
+         <p>
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;Spase&gt;
+   &lt;Version&gt;2.6.0&lt;/Version&gt;
+   &lt;Person&gt;
+      &lt;ResourceID&gt;spase://Person/jsmith@smith.org&lt;/ResourceID&gt;
       &lt;PersonName&gt;John Smith&lt;/PersonName&gt;
       &lt;OrganizationName&gt;Smith Foundation&lt;/OrganizationName&gt;
       &lt;Address&gt;1 Main St., Smithville, MA&lt;/Address&gt;
       &lt;Email&gt;jsmith@smith.org&lt;/Email&gt;
       &lt;PhoneNumber&gt;1-800-555-1212&lt;/PhoneNumber&gt;
    &lt;/Person&gt;
- &lt;/Spase&gt;
-</pre>
-</p>
-<p>
-For a more extensive example let us consider a collection of numerical data from the magnetometer 
-on the ACE spacecraft. This data set has been averaged to 1 minute intervals (cadence) 
-and spans the beginning of the mission to the end of 2004 (1997-09-01 through 2004-12-31). 
-The ACE spacecraft orbits the L1 point between the Earth and the Sun. While the SPASE data model
-is implementation neutral, XML representation is preferred. This example uses the SPASE XML form.
-The presented URLs are fictitious and will not direct you to the actual data.
-</p>
-<p>
-<pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; 
- &lt;Spase&gt;
-   &lt;Version&gt;2.0.0&lt;/Version&gt;
+&lt;/Spase&gt;
+            </pre>
+         </p>
+         <p>Now, let us consider a collection of observations from the magnetometer on the ACE spacecraft, which was placed into a Lissajous orbit about the L1 Lagrange point 2004-12-31). This data set has been averaged to produce a time series with 1 min resolution (cadence), which spans the time interval from the beginning of the mission to the end of 2004 (1997-09-01 to 2004-12-31). A data product such as this is best described by using the SPASE NumericalData resource type as recommended in section 3.1.1 above. This example NumericalData description XML format. And while the SPASE data model is implementation neutral, the XML representation is preferred. Note that the presented URLs are fictitious and will not direct you to the actual data.</p>
+         <p>
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;Spase&gt;
+   &lt;Version&gt;2.6.0&lt;/Version&gt;
    &lt;NumericalData&gt;
       &lt;ResourceID&gt;spase://VMO/NumericalData/ACE/MAG/200301&lt;/ResourceID&gt;
       &lt;ResourceHeader&gt;
          &lt;ResourceName&gt;ACEMAG200301&lt;/ResourceName&gt;
          &lt;ReleaseDate&gt;2006-07-26T00:00:00.000&lt;/ReleaseDate&gt;
-         &lt;Acknowledgement&gt;                                             
-            User will acknowledge the data producer and instrument P.I. in any     
-            publication resulting from the use of these data.
-         &lt;/Acknowledgement&gt;
-       &lt;Description&gt;
-          ACE MFI 1-minute averaged magnetic-field data in GSE coordinates
-          from Jan 2003. These data have been derived from the 16 second 
-          resolution ACE MFI which were linearly interpolated to a 1-minute 
-          time grid with time stamps at second zero of each minute.
-       &lt;/Description&gt;
-       
-       &lt;Contact&gt;
-          &lt;Role&gt;PrincipalInvestigator&lt;/Role&gt;
-          &lt;PersonID&gt;spase://SMWG/Person/Norman.F.Ness&lt;/PersonID&gt;
-       &lt;/Contact&gt;
-     
-       &lt;Contact&gt;
-          &lt;Role&gt;Co-Investigator&lt;/Role&gt;
-          &lt;PersonID&gt;spase://SMWG/Person/Charles.Smith&lt;/PersonID&gt;
-       &lt;/Contact&gt;
-     
-       &lt;Contact&gt;
-          &lt;Role&gt;DataProducer&lt;/Role&gt;
-          &lt;PresonID&gt;spase://SMWG/Person/James.M.Weygand&lt;/PresonID&gt;
-       &lt;/Contact&gt;
-    &lt;/ResourceHeader&gt;
-    
-    &lt;AccessInformation&gt;
-       &lt;AccessRights&gt;Open&lt;/AccessRights&gt;
-       &lt;AccessURL&gt;
-          &lt;URL&gt;http://www.igpp.ucla.edu/getResource?format=text&amp;id=spase://UCLA/ACEMAG200301&lt;/URL&gt;
-       &lt;/AccessURL&gt;
-       &lt;Format&gt;Text&lt;/Format&gt;
-       &lt;Encoding&gt;GZIP&lt;/Encoding&gt;
-    &lt;/AccessInformation&gt;
-  
-    &lt;InstrumentID&gt;spase://SMWG/ACE/MAG&lt;/InstrumentID&gt;
-    &lt;MeasurementType&gt;MagneticField&lt;/MeasurementType&gt;
-   
-    &lt;TemporalDescription&gt;
-       &lt;TimeSpan&gt;
-         &lt;StartDate&gt;1997-01-01T00:00&lt;/StartDate&gt;
-         &lt;StopDate&gt;2004-01-31T23:59&lt;/StopDate&gt;
-       &lt;/TimeSpan&gt;
-       &lt;Cadence&gt;PT1M&lt;/Cadence&gt;
-    &lt;/TemporalDescription&gt;
-  
-    &lt;InstrumentRegion&gt;Heliosphere.NearEarth&lt;/InstrumentRegion&gt;
-    &lt;ObservedRegion&gt;Heliosphere.NearEarth&lt;/ObservedRegion&gt;
-  
-    &lt;Parameter&gt;
-       &lt;Name&gt;SAMPLE_TIME_UTC&lt;/Name&gt;
-       &lt;ParameterKey&gt;time&lt;/ParameterKey&gt;
-       &lt;Description&gt;
-        Sample UTC in the form DD MM YYYY hh mm ss where
-          DD   = day of month (01-31)
-          MM   = month of year (01-12)
-          YYYY = Gregorian Year AD
-          hh   = hour of day     (00:23)
-          mm   = minute of hour  (00-59)
-          ss   = second of minute (00-60).
-       &lt;/Description&gt;
-       &lt;Support&gt;
-         &lt;SupportQuantity&gt;Temporal&lt;/SupportQuantity&gt;
-       &lt;/Support&gt;
-    &lt;/Parameter&gt;
-  
-    &lt;Parameter&gt;
-       &lt;Name&gt;MAGNETIC_FIELD_VECTOR&lt;/Name&gt;
-       &lt;Units&gt;nT&lt;/Units&gt;
-       &lt;CoordinateSystem&gt;
-          &lt;CoordinateRepresentation&gt;Cartesian&lt;/CoordinateRepresentation&gt;
-          &lt;CoordinateSystemName&gt;GSE&lt;/CoordinateSystemName&gt;
-       &lt;/CoordinateSystem&gt;
-       &lt;Description&gt;
-           Magnetic field vector in GSE Coordinates (Bx, By, Bz).
-       &lt;/Description&gt;
-       &lt;Field&gt;
-          &lt;Qualifier&gt;Vector&lt;/Qualifier&gt;
-          &lt;FieldQuantity&gt;Magnetic&lt;/FieldQuantity&gt;
-      &lt;/Field&gt;
-    &lt;/Parameter&gt;
-  
-    &lt;Parameter&gt;
-       &lt;Name&gt;SPACECRAFT_POSITION_VECTOR&lt;/Name&gt;
-       &lt;CoordinateSystem&gt;
-          &lt;CoordinateRepresentation&gt;Cartesian&lt;/CoordinateRepresentation&gt;
-          &lt;CoordinateSystemName&gt;GSE&lt;/CoordinateSystemName&gt;
-       &lt;/CoordinateSystem&gt;
-       &lt;Units&gt;EARTH RADII&lt;/Units&gt;
-       &lt;UnitsConversion&gt;6378.16 km&lt;/UnitsConversion&gt;
-       &lt;Description&gt;
-          ACE spacecraft location in GSE coordinates (X,Y,Z).&quot;
-       &lt;/Description&gt;
-       &lt;Support&gt;
-         &lt;SupportQuantity&gt;Positional&lt;/SupportQuantity&gt;
-       &lt;/Support&gt;
-    &lt;/Parameter&gt;
-
+         &lt;Acknowledgement&gt;User will acknowledge the data producer and the instrument
+                          principal investigator in any publication resulting from the
+                          use of these data.&lt;/Acknowledgement&gt;
+         &lt;Description&gt;ACE MFI 1 min averaged magnetic-field data in GSE coordinates.
+                      These data were derived from the 16 s observations that were linearly
+                      interpolated to derive a time series with time stamps at second zero
+                      of each minute.&lt;/Description&gt;
+         &lt;Contact&gt;
+            &lt;PersonID&gt;spase://SMWG/Person/Norman.F.Ness&lt;/PersonID&gt;
+            &lt;Role&gt;PrincipalInvestigator&lt;/Role&gt;
+         &lt;/Contact&gt;
+         &lt;Contact&gt;
+            &lt;PersonID&gt;spase://SMWG/Person/Charles.Smith&lt;/PersonID&gt;
+            &lt;Role&gt;Co-Investigator&lt;/Role&gt;
+         &lt;/Contact&gt;
+         &lt;Contact&gt;
+            &lt;PresonID&gt;spase://SMWG/Person/James.M.Weygand&lt;/PresonID&gt;
+            &lt;Role&gt;DataProducer&lt;/Role&gt;
+         &lt;/Contact&gt;
+      &lt;/ResourceHeader&gt;
+      &lt;AccessInformation&gt;
+         &lt;AccessRights&gt;Open&lt;/AccessRights&gt;
+         &lt;AccessURL&gt;
+            &lt;URL&gt;http://www.igpp.ucla.edu/getResource?format=text&amp;id=ACEMAG200301&lt;/URL&gt;
+         &lt;/AccessURL&gt;
+         &lt;Format&gt;Text&lt;/Format&gt;
+         &lt;Encoding&gt;GZIP&lt;/Encoding&gt;
+      &lt;/AccessInformation&gt;
+      &lt;InstrumentID&gt;spase://SMWG/ACE/MAG&lt;/InstrumentID&gt;
+      &lt;MeasurementType&gt;MagneticField&lt;/MeasurementType&gt;
+      &lt;TemporalDescription&gt;
+         &lt;TimeSpan&gt;
+            &lt;StartDate&gt;1997-01-01T00:00&lt;/StartDate&gt;
+            &lt;StopDate&gt;2004-01-31T23:59&lt;/StopDate&gt;
+         &lt;/TimeSpan&gt;
+         &lt;Cadence&gt;PT1M&lt;/Cadence&gt;
+      &lt;/TemporalDescription&gt;
+      &lt;InstrumentRegion&gt;Heliosphere.NearEarth&lt;/InstrumentRegion&gt;
+      &lt;ObservedRegion&gt;Heliosphere.NearEarth&lt;/ObservedRegion&gt;
+      &lt;Parameter&gt;
+         &lt;Name&gt;SAMPLE_TIME_UTC&lt;/Name&gt;
+         &lt;ParameterKey&gt;time&lt;/ParameterKey&gt;
+         &lt;Description&gt;
+            Sample UTC in the form DD MM YYYY hh mm ss where
+               DD   = day of month      (01-31)
+               MM   = month of year     (01-12)
+               YYYY = Gregorian Year AD
+               hh   = hour of day       (00:23)
+               mm   = minute of hour    (00-59)
+               ss   = second of minute  (00-60)
+         &lt;/Description&gt;
+         &lt;Support&gt;
+            &lt;SupportQuantity&gt;Temporal&lt;/SupportQuantity&gt;
+         &lt;/Support&gt;
+      &lt;/Parameter&gt;
+      &lt;Parameter&gt;
+         &lt;Name&gt;MAGNETIC_FIELD_VECTOR&lt;/Name&gt;
+         &lt;Units&gt;nT&lt;/Units&gt;
+         &lt;CoordinateSystem&gt;
+            &lt;CoordinateRepresentation&gt;Cartesian&lt;/CoordinateRepresentation&gt;
+            &lt;CoordinateSystemName&gt;GSE&lt;/CoordinateSystemName&gt;
+         &lt;/CoordinateSystem&gt;
+         &lt;Description&gt;Magnetic field vector, GSE Coordinates (Bx,By,Bz)&lt;/Description&gt;
+         &lt;Field&gt;
+            &lt;Qualifier&gt;Vector&lt;/Qualifier&gt;
+            &lt;FieldQuantity&gt;Magnetic&lt;/FieldQuantity&gt;
+         &lt;/Field&gt;
+      &lt;/Parameter&gt;
+      &lt;Parameter&gt;
+         &lt;Name&gt;SPACECRAFT_POSITION_VECTOR&lt;/Name&gt;
+         &lt;CoordinateSystem&gt;
+            &lt;CoordinateRepresentation&gt;Cartesian&lt;/CoordinateRepresentation&gt;
+            &lt;CoordinateSystemName&gt;GSE&lt;/CoordinateSystemName&gt;
+         &lt;/CoordinateSystem&gt;
+         &lt;Units&gt;EARTH RADII&lt;/Units&gt;
+         &lt;UnitsConversion&gt;6378.16 km&lt;/UnitsConversion&gt;
+         &lt;Description&gt;ACE spacecraft location, GSE coordinates (X,Y,Z)&lt;/Description&gt;
+         &lt;Support&gt;
+            &lt;SupportQuantity&gt;Positional&lt;/SupportQuantity&gt;
+         &lt;/Support&gt;
+      &lt;/Parameter&gt;
    &lt;/NumericalData&gt;
- &lt;/Spase&gt;
-</pre>
-</p>
-</div>
+&lt;/Spase&gt;
+                                                                                                   
+            </pre>
+         </p>
+      </div>
 
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-		<h1 id="datatypes">6. Element Data Types</h1> {{{pdfAddPageItem id="datatypes"}}} <!-- Used for getting page numbers in TOC -->
-		<p>
-		Each element in the SPASE Data Model has a data type. One design feature 
-		of the SPASE data model is that an element can contain either a value or 
-		other elements. Mixed content (elements and values) are not allowed. 
-		This allows the data model to be implemented in a wider range of 
-		metadata languages. The following data types are supported:
-		</p>
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="datatypes">6. Element Data Types</h1> {{{pdfAddPageItem id="datatypes"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Each element in the SPASE Data Model has a data type. One design feature of the SPASE data model is that an element can contain either a value or other elements. Mixed content (elements and values) is not allowed. This allows the data model to be implemented in a wider range of metadata languages. Note that the SPASE DateTime and Duration type elements must be populated by text that complies with the ISO 8601 international standard for date and time representations (other ISO 8601 informational URLs appear in the Bibliography below. The following SPASE model data types are supported:</p>
+         {{#each data.type}}
+            <div id="{{type}}" class="indent top-pad">
+               <b>{{type}}</b>
+               <div class="indent">{{definition}}</div>
+            </div>
+         {{/each}}
+      </div> <!-- Chapter -->
 
-		{{#each data.type}}
-		<div id="{{type}}" class="indent top-pad">
-			<b>{{type}}</b>
-			<div class="indent">{{definition}}</div>
-		</div>
-		{{/each}}
-		</div> <!-- chapter -->
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="enumerations">7. Enumerations</h1> {{{pdfAddPageItem id="enumerations"}}} <!-- Used for getting page numbers in TOC -->
+         <p>Enumeration lists are either "open" or "closed". The list members in a closed enumeration list are stipulated by the SPASE model and the definition for all closed list members are compiled in the SPASE data dictionary. The items in an open enumeration list are determined by an external control authority. The URL for the control authority is indicated in the definition of each open list.</p>
+         {{#each data.list}}
+            <div class="indent top-pad">
+               <b>{{name}}</b>
+               <div class="indent">{{definition}}</div>
+               <div class="indent top-pad">Allowed Values:
+                  {{#each (array @root/data/member name) }}
+                     <div class="indent">
+                        <a href="#{{item}}">{{item}}</a>
+                     </div>
+                  {{/each}}
+               </div>
+            </div>
+         {{/each}}
+      </div> <!-- Chapter -->
 
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="enumerations">7. Enumerations</h1> {{{pdfAddPageItem id="enumerations"}}} <!-- Used for getting page numbers in TOC -->
-			<p>
-			Lists are either "open" or "closed". The items in a "closed" list are determined by the SPASE model 
-			and definitions of each item is in the SPASE data dictionary. The items in an "open" list are 
-			determined by an external control authority. The URL for the control authority is indicated in the definition
-			of each "open" list.
-			</p>
-			{{#each data.list}}
-			<div class="indent top-pad">
-				<b>{{name}}</b>
-				<div class="indent">{{definition}}</div>
-				<div class="indent top-pad">Allowed Values:
-					{{#each (array @root/data/member name) }}
-						<div class="indent"><a href="#{{item}}">{{item}}</a></div>
-					{{/each}}
-				</div>
-			</div>
-			{{/each}}
-		</div> <!-- Chapter -->
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="tree">8. Data Model Tree</h1> {{{pdfAddPageItem id="tree"}}} <!-- Used for getting page numbers in TOC -->
+         <div>The taxonomy tree shows the inter-relationship of elements in the data model. This provides a "big picture" view of the SPASE data model. The taxonomy is implementation neutral. Details for each element are contained in the SPASE data dictionary.</div>
+         <div class="top-pad">Notes: Occurence specifications are enclosed in parenthesis: 0 = optional, 1 = required, * = zero or more, + = 1 or more</div>
+         <div class="top-pad"></div>
+         {{#each (buildTree data.ontology "Spase" "1" "+") }}
+            <div class="whitespace">{{prefix}} <a href="#{{name}}">{{name}}</a> ({{occurrence}})</div>
+         {{/each}}
+      </div> <!-- Chapter -->
 
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="tree">8. Data Model Tree</h1> {{{pdfAddPageItem id="tree"}}} <!-- Used for getting page numbers in TOC -->
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="dictionary">9. Dictionary</h1> {{{pdfAddPageItem id="dictionary"}}} <!-- Used for getting page numbers in TOC -->
+         <b>How to Read a Definition</b>
+         Each element has certain attributes and context that set how they should be used. The details for each element are presented in the following form:
+         <img class="full-center" src="{#asset ./images/card.png @encoding=dataURI}">
+         {{#each data.dictionary}}
+            <div id="{{term}}" class="entry-container">
+               <table class="entry">
+                  <tr>
+                     <td class="term">{{term}}</td>
+                     <td class="type">
+                        <a href="#{{type}}">{{type}}</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="definition" colspan="2">
+                        {{definition}}
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <table>
+                           <tr>
+                              <td width="40">&nbsp;</td>
+                              <td id="since" class="nowrap">Since:{{since}}</td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  {{#if allowedValues}}
+                     <tr>
+                        <td colspan="2">
+                           <table>
+                              <tr>
+                                 <td width="40">&nbsp;</td>
+                                 <td>
+                                    <table>
+                                       {{#each allowedValues}}
+                                          <tr>
+                                             <td class="nowrap">{{#if @first}}Allowed Values{{/if}}</td>
+                                             <td>
+                                                <a href="#{{this}}">{{this}}</a>
+                                             </td>
+                                          </tr>
+                                       {{/each}}
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  {{/if}}
+                  {{#if subElements}}
+                     <tr>
+                        <td colspan="2">
+                        <table>
+                           <tr>
+                              <td width="40">&nbsp;</td>
+                              <td>
+                                 <table>
+                                    {{#each subElements}}
+                                       <tr>
+                                          <td class="nowrap">
+                                             {{#if @first}}Sub-elements{{/if}}
+                                          </td>
+                                          <td>
+                                             <a href="#{{this}}">{{this}}</a>
+                                          </td>
+                                       </tr>
+                                    {{/each}}
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  {{/if}}
+                  <tr>
+                     <td colspan="2">
+                        <table>
+                           <tr>
+                              <td width="40">&nbsp;</td>
+                              <td>
+                                 <table>
+                                    {{#each usedBy}}
+                                       <tr>
+                                          <td class="nowrap">
+                                             {{#if @first}}Used by:{{/if}}
+                                          </td>
+                                          <td>
+                                             <a href="#{{this}}">{{this}}</a>
+                                          </td>
+                                       </tr>
+                                    {{/each}}
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         {{/each}}
+      </div> <!-- Chapter -->
 
-			<div>The taxonomy tree shows the inter-relationship of elements in the data model. 
-			This provides a "big picture" view of the SPASE data model. This taxonomy is implementation
-			neutral. Details for each element are contained in the data dictionary. 
-			</div>
-			<div class="top-pad">
-			Notes: Occurence specifications are enclosed in parenthesis: 0 = optional, 1 = required, * = zero or more, + = 1 or more
-			</div>
-			<div class="top-pad"></div>
-			{{#each (buildTree data.ontology "Spase" "1" "+") }}
-			<div class="whitespace">{{prefix}} <a href="#{{name}}">{{name}}</a>  ({{occurrence}})</div>	
-			{{/each}}
-			
-		</div> <!-- Chapter -->
-		
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="dictionary">9. Dictionary</h1> {{{pdfAddPageItem id="dictionary"}}} <!-- Used for getting page numbers in TOC -->
-			<b>How to Read a Definition</b>
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="history">10. History</h1> {{{pdfAddPageItem id="history"}}} <!-- Used for getting page numbers in TOC -->
+         {{#each (group data.history "version")}}
+            <table class="entry">
+               <tr>
+                  <td class="term">{{title}}</td>
+                  <td class="type"></td>
+               </tr>
+            </table>
+            <table>
+               {{#each entry}}
+                  <tr>
+                     <td nowrap>{{updated}}</td>
+                     <td class="left-pad">{{description}}</td>
+                  </tr>
+               {{/each}}
+            </table>
+         {{/each}}
+      </div> <!-- Chapter -->
 
-			Each element has certain attributes and context for use. The details 
-			for each element are presented in the following form:
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="biblio">11. Bibliography</h1> {{{pdfAddPageItem id="biblio"}}} <!-- Used for getting page numbers in TOC -->
+         <br>
+         <p>
+            <dt>
+               <b>URI template specification for file and directory naming conventions</b>
+            </dt>
+            <dd>
+               <p>
+                  URI Template Standard (draft) hosted on the HAPI server Github
+                  <br>
+                  <a href=https://github.com/hapi-server/uri-templates/wiki/Specification>https://github.com/hapi-server/uri-templates/wiki/Specification</a>
+               </p>
+               <p>
+                  URI Template Standard (draft) hosted by Autoplot
+                  <br>
+                  <a href=http://autoplot.org/uri_templates>http://autoplot.org/uri_templates</a>
+               </p>
+            </dd>
+         </p>
+         <br>
+         <p>
+            <dt>
+               <b>ISO 8602 Date and time - Representations for information interchange</b>
+            </dt>
+            <dd>
+               <p>
+                  ISO 8601 Wikipedia page
+                  <br>
+                  <a href=https://en.wikipedia.org/wiki/ISO_8601>https://en.wikipedia.org/wiki/ISO_8601</a>
+               </p>
+               <p>
+                  ISO 8601-1:2019 Part 1: Basic rules
+                  <br>
+                  <a href=https://www.iso.org/en/contents/data/standard/07/09/70907.html>https://www.iso.org/en/contents/data/standard/07/09/70907.html</a>
+               </p>
+               <p>
+                  ISO 8601-2:2019 Part 2: Extensions
+                  <br>
+                  <a href=https://www.iso.org/en/contents/data/standard/07/09/70908.html>https://www.iso.org/en/contents/data/standard/07/09/70908.html</a>
+               </p>
+               <p>
+                  Request for Comments 3339 (RFC 3339) for Dates and Time on the Internet written by the Network Working Group forming the basis for ISO 8601
+                  <br>
+                  <a href=http://www.ietf.org/rfc/rfc3339.txt>http://www.ietf.org/rfc/rfc3339.txt</a>
+               </p>
+            </dd>
+         </p>
+         <br>
+         <p>
+            <dt>
+               <b>International System of Units (SI) hosted by the Bureau des Poids et Mesures</b>
+            </dt>
+            <dd>
+               <p>
+                  BIPM International System of Units (SI) homepage
+                  <br>
+                  <a href=https://www.bipm.org/en/-/si>https://www.bipm.org/en/-/si</a>
+               </p>
+               <p>
+                  Base units:
+                  <br>
+                  <a href=https://www.bipm.org/en/measurement-units/si-base-units>https://www.bipm.org/en/measurement-units/si-base-units</a>
+               </p>
+               <p>
+                  The International System of Units (SI) Brochure - PDF file in English
+                  <br>
+                  <a href=https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf>https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf</a>
+               </p>
+               <p>
+                  The International System of Units (SI) Brochure - PDF file in French
+                  <br>
+                  <a href=https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf>https://www.bipm.org/documents/20126/41483022/SI-Brochure-9.pdf</a>
+               </p>
+            </dd>
+         </p>
+         <br>
+         <p>
+            <dt>
+               <b>Request for Comments 1014 (RFC 1014) - XDR: External Data Representation standard</b>
+            </dt>
+            <p>
+               <dd>
+                  <a href=http://www.faqs.org/rfcs/rfc1014.html>http://www.faqs.org/rfcs/rfc1014.html</a>
+               </dd>
+            </p>
+         </p>
+         <br>
+         <p>
+            <dt>
+               <b>Glossary of Solar-Terrestrial Physics Terms hosted by the NOAA National Centers for Environmental Information (NCEI)</b>
+            </dt>
+            <p>
+               <dd>
+                  <a href=https://www.ngdc.noaa.gov/stp/glossary/glossary.html>https://www.ngdc.noaa.gov/stp/glossary/glossary.html</a>
+               </dd>
+            </p>
+         </p>
+      </div> <!-- Chapter -->
 
-			<img class="full-center" src="{#asset ./images/card.png @encoding=dataURI}">
-			
-			{{#each data.dictionary}}
-				<div id="{{term}}" class="entry-container">
-				<table class="entry">
-				<tr>
-					<td class="term">{{term}}</td>
-					<td class="type"><a href="#{{type}}">{{type}}</a></td>
-				</tr>
-				<tr>
-					<td class="definition" colspan="2">{{definition}}</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<table><tr><td width="40">&nbsp;</td><td id="since" class="nowrap">Since:{{since}}</td></tr></table>
-					</td>
-				</tr>
-				{{#if allowedValues}}
-				<tr>
-					<td colspan="2">
-					<table>
-						<tr>
-							<td width="40">&nbsp;</td>
-							<td>
-								<table>
-								{{#each allowedValues}}
-									<tr><td class="nowrap">{{#if @first}}Allowed Values{{/if}}</td><td><a href="#{{this}}">{{this}}</a></td></tr>
-								{{/each}}
-								</table>
-							</td>
-						</tr>
-					</table>
-					</td>
-				</tr>
-				{{/if}}
-				{{#if subElements}}
-				<tr>
-					<td colspan="2">
-						<table>
-							<tr>
-								<td width="40">&nbsp;</td>
-								<td>
-									<table>
-									{{#each subElements}}
-										<tr><td class="nowrap">{{#if @first}}Sub-elements{{/if}}</td><td><a href="#{{this}}">{{this}}</a></td></tr>
-									{{/each}}
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				{{/if}}
-				<tr>
-					<td colspan="2">
-						<table>
-							<tr>
-								<td width="40">&nbsp;</td>
-								<td>
-									<table>
-									{{#each usedBy}}
-										<tr><td class="nowrap">{{#if @first}}Used by:{{/if}}</td><td><a href="#{{this}}">{{this}}</a></td></tr>
-									{{/each}}
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				</table>
-				</div>
-			{{/each}}
-		</div> <!-- Chapter -->
+      <div style='page-break-before: always;'></div>
+      <div class="chapter">
+         <h1 id="appendix.a">12. Appendix A - Comparison of Spectral Domains</h1> {{{pdfAddPageItem id="appendix.a"}}} <!-- Used for getting page numbers in TOC -->
+         <img class="full-center" src="{#asset ./images/spectrum.png @encoding=dataURI}">
+      </div> <!-- Chapter -->
 
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="history">10. History</h1> {{{pdfAddPageItem id="history"}}} <!-- Used for getting page numbers in TOC -->
-			{{#each (group data.history "version")}}
-				<table class="entry">
-				<tr>
-					<td class="term">{{title}}</td>
-					<td class="type"></td>
-				</tr>
-				</table>
-				<table>
-				{{#each entry}}
-					<tr><td nowrap>{{updated}}</td><td class="left-pad">{{description}}</td></tr>
-				{{/each}}
-				</table>
-			{{/each}}
-			</table>
-			
-		</div> <!-- Chapter -->
-
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="biblio">11. Bibliography</h1> {{{pdfAddPageItem id="biblio"}}} <!-- Used for getting page numbers in TOC -->
-			<dt>National Solar Observatory Sacramento Peak </dt>
-			<dd><a href=http://www.sunspot.noao.edu/sunspot/pr/glossary.html>http://www.sunspot.noao.edu/sunspot/pr/glossary.html</a></dd>
-
-			<dt>Terms and Definitions</dt>
-			<dd><a href=http://www.pgd.hawaii.edu/eschool/glossary.htm>http://www.pgd.hawaii.edu/eschool/glossary.htm</a></dd>
-
-			<dt>International System of Units (SI)</dt>
-			<dd><a href=http://www.bipm.fr/en/si>http://www.bipm.fr/en/si</a><br>
-			Base units:  
-			<a href=http://www.bipm.fr/en/si/si_brochure/chapter2/2-1/#symbols>http://www.bipm.fr/en/si/si_brochure/chapter2/2-1/#symbols</a>
-			<br>
-			and those for Common derived units:  
-			<a href=http://www.bipm.fr/en/si/derived_units/2-2-2.html>http://www.bipm.fr/en/si/derived_units/2-2-2.html</a>
-			</dd>
-
-			<dt>ISO 8601:2004 - Date Format</dt>
-			<dd><a href=http://en.wikipedia.org/wiki/ISO_8601>http://en.wikipedia.org/wiki/ISO_8601</a>
-			<br>
-			- or -
-			<br>
-			<a href=http://www.iso.ch/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=40874>http://www.iso.ch/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=40874</a>
-			<br>
-			- or -
-			<br>
-			<a href=http://www.iso.org/iso/en/prods-services/popstds/datesandtime.html>http://www.iso.org/iso/en/prods-services/popstds/datesandtime.html</a>
-			</dd>
-
-			<dt>RFC 3339 - Date and Time on the Internet</dt>
-			<dd>
-				The basis for the ISO 8601 standard.
-			<a href=http://www.iso.org/iso/en/prods-services/popstds/datesandtime.html>http://www.ietf.org/rfc/rfc3339.txt</a>
-			</dd>
-
-			<dt>RFC 1014 - XDR: External Data Representation standard</dt>
-			<dd>
-			<a href=http://www.faqs.org/rfcs/rfc1014.html>http://www.faqs.org/rfcs/rfc1014.html</a>
-			</dd>
-		</div> <!-- Chapter -->
-		
-		<div style='page-break-before: always;'></div>
-		<div class="chapter">
-			<h1 id="appendix.a">12. Appendix A - Comparison of Spectrum Domains</h1> {{{pdfAddPageItem id="appendix.a"}}} <!-- Used for getting page numbers in TOC -->
-			<img class="full-center" src="{#asset ./images/spectrum.png @encoding=dataURI}">
-		</div> <!-- Chapter -->
-		
-	</body>
+   </body>
 </html>
