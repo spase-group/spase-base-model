@@ -108,18 +108,18 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	DisplayOutput	ProviderResourceName	05	0		
 2.6.0	2.6.0	DisplayOutput	ProviderProcessingLevel	06	0		
 2.6.0	2.6.0	DisplayOutput	ProviderVersion	07	0		
-2.6.0	2.6.0	DisplayOutput	SimulatedInstrumentID	08	*		
+2.6.0	2.6.0	DisplayOutput	ModeledInstrumentID	08	*		
 2.6.0	2.6.0	DisplayOutput	MeasurementType	09	+		
 2.6.0	2.6.0	DisplayOutput	TemporalDescription	10	0	SpacialTemporalEntity	
 2.6.0	2.6.0	DisplayOutput	SpatialDescription	11	0	SpacialTemporalEntity	
 2.6.0	2.6.0	DisplayOutput	SpectralRange	12	*		
 2.6.0	2.6.0	DisplayOutput	DisplayCadence	13	0		
-2.6.0	2.6.0	DisplayOutput	SimulatedRegion	14	*		
+2.6.0	2.6.0	DisplayOutput	ModeledRegion	14	*		
 2.6.0	2.6.0	DisplayOutput	Caveats	15	0		
 2.6.0	2.6.0	DisplayOutput	Keyword	16	*		
 2.6.0	2.6.0	DisplayOutput	InputResourceID	17	*		
 2.6.0	2.6.0	DisplayOutput	Parameter	18	*		
-2.6.0	2.6.0	DisplayOutput	SimulationProduct	19	0		
+2.6.0	2.6.0	DisplayOutput	ModelProduct	19	0		
 2.6.0	2.6.0	DisplayOutput	Property	20	*		
 2.6.0	2.6.0	DisplayOutput	Extension	21	0		
 2.6.0	1.3.0	Document	ResourceID	01	1		
@@ -184,7 +184,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	InputField	ParameterKey	03	0		
 2.6.0	2.6.0	InputField	Description	04	0		
 2.6.0	2.6.0	InputField	Caveats	05	0		
-2.6.0	2.6.0	InputField	SimulatedRegion	06	*		
+2.6.0	2.6.0	InputField	ModeledRegion	06	*		
 2.6.0	2.6.0	InputField	CoordinateSystem	07	0		
 2.6.0	2.6.0	InputField	Qualifier	08	*		
 2.6.0	2.6.0	InputField	FieldQuantity	09	1		
@@ -200,7 +200,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	InputParameter	Name	01	1		
 2.6.0	2.6.0	InputParameter	Description	02	0		
 2.6.0	2.6.0	InputParameter	Caveats	03	0		
-2.6.0	2.6.0	InputParameter	SimulatedRegion	04	*		
+2.6.0	2.6.0	InputParameter	ModeledRegion	04	*		
 2.6.0	2.6.0	InputParameter	Qualifier	05	*		
 2.6.0	2.6.0	InputParameter	InputTableURL	05	*		
 2.6.0	2.6.0	InputParameter	ParameterQuantity	07	0		
@@ -210,7 +210,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	InputPopulation	ParameterKey	03	0		
 2.6.0	2.6.0	InputPopulation	Description	04	0		
 2.6.0	2.6.0	InputPopulation	Caveats	05	0		
-2.6.0	2.6.0	InputPopulation	SimulatedRegion	06	*		
+2.6.0	2.6.0	InputPopulation	ModeledRegion	06	*		
 2.6.0	2.6.0	InputPopulation	Qualifier	07	*		
 2.6.0	2.6.0	InputPopulation	ParticleType	08	0		
 2.6.0	2.6.0	InputPopulation	ChemicalFormula	09	0		
@@ -231,7 +231,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	InputProcess	ParameterKey	03	0		
 2.6.0	2.6.0	InputProcess	Description	04	0		
 2.6.0	2.6.0	InputProcess	Caveats	05	0		
-2.6.0	2.6.0	InputProcess	SimulatedRegion	06	*		
+2.6.0	2.6.0	InputProcess	ModeledRegion	06	*		
 2.6.0	2.6.0	InputProcess	ProcessType	07	1		
 2.6.0	2.6.0	InputProcess	Units	08	0		
 2.6.0	2.6.0	InputProcess	UnitsConversion	09	0		
@@ -277,8 +277,8 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	1.3.5	Mixed	MixedQuantity	01	1		
 2.6.0	1.3.6	Mixed	ParticleType	02	*		
 2.6.0	1.3.5	Mixed	Qualifier	03	*		
-2.6.0	2.6.0	Model	ModelID	01	0		
-2.6.0	2.6.0	Model	VersionTag	02	0		
+2.6.0	2.6.0	ModelSpecification	ModelID	01	0		
+2.6.0	2.6.0	ModelSpecification	VersionTag	02	0		
 2.6.0	2.6.0	ModelVersion	VersionTag	01	0		
 2.6.0	2.6.0	ModelVersion	ReleaseDate	02	1		
 2.6.0	2.6.0	ModelVersion	Description	03	0		
@@ -309,17 +309,17 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	NumericalOutput	ProviderResourceName	05	0		
 2.6.0	2.6.0	NumericalOutput	ProviderProcessingLevel	06	0		
 2.6.0	2.6.0	NumericalOutput	ProviderVersion	07	0		
-2.6.0	2.6.0	NumericalOutput	SimulatedInstrumentID	08	*		
+2.6.0	2.6.0	NumericalOutput	ModeledInstrumentID	08	*		
 2.6.0	2.6.0	NumericalOutput	MeasurementType	09	+		
 2.6.0	2.6.0	NumericalOutput	TemporalDescription	10	0	SpatialTemporalEntity	
 2.6.0	2.6.0	NumericalOutput	SpatialDescription	11	0	SpatialTemporalEntity	
 2.6.0	2.6.0	NumericalOutput	SpectralRange	12	*		
-2.6.0	2.6.0	NumericalOutput	SimulatedRegion	13	*		
+2.6.0	2.6.0	NumericalOutput	ModeledRegion	13	*		
 2.6.0	2.6.0	NumericalOutput	Caveats	14	0		
 2.6.0	2.6.0	NumericalOutput	Keyword	15	*		
 2.6.0	2.6.0	NumericalOutput	InputResourceID	16	*		
 2.6.0	2.6.0	NumericalOutput	Parameter	17	*		
-2.6.0	2.6.0	NumericalOutput	SimulationProduct	18	0		
+2.6.0	2.6.0	NumericalOutput	ModelProduct	18	0		
 2.6.0	2.6.0	NumericalOutput	Property	19	*		
 2.6.0	2.6.0	NumericalOutput	Extension	20	0		
 2.6.0	1.3.6	ObservationExtent	ObservedRegion	01	0		
@@ -415,7 +415,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.3.0	PublicationInfo	PublicationDate	03	1		
 2.6.0	2.3.0	PublicationInfo	PublishedBy	04	1		
 2.6.0	2.4.2	PublicationInfo	LandingPageURL	05	0		
-2.6.0	2.6.0	RegionParameter	SimulatedRegion	01	0		
+2.6.0	2.6.0	RegionParameter	ModeledRegion	01	0		
 2.6.0	2.6.0	RegionParameter	Description	02	0		
 2.6.0	2.6.0	RegionParameter	Caveats	03	0		
 2.6.0	2.6.0	RegionParameter	Radius	04	0		
@@ -461,61 +461,61 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	1.1.0	Service	ResourceHeader	02	1		
 2.6.0	1.1.0	Service	AccessURL	03	1		
 2.6.0	1.3.0	Service	Extension	04	*		
-2.6.0	2.6.0	SimulationDomain	CoordinateSystem	01	1		
-2.6.0	2.6.0	SimulationDomain	Description	02	0		
-2.6.0	2.6.0	SimulationDomain	Caveats	03	0		
-2.6.0	2.6.0	SimulationDomain	SpatialDimension	04	1		
-2.6.0	2.6.0	SimulationDomain	VelocityDimension	05	0		
-2.6.0	2.6.0	SimulationDomain	FieldDimension	06	0		
-2.6.0	2.6.0	SimulationDomain	Units	07	1		
-2.6.0	2.6.0	SimulationDomain	UnitsConversion	08	0		
-2.6.0	2.6.0	SimulationDomain	CoordinatesLabel	09	0		
-2.6.0	2.6.0	SimulationDomain	ValidMin	10	0		
-2.6.0	2.6.0	SimulationDomain	ValidMax	11	0		
-2.6.0	2.6.0	SimulationDomain	GridStructure	12	0		
-2.6.0	2.6.0	SimulationDomain	GridCellSize	13	0		
-2.6.0	2.6.0	SimulationDomain	Symmetry	14	0		
-2.6.0	2.6.0	SimulationDomain	BoundaryConditions	15	0		
-2.6.0	2.6.0	SimulationModel	ResourceID	01	1		
-2.6.0	2.6.0	SimulationModel	ResourceHeader	02	1		
-2.6.0	2.6.0	SimulationModel	AccessInformationOptional	03	*		
-2.6.0	2.6.0	SimulationModel	Versions	04	0		
-2.6.0	2.6.0	SimulationModel	SimulationType	05	1		
-2.6.0	2.6.0	SimulationModel	CodeLanguage	06	0		
-2.6.0	2.6.0	SimulationModel	TemporalDependence	07	0		
-2.6.0	2.6.0	SimulationModel	SpatialDescription	08	0		
-2.6.0	2.6.0	SimulationModel	SimulatedRegion	09	*		
-2.6.0	2.6.0	SimulationModel	InputProperties	10	0		
-2.6.0	2.6.0	SimulationModel	OutputParameters	11	0		
-2.6.0	2.6.0	SimulationModel	ModelURL	12	0		
-2.6.0	2.6.0	SimulationRun	ResourceID	01	1		
-2.6.0	2.6.0	SimulationRun	ResourceHeader	02	1		
-2.6.0	2.6.0	SimulationRun	AccessInformation	03	*		
-2.6.0	2.6.0	SimulationRun	ProviderResourceName	04	0		
-2.6.0	2.6.0	SimulationRun	ProviderProcessingLevel	05	0		
-2.6.0	2.6.0	SimulationRun	ProviderVersion	06	0		
-2.6.0	2.6.0	SimulationRun	Model	07	0		
-2.6.0	2.6.0	SimulationRun	TemporalDependence	08	0		
-2.6.0	2.6.0	SimulationRun	SimulatedRegion	09	+		
-2.6.0	2.6.0	SimulationRun	LikelihoodRating	10	0		
-2.6.0	2.6.0	SimulationRun	Caveats	11	0		
-2.6.0	2.6.0	SimulationRun	Keyword	12	*		
-2.6.0	2.6.0	SimulationRun	InputResourceID	13	*		
-2.6.0	2.6.0	SimulationRun	SimulationTime	14	0		
-2.6.0	2.6.0	SimulationRun	SimulationDomain	15	0		
-2.6.0	2.6.0	SimulationRun	RegionParameter	16	+	InputEntity	
-2.6.0	2.6.0	SimulationRun	InputParameter	17	+	InputEntity	
-2.6.0	2.6.0	SimulationRun	InputPopulation	18	+	InputEntity	
-2.6.0	2.6.0	SimulationRun	InputField	19	+	InputEntity	
-2.6.0	2.6.0	SimulationRun	InputProcess	20	+	InputEntity	
-2.6.0	2.6.0	SimulationRun	Extension	21	*		
-2.6.0	2.6.0	SimulationTime	Description	01	0		
-2.6.0	2.6.0	SimulationTime	Caveats	02	0		
-2.6.0	2.6.0	SimulationTime	Duration	03	0		
-2.6.0	2.6.0	SimulationTime	TimeStart	04	0		
-2.6.0	2.6.0	SimulationTime	TimeStop	05	0		
-2.6.0	2.6.0	SimulationTime	TimeStep	06	0		
-2.6.0	2.6.0	SimulationTime	DiagnosisTimeStep	07	0		
+2.6.0	2.6.0	ModelDomain	CoordinateSystem	01	1		
+2.6.0	2.6.0	ModelDomain	Description	02	0		
+2.6.0	2.6.0	ModelDomain	Caveats	03	0		
+2.6.0	2.6.0	ModelDomain	SpatialDimension	04	1		
+2.6.0	2.6.0	ModelDomain	VelocityDimension	05	0		
+2.6.0	2.6.0	ModelDomain	FieldDimension	06	0		
+2.6.0	2.6.0	ModelDomain	Units	07	1		
+2.6.0	2.6.0	ModelDomain	UnitsConversion	08	0		
+2.6.0	2.6.0	ModelDomain	CoordinatesLabel	09	0		
+2.6.0	2.6.0	ModelDomain	ValidMin	10	0		
+2.6.0	2.6.0	ModelDomain	ValidMax	11	0		
+2.6.0	2.6.0	ModelDomain	GridStructure	12	0		
+2.6.0	2.6.0	ModelDomain	GridCellSize	13	0		
+2.6.0	2.6.0	ModelDomain	Symmetry	14	0		
+2.6.0	2.6.0	ModelDomain	BoundaryConditions	15	0		
+2.6.0	2.6.0	Model	ResourceID	01	1		
+2.6.0	2.6.0	Model	ResourceHeader	02	1		
+2.6.0	2.6.0	Model	AccessInformationOptional	03	*		
+2.6.0	2.6.0	Model	Versions	04	0		
+2.6.0	2.6.0	Model	ModelType	05	1		
+2.6.0	2.6.0	Model	CodeLanguage	06	0		
+2.6.0	2.6.0	Model	TemporalDependence	07	0		
+2.6.0	2.6.0	Model	SpatialDescription	08	0		
+2.6.0	2.6.0	Model	ModeledRegion	09	*		
+2.6.0	2.6.0	Model	InputProperties	10	0		
+2.6.0	2.6.0	Model	OutputParameters	11	0		
+2.6.0	2.6.0	Model	ModelURL	12	0		
+2.6.0	2.6.0	ModelRun	ResourceID	01	1		
+2.6.0	2.6.0	ModelRun	ResourceHeader	02	1		
+2.6.0	2.6.0	ModelRun	AccessInformation	03	*		
+2.6.0	2.6.0	ModelRun	ProviderResourceName	04	0		
+2.6.0	2.6.0	ModelRun	ProviderProcessingLevel	05	0		
+2.6.0	2.6.0	ModelRun	ProviderVersion	06	0		
+2.6.0	2.6.0	ModelRun	ModelSpecification	07	0		
+2.6.0	2.6.0	ModelRun	TemporalDependence	08	0		
+2.6.0	2.6.0	ModelRun	ModeledRegion	09	+		
+2.6.0	2.6.0	ModelRun	LikelihoodRating	10	0		
+2.6.0	2.6.0	ModelRun	Caveats	11	0		
+2.6.0	2.6.0	ModelRun	Keyword	12	*		
+2.6.0	2.6.0	ModelRun	InputResourceID	13	*		
+2.6.0	2.6.0	ModelRun	ModelTime	14	0		
+2.6.0	2.6.0	ModelRun	ModelDomain	15	0		
+2.6.0	2.6.0	ModelRun	RegionParameter	16	+	InputEntity	
+2.6.0	2.6.0	ModelRun	InputParameter	17	+	InputEntity	
+2.6.0	2.6.0	ModelRun	InputPopulation	18	+	InputEntity	
+2.6.0	2.6.0	ModelRun	InputField	19	+	InputEntity	
+2.6.0	2.6.0	ModelRun	InputProcess	20	+	InputEntity	
+2.6.0	2.6.0	ModelRun	Extension	21	*		
+2.6.0	2.6.0	ModelTime	Description	01	0		
+2.6.0	2.6.0	ModelTime	Caveats	02	0		
+2.6.0	2.6.0	ModelTime	Duration	03	0		
+2.6.0	2.6.0	ModelTime	TimeStart	04	0		
+2.6.0	2.6.0	ModelTime	TimeStop	05	0		
+2.6.0	2.6.0	ModelTime	TimeStep	06	0		
+2.6.0	2.6.0	ModelTime	DiagnosisTimeStep	07	0		
 2.6.0	2.4.0	Software	ResourceID	01	1		
 2.6.0	2.4.0	Software	ResourceHeader	02	1		
 2.6.0	2.6.0	Software	AccessInformation	03	*		
@@ -546,8 +546,8 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	1.3.0	Spase	Document	13	+	ResourceEntity	
 2.6.0	2.4.0	Spase	Software	14	+	ResourceEntity	
 2.6.0	2.5.0	Spase	Collection	15	+	ResourceEntity	
-2.6.0	2.6.0	Spase	SimulationModel	16	+	ResourceEntity	
-2.6.0	2.6.0	Spase	SimulationRun	17	+	ResourceEntity	
+2.6.0	2.6.0	Spase	Model	16	+	ResourceEntity	
+2.6.0	2.6.0	Spase	ModelRun	17	+	ResourceEntity	
 2.6.0	2.6.0	Spase	DisplayOutput	18	+	ResourceEntity	
 2.6.0	2.6.0	Spase	NumericalOutput	19	+	ResourceEntity	
 2.6.0	2.4.2	SpatialCoverage	CoordinateSystem	01	1		

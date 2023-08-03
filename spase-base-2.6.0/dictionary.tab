@@ -1,8 +1,8 @@
 #Version	Since	Term	Type	List	Elements	Attributes	Definition
 2.6.0	2.6.0	1P-Halley	Item				1P/Halley, is a short-period comet visible from Earth every 75 to 79 years. The comet was visited by the Halley Armada comprised of the ESA Giotto, Japanese Suisei and Sekigake, and Soviet Union Vega 1 and Vega 2 spacecraft in 1986.
 2.6.0	2.6.0	26P-Grigg-Skjellerup	Item				26P/Grigg-Skjellerup is a periodic comet. It was visited by the ESA Giotto spacecraft in July 1992.
-2.6.0	2.6.0	2DCuts	Item				A set of 2-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points located in a planar slice of a simulation volume.
-2.6.0	2.6.0	3DCubes	Item				A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a simulation volume.
+2.6.0	2.6.0	2DCuts	Item				A set of 2-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points located in a planar slice of a model volume.
+2.6.0	2.6.0	3DCubes	Item				A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a model volume.
 2.6.0	2.6.0	67P-Churyumov-Gerasimenko	Item				67P/Churyumov-Gerasimenko is a Jupiter-family comet originally from the Kuiper belt. The ESA Rosetta spacecraft rendezvoused with Comet 67P on August 6, 2014 and then orbited the comet from September 10, 2014 to September 30, 2016. Philae, a lander carried by Rosetta, touched down on the comet surface on November 12, 2014.
 2.6.0	1.3.5	Absorption	Item				Decrease of radiant energy (relative to the background continuum spectrum).
 2.6.0	2.6.0	AccessDirectoryTemplate	Text				Directory hierarchy templates to store the patterns for the data directory structure, using the URI template specification https://github.com/hapi-server/uri-templates/wiki/Specification. This will enable automated search of files matching a time range. For example, the ACE definitive orbit dataset at NASA SPDF has yearly subdirectories for the data files following the naming pattern $Y. See links for access templates in the Bibliography.
@@ -64,14 +64,14 @@
 2.6.0	1.3.1	AxisLabel	Text				A short character string (approximately 10 characters, but preferably 6 characters, more only if absolutely required for clarity) which can be used to label a y-axis for a plot or to provide a heading for a data listing.
 2.6.0	1.1.0	AzimuthalAngleRange	Container				The range of possible azimuthal angles for a group of energy observations. Default units are degrees.
 2.6.0	1.3.4	AzimuthAngle	Item				The angle between the projection into the I-J plane of a position or measured vector and the I-axis of the coordinate system. Mathematically defined as arctan(J/I). This term could be also applied to angles measured in different planes, i.e., the IMF clock angle defined as arctan(|By|/Bz).
-2.6.0	2.5.0	BackWall	Text				Back wall of the simulation domain by which the plasma flow may exit the simulation.
+2.6.0	2.5.0	BackWall	Text				Back wall of the model domain by which the plasma flow may exit the model.
 2.6.0	1.3.0	BandName	Text				A common or provider assigned name for a range of values.
 2.6.0	1.3.6	Bandwidth	Item				Integration over the width a frequency band.
 2.6.0	1.1.0	Base64	Item				A data encoding scheme whereby binary-encoded data is converted to printable ASCII characters. It is defined as a MIME content transfer encoding for use in Internet e-mail. The only characters used are the upper-case and lower-case Roman alphabet characters (A-z), the numerals (0-9), and the "+" and "/" symbols, with the "=" symbol as a special suffix (padding) code.
 2.6.0	1.1.0	Bin	Container				A grouping of observations according to a band or window of a common attribute.
 2.6.0	1.0.0	Binary	Item				A direct representation of the bits which may be stored in memory on a computer.
 2.6.0	2.3.1	BounceMotion	Item				The second adiabatic invariant is associated with periodic bounce motion of charged particles trapped between two magnetic mirrors on a magnetic field line. The second invariant, termed J, is defined by using the integral J=m &int; v||*ds where m is the mass of the charged particle, v|| is the particle velocity along the field line, and ds represents elemental arc lengths along the field line. The second adiabatic invariant is conserved as long as changes in the background magnetic field occur at time scales much longer than the bounce time of the charged particles.
-2.6.0	2.5.0	BoundaryConditions	Container				Parameters associated to the simulation boundaries.
+2.6.0	2.5.0	BoundaryConditions	Container				Parameters associated to the model boundaries.
 2.6.0	1.0.0	BowShockCrossing	Item				A crossing of the boundary between the undisturbed (except for foreshock effects) solar wind and the shocked, decelerated solar wind of the magnetosheath.
 2.6.0	1.3.1	Browse	Item				A representation of an image which is suitable to reveal most or all of the details of the image.
 2.6.0	1.0.0	BZIP2	Item				An open standard algorithm by Julian Seward using Burrows-Wheeler block sorting and Huffman coding, see http://www.bzip.org/.
@@ -136,10 +136,10 @@
 2.6.0	1.0.0	CrossSpectrum	Item				The Fourier transform of the cross correlation of two physical or empirical observations.
 2.6.0	2.2.5	CSO	Item				Corrected Solar Orbital - A coordinate system related to Earth where x-axis is anti-sunward and the y-axis points in the orbital velocity direction.
 2.6.0	2.2.7	CSV	Item				Comma Separated Value - A data exchange format defined by RFC 4180.
-2.6.0	2.6.0	CubesDescription	Text				A description of the configuration of the set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a simulation volume.
+2.6.0	2.6.0	CubesDescription	Text				A description of the configuration of the set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a model volume.
 2.6.0	1.2.1	Current	Item				It is the scalar quantity giving the net charge (summed over charged particle species) per unit time flowing across a given surface.
 2.6.0	2.6.0	CurrentDensity	Item				It is the vector quantity giving the net charge (summed over charged particle species) per unit cross-sectional area per unit time flowing through a given point. Measurements of current density are often provided in terms of the magnetic perturbations (superposed upon a background magnetic field, if present) associated with the current density.
-2.6.0	2.6.0	CutsDescription	Text				A description of the configuration of the set of 2-D array points that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points located in a planar slice of a simulation volume.
+2.6.0	2.6.0	CutsDescription	Text				A description of the configuration of the set of 2-D array points that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points located in a planar slice of a model volume.
 2.6.0	1.0.0	Cylindrical	Item				A coordinate representation of a position vector or measured vector (field or flow) by its k-component, the magnitude of its projection into the i-j plane, and the azimuthal angle of the i-j plane projection.
 2.6.0	1.3.1	Data	Item				A collection of organized information, usually the results of experience, observation or experiment, or a set of premises. This may consist of numbers, words, or images, particularly as measurements or observations of a set of variables.
 2.6.0	1.2.0	DataExtent	Container				The area of storage in a file system required to store the contents of a resource. By default, the data extent is expressed in bytes.
@@ -175,7 +175,7 @@
 2.6.0	1.0.0	DoubleSphere	Item				A dipole antenna of which the active (sensor) elements are small spheres located at the ends of two wires deployed in the equatorial plane, on opposite sides of a spinning spacecraft.
 2.6.0	1.2.0	DRegion	Item				The layer of the ionosphere that exists approximately 50 km to 95 km above the surface of the Earth. One of several layers in the ionosphere.
 2.6.0	2.3.1	DriftMotion	Item				The third invariant for charged particle motion in a dipolar magnetic field is associated with drift of its guiding center in the equatorial plane. The conserved quantity, J<sub>2</sub>, is equal to q&phi; where q is the particle charge and &phi; is the magnetic flux enclosed within the particle drift path.
-2.6.0	2.5.0	Duration	Duration				Duration of the simulation.
+2.6.0	2.5.0	Duration	Duration				Duration of the model run.
 2.6.0	1.0.0	Dust	Item				Free microscopic particles of solid material.
 2.6.0	1.3.1	DustDetector	Item				An instrument which determines the mass and speed of ambient dust particles.
 2.6.0	2.3.2	DynamicPressure	Item				Dynamic pressure is a measure of the kinetic energy per unit volume of a fluid. For instance, the solar wind dynamic pressure or ram pressure for a purely proton plasma is equal to m<sub>p</sub> n V<sup>2</sup> where m<sub>p</sub> is the proton mass, n is the proton number density, and V is the solar wind speed.
@@ -193,11 +193,12 @@
 2.6.0	1.3.5	Electrostatic	Item				Collective longitudinal electric-field and plasma oscillations trapped within a body of plasma.
 2.6.0	1.0.0	ElectrostaticAnalyser	Item				An instrument which uses charged plates to analyze the mass, charge and kinetic energies of charged particles which enter the instrument.
 2.6.0	1.2.0	Element	Container				A component or individual unit of a multiple value quantity such as an array or vector.
-2.6.0	2.5.0	ElementBoundary	Container				Parameters associated to the simulation boundaries.
+2.6.0	2.5.0	ElementBoundary	Container				Parameters associated to the model boundaries.
 2.6.0	1.2.0	Elevation	Numeric				The distance in meters above (positive) or below (negative) the zero-elevation defined by the World Geodetic System reference frame (WGS84).
 2.6.0	1.2.0	ElevationAngle	Item				The angle between the position or measured vector and the I-J plane of the coordinate system. Mathematically defined as arctan(K/sqrt(I^2+J^2)).
 2.6.0	1.0.0	Email	Text				The electronic address at which the individual may be contacted expressed in the form "local-part@domain".
 2.6.0	1.0.0	Emissivity	Item				The energy emitted spontaneously per unit bandwidth (typically frequency) per unit time per unit mass of source. Emissivity is usually integrated over all directions/solid angles.
+2.6.0	1.0.0	Empirical	Item				Information obtained through observation, experiment, or experience.
 2.6.0	2.2.5	Enceladus	Item				The sixth largest moon of Saturn. It is currently endogenously active. The smallest known body in the Solar System that is geologically active today.
 2.6.0	2.3.2	EncodedParameter	Item				A variable that uses successive bits to encode, this is bitwise encode, a set of conditions by using a composited multi-bit numeric value. A common example is a bitwise encoded flag that denotes whether various possible errors that may affect a particular measurement. For example, a bit value equal to zero may indicate the absence of a particular error condition while a value equal to one would indicate the possibility that the associated datum should be ignored or used with caution due to the same error categorization.
 2.6.0	1.0.0	Encoding	Enumeration	Encoding			A set of unambiguous rules that establishes the representation of information within a file.
@@ -233,9 +234,9 @@
 2.6.0	1.3.4	Feature	Item				A prominent or distinctive characteristic that occurs at a location or persists over a period of time.
 2.6.0	1.0.0	Field	Container				The space around a radiating body within which its electromagnetic attributes can exert force on another similar body that is not in direct contact.
 2.6.0	1.3.6	FieldAligned	Item				The component of a quantity which is oriented in the same direction of a field.
-2.6.0	2.5.0	FieldBoundary	Text				Parameters associated with the field boundaries of the simulation.
-2.6.0	2.5.0	FieldDimension	Count				Number of field dimensions in the simulation domain.
-2.6.0	2.5.0	FieldModel	Text				Field model imposed in the simulation run.
+2.6.0	2.5.0	FieldBoundary	Text				Parameters associated with the field boundaries of the model.
+2.6.0	2.5.0	FieldDimension	Count				Number of field dimensions in the model domain.
+2.6.0	2.5.0	FieldModel	Text				Field model imposed in the model run.
 2.6.0	1.1.0	FieldQuantity	Enumeration	FieldQuantity			The physical attribute of the field.
 2.6.0	2.5.0	FieldValue	Text				A string list of the values of the input parameter.
 2.6.0	2.3.0	File	Item				Access to a file containing the data.
@@ -255,7 +256,7 @@
 2.6.0	1.3.5	Frequency	Item				The number of occurrences of a repeating event per unit time.
 2.6.0	1.1.0	FrequencyRange	Container				The range of possible values for the observed frequency.
 2.6.0	1.3.6	FrequencyToGyrofrequencyRatio	Item				The ratio of the characteristic frequency of a medium to gyrofrequency of a particle.
-2.6.0	2.5.0	FrontWall	Text				Front wall of the simulation domain by which the plasma flow may be injected.
+2.6.0	2.5.0	FrontWall	Text				Front wall of the model domain by which the plasma flow may be injected.
 2.6.0	2.3.0	Funding	Container				The source of financial support (funding) for the resource.
 2.6.0	1.0.0	GammaRays	Item				Photons with a wavelength range: 0.00001 nm to 0.001 nm.
 2.6.0	2.2.5	Ganymede	Item				The biggest moon of Jupiter and in the solar system.
@@ -270,7 +271,7 @@
 2.6.0	2.2.5	GPHIO	Item				Kronian Solar Orbital - A coordinate system related to Saturn where the x-axis is anti-sunward and the y-axis points in the orbital velocity direction.
 2.6.0	1.1.0	Granule	Container				An accessible portion of another resource. A Granule may be composed of one or more physical pieces (files) which are considered inseparable. For example, a data storage format that maintains metadata and binary data in separate, but tightly coupled files. Granules should not be used to group files that have simple relationships or which are associated through a parent resource. For example, each file containing a time interval data for a Numerical Data resource would each be considered a Granule. The ParentID of a Granule resource must be a NumericalData resource. The attributes of a Granule supersede the corresponding attributes in the NumericalData resource.
 2.6.0	2.5.0	GridCellSize	Text				A string list of the cell sizes in each dimension.
-2.6.0	2.5.0	GridStructure	Text				Structure of the simulation grid.
+2.6.0	2.5.0	GridStructure	Text				Structure of the model grid.
 2.6.0	1.3.6	Group	Item				An assemblage of values that a certain relation or common characteristic.
 2.6.0	1.0.0	GSE	Item				Geocentric Solar Ecliptic - A coordinate system where the x-axis is from Earth to Sun. The z-axis is normal to the ecliptic, positive northward, see Russell, 1971.
 2.6.0	1.0.0	GSEQ	Item				Geocentric Solar Equatorial - A coordinate system where the x-axis is from Earth to Sun. The y-axis is parallel to solar equatorial plane. The z-axis is positive northward, see Russell, 1971.
@@ -311,7 +312,7 @@
 2.6.0	2.2.0	HPR	Item				Helioprojective Radial - A 3-D orthonormal (left-handed) coordinate system that is primarily intended to specify with two dimensions a point on the solar disk. The z-axis points from the observer to the center of the solar disk. The y-axis lies in the plane defined by the solar spin vector and the z-axis, positive northward. The x-axis is perpendicular to the y-axis and z-axis, positive toward solar west. Given as the distance between the observer and the center of the solar disk, the standard representation for this system of an (x,y) point on the solar disk is latitude angle theta (arctan(sqrt(x**2+y**2)/d))) or equivalent declination parameter delta (theta-90 deg) and the phase angle psi as measured counterclockwise from the positive y-axis (psi=arctan(-y/x)) of the point of interest.
 2.6.0	2.2.5	HSM	Item				Heliospheric Solar Magnetospheric - A coordinate system where the x-axis is from Earth to Sun, z-axis is northward in a plane containing the x-axis and the geomagnetic dipole axis.
 2.6.0	1.0.0	HTML	Item				A text file containing structured information represented in the Hypertext Mark-up Language (HTML), see http://www.w3.org/MarkUp/.
-2.6.0	2.5.0	Hybrid	Item				A numerical scheme simulating ions as particles and electrons as a fluid.
+2.6.0	2.5.0	Hybrid	Item				A numerical scheme modeling ions as particles and electrons as a fluid.
 2.6.0	1.3.5	Hydrodynamic	Item				Periodic or quasi-periodic oscillations of fluid quantities.
 2.6.0	1.3.4	I	Item				Projection of a vector along the first named axis of a coordinate system. Typically, the x-axis, but could be the R-axis for an RTN coordinate system.
 2.6.0	2.2.5	Iapetus	Item				The third largest moon of Saturn and the eleventh largest in the Solar System.
@@ -332,11 +333,11 @@
 2.6.0	1.0.0	InformationURL	Container				Attributes of the method of acquiring additional information.
 2.6.0	1.0.0	Infrared	Item				Photons with a wavelength range: 760 nm to 10^6 nm.
 2.6.0	1.0.0	Inner	Item				The region of the heliosphere extending radially outward from the solar coronal base to just inside 1 AU.
-2.6.0	2.5.0	InputField	Container				Parameters associated to a field imposed in the simulation.
+2.6.0	2.5.0	InputField	Container				Parameters associated to a field imposed in the model.
 2.6.0	2.5.0	InputLabel	Text				A string list of the labels of each dimension of the input parameter.
-2.6.0	2.5.0	InputParameter	Container				A container of information regarding an input parameter of the simulation run.
-2.6.0	2.6.0	InputPopulation	Container				A container element that specifies the characteristics of a particle population used as input to a simulation model.
-2.6.0	2.5.0	InputProcess	Container				Parameters associated to a chemical process happening in the simulation.
+2.6.0	2.5.0	InputParameter	Container				A container of information regarding an input parameter of the model run.
+2.6.0	2.6.0	InputPopulation	Container				A container element that specifies the characteristics of a particle population used as input to a model model.
+2.6.0	2.5.0	InputProcess	Container				Parameters associated to a chemical process happening in the model.
 2.6.0	2.5.0	InputProperties	Container				Properties.
 2.6.0	2.4.0	InputProperty	Container				A container of attributes regarding an input property of an application.
 2.6.0	1.0.0	InputResourceID	ID				The resource identifier for a resource which was used to generate this resource.
@@ -391,7 +392,7 @@
 2.6.0	1.3.4	LinearScale	Item				Intervals which are equally spaced.
 2.6.0	1.0.0	LineDepth	Item				The measure of the amount of absorption below the continuum (depth) in a particular wavelength or frequency in an absorption spectrum.
 2.6.0	1.0.0	LineOfSight	Item				The line of sight is the line that connects the observer with the observed object. This expression is often used with measurements of Doppler velocity and magnetic field in magnetograms, where only the component of the vector field directed along the line of sight is measured.
-2.6.0	2.6.0	Lines	Item				A set of 1-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points along a line though a simulation volume. For instance, the points of the line may correspond to the trajectory of a spacecraft through simulation space.
+2.6.0	2.6.0	Lines	Item				A set of 1-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points along a line though a model volume. For instance, the points of the line may correspond to the trajectory of a spacecraft through model space.
 2.6.0	2.3.0	Listing	Item				A listing of files either through FTP or HTTP.
 2.6.0	1.2.0	Location	Container				A position in space definable by a regional referencing system and geographic coordinates.
 2.6.0	1.3.4	LogScale	Item				Intervals which are spaced proportionally to the logarithms of the values being represented.
@@ -486,7 +487,7 @@
 2.6.0	1.0.0	NumericalData	Container				Data stored as numerical values in one or more specified formats. A Numerical Data resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of Parameters stored in a collection of granules of successive time spans or a single data granule.
 2.6.0	2.5.0	NumericalOutput	Container				Data stored as numerical values in a specified format. A Numerical Data resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.
 2.6.0	2.2.5	Oberon	Item				The second largest and second most massive moon of Uranus, and the ninth most massive moon in the Solar System.
-2.6.0	2.5.0	ObjectMass	Text				Mass of an object referenced as a simulated region.
+2.6.0	2.5.0	ObjectMass	Text				Mass of an object referenced as a modeled region.
 2.6.0	1.3.6	ObservationExtent	Container				The spatial area encompassed by an observation.
 2.6.0	1.0.0	Observatory	Container				The host (spacecraft, network, facility) for instruments making observations, or a family of closely related hosts.
 2.6.0	2.2.0	ObservatoryGroupID	ID				The identifier of an Observatory resource which the referring resource is a member of.
@@ -494,7 +495,7 @@
 2.6.0	1.2.0	ObservatoryRegion	Enumeration	Region			A spatial location distinguished by certain natural features or physical characteristics where an observatory is located.
 2.6.0	1.3.6	ObservedBy	Item				Detected or originating from another resource.
 2.6.0	1.0.0	ObservedRegion	Enumeration	Region			The portion of space measured by the instrument at the time of an observation. A region is distinguished by certain natural features or physical characteristics. It is the location of the observatory for in situ data, the location or region sensed by remote sensing observatories and the location-of-relevance for parameters that are derived from observational data.
-2.6.0	2.5.0	Obstacle	Text				Obstacle in the simulation domain.
+2.6.0	2.5.0	Obstacle	Text				Obstacle in the model domain.
 2.6.0	1.0.0	Offline	Item				Not directly accessible electronically. This includes resources which may to be moved to an online status in response to a given request.
 2.6.0	1.0.0	Online	Item				Directly accessible electronically.
 2.6.0	1.0.0	Open	Item				Access is granted to everyone.
@@ -506,7 +507,7 @@
 2.6.0	2.3.1	Orientation	Item				The specification of the directional alignment of an object or measurement in a reference coordinate system. The orientation such as a spacecraft spin axis attitude is usually expressed as one or more angles relative to the basis axes of some specified physical space usually together with the date/time of the observation.
 2.6.0	1.0.0	Other	Item				Not classified with more specific terms. The context of its usage may be described in related text.
 2.6.0	1.0.0	Outer	Item				The region of the heliosphere extending radially outward from just outside 1 AU to the heliospheric termination shock.
-2.6.0	2.5.0	OutputParameters	Container				A container of information regarding the output parameters of the simulation run.
+2.6.0	2.5.0	OutputParameters	Container				A container of information regarding the output parameters of the model run.
 2.6.0	2.4.0	OutputProperty	Container				A container of attributes regarding an output property of an application.
 2.6.0	2.3.0	Overview	Item				A web page that provides and overview of available data and links.
 2.6.0	2.5.0	Paraboloid	Item				A shape generated by the rotation of a parabola around its axis of symmetry.
@@ -517,7 +518,7 @@
 2.6.0	1.1.0	ParentID	ID				The resource identifier for a resource that a resource is a part of. The resource inherits the attributes of the referenced resource. Attributes defined in the resource override attributes of the parent in the manner prescribed by the containing resource.
 2.6.0	2.2.9	PartiallyRestricted	Item				Some portions of the resource have restricted access, the rest is open access. Typically, this is for accumulating data collections where some data is under review before being publicly released.
 2.6.0	1.0.0	Particle	Container				A description of the types of particles observed in the measurement. This includes both direct observations and inferred observations.
-2.6.0	2.5.0	ParticleBoundary	Text				Parameters associated with the particles at the boundaries of the simulation.
+2.6.0	2.5.0	ParticleBoundary	Text				Parameters associated with the particles at the boundaries of the model.
 2.6.0	1.0.0	ParticleCorrelator	Item				An instrument which correlates particle flux to help identify wave/particle interactions.
 2.6.0	1.0.0	ParticleDetector	Item				An instrument which detects particle flux!!!.
 2.6.0	1.1.0	ParticleQuantity	Enumeration	ParticleQuantity			A characterization of the physical properties of the particle.
@@ -551,7 +552,7 @@
 2.6.0	1.0.0	Photon	Item				Electromagnetic waves detected by techniques that utilize their corpuscular character (e.g., CCD, CMOS, or Photomultiplier).
 2.6.0	1.2.1	Photopolarimeter	Item				An instrument which measures the intensity and polarization or radiant energy. A photopolarimeter is a combination of a photometer and a polarimeter.
 2.6.0	1.0.0	Photosphere	Item				The atmospheric layer of the Sun or a star from which continuum radiation, especially optical, is emitted to space. For the Sun, the photosphere is about 500 km thick.
-2.6.0	2.5.0	PIC	Item				A numerical scheme simulating ions and electrons as macroparticles.
+2.6.0	2.5.0	PIC	Item				A numerical scheme modeling ions and electrons as macroparticles.
 2.6.0	2.2.9	PitchAngleRange	Container				The range of possible pitch angles for a group of particle observations.
 2.6.0	2.5.0	Plane	Item				Symmetry across a plane.
 2.6.0	2.5.0	PlaneNormalVector	Text				A list of the component in each dimension of the vector normal to a plane.
@@ -592,7 +593,7 @@
 2.6.0	1.2.0	PriorID	ID				The resource identifier for a resource that is superseded or replaced by a resource.
 2.6.0	1.3.4	Probable	Item				Likely given the available evidence. Considered in the range of 4 to 7 on a scale of 0 to 10.
 2.6.0	2.5.0	ProcessCoefficient	Text				Coefficient associated to a chemical process.
-2.6.0	2.5.0	ProcessCoeffType	Enumeration	ProcCoeffType			Whether the simulation results are obtained from a stationary solution or are dynamically computed.
+2.6.0	2.5.0	ProcessCoeffType	Enumeration	ProcCoeffType			Whether the model results are obtained from a stationary solution or are dynamically computed.
 2.6.0	1.2.0	ProcessingLevel	Enumeration	ProcessingLevel			The standard classification of the processing performed on the product.
 2.6.0	2.5.0	ProcessModel	Text				Model used to describe a chemical process.
 2.6.0	2.5.0	ProcessType	Enumeration	ProcessType			Type of chemical process.
@@ -643,7 +644,7 @@
 2.6.0	2.3.2	RealPart	Item				Any number z can in general be represented by its complex form with z= a+ib where i, which is defined as the square root of -1, signifies the imaginary component of the number z. The coefficient a is called the real part of the complex number z.
 2.6.0	2.5.0	RegionBegin	Text				The values that define the start point of a region.
 2.6.0	2.5.0	RegionEnd	Text				The values that define the ending point of a region.
-2.6.0	2.5.0	RegionParameter	Container				Radius of the Region in the simulation.
+2.6.0	2.5.0	RegionParameter	Container				Radius of the Region in the model.
 2.6.0	1.1.0	Registry	Container				A location or facility where resources are cataloged.
 2.6.0	1.1.0	RelativeStopDate	Duration				An indication of the nominal end date relative to the present.
 2.6.0	1.1.0	ReleaseDate	DateTime				The date and time when a resource is made available. The availability of a resource coincides with the release of a resource description. If the Release Date is specified as a future date, then it indicates that resource should not be made available until that time. However, this is only advisory and in practice the Release Date should be the actual date the resource description was published.
@@ -690,15 +691,15 @@
 2.6.0	1.3.0	Set	Text				A collection of items for a particular purpose.
 2.6.0	1.2.0	SHA1	Item				Secure Hash Algorithm (SHA), a 160-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.
 2.6.0	1.2.0	SHA256	Item				Secure Hash Algorithm (SHA), a 256-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.
-2.6.0	2.5.0	SideWall	Text				Side walls of the simulation domain.
-2.6.0	2.5.0	SimulatedInstrumentID	ID				The identifier of a simulated instrument description.
-2.6.0	2.5.0	SimulatedRegion	Enumeration	SimulatedRegion			The portion of space simulated by the code at the time of a diagnosis. A region is distinguished by certain natural features or physical characteristics. It is the location of the observatory for in situ data, the location or region sensed by remote sensing observatories and the location-of-relevance for parameters that are derived from observational data.
-2.6.0	2.5.0	SimulationDomain	Container				Parameters associated to the simulation spatial domain.
-2.6.0	2.5.0	SimulationModel	Container				Descriptor of a simulation model: type of numerical scheme, versions, etc.
-2.6.0	2.5.0	SimulationProduct	Enumeration	Product			The type of product produced from the simulation.
-2.6.0	2.5.0	SimulationRun	Container				Description of a simulation run, including the code ID, the run spatial and temporal description, and all the relevant inputs.
-2.6.0	2.5.0	SimulationTime	Container				Parameters associated to the simulation time.
-2.6.0	2.5.0	SimulationType	Enumeration	SimulationType			A characterization of the numerical scheme used in the simulation.
+2.6.0	2.5.0	SideWall	Text				Side walls of the modelion domain.
+2.6.0	2.5.0	ModeledInstrumentID	ID				The identifier of a modeled instrument description.
+2.6.0	2.5.0	ModeledRegion	Enumeration	ModeledRegion			The portion of space modeled by the code at the time of a diagnosis. A region is distinguished by certain natural features or physical characteristics. It is the location of the observatory for in situ data, the location or region sensed by remote sensing observatories and the location-of-relevance for parameters that are derived from observational data.
+2.6.0	2.5.0	ModelDomain	Container				Parameters associated to the model spatial domain.
+2.6.0	2.5.0	ModelSpecification	Container				Descriptor of model specifications: type of numerical scheme, versions, etc.
+2.6.0	2.5.0	ModelProduct	Enumeration	Product			The type of product produced from the model.
+2.6.0	2.5.0	ModelRun	Container				Description of a model run, including the code ID, the run spatial and temporal description, and all the relevant inputs.
+2.6.0	2.5.0	ModelTime	Container				Parameters associated to the model time.
+2.6.0	2.5.0	ModelType	Enumeration	ModelType			A characterization of the numerical scheme used in the model.
 2.6.0	1.0.0	Size	Sequence				The number of elements in each dimension of a multi-dimensional array. A scalar has a size of 1. A multi-dimensional vector will have a size for each dimension. Note that the number of elements in the size of an N-dimensional array conveys array dimensionality while the product of those numbers conveys the total number of elements in the array. When size is used to describe a tensor, it is the number of elements in the tensor. As such it has a limited set of values. A tensor of rank 1 has a size of 3, rank 2 a size of 9, rank 3 a size of 27 and rank n a size of 3^n.
 2.6.0	1.0.0	SM	Item				Solar Magnetic - A geocentric coordinate system where the z-axis is northward along dipole axis of the Earth, x-axis is in plane of z-axis and Earth-Sun line, positive sunward, see Russell, 1971.
 2.6.0	2.4.0	Software	Container				An application which can be installed, built or readily used.
@@ -721,10 +722,10 @@
 2.6.0	1.0.0	Spase	Container				Space Physics Archive Search and Extract (SPASE). The outermost container or envelope for SPASE metadata. This indicates the start of the SPASE metadata.
 2.6.0	2.4.2	SpatialCoverage	Container				A region of space defined by the latitude, longitude and altitude in a geographic coordinate system.
 2.6.0	2.5.0	SpatialDescription	Container				A characterization of the spatial extent over which the measurement was taken.
-2.6.0	2.5.0	SpatialDimension	Count				Number of spatial dimensions in the simulation domain.
+2.6.0	2.5.0	SpatialDimension	Count				Number of spatial dimensions in the model domain.
 2.6.0	2.6.0	SpatialSeries	Item				A set of 3-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at grid points in a spacial volume.
 2.6.0	2.2.2	Specification	Item				A detailed description of the requirements and other aspects of an object or component that may be used to develop an implementation.
-2.6.0	2.5.0	SpecificSimulatedRegion	Enumeration	SpecificSimulatedRegion			Identifiers for areas of the physical world which may be occupied or observed.
+2.6.0	2.5.0	SpecificModeledRegion	Enumeration	SpecificModeledRegion			Identifiers for areas of the physical world which may be occupied or observed.
 2.6.0	2.6.0	Spectra	Item				A term that applies to any signal that can be measured or decomposed along a continuous variable such as the electromagnetic radiation which can be decomposed as a function of wavelength or frequency.
 2.6.0	1.3.6	Spectral	Item				Characterized as a range or continuum of frequencies.
 2.6.0	1.0.0	SpectralPowerReceiver	Item				A radio receiver which determines the power spectral density of the electric or magnetic field, or both, at one or more frequencies.
@@ -765,7 +766,7 @@
 2.6.0	1.0.0	SupportQuantity	Enumeration	SupportQuantity			A characterization of the support information.
 2.6.0	1.0.0	Surface	Item				The outermost area of a solid object.
 2.6.0	1.3.1	Symmetric	Item				Equal distribution about one or more axes.
-2.6.0	2.5.0	Symmetry	Enumeration	Symmetry			Symmetry of the simulation domain.
+2.6.0	2.5.0	Symmetry	Enumeration	Symmetry			Symmetry of the model domain.
 2.6.0	2.4.1	TAP	Item				The table access protocol (TAP) defines a service protocol for accessing general table data, including astronomical catalogs as well as general database tables. Access is provided for both database and table metadata as well as for actual table data. https://wiki.ivoa.net/twiki/bin/view/IVOA/TableAccess.
 2.6.0	1.3.0	TAR	Item				A file format used to collate collections of files into one larger file, for distribution or archiving, while preserving file system information such as user and group permissions, dates, and directory structures. The format was standardized by POSIX.1-1988 and later POSIX.1-2001.
 2.6.0	1.0.0	TeamLeader	Item				An individual who is the designated leader of an investigation.
@@ -776,10 +777,10 @@
 2.6.0	1.0.0	Temperature	Item				A measure of the kinetic energy of random motion with respect to the average. Temperature is properly defined only for an equilibrium particle distribution (Maxwellian distribution).
 2.6.0	2.3.0	Template	Item				A URI template that contains special fields as defined in URI Template specification http://tsds.org/uri_templates.
 2.6.0	1.0.0	Temporal	Item				Pertaining to time.
-2.6.0	2.5.0	TemporalDependence	Enumeration	YN			Whether the simulation results are obtained from a stationary solution or are dynamically computed.
+2.6.0	2.5.0	TemporalDependence	Enumeration	YN			Whether the model results are obtained from a stationary solution or are dynamically computed.
 2.6.0	1.0.0	TemporalDescription	Container				A characterization of the time over which the measurement was taken.
 2.6.0	1.2.0	Tensor	Item				A generalized linear quantity or geometrical entity that can be expressed as a multi-dimensional array relative to a choice of basis of the particular space on which it is defined.
-2.6.0	2.6.0	TestParticle	Item				A numerical scheme simulating the motion of charged particles in a prescribed field.
+2.6.0	2.6.0	TestParticle	Item				A numerical scheme modeling the motion of charged particles in a prescribed field.
 2.6.0	2.2.5	Tethys	Item				The fifth largest moon of Saturn and the sixteenth largest moon in the Solar System. The orbit Tethys is the third closest to Saturn of the major Cronian moons.
 2.6.0	1.0.0	Text	Enumeration	Text			A sequence of characters which may have an imposed structure or organization.
 2.6.0	2.4.1	TFCat	Item				Time-Frequency Catalogue (TFCat) is a catalogue model & transfer format for spectro-temporal features. https://gitlab.obspm.fr/maser/catalogues/catalogue-format.
@@ -829,7 +830,7 @@
 2.6.0	1.3.5	VCrossB	Item				The cross product of the charge velocity (V) and the magnetic field (B). It is the electric field exerted on a point charge by a magnetic field.
 2.6.0	1.0.0	Vector	Item				A set of parameter values each along some independent variable (e.g., components of a field in three orthogonal spatial directions, atmospheric temperature values at several altitudes, or at a given latitude and longitude).
 2.6.0	1.0.0	Velocity	Item				Rate of change of position. Also used for the average velocity of a collection of particles, also referred to as bulk velocity.
-2.6.0	2.5.0	VelocityDimension	Count				Number of velocity dimensions in the simulation domain.
+2.6.0	2.5.0	VelocityDimension	Count				Number of velocity dimensions in the model domain.
 2.6.0	1.2.0	Venus	Enumeration	Venus			The second planet from the Sun in our solar system.
 2.6.0	1.0.0	Version	Text				Indicates the release identifier. When used to indicate the release of the SPASE data model, it is a in the form "Major.Minor.Fix" where Major: A significant change in the architecture of the model or rewrite of the implementation. This includes major changes in design or implementation language. This number starts at 0 (zero). Minor: An addition of terms or features that require changes in documentation/external API. This number starts at 0 (zero). Fix: Any change that does not require documentation/external API changes. This number starts at 0 (zero).
 2.6.0	2.5.0	Versions	Container				A container of one or more sets of version information.

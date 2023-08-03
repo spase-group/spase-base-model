@@ -326,3 +326,4 @@
 325	2.6.0	2023-06-15	L.F.Bargatze	Added AccessInformtion to the Software SPASE resource type.	Per Shing F. Fung.
 326	2.6.0	2023-07-09	L.F.Bargatze	Added AccessFilenameTemplate and AccessDirectoryTemplate to AccessInformation.	Per B. Candey and J. Faden.
 326	2.6.0	2023-07-16	L.F.Bargatze	Added AccessInformationOptional to the schema and under SimulationModel as simulation model code is not always accessible.	Per C. Wiegand.
+327	2.6.0	2023-08-02	L.F.Bargatze	Changed SimulationModel to Model, SimulationRun to ModelRun, and other terms by replacing "Simulation" with "Model" and "Simulated" with "Modeled", The dictionary.tab file definitions wre similarly updated to  a generic "model" form, Added Empirical under the ModelType enumeration list.	Per C. Wiegand.

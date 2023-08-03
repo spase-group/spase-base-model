@@ -37,7 +37,7 @@ Version	Since	Name	Type	Reference	Description
 2.6.0	1.1.0	ParticleQuantity	Closed		Identifiers for the characterization of the physical properties of the particle.
 2.6.0	1.0.0	ParticleType	Closed		Identifiers for the characterization of the kind of particle observed by the measurement.
 2.6.0	1.0.0	PhenomenonType	Closed		Identifiers for the characteristics or categorization of an observation. Note: Joe King to provide.
-2.6.0	2.6.0	ProcCoeffType	Closed		Whether the simulation results are obtained from a stationary solution or are dynamically computed.
+2.6.0	2.6.0	ProcCoeffType	Closed		Whether the model results are obtained from a stationary solution or are dynamically computed.
 2.6.0	1.0.0	ProcessingLevel	Closed		Identifiers to characterize the amount and type of manipulation which has been applied to the sampled data.
 2.6.0	2.6.0	ProcessType	Closed		Type of chemical process.
 2.6.0	2.6.0	Product	Closed		Type of article or asset.
@@ -49,15 +49,15 @@ Version	Since	Name	Type	Reference	Description
 2.6.0	2.2.5	Saturn	Closed		Identifiers for the regions surrounding the planet Saturn.
 2.6.0	2.6.0	SavedQuantity	Union	FieldQuantity,MixedQuantity,ParticleQuantity,Product,WaveQuantity	Quantities that are saved during a given diagnosis.
 2.6.0	1.3.1	ScaleType	Closed		Identifiers for scaling applied to a set of numbers.
-2.6.0	2.6.0	SimulatedRegion	Union	Region,SpecificSimulatedRegion	Identifiers for areas of the physical world which may be occupied or observed.
-2.6.0	2.6.0	SimulationType	Closed		A characterization of the numerical scheme used in the simulation.
+2.6.0	2.6.0	ModeledRegion	Union	Region,SpecificModeledRegion	Identifiers for areas of the physical world which may be occupied or observed.
+2.6.0	2.6.0	ModelType	Closed		A characterization of the numerical scheme used in the model.
 2.6.0	1.3.1	SourceType	Closed		Identifiers for the characterization of the function or purpose of a source.
-2.6.0	2.6.0	SpecificSimulatedRegion	Closed		Identifiers for areas of the physical world which may be occupied or observed.
+2.6.0	2.6.0	SpecificModeledRegion	Closed		Identifiers for areas of the physical world which may be occupied or observed.
 2.6.0	1.0.0	SpectralRange	Closed		Identifiers for names associated with wavelengths. Based on the ISO 21348 Solar Irradiance Standard. Additions have been made to extend the frequency ranges to include those used in space physics. Those additions are indicated in blue text. The "Total Solar Irradiance" category has not been included since it is a type of measurement and not a specific spectral range. See Appendix A: Comparison of Spectrum Domains for a comparison of the spectral ranges with other systems.
 2.6.0	2.3.0	Style	Closed		Identifiers for the manner in which a response from a URL is presented.
 2.6.0	1.0.0	Sun	Closed		Identifiers for regions of the star upon which our solar system is centered.
 2.6.0	1.0.0	SupportQuantity	Closed		Identifiers for the information useful in understanding the context of an observation, typically observed or measured coincidentally with a physical observation.
-2.6.0	2.6.0	Symmetry	Closed		Symmetry of the simulation domain.
+2.6.0	2.6.0	Symmetry	Closed		Symmetry of the model domain.
 2.6.0	1.3.4	Text	Closed		Identifiers for the encoding of sequences of characters.
 2.6.0	2.2.5	Uranus	Closed		Identifiers for the regions surrounding the planet Uranus.
 2.6.0	2.2.5	Venus	Closed		Identifiers for the regions surrounding the planet Venus.
