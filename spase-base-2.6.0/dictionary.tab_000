@@ -336,7 +336,7 @@
 2.6.0	2.5.0	InputField	Container				Parameters associated to a field imposed in the model.
 2.6.0	2.5.0	InputLabel	Text				A string list of the labels of each dimension of the input parameter.
 2.6.0	2.5.0	InputParameter	Container				A container of information regarding an input parameter of the model run.
-2.6.0	2.6.0	InputPopulation	Container				A container element that specifies the characteristics of a particle population used as input to a model.
+2.6.0	2.6.0	InputPopulation	Container				A container element that specifies the characteristics of a particle population used as input to a model model.
 2.6.0	2.5.0	InputProcess	Container				Parameters associated to a chemical process happening in the model.
 2.6.0	2.5.0	InputProperties	Container				Properties.
 2.6.0	2.4.0	InputProperty	Container				A container of attributes regarding an input property of an application.
@@ -456,15 +456,7 @@
 2.6.0	1.3.5	MixedQuantity	Enumeration	MixedQuantity			A characterization of the combined attributes of a quantity.
 2.6.0	1.0.0	ModeAmplitude	Item				In helioseismology the magnitude of oscillation of waves of a particular geometry.
 2.6.0	2.5.0	Model	Container				Attributes of a model.
-2.6.0	2.5.0	ModelDomain	Container				Parameters associated to the model spatial domain.
-2.6.0	2.5.0	ModeledInstrumentID	ID				The identifier of a modeled instrument description.
-2.6.0	2.5.0	ModeledRegion	Enumeration	ModeledRegion			The portion of space modeled by the code at the time of a diagnosis. A region is distinguished by certain natural features or physical characteristics. It is the location of the observatory for in situ data, the location or region sensed by remote sensing observatories and the location-of-relevance for parameters that are derived from observational data.
 2.6.0	2.5.0	ModelID	ID				A string defining the ID of the model.
-2.6.0	2.5.0	ModelProduct	Enumeration	Product			The type of product produced from the model.
-2.6.0	2.5.0	ModelRun	Container				Description of a model run, including the code ID, the run spatial and temporal description, and all the relevant inputs.
-2.6.0	2.5.0	ModelSpecification	Container				Descriptor of model specifications: type of numerical scheme, versions, etc.
-2.6.0	2.5.0	ModelTime	Container				Parameters associated to the model time.
-2.6.0	2.5.0	ModelType	Enumeration	ModelType			A characterization of the numerical scheme used in the model.
 2.6.0	2.5.0	ModelURL	URL				URL pointing toward the description of a model used in the definition of a property or an input.
 2.6.0	2.5.0	ModelVersion	Container				The version number of the model.
 2.6.0	1.0.0	Molecule	Item				A group of atoms so united and combined by chemical affinity that they form a complete, integrated whole, being the smallest portion of any particular compound that can exist in a free state.
@@ -699,7 +691,15 @@
 2.6.0	1.3.0	Set	Text				A collection of items for a particular purpose.
 2.6.0	1.2.0	SHA1	Item				Secure Hash Algorithm (SHA), a 160-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.
 2.6.0	1.2.0	SHA256	Item				Secure Hash Algorithm (SHA), a 256-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.
-2.6.0	2.5.0	SideWall	Text				Side walls of the model domain.
+2.6.0	2.5.0	SideWall	Text				Side walls of the modelion domain.
+2.6.0	2.5.0	ModeledInstrumentID	ID				The identifier of a modeled instrument description.
+2.6.0	2.5.0	ModeledRegion	Enumeration	ModeledRegion			The portion of space modeled by the code at the time of a diagnosis. A region is distinguished by certain natural features or physical characteristics. It is the location of the observatory for in situ data, the location or region sensed by remote sensing observatories and the location-of-relevance for parameters that are derived from observational data.
+2.6.0	2.5.0	ModelDomain	Container				Parameters associated to the model spatial domain.
+2.6.0	2.5.0	ModelSpecification	Container				Descriptor of model specifications: type of numerical scheme, versions, etc.
+2.6.0	2.5.0	ModelProduct	Enumeration	Product			The type of product produced from the model.
+2.6.0	2.5.0	ModelRun	Container				Description of a model run, including the code ID, the run spatial and temporal description, and all the relevant inputs.
+2.6.0	2.5.0	ModelTime	Container				Parameters associated to the model time.
+2.6.0	2.5.0	ModelType	Enumeration	ModelType			A characterization of the numerical scheme used in the model.
 2.6.0	1.0.0	Size	Sequence				The number of elements in each dimension of a multi-dimensional array. A scalar has a size of 1. A multi-dimensional vector will have a size for each dimension. Note that the number of elements in the size of an N-dimensional array conveys array dimensionality while the product of those numbers conveys the total number of elements in the array. When size is used to describe a tensor, it is the number of elements in the tensor. As such it has a limited set of values. A tensor of rank 1 has a size of 3, rank 2 a size of 9, rank 3 a size of 27 and rank n a size of 3^n.
 2.6.0	1.0.0	SM	Item				Solar Magnetic - A geocentric coordinate system where the z-axis is northward along dipole axis of the Earth, x-axis is in plane of z-axis and Earth-Sun line, positive sunward, see Russell, 1971.
 2.6.0	2.4.0	Software	Container				An application which can be installed, built or readily used.
