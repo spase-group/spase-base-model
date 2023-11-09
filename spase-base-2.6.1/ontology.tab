@@ -364,6 +364,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	1.1.0	Parameter	Wave	20	1	ParameterEntity	
 2.6.0	1.1.0	Parameter	Mixed	21	1	ParameterEntity	
 2.6.0	1.1.0	Parameter	Support	22	1	ParameterEntity	
+2.6.0	1.1.0	Parameter	SpatialCoverage	23	0	
 2.6.0	1.1.0	Particle	ParticleType	01	+		
 2.6.0	1.3.1	Particle	Qualifier	02	*		
 2.6.0	1.1.0	Particle	ParticleQuantity	03	1		
