@@ -1,0 +1,92 @@
+<div class="entry-container">
+   <table class="entry">
+      <tr>
+         <td class="term">{{term}}</td>
+         <td class="type">
+            <a href="javascript:showTerm('{{term}}')">{{type}}</a>
+         </td>
+      </tr>
+      <tr>
+         <td class="definition" colspan="2">{{definition}}</td>
+      </tr>
+      <tr>
+         <td colspan="2">
+            <table>
+               <tr>
+                  <td width="40">&nbsp;</td>
+                  <td id="since" class="nowrap">Since:{{since}}</td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+      {{#if allowedValues}}
+         <tr>
+            <td colspan="2">
+               <table>
+                  <tr>
+                     <td width="40">&nbsp;</td>
+                     <td>
+                        <table>
+                           {{#each allowedValues}}
+                              <tr>
+                                 <td class="nowrap">{{#if @first}}Allowed Values{{/if}}</td>
+                                 <td>
+                                    <a href="javascript:showTerm('{{this}}')">{{this}}</a>
+                                 </td>
+                              </tr>
+                           {{/each}}
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      {{/if}}
+      {{#if subElements}}
+         <tr>
+            <td colspan="2">
+               <table>
+                  <tr>
+                     <td width="40">&nbsp;</td>
+                     <td>
+                        <table>
+                           {{#each subElements}}
+                              <tr>
+                                 <td class="nowrap">{{#if @first}}Sub-elements{{/if}}</td>
+                                 <td>
+                                    <a href="javascript:showTerm('{{this}}')">{{this}}</a>
+                                 </td>
+                              </tr>
+                           {{/each}}
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      {{/if}}
+      <tr>
+         <td colspan="2">
+            <table>
+               <tr>
+                  <td width="40">&nbsp;</td>
+                  <td>
+                     <table>
+                        {{#each usedBy}}
+                           <tr>
+                              <td class="nowrap">
+                                 {{#if @first}}Used by:{{/if}}
+                              </td>
+                              <td>
+                                 <a href="javascript:showTerm('{{this}}')">{{this}}</a>
+                              </td>
+                           </tr>
+                        {{/each}}
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+</div>
