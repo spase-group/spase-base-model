@@ -283,6 +283,7 @@
 2.6.0	2.2.4	MixedQuantity	SolarUVFlux
 2.6.0	1.3.5	MixedQuantity	TotalPressure
 2.6.0	1.3.6	MixedQuantity	VCrossB
+2.6.1	2.6.1	ModelType	Electrohydrodynamics
 2.6.0	2.6.0	ModelType	Empirical
 2.6.0	2.6.0	ModelType	Hybrid
 2.6.0	2.6.0	ModelType	MHD
