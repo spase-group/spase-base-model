@@ -12,7 +12,7 @@
 2.6.0	1.0.0	AccessRights	Enumeration	AccessRights			Permissions granted or denied by the host of a product to allow other users to access and use the resource.
 2.6.0	1.0.0	AccessURL	Container				Attributes of the method for accessing a resource including a URL, name and description.
 2.6.0	1.3.5	ACElectricField	Item				Alternating electric field component of a wave.
-2.6.0	1.0.0	Acknowledgement	Text				The individual, group or organization which should be acknowledged when the data is used in or contributes to a presentation or publication.
+2.6.0	1.0.0	Acknowledgement	Text				The individual, group or organization which should be acknowledged when the data are used in or contributes to a presentation or publication.
 2.6.0	1.3.5	ACMagneticField	Item				Alternating magnetic field component of a wave.
 2.6.0	1.3.0	Active	Item				Exerting an influence or producing a change or effect. An active measurement is one which produces a transmission or excitation as a part of the measurement cycle.
 2.6.0	1.3.0	ActiveRegion	Item				A localized, transient volume of the solar atmosphere in which PLAGEs, SUNSPOTS, FACULAe, FLAREs, etc. may be observed.
@@ -33,6 +33,7 @@
 2.6.0	1.3.4	AnnotationType	Enumeration	AnnotationType			A classification for an annotation.
 2.6.0	1.3.4	Anomaly	Item				An interval where measurements or observations may be adversely affected.
 2.6.0	1.0.0	Antenna	Item				A sensor used to measure electric potential.
+2.6.1	2.6.1	AOGCM	Item				Coupled atmosphere–ocean–sea ice global climate models solve the full equations for mass and energy transfer and radiant exchange.
 2.6.0	2.4.0	API	Item				An application programming interface (API) is a form of interface that allows applications to access the features or data of an operating system, application, or other service. An API may have a required protocol or set of principles. Some examples of protocols are SOAP, XML-RPC and JSON-RPC. An example of an API with a set of principles is REST.
 2.6.0	2.4.0	ApplicationInterface	Enumeration	ApplicationInterface			The type of interface for the application.
 2.6.0	1.2.1	ArchiveSpecialist	Item				An individual who is an expert on a collection of resources and may also be knowledgeable of the phenomenon and related physics represented by the resources. This includes librarians, curators, archive scientists and other experts.
@@ -43,7 +44,7 @@
 2.6.0	1.0.0	ASCII	Item				A sequence of characters that adheres to American Standard Code for Information Interchange (ASCII) which is a 7-bit character-coding scheme.
 2.6.0	1.3.3	Association	Container				Attributes of a relationship a resource has with another resource.
 2.6.0	1.1.0	AssociationID	ID				The resource identifier for a resource with which this resource is closely associated.
-2.6.0	1.3.3	AssociationType	Enumeration	AssociationType			A characterization of the role or purpose of an associated resource.
+2.6.0	1.3.3	AssociationType	Enumeration	AssociationType			A characterization of the role or purpose of the resource being described in relationship to the resource with the AssociationID being referenced.
 2.6.0	1.2.0	Asteroid	Item				A small extraterrestrial body consisting mostly of rock and metal that is in orbit around the Sun.
 2.6.0	1.1.0	Atmosphere	Item				The neutral gases surrounding a body that extends from the surface and is bound to the body by virtue of the gravitational attraction.
 2.6.0	1.3.6	Atom	Item				Matter consisting of a nucleus surrounded by electrons which has no net charge.
@@ -51,8 +52,8 @@
 2.6.0	1.1.0	AtomicNumberDetected	Item				The number of protons in the nucleus of an atom as determined by a detector.
 2.6.0	1.2.0	Aurora	Item				A natural electrical phenomenon characterized by the appearance of streamers of reddish or greenish light in the sky, especially near the northern or southern magnetic pole. The effect is caused by the interaction of charged particles from the sun with atoms in the upper atmosphere. In northern and southern regions, it is respectively called aurora borealis or Northern Lights and aurora australis or Southern Lights.
 2.6.0	1.1.0	AuroralRegion	Item				The region in the atmospheric where electrically-charged particles bombarding the upper atmosphere of a planet in the presence of a magnetic field produce an optical phenomenon.
-2.6.0	1.1.0	Author	Item				The composer of a literary work. This can include presentations, articles, books, white papers or any similar published work.
-2.6.0	2.3.0	Authors	Text				A list of individuals or organizations who prepared the work (document, data, images or other types of resources). Separate multiple names with a semicolon. When an author is a person use the "last, first [, middle]" name format. Including a middle name is optional.
+2.6.0	1.1.0	Author	Item				The composer or creator of an artifact. This can include presentations, articles, books, white papers, data products or any similar published work. In SPASE, Author is a Role under Person resource description.
+2.6.0	2.3.0	Authors	Text				The individuals or organizations who defined or specified a resource (document, data, images or other types of resources). Separate multiple names with a semicolon. When an author is a person use the "last, first [, middle]" name format. Including a middle name is optional (Since 2.6.1).
 2.6.0	1.3.6	Automatic	Item				Determined by the analysis or assessment performed by a program or server.
 2.6.0	2.3.2	AutoSpectrum	Item				The Fourier transform of the auto correlation function for physical or empirical observations, which describes the general dependence of the time series data values at one instant on the time series data values at another instant.
 2.6.0	1.0.0	Availability	Enumeration	Availability			An indication of the method or service which may be used to access the resource.
@@ -158,7 +159,7 @@
 2.6.0	2.2.5	Dione	Item				The fourth largest moon of Saturn.
 2.6.0	1.3.5	Direction	Item				The spatial relation between an object and another object, the orientation of the object or the course along which the object points or moves.
 2.6.0	2.2.0	Directional	Item				A measurement within a narrow range of solid angle.
-2.6.0	2.3.1	DirectionAngle	Enumeration	DirectionAngle			The angle between a position vector or measured vector (or one of its projections onto a plane) and one of the base axes of the coordinate system.
+2.6.0	2.3.1	DirectionAngle	Enumeration	DirectionAngle			An enumeration list of angular measures for specifying the direction of an n-dimensional vector within the n-dimensional coordinate system in use or the angular deviation of an n-dimensional vector from an (n-1)-dimensional plane, depending on the application. [Note: DirectionAngle must be used with a sub enumeration term: DirectionAngle.AzimuthAngle; DirectionAngle.ElevationAngle; DirectionAngle.PolarAngle].
 2.6.0	1.3.5	DirectionCosine	Enumeration	DirectionCosine			The cosine of the angle between two vectors usually between a vector and one of the basis axes defining a Cartesian coordinate system. Three angles and thus three direction cosines are required to define a vector direction in a 3-D Euclidean space.
 2.6.0	1.0.0	DisplayCadence	Duration				The time interval between the successive display elements.
 2.6.0	1.0.0	DisplayData	Container				A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis. Examples are line plots and spectrograms. A Display Data resource is a type of "data product" which is a set of data that is uniformly processed and formatted, from one or more instruments, typically spanning the full duration of the observations of the relevant instrument(s). A data product may consist of a collection of granules of successive time spans, but may be a single high-level entity.
@@ -190,8 +191,8 @@
 2.6.0	1.0.0	Electron	Item				An elementary particle that has a negative charge equal to about 1.60218*10^-19 C and a rest mass equal to about 9.10938*10^-31 kg.
 2.6.0	1.0.0	ElectronDriftInstrument	Item				An active experiment to measure the electron drift velocity based on sensing the displacement of a weak beam of electrons after one gyration in the ambient magnetic field.
 2.6.0	2.5.0	ElectronImpact	Item				Chemical process by which a neutral is ionized thanks to the energy from the impact of an electron.
-2.6.0	1.3.5	Electrohydrodynamics	Item				The study of the motions of ionized particles or molecules and their interactions with electric fields and the surrounding fluid.
 2.6.0	1.3.5	Electrostatic	Item				Collective longitudinal electric-field and plasma oscillations trapped within a body of plasma.
+2.6.1	2.6.1	Electrohydrodynamic	Item				The study of the motions of ionized particles or molecules and their interactions with electric fields and the surrounding fluid [https://en.wikipedia.org/wiki/Electrohydrodynamics].
 2.6.0	1.0.0	ElectrostaticAnalyser	Item				An instrument which uses charged plates to analyze the mass, charge and kinetic energies of charged particles which enter the instrument.
 2.6.0	1.2.0	Element	Container				A component or individual unit of a multiple value quantity such as an array or vector.
 2.6.0	2.5.0	ElementBoundary	Container				Parameters associated to the model boundaries.
@@ -202,7 +203,7 @@
 2.6.0	1.0.0	Empirical	Item				Information obtained through observation, experiment, or experience.
 2.6.0	2.2.5	Enceladus	Item				The sixth largest moon of Saturn. It is currently endogenously active. The smallest known body in the Solar System that is geologically active today.
 2.6.0	2.3.2	EncodedParameter	Item				A variable that uses successive bits to encode, this is bitwise encode, a set of conditions by using a composited multi-bit numeric value. A common example is a bitwise encoded flag that denotes whether various possible errors that may affect a particular measurement. For example, a bit value equal to zero may indicate the absence of a particular error condition while a value equal to one would indicate the possibility that the associated datum should be ignored or used with caution due to the same error categorization.
-2.6.0	1.0.0	Encoding	Enumeration	Encoding			A set of unambiguous rules that establishes the representation of information within a file.
+2.6.0	1.0.0	Encoding	Enumeration	Encoding			File encoding format.
 2.6.0	1.0.0	EnergeticParticleInstrument	Item				An instrument that measures fluxes of charged particles as a function of time, direction of motion, mass, charge and/or species.
 2.6.0	1.0.0	EnergeticParticles	Item				Pieces of matter that are moving very fast. Energetic particles include protons, electrons, neutrons, neutrinos, the nuclei of atoms, and other sub-atomic particles.
 2.6.0	1.0.0	EnergeticSolarParticleEvent	Item				An enhancement of interplanetary fluxes of energetic ions accelerated by interplanetary shocks and/or solar flares.
@@ -245,12 +246,12 @@
 2.6.0	2.2.0	Film	Item				An image recording medium on which usually a negative analog image is registered. A positive analog image can be recovered or reproduced from film, which is usually made of flexible materials for ease of storage and transportation.
 2.6.0	1.0.0	Fit	Item				Values that make a model agree with the data.
 2.6.0	1.0.0	FITS	Item				Flexible Image Transport System (FITS) is a digital format primarily designed to store scientific data sets consisting of multi-dimensional arrays (1-D spectra, 2-D images or 3-D data cubes) and 2-D tables containing rows and columns of data.
-2.6.0	1.2.1	FlowSpeed	Item				The rate at which particles or energy is passing through a unit area in a unit time.
-2.6.0	1.3.1	FlowVelocity	Item				The volume of matter passing through a unit area perpendicular to the direction of flow in a unit of time.
+2.6.0	1.2.1	FlowSpeed	Item				The magnitude of the flow velocity.
+2.6.0	1.3.1	FlowVelocity	Item				The mean velocity of all particles in the flow, also referred to as bulk velocity or average flow velocity.
 2.6.0	2.2.0	Fluence	Item				The time integral of a flux. A fluence is a not a measurement of flux per unit time.
 2.6.0	1.0.0	FluxFeedback	Item				A search coil whose bandwidth and signal/noise ratio are increased by the application of negative feedback at the sensor (flux) level by driving a collocated coil with a signal from the preamplifier.
 2.6.0	1.0.0	ForbushDecrease	Item				A rapid decrease in the observed galactic cosmic ray intensity following the passage of an outwardly convecting interplanetary magnetic field disturbance, such as those associated with large CMEs, that sweep some galactic cosmic rays away from Earth.
-2.6.0	1.0.0	Format	Enumeration	Format			The organization of data according to preset specifications. The value is selected from a list of accepted names for known, well documented formats.
+2.6.0	1.0.0	Format	Enumeration	Format			The file format specification. The value is selected from a list of accepted names for known, well documented formats.
 2.6.0	2.0.3	FormerPI	Item				An individual who had served as the administrative and scientific lead for an investigation, but no longer assumes that role.
 2.6.0	1.0.0	FourierTransformSpectrograph	Item				An instrument that determines the spectra of a radiative source, using time domain measurements and a Fourier transform.
 2.6.0	1.2.0	FRegion	Item				A layer that contains ionized gases at a height of around 150-800 km above sea level, placing it in the thermosphere. the F region has the highest concentration of free electrons and ions anywhere in the atmosphere. It may be thought of as comprising two layers, the F1 layer and F2 layer. One of several layers in the ionosphere. Also known as the Appleton layer.
@@ -261,6 +262,7 @@
 2.6.0	2.3.0	Funding	Container				The source of financial support (funding) for the resource.
 2.6.0	1.0.0	GammaRays	Item				Photons with a wavelength range: 0.00001 nm to 0.001 nm.
 2.6.0	2.2.5	Ganymede	Item				The biggest moon of Jupiter and in the solar system.
+2.6.1	2.6.1	GCM	Item				A Global Circulation Model (GCM) is a type of climate model, which employs mathematical equations to simulate the motion of a planetary atmosphere or ocean.
 2.6.0	1.0.0	GEI	Item				GEI Geocentric Equatorial Inertial - A coordinate system where the z-axis is along spin axis of the Earth, positive northward. The x-axis points towards the first point of Aries (from the Earth towards the Sun at the vernal equinox), see Russell, 1971. When the x-axis is the direction of the mean vernal equinox of J2000, the coordinate system is also called GCI. Then the z-axis is also defined as being normal to the mean Earth equator of J2000.
 2.6.0	1.2.1	GeigerMuellerTube	Item				An instrument which measures density of ionizing radiation based on interactions with a gas.
 2.6.0	1.0.0	GeneralContact	Item				An individual who can provide information on a range of subjects or who can direct you to a domain expert.
@@ -317,6 +319,7 @@
 2.6.0	1.3.5	Hydrodynamic	Item				Periodic or quasi-periodic oscillations of fluid quantities.
 2.6.0	1.3.4	I	Item				Projection of a vector along the first named axis of a coordinate system. Typically, the x-axis, but could be the R-axis for an RTN coordinate system.
 2.6.0	2.2.5	Iapetus	Item				The third largest moon of Saturn and the eleventh largest in the Solar System.
+2.6.1	2.6.1	InterplanetaryCoronalMassEjection	Item				An Interplanetary Coronal Mass Ejection (ICME) is a Coronal Mass Ejection (CME) observed in the solar wind far away from the Sun.
 2.6.0	1.0.0	IDFS	Item				Instrument Data File Set (IDFS) is a set of files written in a prescribed format which contain data, timing data, and metadata. IDFS was developed at Southwest Research Institute (SwRI).
 2.6.0	1.0.0	IDL	Item				Interactive Data Language (IDL) save set. IDL is a proprietary format.
 2.6.0	1.3.4	IJ	Item				A measure of the length of a position or measured vector projected into the I-J (typically X-Y) plane of the coordinate system.
@@ -395,6 +398,8 @@
 2.6.0	1.0.0	LineOfSight	Item				The line of sight is the line that connects the observer with the observed object. This expression is often used with measurements of Doppler velocity and magnetic field in magnetograms, where only the component of the vector field directed along the line of sight is measured.
 2.6.0	2.6.0	Lines	Item				A set of 1-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points along a line though a model volume. For instance, the points of the line may correspond to the trajectory of a spacecraft through model space.
 2.6.0	2.3.0	Listing	Item				A listing of files either through FTP or HTTP.
+2.6.1	2.6.1	LocalGeographic	Item				A coordinate system used mainly for Earth surface or near-Earth surface magnetic field or other vector measurements.  The X-axis points northward from observation point in a geographic meridian in the horizontal plane. The Y-axis points eastward from observation point in a geographic latitude in the horizontal plane. The Z-axis points downward towards center of the Earth.
+2.6.1	2.6.1	LocalGeomagnetic	Item				A coordinate system used mainly for Earth surface or near-Earth surface magnetic field data.  The H-axis points northward toward the north magnetic pole from observation point in a geomagnetic meridian in the horizontal plane. The D-axis points eastward from observation point in a geomagnetic latitude in the horizontal plane. The Z-axis points downward towards center of the Earth.
 2.6.0	1.2.0	Location	Container				A position in space definable by a regional referencing system and geographic coordinates.
 2.6.0	1.3.4	LogScale	Item				Intervals which are spaced proportionally to the logarithms of the values being represented.
 2.6.0	1.2.0	Longitude	Numeric				The angular distance measured west (negative) or east (positive) from a north-south line called the Prime Meridian.
@@ -404,7 +409,7 @@
 2.6.0	2.3.2	LShell	Item				The L-shell is the magnetic equatorial radius (in units of planetary radii) of a dipole magnetic field line. For instance, if the L-shell value equals 6 say at Earth, the magnetic field lines cross the magnetic equator at six Earth radii. The L-shell concept can be applied generally to any magnetized planet or satellite with a dominant dipolar magnetic field moment.
 2.6.0	1.0.0	MAG	Item				Geomagnetic - geocentric. The z-axis is parallel to the geomagnetic dipole axis, positive north. The x-axis is in the plane defined by the z-axis and the rotation axis of the Earth. If N is a unit vector from the center of the Earth to the north geographic pole, the signs of the y-axis and x-axis are given by the vector cross products N cross z and y cross z, respectively, see Russell, 1971 and http://cdpp.cnes.fr/00428.pdf.
 2.6.0	1.0.0	Magnetic	Item				The physical attribute attributed to a magnet or its equivalent.
-2.6.0	1.3.0	MagneticCloud	Item				A transient event observed in the solar wind characterized as a region of enhanced magnetic field strength, smooth rotation of the magnetic field vector and low proton density and temperature.
+2.6.0	1.3.0	MagneticCloud	Item				A transient event observed in the solar wind characterized as a region of enhanced magnetic field strength, smooth and large-scale rotation of the magnetic field vector, low proton temperature, and low plasma beta.
 2.6.0	1.0.0	MagneticField	Item				A region of space near a magnetized body where magnetic forces can be detected (as measured by methods such as Zeeman splitting, etc.).
 2.6.0	2.3.1	MagneticMoment	Item				A constant of motion related to the gyromotion of a particle in a magnetic field that is either static or slowly varying with respect to the gyroperiod. The magnetic moment is usually denoted by using the lower-case Greek letter for mu, &#956;, and can be calculated by using &#956;=m(u^2/2B) where m is the particle mass, u is the velocity of the particle perpendicular to the constant or average magnetic field direction, and B is the magnitude of the magnetic field strength.
 2.6.0	1.0.0	Magnetogram	Item				Measurements of the vector or line-of-sight magnetic field determined from remote sensing measurements of the detailed structure of spectral lines, including their splitting and polarization.
@@ -489,6 +494,7 @@
 2.6.0	1.2.1	Ni6768	Item				A spectrum with a wavelength range centered at 676.8 nm. VSO nickname: Ni-6768 dopplergram with a range of 676.7 nm to 676.9 nm.
 2.6.0	2.6.0	No	Item				The negative response to a yes or no question.
 2.6.0	1.0.0	None	Item				A lack or absence of anything.
+2.6.1	2.6.1	NonHydrostatic	Item				An atmospheric in which the vertical momentum equation must be solved because the hydrostatic approximation is not satisfied.
 2.6.0	2.4.2	NorthernmostLatitude	Text				The latitude furthest to the north in a geographic coordinate system.
 2.6.0	1.2.0	Note	Text				Information which is useful or important for the understanding of a value or parameter.
 2.6.0	1.0.0	NumberDensity	Item				The number of particles per unit volume.
@@ -631,7 +637,7 @@
 2.6.0	1.0.0	ProviderResourceName	Text				A short textual description of a resource used by the provider which may be used to identify a resource.
 2.6.0	1.0.0	ProviderVersion	Text				Describes the release or edition of the product used by the provider. The formation rule may vary between providers. It is intended to aid in queries to the provider regarding the product.
 2.6.0	1.3.4	Pseudo	Item				Similar to or having the appearance of something else. Can be used to indicate an estimation or approximation of a particular quantity.
-2.6.0	2.3.0	PublicationDate	DateTime				The date that the work (document, data, images or other types of resources) was first issued.
+2.6.0	2.3.0	PublicationDate	DateTime				The date that the work (document, data, images, DOI or other types of resources) was first issued.
 2.6.0	2.3.0	PublicationInfo	Container				Information required to mint a DOI for the resource being described in SPASE.
 2.6.0	2.3.0	PublishedBy	Text				The name or the company, organization or individual that issues the work (document, data, images or other types of resources).
 2.6.0	1.3.0	Publisher	Item				An individual, organization, institution or government department responsible for the production and dissemination of a document.
@@ -656,7 +662,7 @@
 2.6.0	2.5.0	RegionParameter	Container				Radius of the Region in the model.
 2.6.0	1.1.0	Registry	Container				A location or facility where resources are cataloged.
 2.6.0	1.1.0	RelativeStopDate	Duration				An indication of the nominal end date relative to the present.
-2.6.0	1.1.0	ReleaseDate	DateTime				The date and time when a resource is made available. The availability of a resource coincides with the release of a resource description. If the Release Date is specified as a future date, then it indicates that resource should not be made available until that time. However, this is only advisory and in practice the Release Date should be the actual date the resource description was published.
+2.6.0	1.1.0	ReleaseDate	DateTime				The date and time when a SPASE resource is made available. The availability of a resource coincides with the release of a resource description. If the Release Date is specified as a future date, then it indicates that resource should not be made available until that time. However, this is only advisory and in practice the Release Date should be the actual date the resource description was published.
 2.6.0	2.4.1	Remark	Item				A notice, comment, or observation.
 2.6.0	1.1.0	Remote1AU	Item				A roughly toroidal region that includes the orbit of the Earth, but exclusive of the region near the Earth.
 2.6.0	2.2.0	RenderingAxis	Enumeration	RenderingAxis			A reference component of a plot or rendering of data. A plot typically is a 2-D rendering with a horizontal axis and vertical axis. A third dimension can be introduced with a color coding of the rendered data.
@@ -667,7 +673,7 @@
 2.6.0	1.0.0	ResonanceSounder	Item				A combination of a radio receiver and a pulsed transmitter used to study the plasma surrounding a spacecraft by identifying resonances or cut-offs (of the wave dispersion relation), whose frequencies are related to the ambient plasma density and magnetic field. When the transmitter is off it is essentially a high-frequency resolution spectral power receiver.
 2.6.0	1.0.0	ResourceHeader	Container				Attributes of a resource which pertain to the provider of the resource and descriptive information about the resource.
 2.6.0	1.0.0	ResourceID	ID				A ResourceID is a URI that has the form "scheme://authority/path" where "scheme" is "spase" for those resources administered through the SPASE framework, "authority" is the unique identifier for the resource provider registered within the SPASE framework and "path" is the unique identifier of the resource within the context of the "authority". All ResourceIDs must be unique within the SPASE framework.
-2.6.0	1.0.0	ResourceName	Text				A short textual description of a resource which may be useful when read by a person.
+2.6.0	1.0.0	ResourceName	Text				A short textual resource description that is sufficient for identifying the resource. It should have a one-to-one correspondence to the ResourceID of the resource.
 2.6.0	1.0.0	Restricted	Item				Access to the product is regulated and requires some form of identification.
 2.6.0	1.2.1	RetardingPotentialAnalyser	Item				An instrument which measures ion temperatures and ion concentrations using a planar ion trap.
 2.6.0	2.3.1	RevisionEvent	Container				A specific change that improves or upgrades.
@@ -696,6 +702,7 @@
 2.6.0	2.3.0	Search	Item				A web search interface that requires additional input.
 2.6.0	1.0.0	SearchCoil	Item				An instrument which measures the time variation of the magnetic flux threading a loop by measurement of the electric potential difference induced between the ends of the wire.
 2.6.0	2.2.2	SectorBoundaryCrossing	Item				A sector boundary crossing is a transit by a spacecraft across the heliospheric current sheet separating the dominantly outward (away from the Sun) interplanetary magnetic field of one hemisphere of the heliosphere from the dominantly inward (towards the Sun) polarity of the other hemisphere. Such crossings have multi-day intervals of opposite IMF dominant polarities on either side.
+2.6.1	2.6.1	SensorCoordinates	Item				A coordinate system defined by the instrument or measuring geometry.
 2.6.0	1.1.0	Service	Container				A location or facility that can perform a well-defined task.
 2.6.0	1.3.0	Set	Text				A collection of items for a particular purpose.
 2.6.0	1.2.0	SHA1	Item				Secure Hash Algorithm (SHA), a 160-bit message digest algorithm developed by the NSA and described in Federal Information Processing Standard (FIPS) publication 180-1.
@@ -757,7 +764,7 @@
 2.6.0	2.0.2	StreamInteractionRegion	Item				The region where two solar wind streams, typically having differing characteristics and solar sources, abut up against (and possibly partially interpenetrate) each other. The abbreviation SIR is commonly used in place of Stream Interaction Region.
 2.6.0	1.3.4	Strong	Item				Highly likely given the available evidence. Considered in the range of 7 to 10 on a scale of 0 to 10.
 2.6.0	1.2.0	Structure	Container				The organization and relationship of individual values within a quantity.
-2.6.0	2.3.0	Style	Enumeration	Style			The manner in which a response from a URL is presented.
+2.6.0	2.3.0	Style	Enumeration	Style			The manner or protocol with which resources can be accessed.
 2.6.0	2.3.1	SubAuroralRegion	Item				When considering the case of the Earth, the sub-auroral region typically refers to two latitudinal bands, one in the northern hemisphere and the other in the southern hemisphere extending from about 50 deg to low 60 deg latitude. The concept sub-auroral regions does not apply to all bodies in the solar system and different latitudinal ranges would apply for each body case by case. The sub-auroral regions may be defined by using either planetographic or magnetic coordinates if the magnetic dipole is closely aligned with the spin axis of a magnetized body. Ground magnetometers located at sub-auroral latitudes on the Earth measure a mixture of activity driven by auroral zone currents and the ring current.
 2.6.0	2.5.0	SubLongitude	Text				The longitude on the surface of an object which is directly below another object.
 2.6.0	1.2.0	Substorm	Item				A process by which plasma in the magnetotail becomes energized at a fast rate.
@@ -786,7 +793,7 @@
 2.6.0	1.0.0	Text	Enumeration	Text			A sequence of characters which may have an imposed structure or organization.
 2.6.0	2.4.1	TFCat	Item				Time-Frequency Catalogue (TFCat) is a catalogue model & transfer format for spectro-temporal features. https://gitlab.obspm.fr/maser/catalogues/catalogue-format.
 2.6.0	1.0.0	ThermalPlasma	Item				Measurements of the plasma in the energy regime where the most of the plasma occurs. May be the basic fluxes in the form of distribution functions or the derived bulk parameters (density, flow velocity, etc.).
-2.6.0	1.0.0	ThermalSpeed	Item				For a Maxwellian distribution, the difference between the mean speed and the speed within 69% (one sigma) of all the members of the speed distribution occur.
+2.6.0	1.0.0	ThermalSpeed	Item				A characteristic fluctuation speed of a distribution of particles about the bulk flow speed of the distribution. The value of the thermal speed depends on the dimensions and temperature of the distribution. Specific quantitative definition of thermal speed must be provided by the provider of a resource to be described in SPASE. [Note: Its quantitative definition depends on the nature of the particle distribution and how the random speed is characterized or calculated and must be specified in the description of the quantity used in the product described by the SPASE document].
 2.6.0	1.2.0	Thermosphere	Item				The layer of the atmosphere that extends from the Mesosphere to 640+ km, temperature increasing with height.
 2.6.0	1.3.1	Thumbnail	Item				A small representation of an image which is suitable to infer what the full-sized imaged is like.
 2.6.0	1.0.0	TIFF	Item				A binary format for still pictures. Tagged Image Format File (TIFF). Originally developed by Aldus and now controlled by Adobe.
