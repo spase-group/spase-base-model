@@ -1,7 +1,7 @@
 {
    "name": "SPASE Base Model",
    "version": "2.6.1",
-   "released": "2024-06-06",
+   "released": "2024-06-13",
    "description": "SPASE Base Model",
    "namespace": "spase",
    "schemaurl": "http://www.spase-group.org/data/schema"
