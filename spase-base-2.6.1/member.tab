@@ -203,6 +203,7 @@
 2.6.0	1.3.0	InstrumentType	IonDrift
 2.6.0	2.3.1	InstrumentType	IonGauge
 2.6.0	1.1.0	InstrumentType	LangmuirProbe
+2.6.1	2.6.1	InstrumentType	Lidar
 2.6.0	1.1.0	InstrumentType	LongWire
 2.6.0	2.2.3	InstrumentType	Magnetograph
 2.6.0	1.1.0	InstrumentType	Magnetometer

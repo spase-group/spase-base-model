@@ -377,8 +377,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	Particle	ChemicalFormula	10	0		
 2.6.0	2.6.0	Particle	Population	11	0		
 2.6.0	2.6.0	Particle	PopulationMassNumber	12	0		
-2.6.1	2.6.1	Particle	SourceRegion	14	*		
-2.6.1	2.6.1	Particle	SourceRegionExtent	15	*		
+2.6.0	1.1.0	Particle	PopulationChargeState	13	0		
 2.6.0	1.1.0	Person	ResourceID	01	1		
 2.6.0	1.1.0	Person	ReleaseDate	02	0		
 2.6.0	1.1.0	Person	PersonName	03	0		
@@ -599,8 +598,6 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	1.3.5	Wave	EnergyRange	04	0		
 2.6.0	1.3.5	Wave	FrequencyRange	05	0		
 2.6.0	1.3.5	Wave	WavelengthRange	06	0		
-2.6.1	2.6.1	Wave	SourceRegion	07	*		
-2.6.1	2.6.1	Wave	SourceRegionExtent	08	*		
 2.6.0	1.3.0	WavelengthRange	SpectralRange	01	0		
 2.6.0	1.3.0	WavelengthRange	Low	02	1		
 2.6.0	1.3.0	WavelengthRange	High	03	1		

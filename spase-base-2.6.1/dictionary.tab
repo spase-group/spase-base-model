@@ -33,7 +33,7 @@
 2.6.0	1.3.4	AnnotationType	Enumeration	AnnotationType			A classification for an annotation.
 2.6.0	1.3.4	Anomaly	Item				An interval where measurements or observations may be adversely affected.
 2.6.0	1.0.0	Antenna	Item				A sensor used to measure electric potential.
-2.6.1	2.6.1	AOGCM	Item				Coupled atmosphere–ocean–sea ice global climate models solve the full equations for mass and energy transfer and radiant exchange.
+2.6.1	2.6.1	AOGCM	Item				Coupled atmosphere-ocean-sea ice global climate models solve the full equations for mass and energy transfer and radiant exchange.
 2.6.0	2.4.0	API	Item				An application programming interface (API) is a form of interface that allows applications to access the features or data of an operating system, application, or other service. An API may have a required protocol or set of principles. Some examples of protocols are SOAP, XML-RPC and JSON-RPC. An example of an API with a set of principles is REST.
 2.6.0	2.4.0	ApplicationInterface	Enumeration	ApplicationInterface			The type of interface for the application.
 2.6.0	1.2.1	ArchiveSpecialist	Item				An individual who is an expert on a collection of resources and may also be knowledgeable of the phenomenon and related physics represented by the resources. This includes librarians, curators, archive scientists and other experts.
@@ -391,6 +391,7 @@
 2.6.0	1.3.1	Layout	Item				The structured arrangement of items in a collection.
 2.6.0	1.3.5	LBHBand	Item				Lyman-Birge-Hopfield band in the far ultraviolet range with wavelength range of 140 nm to 170 nm.
 2.6.0	1.0.0	LGM	Item				Local Geomagnetic - A coordinate system used mainly for Earth surface or near-Earth surface magnetic field data. The x-axis northward from observation point in a geographic meridian. The z-axis downward towards center of the Earth. In this system, the total horizontal component, H, is equal to sqrt(Bx^2+By^2) and declination angle, D is equal to arctan(By/Bx).
+2.6.1	2.6.1	Lidar	Item				Lidar (Light Detection and Ranging) is a class of instruments that uses laser light to study atmospheric properties from the ground up to the top of the atmosphere. Such instruments have been used to study atmospheric gases, aerosols, clouds, and temperature.
 2.6.0	2.5.0	LikelihoodRating	Enumeration	ConfidenceRating			The probability that something is true or possible.
 2.6.0	1.0.0	Linear	Item				Polarization where the E-field vector is confined to a given plane.
 2.6.0	1.3.4	LinearScale	Item				Intervals which are equally spaced.
@@ -398,8 +399,8 @@
 2.6.0	1.0.0	LineOfSight	Item				The line of sight is the line that connects the observer with the observed object. This expression is often used with measurements of Doppler velocity and magnetic field in magnetograms, where only the component of the vector field directed along the line of sight is measured.
 2.6.0	2.6.0	Lines	Item				A set of 1-D arrays that contain the values of physical parameters, i.e., magnetic field vectors, particle densities, temperatures, etc., at the grid points along a line though a model volume. For instance, the points of the line may correspond to the trajectory of a spacecraft through model space.
 2.6.0	2.3.0	Listing	Item				A listing of files either through FTP or HTTP.
-2.6.1	2.6.1	LocalGeographic	Item				A coordinate system used mainly for Earth surface or near-Earth surface magnetic field or other vector measurements.  The X-axis points northward from observation point in a geographic meridian in the horizontal plane. The Y-axis points eastward from observation point in a geographic latitude in the horizontal plane. The Z-axis points downward towards center of the Earth.
-2.6.1	2.6.1	LocalGeomagnetic	Item				A coordinate system used mainly for Earth surface or near-Earth surface magnetic field data.  The H-axis points northward toward the north magnetic pole from observation point in a geomagnetic meridian in the horizontal plane. The D-axis points eastward from observation point in a geomagnetic latitude in the horizontal plane. The Z-axis points downward towards center of the Earth.
+2.6.1	2.6.1	LocalGeographic	Item				A coordinate system used mainly for Earth surface or near-Earth surface magnetic field or other vector measurements. The X-axis points northward from observation point in a geographic meridian in the horizontal plane. The Y-axis points eastward from observation point in a geographic latitude in the horizontal plane. The Z-axis points downward towards center of the Earth.
+2.6.1	2.6.1	LocalGeomagnetic	Item				A coordinate system used mainly for Earth surface or near-Earth surface magnetic field data. The H-axis points northward toward the north magnetic pole from observation point in a geomagnetic meridian in the horizontal plane. The D-axis points eastward from observation point in a geomagnetic latitude in the horizontal plane. The Z-axis points downward towards center of the Earth.
 2.6.0	1.2.0	Location	Container				A position in space definable by a regional referencing system and geographic coordinates.
 2.6.0	1.3.4	LogScale	Item				Intervals which are spaced proportionally to the logarithms of the values being represented.
 2.6.0	1.2.0	Longitude	Numeric				The angular distance measured west (negative) or east (positive) from a north-south line called the Prime Meridian.
@@ -722,6 +723,8 @@
 2.6.0	1.2.1	Sounder	Item				An instrument which measures the radiances from an object. A sounder may measure radiances at multiple spectral ranges.
 2.6.0	2.0.1	SoundSpeed	Item				The speed at which sound travels through a medium.
 2.6.0	1.3.1	Source	Container				The location and attributes of an object.
+2.6.1	2.6.1	SourceRegion	Text				The apparent region of space from which a particular type of observed electromagnetic or particle radiation appears to have originated.
+2.6.1	2.6.1	SourceRegionExtent	Text				The observational size of a remote source of radiation (electromagnetic waves or particles). It is typically expressed in angular width (full or half width), or in solid angle, subtended at the observing point. SourceRegionExtent should be accompanied by the description of source direction (see Direction under Qualifier).
 2.6.0	1.3.1	SourceType	Enumeration	SourceType			A characterization of the function or purpose of the source.
 2.6.0	1.2.0	SouthAtlanticAnomalyRegion	Item				The region where the inner Van Allen radiation belt makes its closest approach to the surface of the Earth. The result is that, for a given altitude, the radiation intensity is higher over this region than elsewhere.
 2.6.0	2.4.2	SouthernmostLatitude	Text				The latitude furthest to the south in a geographic coordinate system.
@@ -756,7 +759,7 @@
 2.6.0	1.3.6	StartLocation	Text				The initial position in space.
 2.6.0	2.5.0	Step	Text				Spatial step between two elements of the diagnosis.
 2.6.0	1.0.0	StokesParameters	Item				A set of four parameters (usually called I,Q, U and V) which describe the polarization state of an electromagnetic wave propagating through space.
-2.6.0	1.0.0	StonyhurstHeliographic	Item				The origin of the Stonyhurst heliographic coordinate system is at the intersection of the solar equator and the central meridian as seen from Earth. Thus, the coordinate system remains fixed with respect to Earth, while the Sun rotates (synodically) underneath it. The latitude and longitude angles, theta and phi, respectively, are given in degrees, with theta increasing towards solar North, and phi increasing towards the solar West limb. The distance r is either a physical distance in meters, or is relative to the solar photospheric radius R approximately equal to 6.96 x 10^8 m. This coordinate system is demonstrated in An alternative to the r coordinate is the height h = r - R relative to the solar surface, where h is positive above the surface and negative below the surface.
+2.6.1	2.6.1	StonyhurstHeliographic	Item				The origin of the Stonyhurst heliographic coordinate system is at the intersection of the solar equator and the central meridian as seen from Earth. Thus, the coordinate system remains fixed with respect to Earth, while the Sun rotates (synodically) underneath it. The latitude and longitude angles, theta and phi, respectively, are given in degrees, with theta increasing towards solar North, and phi increasing towards the solar West limb. The distance r is either a physical distance in meters, or is relative to the solar photospheric radius R approximately equal to 6.96 x 10^8 m. This coordinate system is demonstrated in An alternative to the r coordinate is the height h = r - R relative to the solar surface, where h is positive above the surface and negative below the surface.
 2.6.0	1.0.0	StopDate	DateTime				The specification of a stopping point in time.
 2.6.0	1.3.6	StopLocation	Text				The final position in space.
 2.6.0	2.4.0	Storage	Text				The component of your computer that allows you to store and access data on a long-term basis. Indicate units with standard byte scales such as KB, MB, GB, TB and PB.
