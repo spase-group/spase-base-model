@@ -377,7 +377,6 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.6.0	2.6.0	Particle	ChemicalFormula	10	0		
 2.6.0	2.6.0	Particle	Population	11	0		
 2.6.0	2.6.0	Particle	PopulationMassNumber	12	0		
-2.6.0	2.6.0	Particle	PopulationChargeState	13	0		
 2.6.1	2.6.1	Particle	SourceRegion	14	*		
 2.6.1	2.6.1	Particle	SourceRegionExtent	15	*		
 2.6.0	1.1.0	Person	ResourceID	01	1		

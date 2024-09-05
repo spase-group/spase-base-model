@@ -360,6 +360,7 @@
 2.6.0	1.1.0	ParticleType	Electron
 2.6.0	1.1.0	ParticleType	Ion
 2.6.0	1.1.0	ParticleType	Molecule
+2.6.0	1.1.0	ParticleType	Muon
 2.6.0	1.3.6	ParticleType	Neutron
 2.6.0	1.1.0	ParticleType	Proton
 2.6.0	2.3.1	ParticleType	Positron
