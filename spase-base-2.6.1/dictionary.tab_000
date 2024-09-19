@@ -480,7 +480,7 @@
 2.6.1	1.0.0	MPEG	Item				A digital format for movies defined by the Motion Picture Experts Group.
 2.6.1	2.2.4	MSO	Item				Mars/Mercury Solar Orbital A coordinate system related to Mars or Mercury. A coordinate system where, depending on the body (Mars or Mercury), the x-axis is anti-sunward and the y-axis points in the orbital velocity direction.
 2.6.1	1.2.1	MultispectralImager	Item				An instrument which captures images at multiple spectral ranges.
-2.6.1	2.6.1	Muon	Item				An elementary particle similar to the electron, with an electric charge equal to -1 elementary charge, -e, and spin -1/2 h-bar with a much mass -206.7682827(46) times that of the electron rest mass, m sub e.
+2.6.1	2.6.1	Muon	Item				An elementary particle similar to the electron, with an electric charge equal to −1 elementary charge, -e, and spin -1/2 h-bar, ħ, with a much mass ~206.7682827(46) times that of the electron rest mass, m sub e.
 2.6.1	1.2.1	NaD	Item				A spectrum with a wavelength range of centered at 589.3 nm. VSO nickname: Na-D image with a range of 588.8 nm to 589.8 nm.
 2.6.1	1.0.0	Name	Text				A language unit by which a person or thing is known.
 2.6.1	1.1.0	NCAR	Item				The National Center for Atmospheric Research (NCAR) format. A complete description of that standard is given in appendix C of the "Report on Establishment & Operation of the Incoherent-Scatter Data Base", dated 1984-08-23, obtainable from NCAR, P.O. Box 3000 Boulder, Colorado 80307-3000.
