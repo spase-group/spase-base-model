@@ -1,0 +1,109 @@
+*** These instructions are obsolete. Use script "build-all.sh" in parent folder ***
+
+-- SQLite method ---
+The metadata model is maintained in a database.
+This database is accessed by other tools to generate all
+the different forms of documentation and representation.
+
+===> Skip to "makeall.sh"
+
+From the folder with the "tab" files:
+
+%> cd ../sqlite
+%> bash ./clear-version.sh x.x.x spase-model
+%> bash ./load-tables.sh spase-model
+
+Then copy the "spase-model.db" file into the webapp for the root web site.
+
+%> copy /Y spase-model.db  "..\..\..\webapp\website\site\ROOT\data"
+
+If a new version, copy doclet files used in the generation of references and guides.
+
+%> cd ../doclet
+%> mkdir ..\..\..\webapp\website\site\ROOT\data\doclet\Version_x_x_x
+%> copy /Y * "..\..\..\webapp\website\site\ROOT\data\doclet\Version_x_x_x"
+
+===> Start here
+
+From the folder containing the "model-tools/build/bin":
+
+%> cd ..\..\..\java\model-tools\build\bin
+%> bash ./makeall.sh x.x.x
+
+and then run the schema generation script to use Oxygen to generate
+some of the documentation. Instructions on how to run the command
+are displayed when "makeall.sh" completes.
+
+If a draft version run
+%> bash ./makedraft.sh x.x.x
+
+If a previous draft exists and this is a release, clear the old draft versions
+
+%> bash ./cleardraft.sh x.x.x
+
+# Copy files into the VM
+#
+# %> bash copytovm.sh
+#
+#
+# Commit the VM website to the git repository
+#
+# %> cd /projects-vm/spase/website/
+# %> git add .
+# %> git commit -a -m "Update web site to version x.x.x. of metadata model."
+# %> git tag -a x.x.x -m "x.x.x"
+# %> git push
+# %> git push --tags
+#
+
+Commit the website to the git repository
+
+%> cd ..\..\..\..\webapp\website
+%> git add .
+%> git commit -a -m "Update web site to version x.x.x of metadata model."
+%> git tag -a x.x.x -m "x.x.x"
+%> git push
+%> git push --tags
+
+Login to the web server and pull web site
+
+%> cd /var/www/spase/site/root
+%> git pull
+
+Do the same for the SPASE School.
+
+--- Old MYSQL method ---
+Managing the SPASE data model database.
+
+All database operations are performed with SQL commands.
+To run an SQL command first set the default directory to
+the one containing the SQL scripts then login to the
+MySQL database server.
+
+%> cd tools/database
+%> mysql -p
+
+And switch to the "spase" database:
+
+mysql> use spase
+
+Then perform one of the following tasks.
+
+Loading data into the database, clearing existing definitions first.
+Note: You need to edit "clearversion.sql" to make sure it operates on
+      the right version.
+
+mysql> source clearversion.sql;
+mysql> source dataload.sql;
+
+To create the database and tables:
+
+mysql> source CreateDatabase.sql;
+
+To grant access rights to extra locations/services.
+
+mysql> source grant.sql;
+
+To truncate the contents of all tables:
+
+mysql> TruncateTables.sql;
