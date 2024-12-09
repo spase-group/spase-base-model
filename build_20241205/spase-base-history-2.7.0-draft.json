@@ -1,0 +1,2666 @@
+[
+   {
+      "id": "332",
+      "version": "2.7.0",
+      "updated": "2024-12-04",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added DataCite equivalent container named rightsList to the ResourceHeader container. The rightsList Container must include at least one text field elements called rights. Both rightsList and rights definitions have been added to the SPASE dictionary. Added new items to the Qualifier enumeration list: Amplitude, Magnitude, MassMixingRatio, and MixingRatio; definitions added to the SPASE Dictionary. Added NamingAuthority, a text field element, and ResourceType, an enumerated text field element, to all SPASE resource types (eighteen total). NamingAuthority and ResourceType have been inserted immediately following ResourceID and the both terms have been added to the dictionary. An enumeration list also called ResourceType has been added under list.tab. And, the ResourceType enumeration list items have been inserted into member.tab. Added the text field element re3data to the dictionary and to the Repository resource type container. Added the RORIdentifier text field under the Instrument, Observatory, Registry, and Repository resource type containers.",
+      "note": ""
+   },
+   {
+      "id": "331",
+      "version": "2.6.1",
+      "updated": "2024-10-07",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added Dictionary listings for the terms Region and YN with assigned Enumeration List names. Changed Enumeration List name from Product to ModelProduct. Changed ProcCoeffType Enumeration List name to ProcessCoeffType. Correct duplicate History listing 329 to 330. Sort SPASE model Dictionary, List, and Member tab files alphabetically. The Member tab file was sorted alphabetically within each individual Enmeration List member sequence.",
+      "note": ""
+   },
+   {
+      "id": "330",
+      "version": "2.6.1",
+      "updated": "2024-09-05",
+      "changedBy": "L.F.Bargatze",
+      "description": "Corrected the deletion error of PopulationChargeState in the Particle container. Added SPASE Dictionary definition for Muon added it to the ParticleType enumeration list.",
+      "note": "Muon addition requested by S.F. Fung via e-mail 2024-08-09."
+   },
+   {
+      "id": "329",
+      "version": "2.6.1",
+      "updated": "2024-06-24",
+      "changedBy": "L.F.Bargatze",
+      "description": "Updated SPASE Dictionary definitions for Acknowledgement, AssociationType, Author, Authors, DirectionAngle, Encoding, FlowSpeed, FlowVelocity, Format, MagneticCloud, PublicationDate, ReleaseDate, ResourceName, Style, and ThermalSpeed. Added SPASE Dictionary definitions for LocalGeographic, LocalGeomagnetic, and SensorCoordinates and added these terms to the CoordinateSystemName enumeration list. Added SPASE Dictionary definition for StonyhurstHeliographic and added this term to the CoordinateSystemName enumeration list per request of Masahito Nose-san. Added SPASE Dictionary definitions for AOGCM, GCM, and NonHydrostatic and added these terms to the ModelType enumeration list. Updated SPASE Dictionary definition for Electrohydrodynamics and revised the name of the term by deleting the last character, the terminal s, to maintain consistancy with other terms in ModelType enumeration list. Added SPASE Dictionary definition for InterplanetaryCoronalMassEjection and added this term to the PhenomenonType enumeration list. Corrected SPASE Ontology listing of the Cardinality for RepositoryID under AccessInformationOptional to replace the letter r with the number 1 (required). Updated the SPASE Ontology listing of the Cardinality for SpatialCoverage under DisplayData and Granule from + (1 or more) to * (0 or more). Updated the SPASE Ontology listing of the Cardinality for SpatialCoverage under Member and Parameter from 0 (optional) to * (0 or more). Updated the SPASE Ontology listing of the Cardinality for OperatingSpan under Observatory from + (1 or more) to * (0 or more). Updated the SPASE Ontology listing of the Cardinality for OperatingSpan under Instrument from 0 (optional) to * (0 or more). Updated the SPASE Ontology listing of the Cardinality for ModelType under Model from 1 (required) to + (1 or more). Added SPASE Dictionary definitions for SourceRegion and SourceRegionExtent and added these to text fields to the end of the Particle and the Wave containers each with * cardinality (0 or more). Added SPASE Dictionary definition for Lidar and added this term to the InstrumentType enumeration list.",
+      "note": "Decided during the telecon on 2024-05-23."
+   },
+   {
+      "id": "328",
+      "version": "2.6.0",
+      "updated": "2023-08-03",
+      "changedBy": "C. Dolan",
+      "description": "SPASE Version 2.6.0 Released.",
+      "note": "Decided during the telecon on 2023-08-02."
+   },
+   {
+      "id": "327",
+      "version": "2.6.0",
+      "updated": "2023-08-02",
+      "changedBy": "L.F.Bargatze",
+      "description": "Changed SimulationModel to Model, SimulationRun to ModelRun, and other terms by replacing \"Simulation\" with \"Model\" and \"Simulated\" with \"Modeled\", The dictionary.tab file definitions wre similarly updated to a generic \"model\" form, Added Empirical under the ModelType enumeration list.",
+      "note": "Per C. Wiegand."
+   },
+   {
+      "id": "326",
+      "version": "2.6.0",
+      "updated": "2023-07-16",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added AccessInformationOptional to the schema and under SimulationModel as simulation model code is not always accessible.",
+      "note": "Per C. Wiegand."
+   },
+   {
+      "id": "326",
+      "version": "2.6.0",
+      "updated": "2023-07-09",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added AccessFilenameTemplate and AccessDirectoryTemplate to AccessInformation.",
+      "note": "Per B. Candey and J. Faden."
+   },
+   {
+      "id": "325",
+      "version": "2.6.0",
+      "updated": "2023-06-15",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added AccessInformtion to the Software SPASE resource type.",
+      "note": "Per Shing F. Fung."
+   },
+   {
+      "id": "324",
+      "version": "2.6.0",
+      "updated": "2023-06-15",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added the Comet Enumeration List including three members.",
+      "note": "Per Daniele Boucon via Shing F. Fung."
+   },
+   {
+      "id": "323",
+      "version": "2.6.0",
+      "updated": "2023-06-15",
+      "changedBy": "L.F.Bargatze",
+      "description": "Updated the Description of Current under FieldQuantity and Added Current under ParticleQuantity; Added CurrentDensiity under both FieldQuantity and ParticleQuantity.",
+      "note": "Per Shing F. Fung and Vincent Genot."
+   },
+   {
+      "id": "322",
+      "version": "2.6.0",
+      "updated": "2023-06-15",
+      "changedBy": "L.F.Bargatze",
+      "description": "Merged the Simulation 1.0.0 SPASE Model Extensions with the SPASE 2.5.0 Base Model; Four simulation related SPASE resource types added: SimulationModel, SimulationRun, DisplayOutput, and NumericalOutput; Merged Base and Simulation definitions.",
+      "note": "Concensus to add the Simulation Extensions to the SPASE Base Model."
+   },
+   {
+      "id": "321",
+      "version": "2.5.0",
+      "updated": "2022-08-29",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.5.0 Released.",
+      "note": "Decided during the telecon on 2022-08-29."
+   },
+   {
+      "id": "320",
+      "version": "2.5.0",
+      "updated": "2022-08-29",
+      "changedBy": "T.King",
+      "description": "Added AccessInformation to Collection.",
+      "note": "Per Seiji and discussion during telecon on 2022-08-29."
+   },
+   {
+      "id": "319",
+      "version": "2.5.0",
+      "updated": "2022-07-21",
+      "changedBy": "T.King",
+      "description": "Added Collection, Member, and MemberID to the dictionary; Added Collection resource to model.",
+      "note": "Per L.F. Bargatze, D.A. Roberts and T. King emails, and discussion during telecon on 2022-04-28."
+   },
+   {
+      "id": "318",
+      "version": "2.4.2",
+      "updated": "2022-07-21",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.4.2 Released.",
+      "note": "Decided during the telecon on 2022-07-21."
+   },
+   {
+      "id": "317",
+      "version": "2.4.2",
+      "updated": "2022-07-07",
+      "changedBy": "T.King",
+      "description": "Revised the \"SpatialCoverage\" container.",
+      "note": "Per L.F. Bargatze, and discussion during telecon on 2022-07-07."
+   },
+   {
+      "id": "316",
+      "version": "2.4.2",
+      "updated": "2022-05-19",
+      "changedBy": "T.King",
+      "description": "Added Title and LandingPageURL to the dictionary; Added Title and LandingPageURL to PublicationInfo.",
+      "note": "Decided during telecon on 2022-05-19."
+   },
+   {
+      "id": "315",
+      "version": "2.4.2",
+      "updated": "2022-01-21",
+      "changedBy": "T.King",
+      "description": "Added \"SpatialCoverage\", \"NorthernmostLatitude\", \"SouthernmostLatitude\", \"EasternmostLongitude\", \"WesternmostLongitude\", \"CenterLatitude\", \"CenterLongitude\", \"MinimumAltitude\", \"MaximumAltitude\" to the dictionary; Created \"SpatialContainer\" container; Added \"SpatialCoverage\" to \"DisplayData\", \"Granule\" and \"NumericalData\"; Decided during the telecon on 2022-01-20, but moved from 2.4.1 to 2.5.0.",
+      "note": "Decided during the telecon on 2022-01-20, but moved to from 2.4.1 to 2.5.0."
+   },
+   {
+      "id": "314",
+      "version": "2.4.1",
+      "updated": "2022-05-19",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.4.1 Released.",
+      "note": "Decided during the telecon on 2022-05-19."
+   },
+   {
+      "id": "313",
+      "version": "2.4.1",
+      "updated": "2022-05-05",
+      "changedBy": "T.King",
+      "description": "Updated definitions of MeasurementType, PublicationDate, PublicationInfo and PublishedBy.",
+      "note": "Per S. Fung suggestions."
+   },
+   {
+      "id": "312",
+      "version": "2.4.1",
+      "updated": "2022-04-28",
+      "changedBy": "T.King",
+      "description": "Added Remark and WebResource to the dictionary; Added Remark, WebResource, WebService to SupportQuantity enumeration.",
+      "note": "Per L.F. Bargatze led discussion during telecon on 2022-04-28."
+   },
+   {
+      "id": "311",
+      "version": "2.4.1",
+      "updated": "2022-04-20",
+      "changedBy": "T.King",
+      "description": "Added InstrumentScientist to the dictionary and to Role enumeration; Fix definition of Longitude.",
+      "note": "Per S. Fung email."
+   },
+   {
+      "id": "310",
+      "version": "2.4.1",
+      "updated": "2022-02-24",
+      "changedBy": "T.King",
+      "description": "Make Annotation.PhenomenomType zero or more occurrences (*); Make Observatory.Location one or more occurrences (+).",
+      "note": "Decided during the SMWT telecon on 2022-02-24."
+   },
+   {
+      "id": "309",
+      "version": "2.4.1",
+      "updated": "2021-10-14",
+      "changedBy": "T.King",
+      "description": "Added Git, TAP, EPNTAP to the dictionary and to Style enumeration; Added TFCat, RINEX2 and RINEX3 to the dictionary and Format enumeration; Added Author to the dictionary and to Role enumeration.",
+      "note": "Decided during the IHDEA meeting 2021-10-01."
+   },
+   {
+      "id": "308",
+      "version": "2.4.0",
+      "updated": "2021-06-10",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.4.0 Released.",
+      "note": "Decided during the telecon on 2021-06-10."
+   },
+   {
+      "id": "307",
+      "version": "2.4.0",
+      "updated": "2021-04-29",
+      "changedBy": "T.King",
+      "description": "Added ValueAdded to the dictionary; Added ValueAdded to ProcessingLevel.",
+      "note": "Suggested during subsequent telecons."
+   },
+   {
+      "id": "306",
+      "version": "2.4.0",
+      "updated": "2021-04-29",
+      "changedBy": "T.King",
+      "description": "Changed Format in AccessInformation to have one or more occurrence.",
+      "note": "Decided during telecon on 2021-04-29."
+   },
+   {
+      "id": "305",
+      "version": "2.4.0",
+      "updated": "2021-04-29",
+      "changedBy": "T.King",
+      "description": "Added Policy and Convention to the dictionary and to DocumentType enumeration.",
+      "note": "Decided during prior telecon."
+   },
+   {
+      "id": "304",
+      "version": "2.4.0",
+      "updated": "2021-02-04",
+      "changedBy": "T.King",
+      "description": "Changed \"Version\" to \"SoftwareVersion\" under \"Software\"; Added elements to \"InputProperty\" and \"OutputProperty\".",
+      "note": "Discussed in email exchanges."
+   },
+   {
+      "id": "303",
+      "version": "2.4.0",
+      "updated": "2020-11-12",
+      "changedBy": "T.King",
+      "description": "Added Software resource and related elements to the information model.",
+      "note": "Discussed during prior telecons."
+   },
+   {
+      "id": "302",
+      "version": "2.3.2",
+      "updated": "2020-10-15",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.3.2 Released.",
+      "note": "Decided during the telecon on 2020-10-15."
+   },
+   {
+      "id": "301",
+      "version": "2.3.2",
+      "updated": "2020-10-08",
+      "changedBy": "T.King",
+      "description": "Added InstrumentLead to the dictionary and to Role.",
+      "note": "Decided during the telecon on 2020-10-08."
+   },
+   {
+      "id": "300",
+      "version": "2.3.2",
+      "updated": "2020-09-30",
+      "changedBy": "T.King",
+      "description": "Added InstrumentGroupID and Experiment to the dictionary; Added InstrumentGroupID to Instrument and Experiment to InstrumentType.",
+      "note": "Decided during the telecon on 2020-09-24."
+   },
+   {
+      "id": "299",
+      "version": "2.3.2",
+      "updated": "2020-09-10",
+      "changedBy": "T.King",
+      "description": "Added \"Housekeeping\", \"Telemetry\", \"RotationMatrix\", \"EncodedParameter\", \"AutoSpectrum\", \"Coherence\", \"ImaginaryPart\", \"RealPart\", \"PowerSpectralDensity\", \"ChargeFlux\", \"DynamicPressure\", \"EnergyPerCharge\", \"ParticleRigidity\", \"MassPerCharge\", \"LShell\", \"MissionPrincipalInvestigator\", \"ProgramManager\", \"ProgramScientist\", \"VolumeEmissionRate\", \"SPICE\", \"MissionManager \"to the dictionary and to appropriate \"enumerations as suggested by L.F. Bargatze; Added \"PDS4\" and \"PDS3\" to \"the \"dictionary and to the \"Format\" enumeration as suggest by A. Masson.",
+      "note": "Decided during the telecon on 2020-08-06."
+   },
+   {
+      "id": "298",
+      "version": "2.3.1",
+      "updated": "2019-11-14",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.3.1 Released.",
+      "note": "Decided during the telecon on 2019-11-14."
+   },
+   {
+      "id": "297",
+      "version": "2.3.1",
+      "updated": "2019-10-31",
+      "changedBy": "T.King",
+      "description": "Added CoPI, MidLatitudeRegion, SubAuroralRegion, ProjectEngineer, and ProjectManager to the dictionary; Added CoPI, ProjectEngineer, ProjectManager to Role enumeration; Added Plasmasphere, RingCurrent, and MidLatitudeRegion to Magnetosphere enumeration.; Added MidLatitudeRegion, and ProjectManager to NearSurface enumeration.; Fix typo with Role values with dashes.",
+      "note": "Decided during telecon on 2019-10-31."
+   },
+   {
+      "id": "296",
+      "version": "2.3.1",
+      "updated": "2019-09-27",
+      "changedBy": "T.King",
+      "description": "Added DirectionCosine, GeometricFactor, AdiabaticInvariant, MagneticMoment, BounceMotion, DriftMotion, DataQuality, Orientation, SpinPeriod, SpinPhase, SpinRate, LowerHybridFrequency and UpperHybridFrequency to the dictionary.; Create DirectionCosine enumeration with I,J,K as members; Create AdiabaticInvariant enumeration with MagneticMoment, BounceMotion and DriftMotion as members.; Added DirectionCosine to Qualifier list.; Added GeometricFactor, AdiabaticInvariant to ParticleQuantity; Added DataQuality, Orientation, SpinPeriod, SpinPhase and SpinRate to SupportQuantity.; Added LowerHybridFrequency and UpperHybridFrequency to WaveQuantity.",
+      "note": "Suggested by L.F. Bargatze. Decided during telecon on 2019-09-20."
+   },
+   {
+      "id": "295",
+      "version": "2.3.1",
+      "updated": "2019-06-13",
+      "changedBy": "T.King",
+      "description": "Added RevisionHistory, RevisionEvent to the dictionary and Added RevisionHistory to ResourceHeader; Added IonGauge to the dictionary and to InstrumentType.",
+      "note": "Decided during telecon on 2019-06-13."
+   },
+   {
+      "id": "294",
+      "version": "2.3.1",
+      "updated": "2019-06-13",
+      "changedBy": "T.King",
+      "description": "Added StartDate, StopDate and Note to Contact.",
+      "note": "Decided (partially) during telecon on 2019-05-30."
+   },
+   {
+      "id": "293",
+      "version": "2.3.1",
+      "updated": "2019-02-25",
+      "changedBy": "T.King",
+      "description": "Added Developer, HostContact and User to the dictionary and Role list.",
+      "note": "Decided by email 2019-02-20."
+   },
+   {
+      "id": "292",
+      "version": "2.3.1",
+      "updated": "2018-11-01",
+      "changedBy": "T.King",
+      "description": "Added Positron to the dictionary and ParticleType list.",
+      "note": "Decided at telecon on 2018-11-01."
+   },
+   {
+      "id": "291",
+      "version": "2.3.1",
+      "updated": "2018-06-18",
+      "changedBy": "T.King",
+      "description": "Added Eccentric Dipole (ECD) to the dictionary and CoordinateSystem list.",
+      "note": "Decided by email on 2018-05-18."
+   },
+   {
+      "id": "290",
+      "version": "2.3.0",
+      "updated": "2018-05-31",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.3.0 Released.",
+      "note": "Decided during the telecon on 2018-05-31."
+   },
+   {
+      "id": "289",
+      "version": "2.3.0",
+      "updated": "2018-05-08",
+      "changedBy": "T.King",
+      "description": "Added File, HAPI, Listing, Search, Template, Overview, WebService to the dictionary and as values for Style enumeration.; Added Style to the dictionary and AccessURL.",
+      "note": "Decided (partially) during the telecon on 2018-03-19."
+   },
+   {
+      "id": "288",
+      "version": "2.3.0",
+      "updated": "2018-05-04",
+      "changedBy": "T.King",
+      "description": "Added PublicationInfo, PublicationDate, Authors, Funding, Agency, Project, Award, ORCIdentifier to the dictionary and to the model.",
+      "note": "Decided (mostly) during the telecon on 2018-03-19."
+   },
+   {
+      "id": "287",
+      "version": "2.3.0",
+      "updated": "2018-02-08",
+      "changedBy": "T.King",
+      "description": "Added DOI to the dictionary and to ResourceHeader.",
+      "note": "Decided during the telecon on 2018-02-08."
+   },
+   {
+      "id": "286",
+      "version": "2.2.9",
+      "updated": "2017-11-14",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.9 Released.",
+      "note": "Decided during the telecon on 2017-11-14."
+   },
+   {
+      "id": "285",
+      "version": "2.2.9",
+      "updated": "2017-09-07",
+      "changedBy": "T.King",
+      "description": "Added HGRTN, HERTN to the dictionary and to CoordinateSystemName Added Entropy to the dictionary and ParticleQuantity.",
+      "note": "Decided during the telecon on 2017-09-14."
+   },
+   {
+      "id": "284",
+      "version": "2.2.9",
+      "updated": "2017-02-09",
+      "changedBy": "T.King",
+      "description": "Added CadenceMin, CadenceMax, ExposureMin, ExposureMax, PartiallyRestricted, Confidence, ProviderName, MassRange, PitchAngleRange; Changed occurrence of Observatory/OperatingSpan from 1 to +.",
+      "note": "Decided during the telecon on 2017-02-09."
+   },
+   {
+      "id": "283",
+      "version": "2.2.8",
+      "updated": "2016-07-21",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.8 Released.",
+      "note": "Decided during the telecon on 2016-09-08."
+   },
+   {
+      "id": "282",
+      "version": "2.2.7",
+      "updated": "2016-07-21",
+      "changedBy": "T.King",
+      "description": "Added JSON and CSV to the dictionary and to Format enumeration.",
+      "note": "Decided during the telecon on 2016-07-21."
+   },
+   {
+      "id": "281",
+      "version": "2.2.7",
+      "updated": "2016-07-21",
+      "changedBy": "T.King",
+      "description": "Changed occurrence of \"ParticleType\" under \"Particle\" from + to * and \"WaveType\" under \"Wave\" from 1 to 0.",
+      "note": "Decided during the telecon on 2016-05-05."
+   },
+   {
+      "id": "280",
+      "version": "2.2.6",
+      "updated": "2015-09-09",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.6 Released.",
+      "note": "Decided during the telecon on 2015-09-09."
+   },
+   {
+      "id": "279",
+      "version": "2.2.5",
+      "updated": "2015-06-12",
+      "changedBy": "T.King",
+      "description": "Added coordinate systems to enumeration.",
+      "note": "Decided at telecon on 2015-05-11."
+   },
+   {
+      "id": "278",
+      "version": "2.2.5",
+      "updated": "2015-06-12",
+      "changedBy": "T.King",
+      "description": "Added moons and magnetosphere to planets; Only the larger moons which are typically encountered or simulated were added.",
+      "note": "Decided at telecon on 2015-05-11."
+   },
+   {
+      "id": "277",
+      "version": "2.2.4",
+      "updated": "2015-05-31",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.4 Released.",
+      "note": "Coordinated with SPASE Simulation Extension release."
+   },
+   {
+      "id": "276",
+      "version": "2.2.4",
+      "updated": "2015-05-28",
+      "changedBy": "T.King",
+      "description": "Added coordinate systems MSO, VSO, KSO, KSM, JSO, JSM to the dictionary and CoordinateSystemName, Added SolarUVFlux and IMFClockAngle to the dictionary and MixedQuantity.",
+      "note": ""
+   },
+   {
+      "id": "275",
+      "version": "2.2.3",
+      "updated": "2014-05-22",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.3 Released.",
+      "note": "Decided during the telecon on 2014-05-22."
+   },
+   {
+      "id": "274",
+      "version": "2.2.3",
+      "updated": "2012-05-24",
+      "changedBy": "T.King",
+      "description": "Added definition of \"Moon\" and Added to \"Earth\" enumeration as suggested by T. Narock.",
+      "note": "Decided during the telecon on 2012-05-24."
+   },
+   {
+      "id": "273",
+      "version": "2.2.3",
+      "updated": "2012-05-10",
+      "changedBy": "T.King",
+      "description": "Modified definitions of \"GEI\", \"AzimuthAngle\", \"ElevationAngle\" and \"PolarAngle\" as suggested by J. Merka; Added definition for \"ENP and Added to \"CoordinateSystem ame\" enumeration as suggested by J. Merka; Added definitions of \"PhotomultiplierTube\" and \"SolidStateDetector\" to the dictionary and \"IntrumentType\" as suggested by B. Weigel.",
+      "note": "Decided during the telecon on 2012-05-10."
+   },
+   {
+      "id": "272",
+      "version": "2.2.3",
+      "updated": "2012-03-15",
+      "changedBy": "T.King",
+      "description": "Modified definition of \"NumericalData\" as suggested by R. Weigel and D.A. Roberts; Modified definition of \"Potential\" as suggested by F. Mozer, D.A. Roberts and S. Fung; Added \"Magnetograph\" to the dictionary and \"Instrument Type\" as suggested by J. King.",
+      "note": "Decided during the telecon on 2012-03-15."
+   },
+   {
+      "id": "271",
+      "version": "2.2.2",
+      "updated": "2012-02-27",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.2 Released.",
+      "note": ""
+   },
+   {
+      "id": "270",
+      "version": "2.2.2",
+      "updated": "2012-02-27",
+      "changedBy": "T.King",
+      "description": "Added \"Albedo\" to the dictionary and to \"WaveQuantity\" list.; Added \"ParticleRadius\" to the dictionary and to the \"ParticleQuantity\" list.",
+      "note": "Decided during the HDMC face-to-face on 2012-02-21."
+   },
+   {
+      "id": "269",
+      "version": "2.2.2",
+      "updated": "2012-02-02",
+      "changedBy": "T.King",
+      "description": "Added \"Sector Boundary Crossing\" to the dictionary and the \"Phenomenon Type\" list.; Added \"Product Key\" to the dictionary and under \"Access Information\".",
+      "note": "Decided during the telecon on 2012-02-02."
+   },
+   {
+      "id": "268",
+      "version": "2.2.2",
+      "updated": "2011-10-27",
+      "changedBy": "T.King",
+      "description": "Updated definition of \"Document\"; Added \"MIME Type\" to the dictionary and \"Document\" structure; Added \"Presentation\", \"Poster\", \"White Paper\", \"Technical Note\", \"Specification\" and \"Report\" to the dictionary and to \"Document Type\" enumeration; Removed \"Paper\" from dictionary.",
+      "note": "Decided during the telecon on 2011-10-27."
+   },
+   {
+      "id": "267",
+      "version": "2.2.2",
+      "updated": "2011-09-26",
+      "changedBy": "T.King",
+      "description": "Added \"RenderingHints\" under \"Element\"; Set occurrence for \"CoordinateRepresentation\" and \"CoordinateSystemName\" under \"CoordinateSystem\" to required (1); Set \"Size\" under \"Structure\" to required (1); Set \"AssociationID\" and \"AssociationType\" under \"Association\" to required (1).",
+      "note": "Decided during the telecon on 2011-09-15."
+   },
+   {
+      "id": "266",
+      "version": "2.2.1",
+      "updated": "2011-08-18",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.1 Released.",
+      "note": ""
+   },
+   {
+      "id": "265",
+      "version": "2.2.1",
+      "updated": "2011-06-16",
+      "changedBy": "T.King",
+      "description": "Added \"Core\", \"Halo\", \"Strahl\" and \"Superhalo\" to the dictionary and to \"Qualifier\".",
+      "note": "As supplied by D.A. Roberts 2011-04-21, modified by Todd King, Decided during the telecon on 2011-06-12."
+   },
+   {
+      "id": "264",
+      "version": "2.2.1",
+      "updated": "2011-05-12",
+      "changedBy": "T.King",
+      "description": "Strike \"product\" from the definition of \"Numerical Data\".",
+      "note": "Per e-mail from J. King 2011-02-21."
+   },
+   {
+      "id": "263",
+      "version": "2.2.0",
+      "updated": "2011-01-06",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.2.0 Released.",
+      "note": ""
+   },
+   {
+      "id": "262",
+      "version": "2.2.0",
+      "updated": "2011-01-06",
+      "changedBy": "T.King",
+      "description": "Updated definition for \"Irradiance\".",
+      "note": ""
+   },
+   {
+      "id": "261",
+      "version": "2.2.0",
+      "updated": "2010-09-17",
+      "changedBy": "T.King",
+      "description": "Added \"SSE_L\" to the dictionary and to \"Coordinate System Name\" list.",
+      "note": "Decided during the telecon on 2010-09-16."
+   },
+   {
+      "id": "260",
+      "version": "2.2.0",
+      "updated": "2010-09-15",
+      "changedBy": "T.King",
+      "description": "Added \"Excel\" to the dictionary and to the \"Format\" list; Added \"RenderingAxis\", and \"Index\" to the dictionary and under \"Rendering Hints\"; Added \"Vertical\", \"Horizontal\", and \"ColorBar\" to the dictionary and to the \"Rendering Hints\" enumeration; Changed cardinality of \"InvestigationName\" from 1 to +; Added \"Median, \" Maximum\" and \"Minimum\" to the dictionary and to \"Qualifier\" list.",
+      "note": "Decided during the telecon on 2010-08-26."
+   },
+   {
+      "id": "259",
+      "version": "2.2.0",
+      "updated": "2010-08-20",
+      "changedBy": "T.King",
+      "description": "Updated definitions of \"Outer\", \"Inner\", \"Heliosheath\" and \"Remote1AU\".",
+      "note": "Decided during the telecon on 2010-07-08 and refined through subsequent e-mail."
+   },
+   {
+      "id": "258",
+      "version": "2.2.0",
+      "updated": "2010-08-17",
+      "changedBy": "T.King",
+      "description": "Added \"S3_BUCKET\" to the dictionary and \"Encoding\"; Added \"Directional\" to the dictionary and to \"Qualifier\"; updated the definitions for \"EnergyFlux\" and \"Differential\".",
+      "note": "Decided during the telecon on 2010-07-08."
+   },
+   {
+      "id": "257",
+      "version": "2.2.0",
+      "updated": "2010-06-25",
+      "changedBy": "T.King",
+      "description": "Added \"Fluence\" to the dictionary and \"ParticleQuantity\"; Updated definitions for \"NumberFlux\", \"CoordinateSystem\" and \"Counts\"; Added \"HCC\" (Heliocentric Cartesian), \"HCR\" (Heliocentric Radial), HPC (Helioprojective Cartesian) and \"HPR\" (Helioprojective Radial) to the dictionary and under \"CoordinateSystemName\".",
+      "note": "Decided during the telecon on 2010-06-10."
+   },
+   {
+      "id": "256",
+      "version": "2.2.0",
+      "updated": "2010-05-21",
+      "changedBy": "T.King",
+      "description": "Added \"Heliosheath\" to the dictionary and to \"Heliosphere\" enumeration.",
+      "note": "Decided during the telecon on 2010-05-13."
+   },
+   {
+      "id": "255",
+      "version": "2.2.0",
+      "updated": "2010-04-15",
+      "changedBy": "T.King",
+      "description": "Added \"Hardcopy\" as an enumeration to the dictionary and to \"Format\"; Added \"Film\", \"Photographic Plate\", \"Photograph\", \"Microfiche\", \"Microfilm\", \"Print\" to the dictionary and to \"Hardcopy\" enumeration; Changed \"Observatory Group\" to \"Observatory Group ID\"; Updated definition of \"Observatory\" to make it more suitable for creation of conceptual Observatories.; Added \"Operating Span\" to the dictionary with elements \"Start Date\", \"Stop Date\" and \"Note\"; Added \"Operating Span\" to \"Instrument\" and \"Observatory\".",
+      "note": "Decided during the telecon on 2010-04-15."
+   },
+   {
+      "id": "254",
+      "version": "2.1.0",
+      "updated": "2010-03-19",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.1.0 Released.",
+      "note": "Decided during the telecon on 2010-03-18."
+   },
+   {
+      "id": "253",
+      "version": "2.0.3",
+      "updated": "2010-03-19",
+      "changedBy": "T.King",
+      "description": "Updated definitions for \"Number Flux\", \"Energy Flux\", \"Differential\", and \"Integral\"; Added \"Dust\" to \"Measurement Type\" enumeration.",
+      "note": "Decided during the telecon on 2010-03-18."
+   },
+   {
+      "id": "252",
+      "version": "2.0.3",
+      "updated": "2010-02-04",
+      "changedBy": "T.King",
+      "description": "Added \"Former-PI\" to the dictionary and to \"Role\" enumeration; Added \"Note\" to \"Person\".",
+      "note": "Decided during the telecon on 2010-02-04."
+   },
+   {
+      "id": "251",
+      "version": "2.0.2",
+      "updated": "2009-11-18",
+      "changedBy": "T.King",
+      "description": "Modified definitions for \"Observatory\" and \"Instrument\".",
+      "note": ""
+   },
+   {
+      "id": "250",
+      "version": "2.0.2",
+      "updated": "2009-11-05",
+      "changedBy": "T.King",
+      "description": "Added \"StreamInteractionRegion\" to the dictionary and to \"PhenomenonType\" enumeration; Updated the definition of \"Coronal Mass Ejection\".",
+      "note": ""
+   },
+   {
+      "id": "249",
+      "version": "2.0.2",
+      "updated": "2009-10-08",
+      "changedBy": "T.King",
+      "description": "Added \"ArrivalDirection\" to the dictionary and to \"ParticleQuantity\" enumeration; Added \"InstrumentMode\" to the dictionary and to \"SupportQuantity\"; Updated definitions of \"ChargeState\" and \"AtomicNumberDetected\".",
+      "note": ""
+   },
+   {
+      "id": "248",
+      "version": "2.0.2",
+      "updated": "2009-09-24",
+      "changedBy": "T.King",
+      "description": "Added \"Atomic Number Detected\", \"MassNumber\" and \"ChargeState\" to the dictionary and to the \"ParticleQuantity\" enumeration; Also added \"DirectionAngle\" to \"ParticleQuantity\".",
+      "note": ""
+   },
+   {
+      "id": "247",
+      "version": "2.0.1",
+      "updated": "2009-07-12",
+      "changedBy": "T.King",
+      "description": "Updates to the definition \"Access URL\", \"Data Extent\", \"Polar\" and \"Sonic Mach Number\".",
+      "note": ""
+   },
+   {
+      "id": "246",
+      "version": "2.0.1",
+      "updated": "2009-07-12",
+      "changedBy": "T.King",
+      "description": "Added \"Sound Speed\" to the dictionary and to \"Particle Quantity\".",
+      "note": "Decided in e-mail in 2009-06-??."
+   },
+   {
+      "id": "245",
+      "version": "2.0.1",
+      "updated": "2009-07-12",
+      "changedBy": "T.King",
+      "description": "Updated the description of \"Index\" data type to explain wild cards.",
+      "note": "Circulated in e-mail after the telecon on 2009-07-02."
+   },
+   {
+      "id": "244",
+      "version": "2.0.1",
+      "updated": "2009-07-12",
+      "changedBy": "T.King",
+      "description": "Under \"Element\" replaced \"Component\" with \"Qualifier\" and allow multiple occurrences.",
+      "note": "Decided during the telecon on 2009-07-02."
+   },
+   {
+      "id": "243",
+      "version": "2.0.1",
+      "updated": "2009-07-12",
+      "changedBy": "T.King",
+      "description": "Changed \"Rendering Hints\" to 0-to-many occurrence.",
+      "note": "Decided during the telecon on 2009-07-02."
+   },
+   {
+      "id": "242",
+      "version": "2.0.0",
+      "updated": "2009-04-15",
+      "changedBy": "T.King",
+      "description": "SPASE version 2.0.0 Released.",
+      "note": ""
+   },
+   {
+      "id": "241",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Area\", \"Bandwidth\" and \"Solid Angle\" to \"Integral\", added \"Field-Aligned\", \"Group\", \"Perturbation\", \"Phase\" and \"Spectral\" to \"Qualifier\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "240",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Child Event Of\" and \"Observed By\" to \"Association Type\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "239",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"ObservationExtent\" to \"Annotation\" with attributes of \"Observed Region\", \"Start Location\", \"Stop Location\" and \"Note\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "238",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Classification Method\" as a enumeration with allowed values of \"Automatic\", \"Inspection\", and \"Inferred\"; Added \"ClassificationMethod\" to \"Annotation\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "237",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Unlikely\" and \"Weak\" to the dictionary and modified \"Confidence Rating\" to have values \"Unlikely\", \"Weak\", \"Probable\", and \"Strong\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "236",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Particle Type\" to \"Mixed\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "235",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Array\" and \"Total\" to \"Qualifier\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "234",
+      "version": "1.3.6",
+      "updated": "2009-04-09",
+      "changedBy": "T.King",
+      "description": "Added \"Atom\" and \"Neutron\" to \"Particle Type\".",
+      "note": "Decided during the telecon on 2009-04-09."
+   },
+   {
+      "id": "233",
+      "version": "1.3.5",
+      "updated": "2009-04-06",
+      "changedBy": "T.King",
+      "description": "Removed \"Spectral Range\" from under \"Energy Range\".",
+      "note": "Decided by e-mail 2009-04-06."
+   },
+   {
+      "id": "232",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Added \"Far Ultraviolet\", \"HE-304\", \"LBH Band\" and \"Soft X-Rays\" to the dictionary and \"Spectral Range\".",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "231",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Added \"Absorption\", \"ACElectricField\", \"ACMagneticField\", \"DopplerFrequency\", \"Frequency\", \"PropagationTime\", and \"Wavelength\" to the dictionary and \"WaveQuantity\"; Added \"WaveType\" with values of \"Electromagnetic\", \"Electrostatic\", \"Photon\", \"PlasmaWaves\", \"Hydrodynamic\", and \"MHD\".",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "230",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Updated definitions of \"Emissivity\", \"EquivalentWidth\", \"Gyrofrequency\", \"Intensity\", \"LineDepth\", \"PlasmaFrequency\", \"PoyntingFlux\"; Added \"WaveType\" with values of \"Electromagnetic\", \"Electrostatic\", \"Photon\", \"PlasmaWaves\", \"Hydrodynamic\", and \"MHD\".",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "229",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Changed the name of \"Photon\" to \"Waves\" and \"PhotonQuantity\" to \"WaveQuantity\"; Added \"WaveType\" with values of \"Electromagnetic\", \"Electrostatic\", \"Photon\", \"PlasmaWaves\", \"Hydrodynamic\", and \"MHD\".",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "228",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Added \"Plasmagram\", \"Spectrogram\" and \"Wave Form\" to the dictionary and to the \"Display Type\" list.",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "227",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Various editorial updates to definitions, spelling and typos.",
+      "note": "Editorial change permitted during the telecon on 2009-03-26."
+   },
+   {
+      "id": "226",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Added \"ImageURL\" to \"Annotation\" and dictionary.",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "225",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Added \"Access URL\" to \"Repository\" and \"Registry\".",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "224",
+      "version": "1.3.5",
+      "updated": "2009-03-26",
+      "changedBy": "T.King",
+      "description": "Changed \"Mixed\" to a container with \"Qualifier\" and \"MixedQuantity\" as attributes; Added \"MixedQuantity\" enumeration with allowed values of \"AlfvenMachNumber\", \"Other\", \"PlasmaBeta\", \"ThermalPressure\", \"AlfvenVelocity\", \"MagnetosonicMachNumber\", \"PlasmaBeta\", and \"PlasmaFrequencyToGyrofrequencyRatio\".",
+      "note": "Decided during the telecon on 2009-03-26."
+   },
+   {
+      "id": "223",
+      "version": "1.3.5",
+      "updated": "2009-03-25",
+      "changedBy": "T.King",
+      "description": "Updated definitions for \"Numeric\" and \"Text\" data types.",
+      "note": "Editorial Change."
+   },
+   {
+      "id": "222",
+      "version": "1.3.4",
+      "updated": "2009-02-27",
+      "changedBy": "T.King",
+      "description": "Changed \"Wave\" to \"Waves\".",
+      "note": "Editorial Change."
+   },
+   {
+      "id": "221",
+      "version": "1.3.4",
+      "updated": "2009-02-26",
+      "changedBy": "T.King",
+      "description": "Added \"Annotation\" resource and \"AnnotationType\" and \"ConfidenceRating\" enumerations The terms \"Anomaly\", \"Event\", \"Feature\", \"Probable\", \"Good\", \"High\" were added to support the new enumerations.",
+      "note": "Decided during the telecon on 2009-02-05."
+   },
+   {
+      "id": "220",
+      "version": "1.3.4",
+      "updated": "2009-02-05",
+      "changedBy": "T.King",
+      "description": "Added \"Psuedo\" and \"Column\" to the dictionary and to \"Qualifier\" list.",
+      "note": "Decided during the telecon on 2009-02-05."
+   },
+   {
+      "id": "219",
+      "version": "1.3.4",
+      "updated": "2009-02-05",
+      "changedBy": "T.King",
+      "description": "Changed \"Line-of-sight\" to \"Line Of Sight\".",
+      "note": "Decided during the telecon on 2009-02-05."
+   },
+   {
+      "id": "218",
+      "version": "1.3.4",
+      "updated": "2009-02-05",
+      "changedBy": "T.King",
+      "description": "Added (restored) \"Intensity\" to the dictionary and \"Photon Quantity\" list.",
+      "note": "Decided during the telecon on 2009-02-05."
+   },
+   {
+      "id": "217",
+      "version": "1.3.4",
+      "updated": "2009-01-23",
+      "changedBy": "T.King",
+      "description": "Added \"Ion Chamber\" to the dictionary and \"Instrument Type\" list.",
+      "note": "Decided during the telecon on 2009-01-22."
+   },
+   {
+      "id": "216",
+      "version": "1.3.4",
+      "updated": "2009-01-22",
+      "changedBy": "T.King",
+      "description": "Changed occurrence of \"Particle\" to one or more.",
+      "note": "Decided during the telecon on 2009-01-22."
+   },
+   {
+      "id": "215",
+      "version": "1.3.4",
+      "updated": "2009-01-22",
+      "changedBy": "T.King",
+      "description": "Modified definition of \"Mixed\".",
+      "note": "Decided during the telecon on 2009-01-22."
+   },
+   {
+      "id": "214",
+      "version": "1.3.4",
+      "updated": "2009-01-14",
+      "changedBy": "T.King",
+      "description": "Modified \"Component\" to consist of \"I\", \"J\", \"K\"; Added \"DirectionAngle\", and \"Projection\" to \"Qualifier\"; Removed \"R\", \"Theta\", \"Phi\", \"X\", \"Y\", and \"Z\"; Added \"Direction Angle\" as an enumeration with values of \"AzimuthAngle\", \"PolarAngle\" and \"Elevation Angle\"; Added \"Projection\" as an enumeration with value of \"IJ\", \"IK\", and \"JK\".",
+      "note": "Decided during the telecon on 2009-01-08."
+   },
+   {
+      "id": "213",
+      "version": "1.3.4",
+      "updated": "2009-01-14",
+      "changedBy": "T.King",
+      "description": "Changed the definition of \"Text\" and converted \"Text\" to an enumeration with possible encoding types.",
+      "note": "Decided during the telecon on 2009-01-08 and subsequent e-mails."
+   },
+   {
+      "id": "212",
+      "version": "1.3.4",
+      "updated": "2009-01-14",
+      "changedBy": "T.King",
+      "description": "Added \"Language\" under \"Information URL\".",
+      "note": "Editorial addition."
+   },
+   {
+      "id": "211",
+      "version": "1.3.4",
+      "updated": "2009-01-14",
+      "changedBy": "T.King",
+      "description": "Added \"Linear Scale\" and \"Log Scale\" to the dictionary; Removed \"Log\" from the dictionary; Modified the definition of \"Linear\"; Removed reference scaled related usage; Updated the \"Scale\" enumeration with the name changes.",
+      "note": "Decided during the telecon on 2009-01-08."
+   },
+   {
+      "id": "210",
+      "version": "1.3.4",
+      "updated": "2009-01-14",
+      "changedBy": "T.King",
+      "description": "Added \"Wave\", \"Passive\" and \"Active\" to the dictionary; Added \"Wave\" as an enumeration; Removed \"Radio and Plasma Waves\" and \"Radio Soundings\" from the \"Measurement Type\" enumeration; Added \"Wave\" to the enumeration.",
+      "note": "Decided during the telecon on 2009-01-08."
+   },
+   {
+      "id": "209",
+      "version": "1.3.3",
+      "updated": "2008-10-16",
+      "changedBy": "T.King",
+      "description": "Added the \"Association\" container and \"Association Type\" enumeration to the dictionary; Modified the ontology to replace \"Association Type\" with the new \"Association\" container.",
+      "note": "Decided during the telecon on 2008-10-16."
+   },
+   {
+      "id": "208",
+      "version": "1.3.2",
+      "updated": "2008-10-15",
+      "changedBy": "T.King",
+      "description": "Changed \"Format\" under \"Rendering Hints\" to \"Value Format\" to eliminate name conflict with \"Format\".",
+      "note": ""
+   },
+   {
+      "id": "207",
+      "version": "1.3.2",
+      "updated": "2008-10-07",
+      "changedBy": "T.King",
+      "description": "Added \"Interstellar\" to the dictionary and Region.",
+      "note": "Decided during the telecon on 2008-09-18."
+   },
+   {
+      "id": "206",
+      "version": "1.3.2",
+      "updated": "2008-10-07",
+      "changedBy": "T.King",
+      "description": "Removed \"Charged Particle Flux\" from Measurement Type and the dictionary.",
+      "note": "Decided during the telecon on 2008-09-18."
+   },
+   {
+      "id": "205",
+      "version": "1.3.1",
+      "updated": "2008-09-04",
+      "changedBy": "T.King",
+      "description": "Added \"Count Rate\" to the dictionary and to \"Particle Quantity\".",
+      "note": "Decided during the telecon on 2008-09-04."
+   },
+   {
+      "id": "204",
+      "version": "1.3.1",
+      "updated": "2008-09-04",
+      "changedBy": "T.King",
+      "description": "Added \"Velocity\" to \"Support Quantity\".",
+      "note": "Decided during the telecon on 2008-09-04."
+   },
+   {
+      "id": "203",
+      "version": "1.3.1",
+      "updated": "2008-09-04",
+      "changedBy": "T.King",
+      "description": "Removed \"Measured\" and shifted containers under \"Measured\" up one level.",
+      "note": "Decided during the telecon on 2008-09-04."
+   },
+   {
+      "id": "202",
+      "version": "1.3.1",
+      "updated": "2008-09-04",
+      "changedBy": "T.King",
+      "description": "Changed \"Physical Parameter\" to \"Parameter\".",
+      "note": "Decided during the telecon on 2008-09-04."
+   },
+   {
+      "id": "201",
+      "version": "1.3.1",
+      "updated": "2008-09-04",
+      "changedBy": "T.King",
+      "description": "Added \"Symmetric\" to the dictionary and to Qualifier.",
+      "note": "Decided during the telecon on 2008-08-21."
+   },
+   {
+      "id": "200",
+      "version": "1.3.1",
+      "updated": "2008-09-04",
+      "changedBy": "T.King",
+      "description": "Added \"Rendering Hints\" with elements Format, AxisLabel, DisplayType, ScaleMin, ScaleMax, ScaleType and related enumerated values.",
+      "note": "Decided during the telecon on 2008-08-21."
+   },
+   {
+      "id": "199",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Platform\" to the dictionary and to the \"Instrument Type\" list, Removed \"Ephemeris\" from the \"Instrument Type\" list.",
+      "note": "Decided during the telecon on 2008-07-31."
+   },
+   {
+      "id": "198",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Ion Drift\" and \"Dust Detector\" to the dictionary and to the \"Instrument Type\" list.",
+      "note": "Decided during the telecon on 2008-07-31."
+   },
+   {
+      "id": "197",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Trace\" to the dictionary and to the \"Qualifier\" list.",
+      "note": "Decided during the telecon on 2008-07-31."
+   },
+   {
+      "id": "196",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Qualifier\" as a unified list of all qualifiers; Removed \"FieldQualifier\", \"PhotonQualifier\" and \"ParticleQualifier\" from the dictionary; Replaced each with \"Qualifier\" in the ontology; Added \"Qualifier\" to \"Support\".",
+      "note": "Decided during the telecon on 2008-07-31."
+   },
+   {
+      "id": "195",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Source Type\" as a list with possible values of Data, Layout, Ancillary, Browse and Thumbnail.",
+      "note": "Decided during the telecon on 2008-06-26."
+   },
+   {
+      "id": "194",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Source\" to the dictionary and to \"Granule\", Removed \"URL\", \"Checksum\" and \"DataExtent\" from \"Granule\" and added them under \"Source\".",
+      "note": "Decided during the telecon on 2008-06-26."
+   },
+   {
+      "id": "193",
+      "version": "1.3.1",
+      "updated": "2008-07-31",
+      "changedBy": "T.King",
+      "description": "Added \"Set\" to \"PhysicalParameter\".",
+      "note": "Decided during the telecon on 2008-06-26."
+   },
+   {
+      "id": "192",
+      "version": "1.3.1",
+      "updated": "2008-07-21",
+      "changedBy": "T.King",
+      "description": "Updated description of duration type.",
+      "note": "Editorial correction."
+   },
+   {
+      "id": "191",
+      "version": "1.3.0",
+      "updated": "2008-11-22",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.3.0 Released.",
+      "note": "Estimated release date."
+   },
+   {
+      "id": "190",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Removed \"Array\" from the Field, Photon and Particle qualifier lists.",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "189",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Fixed spelling of \"Plasma Frequency\" in the \"Photon Qualifier\" list.",
+      "note": ""
+   },
+   {
+      "id": "188",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"EIT Waves\" to the dictionary and \"Phenomenon Type\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "187",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"Radio Burst\" to the dictionary and \"Phenomenon Type\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "186",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"Coronal Hole\" to the dictionary and \"Phenomenon Type\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "185",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"Active Region\" to the dictionary and \"Phenomenon Type\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "184",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Changed \"End Date\" to \"Stop Date\" and \"Relative End Date\" to \"Relative Stop Date\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "183",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Made \"Encoding Type\" multiple occurrence (*) in \"Access Information\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "182",
+      "version": "1.3.0",
+      "updated": "2008-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"TAR\" to the dictionary and to \"Encoding Type\".",
+      "note": "Decided during telecon on 2008-05-22."
+   },
+   {
+      "id": "181",
+      "version": "1.3.0",
+      "updated": "2008-04-24",
+      "changedBy": "T.King",
+      "description": "Restored \"Observatory Group\" and made it multiple occurrence.",
+      "note": "Decided during telecon on 2008-05-08."
+   },
+   {
+      "id": "180",
+      "version": "1.3.0",
+      "updated": "2008-05-20",
+      "changedBy": "T.King",
+      "description": "Changed cardinality of \"Phenomenon Type\" to + in Catalog.",
+      "note": "Decided by e-mail on 2008-05-20."
+   },
+   {
+      "id": "179",
+      "version": "1.3.0",
+      "updated": "2008-05-20",
+      "changedBy": "T.King",
+      "description": "Added \"MagneticCloud\" to the dictionary and \"PhenomenonType\".",
+      "note": "Decided by e-mail on 2008-05-20."
+   },
+   {
+      "id": "178",
+      "version": "1.3.0",
+      "updated": "2008-04-25",
+      "changedBy": "T.King",
+      "description": "Removed \"Provider Release Date\" from dictionary.",
+      "note": "Decided during telecon on 2008-04-24."
+   },
+   {
+      "id": "177",
+      "version": "1.3.0",
+      "updated": "2008-04-24",
+      "changedBy": "T.King",
+      "description": "Removed \"Observatory Group\" from dictionary and Observatory.",
+      "note": "Decided during telecon on 2008-04-24."
+   },
+   {
+      "id": "176",
+      "version": "1.3.0",
+      "updated": "2008-04-24",
+      "changedBy": "T.King",
+      "description": "Removed \"Structure Type\" from dictionary and Structure.",
+      "note": "Decided during telecon on 2008-04-24."
+   },
+   {
+      "id": "175",
+      "version": "1.3.0",
+      "updated": "2008-??-??",
+      "changedBy": "T.King",
+      "description": "Added PhysicalParameter to Catalog and DisplayData.",
+      "note": ""
+   },
+   {
+      "id": "174",
+      "version": "1.3.0",
+      "updated": "2008-??-??",
+      "changedBy": "T.King",
+      "description": "Added Electromagnetic to FieldQuantity.",
+      "note": ""
+   },
+   {
+      "id": "173",
+      "version": "1.3.0",
+      "updated": "2008-??-??",
+      "changedBy": "T.King",
+      "description": "Moved CrossSpectrum from FieldQuantity to FieldQualifier.",
+      "note": ""
+   },
+   {
+      "id": "172",
+      "version": "1.3.0",
+      "updated": "2008-??-??",
+      "changedBy": "T.King",
+      "description": "Added Number Flux to Particle Quantity.",
+      "note": ""
+   },
+   {
+      "id": "171",
+      "version": "1.3.0",
+      "updated": "2008-??-??",
+      "changedBy": "T.King",
+      "description": "Added Document Type enumeration and Paper as an item.",
+      "note": ""
+   },
+   {
+      "id": "170",
+      "version": "1.3.0",
+      "updated": "2008-??-??",
+      "changedBy": "T.King",
+      "description": "Introduced Document resource.",
+      "note": ""
+   },
+   {
+      "id": "169",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added Language to the dictionary.",
+      "note": ""
+   },
+   {
+      "id": "168",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added Contributor and Publisher to the dictionary and Role.",
+      "note": ""
+   },
+   {
+      "id": "167",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added Fax Number to Person.",
+      "note": ""
+   },
+   {
+      "id": "166",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added Units, UnitsConversion, ValidMin, ValidMax, FillValue to Element.",
+      "note": ""
+   },
+   {
+      "id": "165",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added SpectralRange to EnergyRange, FrequencyRange and WavelengthRange.",
+      "note": ""
+   },
+   {
+      "id": "164",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Moved Extension into each resource class.",
+      "note": ""
+   },
+   {
+      "id": "163",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added SupportQuantity to Support.",
+      "note": ""
+   },
+   {
+      "id": "162",
+      "version": "1.3.0",
+      "updated": "2007-??-??",
+      "changedBy": "T.King",
+      "description": "Added WavelengthRange to the dictionary; Added BandName to Bin.",
+      "note": ""
+   },
+   {
+      "id": "161",
+      "version": "1.2.2",
+      "updated": "2008-08-14",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.2.2 Released.",
+      "note": ""
+   },
+   {
+      "id": "160",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added Repository ID and Stop Date.",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "159",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "AzimuthalAngle, Dayside, ElectricFieldInstrument, Frequency, HighLatitude, LowLatitude, Nightside, PolarAngle, ProviderID, ProviderReleaseDate, RTF, SGI, SoftXRays, SpatialRange, TeX, Wavelength, Wavenumber, XDR.",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "158",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Added \"Ionosphere\" as a list.",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "157",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Removed \"Near Earth\" as a list.",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "156",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Removed \"Field Component\" from lists.",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "155",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Removed \"Offline\" from \"Medium\".",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "154",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Changed \"Observatory Group\" to \"Observatory Name\".",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "153",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Changed \"Time-of-flight\" to \"TimeOfFlight\".",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "152",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Changed \"RetardingPotentialAnalyser\" to \"RetardingPotentialAnalyzer\".",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "151",
+      "version": "1.2.2",
+      "updated": "2008-07-31",
+      "changedBy": "L.F.Bargatze",
+      "description": "Changed \"Plasmafrequency\" to \"PlasmaFrequency\".",
+      "note": "Permitted during 2008-06-26 telecon."
+   },
+   {
+      "id": "150",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.2.1 Released.",
+      "note": ""
+   },
+   {
+      "id": "149",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Removed Flux and Intensity.",
+      "note": ""
+   },
+   {
+      "id": "148",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Updated definitions of Vector and Size.",
+      "note": ""
+   },
+   {
+      "id": "147",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Carrington and HCI to Coordinate System.",
+      "note": ""
+   },
+   {
+      "id": "146",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Anisotropy to Particle Qualifier.",
+      "note": ""
+   },
+   {
+      "id": "145",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Energy Flux to Particle Quantity and Photon Quantity.",
+      "note": ""
+   },
+   {
+      "id": "144",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Flow Speed, Number Flux to Particle Quantity.",
+      "note": ""
+   },
+   {
+      "id": "143",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Archive Specialist to Role.",
+      "note": ""
+   },
+   {
+      "id": "142",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added TimeOfFlight, Interferometer, Photometer, Radiometer, Coronograph, ProportionalCounter, ScintillationDetector, Photopolarimeter, GeigerMuellerTube, NeutralParticleDetector, Sounder, NeutralAtomImager, RetardingPotentialAnalyser, MultispectralImager, ImagingSpectrometer, Riometer, Unspecified to Instrument Type.",
+      "note": ""
+   },
+   {
+      "id": "141",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added White-light, H-alpha, He-10830, Ca-K, Na-D, Extreme Ultraviolet, Ni-6768, K-7699 to the dictionary and to SpectralRange.",
+      "note": ""
+   },
+   {
+      "id": "140",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added EnergyRange and WavelengthRange to PhotonQuantity.",
+      "note": ""
+   },
+   {
+      "id": "139",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Characteristic to ParticleQualifier.",
+      "note": ""
+   },
+   {
+      "id": "138",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Current, Gyrofrequency, Energy, PlasmaFrequency to the appropriate ParticleQuantity, FieldQuantity, or PhotonQuantity.",
+      "note": ""
+   },
+   {
+      "id": "137",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added Parallel and PhaseAngle to FieldQualifier.",
+      "note": ""
+   },
+   {
+      "id": "136",
+      "version": "1.2.1",
+      "updated": "2008-03-20",
+      "changedBy": "T.King",
+      "description": "Added SpacecraftOrbitPlane to CoordinateSystemName.",
+      "note": ""
+   },
+   {
+      "id": "135",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.2.0 Released.",
+      "note": ""
+   },
+   {
+      "id": "134",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added WGS84 as a Coordinate System Name.",
+      "note": ""
+   },
+   {
+      "id": "133",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Removed Instrument Region from NumericalData.",
+      "note": ""
+   },
+   {
+      "id": "132",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added ITM regions under Near Surface.",
+      "note": ""
+   },
+   {
+      "id": "131",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Location container under Observatory and added the elements Latitude, Longitude, Elevation, ObservatoryGroup.",
+      "note": ""
+   },
+   {
+      "id": "130",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"Theta\" and \"Phi\" to \"Component\".",
+      "note": ""
+   },
+   {
+      "id": "129",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Removed D, H, T, N, Latitude, Longitude from the dictionary.",
+      "note": ""
+   },
+   {
+      "id": "128",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"Spectrum\" to \"Measurement Type\".",
+      "note": ""
+   },
+   {
+      "id": "127",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Removed \"Dynamic Spectra\" from \"Measurement Type\".",
+      "note": ""
+   },
+   {
+      "id": "126",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Under \"Physical Parameter\" made \"Parameter Key\" optional and \"Name\" required.",
+      "note": ""
+   },
+   {
+      "id": "125",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Changed name of \"Date\" data type to \"DateTime\" and \"Time\" data type to \"Duration\" to be consistent with conventional terminology.",
+      "note": ""
+   },
+   {
+      "id": "124",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Made \"URL\" in \"Granule\" multi-valued.",
+      "note": ""
+   },
+   {
+      "id": "123",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added \"Extension\" as a container.",
+      "note": ""
+   },
+   {
+      "id": "122",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Postscript as a Format.",
+      "note": ""
+   },
+   {
+      "id": "121",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added ProcessingLevel, Removed Theta and Phi.",
+      "note": ""
+   },
+   {
+      "id": "120",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Converted Support to an enumeration with Other, Positional and Temporal as members.",
+      "note": ""
+   },
+   {
+      "id": "119",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added InstrumentStatus to MeasurementType.",
+      "note": ""
+   },
+   {
+      "id": "118",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Made Component and enumeration with the values from Orientation.",
+      "note": ""
+   },
+   {
+      "id": "117",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Removed Orientation.",
+      "note": ""
+   },
+   {
+      "id": "116",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Element under Dimension.",
+      "note": ""
+   },
+   {
+      "id": "115",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Element with members of Name, Index, ParameterKey and Component.",
+      "note": ""
+   },
+   {
+      "id": "114",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Deputy-PI to Roles; Changed cardinality of Caveats under Instrument to optional.",
+      "note": ""
+   },
+   {
+      "id": "113",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Cardinality of Access Information changed from 1 to + (1 or more).",
+      "note": ""
+   },
+   {
+      "id": "112",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Modified definitions of H, Flux, Integral and Differential.",
+      "note": ""
+   },
+   {
+      "id": "111",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Metadata Contact to Role.",
+      "note": ""
+   },
+   {
+      "id": "110",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Changed InstrumentID in DisplayData and NumericalData to one or more occurrences.",
+      "note": ""
+   },
+   {
+      "id": "109",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Defined PriorID and added PriorID to ResourceHeader and Granule.",
+      "note": ""
+   },
+   {
+      "id": "108",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Sequence as a element type and changes Size to a Sequence.",
+      "note": ""
+   },
+   {
+      "id": "107",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Ephemeris as an Instrument Type.",
+      "note": ""
+   },
+   {
+      "id": "106",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Updated Phi and Theta definitions.",
+      "note": ""
+   },
+   {
+      "id": "105",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Longitude and Latitude to Orientation.",
+      "note": ""
+   },
+   {
+      "id": "104",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Expiration Date to Resource Header and Granule.",
+      "note": ""
+   },
+   {
+      "id": "103",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Uncertainty and Standard Deviation to qualifiers.",
+      "note": ""
+   },
+   {
+      "id": "102",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added the ValidMin, ValidMax and FillValue to Physical Parameter.",
+      "note": ""
+   },
+   {
+      "id": "101",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Data Extent to Access URL and Granule.",
+      "note": ""
+   },
+   {
+      "id": "100",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Data Extent, Bytes and Per to describe the size of a resource.",
+      "note": ""
+   },
+   {
+      "id": "99",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added all planets, Comet and Asteroid as regions.",
+      "note": ""
+   },
+   {
+      "id": "98",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Note as a term and added Note under Timespan.",
+      "note": ""
+   },
+   {
+      "id": "97",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Checksum, Hash Value, Hash Function, MD5 and SHA1, SHA256.",
+      "note": ""
+   },
+   {
+      "id": "96",
+      "version": "1.2.0",
+      "updated": "2007-05-22",
+      "changedBy": "T.King",
+      "description": "Added Aurora and Substorm under Phenomenon Type.",
+      "note": ""
+   },
+   {
+      "id": "95",
+      "version": "1.1.1",
+      "updated": "????-??-??",
+      "changedBy": "T.King",
+      "description": "Changed AccessURL to type container.",
+      "note": ""
+   },
+   {
+      "id": "94",
+      "version": "1.1.1",
+      "updated": "????-??-??",
+      "changedBy": "T.King",
+      "description": "Modified definition of Units.",
+      "note": ""
+   },
+   {
+      "id": "93",
+      "version": "1.1.1",
+      "updated": "????-??-??",
+      "changedBy": "T.King",
+      "description": "Removed enumeration of Component.",
+      "note": ""
+   },
+   {
+      "id": "92",
+      "version": "1.1.1",
+      "updated": "????-??-??",
+      "changedBy": "T.King",
+      "description": "Changed InstrumentID and Bin to multiple occurrence.",
+      "note": ""
+   },
+   {
+      "id": "91",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.1.0 Released.",
+      "note": ""
+   },
+   {
+      "id": "90",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Statistics to Phenomenon Type.",
+      "note": ""
+   },
+   {
+      "id": "89",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Field Component container.",
+      "note": ""
+   },
+   {
+      "id": "88",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added ChargeState to Particle Quantity.",
+      "note": ""
+   },
+   {
+      "id": "87",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Removed \"Instrument Name\" and \"Observatory Name\".",
+      "note": ""
+   },
+   {
+      "id": "86",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Changed \"alias\" to \"alternate name\".",
+      "note": ""
+   },
+   {
+      "id": "85",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Release Date to Resource Header, Person, and Granule.",
+      "note": ""
+   },
+   {
+      "id": "84",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Parameter Key under Physical Parameter.",
+      "note": ""
+   },
+   {
+      "id": "83",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Granule.",
+      "note": ""
+   },
+   {
+      "id": "82",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Changed Repository Name to Repository ID under Access Information.",
+      "note": ""
+   },
+   {
+      "id": "81",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Removed Access Right from Display Data.",
+      "note": ""
+   },
+   {
+      "id": "80",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Changed definition of Investigation Name.",
+      "note": ""
+   },
+   {
+      "id": "79",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Removed Observatory ID from Numerical Data and Display Data.",
+      "note": ""
+   },
+   {
+      "id": "78",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added ObservatoryID under Instrument.",
+      "note": ""
+   },
+   {
+      "id": "77",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Updated Pressure definition.",
+      "note": ""
+   },
+   {
+      "id": "76",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Removed Coordinate System from Particle Physical Parameter.",
+      "note": ""
+   },
+   {
+      "id": "75",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Parent ID, Energy Range, Frequency Range, Azimuthal Angle Range, Polar Angle Range, Atomic Number Range, Integral, Differential, Low and High.",
+      "note": ""
+   },
+   {
+      "id": "74",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added Base64 as an Encoding.",
+      "note": ""
+   },
+   {
+      "id": "73",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added J2000 as a coordinate system.",
+      "note": ""
+   },
+   {
+      "id": "72",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added MAT_4, MAT_6, MAT_7 and VOTable as a Format.",
+      "note": ""
+   },
+   {
+      "id": "71",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Updated description of \"Resource ID\".",
+      "note": ""
+   },
+   {
+      "id": "70",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Added \"Service\" resource class.",
+      "note": ""
+   },
+   {
+      "id": "69",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Made data type of \"Mixed\" text.",
+      "note": ""
+   },
+   {
+      "id": "68",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Changed \"Instrument type\" to allow multiple occurrences.",
+      "note": ""
+   },
+   {
+      "id": "67",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Modified definition of \"Near Earth\".",
+      "note": ""
+   },
+   {
+      "id": "66",
+      "version": "1.1.0",
+      "updated": "2006-08-31",
+      "changedBy": "T.King",
+      "description": "Removed \"Orbital\".",
+      "note": ""
+   },
+   {
+      "id": "65",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.0.3 Released.",
+      "note": ""
+   },
+   {
+      "id": "64",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Correct links to \"Stokes Parameters\".",
+      "note": ""
+   },
+   {
+      "id": "63",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Changed \"Spectral Range Name\" to \"Spectral Range\" for consistency.",
+      "note": ""
+   },
+   {
+      "id": "62",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Added \"Near Earth\" under \"Heliosphere\" and added \"Outside Bowshock\" and \"Orbital\" under \"Near Earth\".",
+      "note": ""
+   },
+   {
+      "id": "61",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Moved Mass and Size under \"Particle Physical Quantity\" and changed to type item.",
+      "note": ""
+   },
+   {
+      "id": "60",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Dropped N, Z, Q from dictionary.",
+      "note": ""
+   },
+   {
+      "id": "59",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Added \"NCAR\" as a \"Format\".",
+      "note": ""
+   },
+   {
+      "id": "58",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Changed \"HF Radar\" to \"Radar\".",
+      "note": ""
+   },
+   {
+      "id": "57",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Made \"Acknowledgement\" options.",
+      "note": ""
+   },
+   {
+      "id": "56",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Move \"Access Rights\" under \"Access Information\".",
+      "note": ""
+   },
+   {
+      "id": "55",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Changed definition of \"Item\" to indicate it is a value of an enumeration.",
+      "note": ""
+   },
+   {
+      "id": "54",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Changed \"Observed Region\" and \"Instrument Region\" to enumerations.",
+      "note": ""
+   },
+   {
+      "id": "53",
+      "version": "1.0.3",
+      "updated": "2006-04-27",
+      "changedBy": "T.King",
+      "description": "Added \"Earth\" as a enumeration with \"Magnetosphere\" as a member.",
+      "note": ""
+   },
+   {
+      "id": "52",
+      "version": "1.0.2",
+      "updated": "2006-03-07",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.0.2 Released.",
+      "note": ""
+   },
+   {
+      "id": "51",
+      "version": "1.0.2",
+      "updated": "2006-03-07",
+      "changedBy": "T.King",
+      "description": "Added the \"Registry\" resource class.",
+      "note": ""
+   },
+   {
+      "id": "50",
+      "version": "1.0.2",
+      "updated": "2006-03-07",
+      "changedBy": "T.King",
+      "description": "Added the \"Repository\" resource class.",
+      "note": ""
+   },
+   {
+      "id": "49",
+      "version": "1.0.2",
+      "updated": "2006-03-07",
+      "changedBy": "T.King",
+      "description": "Added \"Caveats\" under \"Instrument\".",
+      "note": ""
+   },
+   {
+      "id": "48",
+      "version": "1.0.2",
+      "updated": "2006-03-07",
+      "changedBy": "T.King",
+      "description": "Added \"ProjectScientist\" to the dictionary and under \"Role\".",
+      "note": ""
+   },
+   {
+      "id": "47",
+      "version": "1.0.1",
+      "updated": "2006-01-03",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.0.1 Released.",
+      "note": ""
+   },
+   {
+      "id": "46",
+      "version": "1.0.1",
+      "updated": "2006-01-03",
+      "changedBy": "T.King",
+      "description": "Added \"Pressure\" under \"ParticleQuantity\".",
+      "note": ""
+   },
+   {
+      "id": "45",
+      "version": "1.0.1",
+      "updated": "2006-01-03",
+      "changedBy": "T.King",
+      "description": "Changes in value type for elements: \"Exposure\", \"InputResourceID\", \"RepositoryName\", and \"Size\".",
+      "note": ""
+   },
+   {
+      "id": "44",
+      "version": "1.0.0",
+      "updated": "2005-11-22",
+      "changedBy": "T.King",
+      "description": "SPASE version 1.0.0 Released.",
+      "note": ""
+   },
+   {
+      "id": "43",
+      "version": "1.0.0",
+      "updated": "2005-11-22",
+      "changedBy": "T.King",
+      "description": "Added \"PhenomenonType\" list and defined terms in the list.",
+      "note": ""
+   },
+   {
+      "id": "42",
+      "version": "1.0.0",
+      "updated": "2005-11-22",
+      "changedBy": "T.King, and others",
+      "description": "Incorporate comments from consortium members on the \"final\" draft before the release of version 1.0.",
+      "note": ""
+   },
+   {
+      "id": "41",
+      "version": "0.99.9",
+      "updated": "2005-11-18",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.9 Released.",
+      "note": ""
+   },
+   {
+      "id": "40",
+      "version": "0.99.9",
+      "updated": "2005-11-18",
+      "changedBy": "T.King, D.A. Roberts",
+      "description": "Incorporate comments from consortium members on the \"final\" draft before the release of version 1.0.",
+      "note": ""
+   },
+   {
+      "id": "39",
+      "version": "0.99.8",
+      "updated": "2005-11-03",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.8 Released.",
+      "note": ""
+   },
+   {
+      "id": "38",
+      "version": "0.99.8",
+      "updated": "2005-11-03",
+      "changedBy": "T.King",
+      "description": "General clean-up and alignment with the schema.",
+      "note": "Agreed upon at the APL meeting, 2005-11-02 to 2005-11-04."
+   },
+   {
+      "id": "37",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.7 Released.",
+      "note": ""
+   },
+   {
+      "id": "36",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Changed \"AcceptableAbbreviation\" to \"ConventionalAbbreviation\" since abbreviations are not supported in the model.",
+      "note": ""
+   },
+   {
+      "id": "35",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Updated definition of \"Magnetotail\", etc. to be generic; Added \"Earth\" examples.",
+      "note": ""
+   },
+   {
+      "id": "34",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Added all planets and the Moon under \"Body\".",
+      "note": ""
+   },
+   {
+      "id": "33",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Added \"Near1AU\" under Heliosphere; Added \"Body\" under \"Atmosphere-Ionosphere\", \"Magnetosphere\" and \"Ground\".",
+      "note": ""
+   },
+   {
+      "id": "32",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Added \"WaveForm\", \"Spectra\", etc. under \"AnalysisMethod\".",
+      "note": ""
+   },
+   {
+      "id": "31",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Added \"AnalysisMethod\" under \"Field\" \"Electric\" and \"Magnetic\".",
+      "note": ""
+   },
+   {
+      "id": "30",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Move Polar Angle under Particle \"IndependentVariable\".",
+      "note": ""
+   },
+   {
+      "id": "29",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Drop Speed from Particle \"IndependentVariable\".",
+      "note": ""
+   },
+   {
+      "id": "28",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Move Wavelength and Wave Number under Photon \"IndependentVariable\".",
+      "note": ""
+   },
+   {
+      "id": "27",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Changed \"PhotonContext\" and \"ParticleContext\" to \"IndependentVariable\".",
+      "note": ""
+   },
+   {
+      "id": "26",
+      "version": "0.99.7",
+      "updated": "2005-09-08",
+      "changedBy": "T.King",
+      "description": "Added \"Description\" and \"TensorOrder\" under \"Parameter\".",
+      "note": ""
+   },
+   {
+      "id": "25",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Removed \"Provider\" and \"Manufacture\" resources and replaced with ID pointers.",
+      "note": ""
+   },
+   {
+      "id": "24",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Introduced \"PhotonContext\" and \"ParticleContext\" as replacements for \"IndependentVariable\".",
+      "note": ""
+   },
+   {
+      "id": "23",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Changed \"UpperLatitude\" to \"HighLatitude\" and \"Lower\" to \"Low\".",
+      "note": ""
+   },
+   {
+      "id": "22",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Removed \"Ratio\" (Numerator and Denominator).",
+      "note": ""
+   },
+   {
+      "id": "21",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Added \"Spherical\" and \"Cartesian\" under \"Position\".",
+      "note": ""
+   },
+   {
+      "id": "20",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Removed \"Body\" and references to it.",
+      "note": ""
+   },
+   {
+      "id": "19",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Changed \"Surface\" to \"Ground\".",
+      "note": ""
+   },
+   {
+      "id": "18",
+      "version": "0.99.6",
+      "updated": "2005-09-07",
+      "changedBy": "T.King",
+      "description": "Corrected the inclusion of \"Atmosphere-Ionosphere\" regions into the \"Magnetosphere\".",
+      "note": ""
+   },
+   {
+      "id": "17",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.5 Released.",
+      "note": ""
+   },
+   {
+      "id": "16",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "Added \"parameter\" loosely based on a model proposed by D.A. Roberts.",
+      "note": ""
+   },
+   {
+      "id": "15",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "Included region descriptions from J. King with additions suggested by K. Reardon.",
+      "note": ""
+   },
+   {
+      "id": "14",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "Added \"Catalog\", \"DisplayData\" to the top list.",
+      "note": ""
+   },
+   {
+      "id": "13",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "Added document elements to product resources.",
+      "note": ""
+   },
+   {
+      "id": "12",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "Changed data types of \"Integer\" to \"Count\" and \"Double\" to \"Numeric\".",
+      "note": ""
+   },
+   {
+      "id": "11",
+      "version": "0.99.5",
+      "updated": "2005-08-26",
+      "changedBy": "T.King",
+      "description": "Clarified some definitions and corrected typographical errors.",
+      "note": "Per J. Thieman and J. Hourcle"
+   },
+   {
+      "id": "10",
+      "version": "0.99.4",
+      "updated": "2005-08-08",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.4 Released.",
+      "note": ""
+   },
+   {
+      "id": "9",
+      "version": "0.99.4",
+      "updated": "2005-08-08",
+      "changedBy": "T.King",
+      "description": "Added definitions for new elements introduced in the new taxonomy.",
+      "note": ""
+   },
+   {
+      "id": "8",
+      "version": "0.99.4",
+      "updated": "2005-08-08",
+      "changedBy": "T.King",
+      "description": "Restructured the taxonomy of elements to match the one suggested by D.A. Roberts.",
+      "note": "Per "
+   },
+   {
+      "id": "7",
+      "version": "0.99.3",
+      "updated": "2005-08-03",
+      "changedBy": "T.King",
+      "description": "Added definitions supplied by J. Thieman, C. Harvey and T. King; Significant revision of document as suggested by J. Hourcle.",
+      "note": ""
+   },
+   {
+      "id": "6",
+      "version": "0.99.2",
+      "updated": "2005-07-07",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.2 Released.",
+      "note": ""
+   },
+   {
+      "id": "5",
+      "version": "0.99.2",
+      "updated": "2005-07-07",
+      "changedBy": "T.King",
+      "description": "Corrected \"NumericalData\" entry under \"Product\".",
+      "note": ""
+   },
+   {
+      "id": "4",
+      "version": "0.99.1",
+      "updated": "2005-06-23",
+      "changedBy": "T.King",
+      "description": "SPASE version 0.99.1 Released.",
+      "note": ""
+   },
+   {
+      "id": "3",
+      "version": "0.99.1",
+      "updated": "2005-06-23",
+      "changedBy": "T.King",
+      "description": "Added \"ParticleCorrelator\" and \"SpacecraftPotentialControl\" under \"InstrumentType\".",
+      "note": ""
+   },
+   {
+      "id": "2",
+      "version": "0.99.1",
+      "updated": "2005-06-23",
+      "changedBy": "T.King",
+      "description": "Added C. Harvey definition for \"Electron Drift\".",
+      "note": ""
+   },
+   {
+      "id": "1",
+      "version": "0.99.1",
+      "updated": "2005-06-23",
+      "changedBy": "T.King",
+      "description": "Removed duplicate entries.",
+      "note": ""
+   }
+]

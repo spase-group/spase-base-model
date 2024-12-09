@@ -7,7 +7,7 @@
 
    <body>
 
-      <!-- We render TOC template twice. The first time in the main template - this is needed for inner pdf links. The second time it is rendered as merge operation in pdf utils - this is needed to for getting page numbers in TOC. -->
+      <!-- We render TOC template twice. The first time in the main template - this is needed for inner pdf links. The second time it is rendered as merge operation in pdf utils - this is needed to for gettign page numbers in TOC. -->
 
       {#child toc @template.recipe=html}
 
@@ -16,7 +16,7 @@
          <h1 id="executive">1. Executive Summary</h1> {{{pdfAddPageItem id="executive"}}} <!-- Used for getting page numbers in TOC -->
          <p>Research in Heliophysics requires information from multiple sources which includes data from and about spacecraft, ground-based observatories, models, simulations and more. The results from research are also invaluable in building up a body of knowledge and need to be available. All the different sources and types of information are considered a "Resource". The Resources exist, are shared, exchanged and used in a framework called the "data environment". The SPASE (Space Physics Archive Search and Extract) group has defined a Data Model which is a set of terms and values along with the relationships between them that allow describing all the resources in a heliophysics data environment. It is the result of many years of effort by an international collaboration of heliophysicists and information scientists to unify and improve on existing Space and Solar Physics data models. The intent of this Data Model is to provide the means to describe resources, most importantly scientifically useful data products, in a uniform way so they may be easily registered, found, accessed, and used.</p>
          <p>The Data Model provides enough detail to allow a scientist to understand the content of Data Products (e.g., a set of files for 3 s resolution Geotail magnetic field data for1992 to 2005), together with essential retrieval and contact information. It also allows for the incremental annotation of resources with expert assessments and the free association of resources to create bundles or networks of resources. Resource descriptions can be stored with the data or at remote locations. Sites can harvest the resource descriptions to enable services like a search engine or portal (Virtual Observatory). A typical use would be to have a collection of descriptions stored in one or more related internet-based registries of products; that can be queried with specifically designed search engines and ultimately link users to the data they need. The Data Model also provides constructs for describing components of such a data delivery system. This includes repositories, registries and services.</p>
-         <p>The SPASE group website is located at <a href=https://www.spase-group.org/>https://www.spase-group.org/</a>. A PDF version of this document can be downloaded from the SPASE site <a href=https://spase-group.org/data/model/spase-2.7.0-draft.pdf>https://spase-group.org/data/model/spase-2.7.0-draft.pdf</a>.</p>
+         <p>The SPASE group website is located at <a href=https://www.spase-group.org/>https://www.spase-group.org/</a>. A PDF version of this document can be downloaded from the SPASE site <a href=https://spase-group.org/data/model/spase-2.6.0-draft.pdf>https://spase-group.org/data/model/spase-2.6.0-draft.pdf</a>.</p>
       </div> <!-- Chapter -->
 
       <div style='page-break-before: always;'></div>
@@ -116,57 +116,6 @@
             <dd>spase://SMWG/Observatory/GOES8</dd>
          </p>
          <p>The Resource ID is used to formally or informally associate one resource with another. For example, an Instrument resource must be formally associated with an Observatory. A Numerical Data resource may be formally associated with an Instrument resource and informally associated with other Numerical Data resources. The free association of resources allows networks or collections to be formed from distributed resources and allows for new associations to be formed as needed without affecting existing associations.</p>
-         <p>A document entitled "Guidelines for Resource ID Formation" provides general recommendations for generating a Resource ID, see https://spase-group.org/docs/conventions/Resource-ID-Formation-Rule-v5.pdf). More specific recommendations are listed by SPASE resource type below:</p>
-<pre>
-
-Person:          spase://NamingAuthority/Person/GivenName.[MiddleName. or MI.]FamilyName
-
-Observatory:     spase://NamingAuthority/Project/Observatory/ObservatoryName
-
-Instrument:      spase://NamingAuthority/Instrument/Observatory/InstrumentName
-
-Repository:      spase://NamingAuthority/Repository/RepositoryName 
-
-NumericalData:   spase://NamingAuthority/NumericalData/Project/Observatory/Instrument/
-                         ProductName/Cadence
-
-DisplayData:     spase://NamingAuthority/DisplayData/Project/Observatory/Instrument/
-                         ProductName/Cadence
-
-Catalog:         spase://NamingAuthority/Catalog/ResourceName
-              or spase://NamingAuthority/Catalog/[Observatory]/[Instrument]/ResourceName
-
-Collection:      spase://NamingAuthority/Collection/Project/Observatory/Instrument/Project/
-                         Observatory/Instrument
-
-Model:           spase://NamingAuthority/Model/ModelProvider/ModelName
-
-Annotation:      spase://NamingAuthority/Annotation/AnnotationType/ResourceName
-                 where AnnotationType: Anomaly, Event, Feature, Phenomenon
-
-Document:        spase://NamingAuthority/Document/Project/DocumentProvider/DocumentName
-
-ModelRun:        spase://NamingAuthority/ModelRun/ModelRunProvider/ResourceName
-                 here ResourceName may take the form of model run name plus date of model
-                 execution
-
-NumericalOutput: spase://NamingAuthority/NumericalOutput/
-
-DisplayOutput:   spase://NamingAuthority/DisplayOutput/
-
-Registry:        spase://NamingAuthority/Registry/RegistryName 
-
-Service:         spase://NamingAuthority/Service/ServiceProvider/ServiceType/ResourceName
-
-Software:        spase://NamingAuthority/Software/SoftwareProvider/SoftwareType/ResourceName
-
-Community-produced products:
-                 spase://NamingAuthority/ResourceType/CommunityProduct/ResourceProvider
-                 for example: PI_Name/ResourceName
-
-Granule:         Not used anymore
-
-</pre>
          <h2 id="model.core">3.3. Core Attributes</h2> {{{pdfAddPageItem id="model.core"}}} <!-- Used for getting page numbers in TOC -->
          <p>With the exception of Granule and Person, every resource has a common set of core attributes. The core attributes provide textual descriptions of the resource and the capability to reference external sources of information (Information URL). It also describes the context of the resource in the larger data environment. This context consists of associations with other resources (Association) and with previous versions (Prior ID). These attributes are grouped in a Resource Header and consists of:</p>
          <div class="indent top-pad">
@@ -235,7 +184,7 @@ Granule:         Not used anymore
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
 &lt;Spase&gt;
-   &lt;Version&gt;2.7.0&lt;/Version&gt;
+   &lt;Version&gt;2.6.0&lt;/Version&gt;
    &lt;Person&gt;
       &lt;ResourceID&gt;spase://Person/jsmith@smith.org&lt;/ResourceID&gt;
       &lt;PersonName&gt;John Smith&lt;/PersonName&gt;
@@ -252,7 +201,7 @@ Granule:         Not used anymore
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
 &lt;Spase&gt;
-   &lt;Version&gt;2.7.0&lt;/Version&gt;
+   &lt;Version&gt;2.6.0&lt;/Version&gt;
    &lt;NumericalData&gt;
       &lt;ResourceID&gt;spase://VMO/NumericalData/ACE/MAG/200301&lt;/ResourceID&gt;
       &lt;ResourceHeader&gt;
@@ -345,112 +294,10 @@ Granule:         Not used anymore
             </pre>
          </p>
       </div>
-      </div> <!-- Chapter -->
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="rightsList">6. DataCite rights and rightList Metadata Conventions</h1> {{{pdfAddPageItem id="rightsList"}}} <!-- Used for getting page numbers in TOC -->
-         <p>The DataCite "rights" text field element has been added to the SPASE Base model, version 2.7.0, in order allow SPASE better compliance with the F.A.I.R. principles: Findability, Accessibility, Interoperability, and Reusability. The DataCite description of Rights (DataCite capitalization) is as follows: "The Rights field is where you can include information about the data's content license (like CC0). When this information is in the metadata for the dataset, it helps researchers to quickly see at a glance whether the data being described is something they'll be able to use. This information is also important for harvesters who are trying to assemble lists of readily available datasets." Note that rights is is a repeatable text element (cardinality +) as it is contained within wrapper element rightsList. The declaration of multiple rights allow one to describe data resources with complex rights characteristics.</p>
-         <p>The rights definition and the definition of its sub-properties are listed below as lightly edited from the DataCite Metadata Schema, version 4.6 (see https://doi.org/10.14454/mzv1-5b55).</p>
-            <pre>
-<b>Rights</b>
-
-<b>Obligation:</b> Optional
-
-<b>Occurrences:</b> 0-n
-
-<b>Definition:</b> Any rights information for this resource.
-
-The property may be repeated to record complex rights characteristics.
-
-<b>Allowed values, examples, other constraints:</b> Free text.
-
-Provide a rights management statement for the resource or reference a service providing such
-information. Include embargo information if applicable.
-
-Use the complete title of a license and include version information if applicable.
-
-May be used for software licenses.
-
-<b>Examples:</b>
-
-Creative Commons Attribution 4.0 International
-
-Apache License, Version 2.0
-
-Two Example XML: The first example shows the rights characteristics as called for by
-SMD-41a that have been adopted by Space Physics Data Facility (SPDF) for its data
-holdings. The second example shows the rights characteristics recommended by the ESAC
-Initiative community.
-
-&lt;rightsList&gt;
-   &lt;rights xml:lang="en" 
-           schemeURI="https://spdx.org/licenses/"
-           rightsIdentifierScheme="SPDX"
-           rightsIdentifier="CC-BY-1.0"
-           rightsURI="https://creativecommons.org/licenses/by/1.0/"&gt;
-   Creative Commons Attribution 1.0 International&lt;/rights&gt;
-&lt;/rightsList&gt;
-
-&lt;rightsList&gt;
-   &lt;rights xml:lang="en" 
-           schemeURI="https://spdx.org/licenses/"
-           rightsIdentifierScheme="SPDX"
-           rightsIdentifier="CC-BY-4.0"
-           rightsURI="https://creativecommons.org/licenses/by/4.0/"&gt;
-   Creative Commons Attribution 4.0 International&lt;/rights&gt;
-&lt;/rightsList&gt;
-
-<b>Sub-properties:</b>
-
-<b>1. schemeURI</b>
-
-<b>Occurrences:</b> 0-1
-
-<b>Definition:</b> The URI of the rightsIdentifierScheme.
-
-<b>Allowed values, examples, other constraints:</b>
-
-Example: https://spdx.org/licenses/
-
-<b>2. rightsIdentifierScheme</b>
-
-<b>Occurrences:</b> 0-1
-
-<b>Definition:</b> The name of the scheme.
-
-<b>Allowed values, examples, other constraints:</b>
-
-Example: SPDX
-
-<b>3. rightsIdentifier</b>
-
-<b>Occurrences:</b> 0-1
-
-<b>Definition:</b> A short, standardized version of the license name.
-
-<b>Allowed values, examples, other constraints:</b>
-
-Example: CC-BY-4.0
-
-<b>4. rightsURI</b>
-
-<b>Occurrences:</b> 0-1
-
-<b>Definition:</b> The URI of the license.
-
-<b>Allowed values, examples, other constraints:</b>
-
-Example: https://creativecommons.org/licenses/by/4.0/
-
-A list of identifiers for commonly-used licenses may be found here:
-https://spdx.org/licenses/
-      </pre>
-      </div> <!-- Chapter -->
-
-      <div style='page-break-before: always;'></div>
-      <div class="chapter">
-         <h1 id="datatypes">7. Element Data Types</h1> {{{pdfAddPageItem id="datatypes"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="datatypes">6. Element Data Types</h1> {{{pdfAddPageItem id="datatypes"}}} <!-- Used for getting page numbers in TOC -->
          <p>Each element in the SPASE Data Model has a data type. One design feature of the SPASE data model is that an element can contain either a value or other elements. Mixed content (elements and values) is not allowed. This allows the data model to be implemented in a wider range of metadata languages. Note that the SPASE DateTime and Duration type elements must be populated by text that complies with the ISO 8601 international standard for date and time representations (other ISO 8601 informational URLs appear in the Bibliography below. The following SPASE model data types are supported:</p>
          {{#each data.type}}
             <div id="{{type}}" class="indent top-pad">
@@ -462,7 +309,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="enumerations">8. Enumerations</h1> {{{pdfAddPageItem id="enumerations"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="enumerations">7. Enumerations</h1> {{{pdfAddPageItem id="enumerations"}}} <!-- Used for getting page numbers in TOC -->
          <p>Enumeration lists are either "open" or "closed". The list members in a closed enumeration list are stipulated by the SPASE model and the definition for all closed list members are compiled in the SPASE data dictionary. The items in an open enumeration list are determined by an external control authority. The URL for the control authority is indicated in the definition of each open list.</p>
          {{#each data.list}}
             <div class="indent top-pad">
@@ -481,7 +328,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="tree">9. Data Model Tree</h1> {{{pdfAddPageItem id="tree"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="tree">8. Data Model Tree</h1> {{{pdfAddPageItem id="tree"}}} <!-- Used for getting page numbers in TOC -->
          <div>The taxonomy tree shows the inter-relationship of elements in the data model. This provides a "big picture" view of the SPASE data model. The taxonomy is implementation neutral. Details for each element are contained in the SPASE data dictionary.</div>
          <div class="top-pad">Notes: Occurence specifications are enclosed in parenthesis: 0 = optional, 1 = required, * = zero or more, + = 1 or more</div>
          <div class="top-pad"></div>
