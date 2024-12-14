@@ -69,9 +69,7 @@
          <h2 id="intro.concept">2.4. Conceptual System Environment</h2> {{{pdfAddPageItem id="intro.concept"}}} <!-- Used for getting page numbers in TOC -->
          <p>The data model is intended to enable the sharing of knowledge through structured metadata (SPASE Descriptions) which can be exchanged in queries and responses between systems. The operational environment this occurs in is the current Internet where systems and users are loosely coupled and highly distributed. Special services or portals may harvest (collect) the SPASE descriptions from multiple sources to create an enriched capability for the user. For example, a search engine may provide a comprehensive search for a particular scientific discipline. The web site https://hpde.gsfc.nasa.gov gives a guide to many currently active projects and a great deal of background information. Of particular interest there is the document entitled, "A Framework for Space and Solar Physics Virtual Observatories."</p>
          <p>Figure 1 illustrates a conceptual architecture in a distributed environment. In this environment multiple communities have resources to share. The storage location of a resource is called a repository. Some of these repositories (boxes) have local SPASE descriptions which are available through a local registry service (balls). The contents of other repositories are described at external, possibly independent, locations which make the descriptions available through remote registries. Gateways (rings) can harvest and aggregate the resources from multiple registries or perform federated searches which provide a single access point to multiple registries. Applications access the registries to discover resources, determine their location and retrieve them from the repositories.</p>
-
          <img class="full-center" src="{#asset ./images/arch.png @encoding=dataURI}">
-
          <div style='page-break-before: always;'></div>
          <h1 id="model">3. SPASE Data Model</h1> {{{pdfAddPageItem id="model"}}} <!-- Used for getting page numbers in TOC -->
          <h2 id="model.types">3.1. Resource Types</h2> {{{pdfAddPageItem id="model.types"}}} <!-- Used for getting page numbers in TOC -->
@@ -346,6 +344,7 @@
                                                                                                    
             </pre>
          </p>
+      </div>
       </div> <!-- Chapter -->
 
       <div style='page-break-before: always;'></div>
@@ -377,8 +376,6 @@ May be used for software licenses.
 
 Creative Commons Attribution 4.0 International
 
-Creative Commons Attribution-NonCommercial 3.0 Intergovernmental Organization
-
 Apache License, Version 2.0
 
 Two Example XML: The first example shows the rights characteristics as called for by
@@ -399,12 +396,12 @@ Initiative community.
    &lt;rights xml:lang="en" 
            schemeURI="https://spdx.org/licenses/"
            rightsIdentifierScheme="SPDX"
-           rightsIdentifier="CC-BY-NC-3.0 IGO"
-           rightsURI="https://creativecommons.org/licenses/by-nc/3.0/igo/"&gt;
+           rightsIdentifier="CC-BY-4.0"
+           rightsURI="https://creativecommons.org/licenses/by/4.0/"&gt;
    Creative Commons Attribution 4.0 International&lt;/rights&gt;
 &lt;/rightsList&gt;
 
-<b>rights Sub-properties:</b>
+<b>Sub-properties:</b>
 
 <b>1. schemeURI</b>
 
@@ -495,7 +492,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="dictionary">10. Dictionary</h1> {{{pdfAddPageItem id="dictionary"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="dictionary">9. Dictionary</h1> {{{pdfAddPageItem id="dictionary"}}} <!-- Used for getting page numbers in TOC -->
          <b>How to Read a Definition</b>
          Each element has certain attributes and context that set how they should be used. The details for each element are presented in the following form:
          <img class="full-center" src="{#asset ./images/card.png @encoding=dataURI}">
@@ -601,7 +598,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="history">11. History</h1> {{{pdfAddPageItem id="history"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="history">10. History</h1> {{{pdfAddPageItem id="history"}}} <!-- Used for getting page numbers in TOC -->
          {{#each (group data.history "version")}}
             <table class="entry">
                <tr>
@@ -622,7 +619,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="biblio">12. Bibliography</h1> {{{pdfAddPageItem id="biblio"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="biblio">11. Bibliography</h1> {{{pdfAddPageItem id="biblio"}}} <!-- Used for getting page numbers in TOC -->
          <br>
          <p>
             <dt>
@@ -723,7 +720,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="appendix.a">13. Appendix A - Comparison of Spectral Domains</h1> {{{pdfAddPageItem id="appendix.a"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="appendix.a">12. Appendix A - Comparison of Spectral Domains</h1> {{{pdfAddPageItem id="appendix.a"}}} <!-- Used for getting page numbers in TOC -->
          <img class="full-center" src="{#asset ./images/spectrum.png @encoding=dataURI}">
       </div> <!-- Chapter -->
 

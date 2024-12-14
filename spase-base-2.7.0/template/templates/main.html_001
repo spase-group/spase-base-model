@@ -27,13 +27,13 @@
 
          <p>The SPASE data model divides the heliophysics data environment into a limited set of resources types. A key resource type is Numerical Data. This type of resource typically consists of a set of files containing values of one or more physical variables and that differ from each other only by the time span. To fully describe a Numerical Data resource requires other types of Resources, namely Observatory, Instrument, Person, and Repository, whose names are self-explanatory, and each of which has its own set of attributes. Often, numerical data are presented in prepared images (gif or jpeg), and such presentations are referred to as Display Data resources. The other data related resource types are Catalog which are lists of events; Annotation which enable expert comments on data products; and Granule which describe individual files within another resource (i.e., Numerical Data, Display Data or Catalog). Other types of resources include Document which can contain narratives or supporting information; Service that provide software to use data resources; Repository for storage locations; and Registry for metadata collections. Resource descriptions and the links in them are intended to make the Resource useful to scientific users.</p>
          <h2 id="intro.development">2.1. History of Development</h2> {{{pdfAddPageItem id="intro.development"}}} <!-- Used for getting page numbers in TOC -->
-         <p>The data model presented here has grown from the efforts begun in 2002 that became formalized in regular teleconferences of a group of interested data providers, including scientific and technical representatives of some of the largest data holdings in the US, Europe, and Japan. As the effort to provide seamless access to distributed data proceeded, it became clear that the data model efforts were central. The SPASE Data Model was developed with an iterative process where additions were made when unaddressed needs were discovered. The original impetus occurred at an ISTP meeting in 1998 where a resolution was passed calling to make data more accessible. Interoperability test beds were constructed in 2001 and in 2002 a grassroots effort was undertaken to define the needs of community. In March of 2003 a meeting of many of the people in the Contributors list at the beginning of this document was convened to begin the data model construction in earnest. The initial effort involved collecting terms from CDPP, SWRI, NSSDC, ISTP, and other sets to form a starting point. Two years of teleconferences, e-mailed revisions, and occasional face-to-face efforts, along with the application of the terms to specific cases, led to the release of version 1.0 of the data model in November 2005. Following the release of version 1.0 many existing data products were described and lead to further improvements of the data model. Version1.1 was released in August 2006. At this time NASA established the Heliophysics VxOs and after an extended period of use and improvements version 1.2.2 was released in August of 2008. Later versions of the data model, that is up until version 2.5.0, are each an extension of this earlier release.</p>
+         <p>The data model presented here has grown from the efforts begun in 2002 that became formalized in regular teleconferences of a group of interested data providers, including scientific and technical representatives of some of the largest data holdings in the US, Europe, and Japan. As the effort to provide seamless access to distributed data proceeded, it became clear that the data model efforts were central. The SPASE Data Model was developed with an iterative process where additions were made when unaddressed needs were discovered. The original impetus occurred at an ISTP meeting in 1998 where a resolution was passed calling to make data more accessible. Interoperability test beds were constructed in 2001 and in 2002 a grassroots effort was undertaken to define the needs of community. In March of 2003 a meeting of many of the people in the Contributors list at the beginning of this document was convened to begin the data model construction in earnest. The initial effort involved collecting terms from CDPP, SWRI, NSSDC, ISTP, and other sets to form a starting point. Two years of teleconferences, e-mailed revisions, and occasional face-to-face efforts, along with the application of the terms to specific cases, led to the release of version 1.0 of the data model in November 2005. Following the release of version 1.0 many existing data products were described and lead to further improvements of the data model. Version1.1 was released in August 2006. At this time NASA established the Heliophysics VxOs and after an extended period of use and improvements version 1.2.2 was released in August of 2008. Later versions of the data model, that is up until version 2.5.0, are each extensions of this earlier release.</p>
          <p>Starting with version 2.5.0, the SPASE base model has been expanded by incorporation of the SPASE Simulation Extensions. The basis for the SPASE Simulation Extensions were originally developed by the Integrated Medium for Planetary Exploration (IMPEx) project, a European Union (EU) Seventh Framework Programme sponsored project. The SPASE Simulation Extensions, version 1.0.0, were released 2014-05-19 with no subsequent revisions. The Resource Types currently in the simulation extensions are:</p>
          <p>SimulationRun - Description of a simulation run, including the code ID, the run spatial and temporal description, and all the relevant inputs.</p>
          <p>SimulationModel - Descriptor of a simulation model: type of numerical scheme, model versions, etc.</p>
          <p>NumericalOutput - Numerical data generated from a simulation run.</p>
          <p>DisplayOutput - A graphical representation of data generated from a simulation run.</p>
-         <p>The simulation extensions also override the following Granule and Particle in the base model. The elements within SimulationRun, SimulationModel, NumericalOutput, DisplayOutput are broken down into sub-elements that provide sufficient detail for adequate description of simulation models and of the data sets derived from simulation runs. The merging of the SPASE Base Model with the SPASE Simulation Extension allows greater interoperability and eases the development of tools such as the SPASE editor <a href=http://xmleditor.spase-group.org>http://xmleditor.spase-group.org</a>, which is a web-based editor for generating SPASE descriptions.</p>
+         <p>The simulation extensions also override the following Granule and Particle in the base model. The elements within SimulationRun, SimulationModel, NumericalOutput, DisplayOutput are broken down into sub-elements that provide sufficient detail for adequate description of simulation models and of the data sets derived from simulation rruns. The merging of the SPASE Base Model with the SPASE Simulation Extension allows greater interoperability and eases the development of tools such as the SPASE editor <a href=http://xmleditor.spase-group.org>http://xmleditor.spase-group.org</a>, which is a web-based editor for generating SPASE descriptions.</p>
          <h2 id="intro.purpose">2.2. Intended Purpose</h2> {{{pdfAddPageItem id="intro.purpose"}}} <!-- Used for getting page numbers in TOC -->
          <p>The design of the SPASE data model is based on a core set of principles related to the intended purpose of descriptive information (metadata), the data environment, and the operational environment. The overall goal of the Data Model is to be able to describe resources using a taxonomy of terms familiar to the heliophysics domain. This taxonomy should provide sufficient scientific context and data content information for an individual to assess the applicability of the resource (data and metadata) to a research question. A data model is the cornerstone of an information system and one purpose for the SPASE Data Model to enable the creation of "Virtual Observatories" that will link the broad range of heliophysics resources which may be available in a loosely coupled distributed environment. Additional goals of the data model are to:</p>
          <ol>
@@ -49,7 +49,7 @@
             <div class="indent">
                <p>Data resources have internal schema or structures for storing values. The physical structure is determined by the storage format. Each retrievable entity on the format is assigned a key or tag which can be used to retrieve the entity.</p>
                <p>The SPASE Data Model does not attempt to describe the physical storage of the parameters, for example, the byte offsets, record format or data encoding in the data resource. Instead, the SPASE Data Model describes the scientific attributes of the parameter and links this to the parameter by a key or tag used by the storage format. Applications can use the SPASE descriptions to locate a parameter and the appropriate format-specific reader to extract parameters.</p>
-               <p>Not all data in the Heliophysics data environment is stored in self-documented formats. For example, data stored as ASCII tables. The method of assigning a key or tag name for each field in the ASCII table is external to the SPASE data model. This method must be part of a "format" specification which may be as simple as the first row of the table containing the tag name of the field.</p>
+               <p>Not all data in the Heliophysics data environment is stored in self-documented formats. For example, data stored as ASCII tables. The method of assigning a key or tag name for each field in the ASCII table is external to the SPASE data model. This method must be part of an "format" specification which may be as simple as the first row of the table containing the tag name of the field.</p>
             </div>
             <div class="bold top-pad">2. Resources are distributed.</div>
             <div class="indent">
@@ -69,9 +69,7 @@
          <h2 id="intro.concept">2.4. Conceptual System Environment</h2> {{{pdfAddPageItem id="intro.concept"}}} <!-- Used for getting page numbers in TOC -->
          <p>The data model is intended to enable the sharing of knowledge through structured metadata (SPASE Descriptions) which can be exchanged in queries and responses between systems. The operational environment this occurs in is the current Internet where systems and users are loosely coupled and highly distributed. Special services or portals may harvest (collect) the SPASE descriptions from multiple sources to create an enriched capability for the user. For example, a search engine may provide a comprehensive search for a particular scientific discipline. The web site https://hpde.gsfc.nasa.gov gives a guide to many currently active projects and a great deal of background information. Of particular interest there is the document entitled, "A Framework for Space and Solar Physics Virtual Observatories."</p>
          <p>Figure 1 illustrates a conceptual architecture in a distributed environment. In this environment multiple communities have resources to share. The storage location of a resource is called a repository. Some of these repositories (boxes) have local SPASE descriptions which are available through a local registry service (balls). The contents of other repositories are described at external, possibly independent, locations which make the descriptions available through remote registries. Gateways (rings) can harvest and aggregate the resources from multiple registries or perform federated searches which provide a single access point to multiple registries. Applications access the registries to discover resources, determine their location and retrieve them from the repositories.</p>
-
          <img class="full-center" src="{#asset ./images/arch.png @encoding=dataURI}">
-
          <div style='page-break-before: always;'></div>
          <h1 id="model">3. SPASE Data Model</h1> {{{pdfAddPageItem id="model"}}} <!-- Used for getting page numbers in TOC -->
          <h2 id="model.types">3.1. Resource Types</h2> {{{pdfAddPageItem id="model.types"}}} <!-- Used for getting page numbers in TOC -->
@@ -113,7 +111,7 @@
             <dd>scheme://authority/path</dd>
          </p>
          <p>where "scheme" is "spase" for those resources administered through the SPASE framework, "authority" is the unique identifier for the naming authority within the data environment and "path" is the unique local identifier of the resource within the context of the "authority". The resource ID must be unique within the data environment.</p>
-         <p>To illustrate the definition of a resource identifier, consider that there is a registered "authority" called "SMWG" which maintains information for spacecraft (Observatory) resources. One such spacecraft is GOES8. Now "SMWG" decides that the "path" to the GOES8 resource description should include the Resource Type as part of the path and that the observatory "name" will be "GOES8". So, the resource identifier would be:</p>
+         <p>To illustrate the definition of a resource identifier consider that there is a registered "authority" called "SMWG" which maintains information for spacecraft (Observatory) resources. One such spacecraft is GOES8. Now "SMWG" decides that the "path" to the GOES8 resource description should include the Resource Type as part of the path and that the observatory "name" will be "GOES8". So, the resource identifier would be:</p>
          <p>
             <dd>spase://SMWG/Observatory/GOES8</dd>
          </p>
@@ -346,12 +344,13 @@
                                                                                                    
             </pre>
          </p>
+      </div>
       </div> <!-- Chapter -->
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
          <h1 id="rightsList">6. DataCite rights and rightList Metadata Conventions</h1> {{{pdfAddPageItem id="rightsList"}}} <!-- Used for getting page numbers in TOC -->
-         <p>The DataCite "rights" text field element has been added to the SPASE Base model, version 2.7.0, in order allow SPASE better compliance with the F.A.I.R. principles: Findability, Accessibility, Interoperability, and Reusability. The DataCite description of Rights (DataCite capitalization) is as follows: "The Rights field is where you can include information about the data's content license (like CC0). When this information is in the metadata for the dataset, it helps researchers to quickly see at a glance whether the data being described is something they'll be able to use. This information is also important for harvesters who are trying to assemble lists of readily available datasets." Note that at least one or more rights text elements must appear within the rightsList container. The declaration of multiple rights allows one to describe data resources with complex rights characteristics.</p>
+         <p>The DataCite "rights" text field element has been added to the SPASE Base model, version 2.7.0, in order allow SPASE better compliance with the F.A.I.R. principles: Findability, Accessibility, Interoperability, and Reusability. The DataCite description of Rights (DataCite capitalization) is as follows: "The Rights field is where you can include information about the data's content license (like CC0). When this information is in the metadata for the dataset, it helps researchers to quickly see at a glance whether the data being described is something they'll be able to use. This information is also important for harvesters who are trying to assemble lists of readily available datasets." Note that rights is is a repeatable text element (cardinality +) as it is contained within wrapper element rightsList. The declaration of multiple rights allow one to describe data resources with complex rights characteristics.</p>
          <p>The rights definition and the definition of its sub-properties are listed below as lightly edited from the DataCite Metadata Schema, version 4.6 (see https://doi.org/10.14454/mzv1-5b55).</p>
             <pre>
 <b>Rights</b>
@@ -377,8 +376,6 @@ May be used for software licenses.
 
 Creative Commons Attribution 4.0 International
 
-Creative Commons Attribution-NonCommercial 3.0 Intergovernmental Organization
-
 Apache License, Version 2.0
 
 Two Example XML: The first example shows the rights characteristics as called for by
@@ -399,12 +396,12 @@ Initiative community.
    &lt;rights xml:lang="en" 
            schemeURI="https://spdx.org/licenses/"
            rightsIdentifierScheme="SPDX"
-           rightsIdentifier="CC-BY-NC-3.0 IGO"
-           rightsURI="https://creativecommons.org/licenses/by-nc/3.0/igo/"&gt;
+           rightsIdentifier="CC-BY-4.0"
+           rightsURI="https://creativecommons.org/licenses/by/4.0/"&gt;
    Creative Commons Attribution 4.0 International&lt;/rights&gt;
 &lt;/rightsList&gt;
 
-<b>rights Sub-properties:</b>
+<b>Sub-properties:</b>
 
 <b>1. schemeURI</b>
 
@@ -486,7 +483,7 @@ https://spdx.org/licenses/
       <div class="chapter">
          <h1 id="tree">9. Data Model Tree</h1> {{{pdfAddPageItem id="tree"}}} <!-- Used for getting page numbers in TOC -->
          <div>The taxonomy tree shows the inter-relationship of elements in the data model. This provides a "big picture" view of the SPASE data model. The taxonomy is implementation neutral. Details for each element are contained in the SPASE data dictionary.</div>
-         <div class="top-pad">Notes: Occurrence specifications are enclosed in parenthesis: 0 = optional, 1 = required, * = zero or more, + = 1 or more</div>
+         <div class="top-pad">Notes: Occurence specifications are enclosed in parenthesis: 0 = optional, 1 = required, * = zero or more, + = 1 or more</div>
          <div class="top-pad"></div>
          {{#each (buildTree data.ontology "Spase" "1" "+") }}
             <div class="whitespace">{{prefix}} <a href="#{{name}}">{{name}}</a> ({{occurrence}})</div>
@@ -495,7 +492,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="dictionary">10. Dictionary</h1> {{{pdfAddPageItem id="dictionary"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="dictionary">9. Dictionary</h1> {{{pdfAddPageItem id="dictionary"}}} <!-- Used for getting page numbers in TOC -->
          <b>How to Read a Definition</b>
          Each element has certain attributes and context that set how they should be used. The details for each element are presented in the following form:
          <img class="full-center" src="{#asset ./images/card.png @encoding=dataURI}">
@@ -601,7 +598,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="history">11. History</h1> {{{pdfAddPageItem id="history"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="history">10. History</h1> {{{pdfAddPageItem id="history"}}} <!-- Used for getting page numbers in TOC -->
          {{#each (group data.history "version")}}
             <table class="entry">
                <tr>
@@ -622,7 +619,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="biblio">12. Bibliography</h1> {{{pdfAddPageItem id="biblio"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="biblio">11. Bibliography</h1> {{{pdfAddPageItem id="biblio"}}} <!-- Used for getting page numbers in TOC -->
          <br>
          <p>
             <dt>
@@ -723,7 +720,7 @@ https://spdx.org/licenses/
 
       <div style='page-break-before: always;'></div>
       <div class="chapter">
-         <h1 id="appendix.a">13. Appendix A - Comparison of Spectral Domains</h1> {{{pdfAddPageItem id="appendix.a"}}} <!-- Used for getting page numbers in TOC -->
+         <h1 id="appendix.a">12. Appendix A - Comparison of Spectral Domains</h1> {{{pdfAddPageItem id="appendix.a"}}} <!-- Used for getting page numbers in TOC -->
          <img class="full-center" src="{#asset ./images/spectrum.png @encoding=dataURI}">
       </div> <!-- Chapter -->
 
