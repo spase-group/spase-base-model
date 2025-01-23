@@ -662,6 +662,7 @@
 2.7.0	2.5.0	Rate	Item				Reaction rate: reaction production per unit of time.
 2.7.0	1.1.0	Ratio	Item				The relative magnitudes of two quantities.
 2.7.0	1.0.0	Raw	Item				Data in its original state with no processing to account for calibration. Similar to NASA Level 0.
+2.7.0	2.3.2	re3data	Item				A unique string to identify the Research Data Repository, RDR, metadata entry. The internal identifier is assigned by re3data.
 2.7.0	2.3.2	RealPart	Item				Any number z can in general be represented by its complex form with z= a+ib where i, which is defined as the square root of -1, signifies the imaginary component of the number z. The coefficient a is called the real part of the complex number z.
 2.7.0	2.2.0	Region	Enumeration	Region			The most general/highest level list of locations of interest in the context of heliophysics. The list contains the names of the planets found in the solar system, the Sun, the Heliosphere, Interstellar, and two catch all terms: Asteroid and Comet.
 2.7.0	2.5.0	RegionBegin	Text				The values that define the start point of a region.
