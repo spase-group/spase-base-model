@@ -522,6 +522,7 @@
 2.7.0	1.0.0	Open	Item				Access is granted to everyone.
 2.7.0	2.2.0	OperatingSpan	Container				The interval in time from the first point at which an instrument or spacecraft was producing and sending data until the last such time, ignoring possible gaps.
 2.7.0	2.4.0	OperatingSystem	Text				The software that supports the basic functions of a computer, such as scheduling tasks, executing applications, and controlling peripherals.
+2.7.0	2.7.0	OperationsManager	Item				The person who manages the instrument operation plans.
 2.7.0	1.0.0	Optical	Item				Photons with a wavelength range: 380 nm to 760 nm.
 2.7.0	2.3.0	ORCIdentifier	Text				An Open Researcher Contributor (ORC) identifier which is a unique alphanumeric string assigned by a registration agency (https://orcid.org/) to identify an individual. It has the format XXXX-XXXX-XXXX-XXXX.
 2.7.0	1.0.0	OrganizationName	Text				A unit within a company or other entity (e.g., government agency or branch of service) within which many projects are managed as a whole.
