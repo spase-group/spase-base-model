@@ -82,6 +82,20 @@ Schema:
 | Group       | The name of super group for the object. A super group allows any member object to appear. For example, in the "Spase" group any of the resource type groups may appear. |
 | Type       | The inherited type for the group or element. Used when defining an extension to the another specification. For example, the simulation extensions use many of the terms and objects defined in the base SPASE information model. |
    
+**history.tab**
+
+Descriptions of changes to the schema.
+
+Schema:
+| Name        | Description                                              |
+| ----------- | -------------------------------------------------------- |
+| ID#         | Incremental identifier for the change.                   |
+| Version     | Schema version where change occurred.                    |
+| Updated     | Date of change.                                          |
+| ChangedBy   | First initial and last name of person making the change. |
+| Description | Description of change.                                   |
+| Note        | Any contextual information.                              |
+   
 ## Other Specification Files
 Files used to create the PDF documentation are in the "template" folder of the information model. 
 
