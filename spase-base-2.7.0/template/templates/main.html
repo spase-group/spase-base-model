@@ -485,12 +485,28 @@ https://spdx.org/licenses/
       <div style='page-break-before: always;'></div>
       <div class="chapter">
          <h1 id="tree">9. Data Model Tree</h1> {{{pdfAddPageItem id="tree"}}} <!-- Used for getting page numbers in TOC -->
-         <div>The taxonomy tree shows the inter-relationship of elements in the data model. This provides a "big picture" view of the SPASE data model. The taxonomy is implementation neutral. Details for each element are contained in the SPASE data dictionary.</div>
-         <div class="top-pad">Notes: Occurrence specifications are enclosed in parenthesis: 0 = optional, 1 = required, * = zero or more, + = 1 or more</div>
+         <div>A "big picture" of the SPASE information model can be visualized in the form of an information tree (ontology) that shows the inter-relationship of elements in the information model. The ontology is implementation neutral. Details for each element (SPASE term) are given in the SPASE data dictionary (next section of this document or online at <a href='https://spase-group.org/data/model/search/index.html' target='_blank'>https://spase-group.org/data/model/search/index.html</a>). </div>
+         <h2 id="tree.structure">9.1 SPASE information tree as a multi-level structure</h2> {{{pdfAddPageItem id="tree.structure"}}} <!-- Used for getting page numbers in TOC -->
+         <div>The SPASE information model is simply a structure by which the information (metadata) about a heliophysics resource is organized so as to give a logical presentation and description of the resource. In addition to the underlying relationship structure, the SPASE schema also provides the occurrence specification of every element in the SPASE ontology in terms of its cardinality given in enclosed parenthesis as follows:</div>
+         <div class="top-pad">0 = optional, 1 = required, * = zero or more, + = 1 or more</div>
+         <div>Cardinality therefore expresses the nature of the relationship (e.g., one-to-one, one-to-many, etc.) between two elements that can both be either required or optional. </div>
+         <div>The information structure below shows the six (6) levels of SPASE elements with the top level (far left) being the Name Space level for SPASE. Each subsequent vertical dashed line toward the right indicates a description level such that all the elements or terms at the same level are connected by the same vertical dashed line. The level in the far right is the last level of description listing where appropriate all the different items of information needed to describe the containers of information at the level just above (to the left).</div>
          <div class="top-pad"></div>
          {{#each (buildTree data.ontology "Spase" "1" "+") }}
             <div class="whitespace">{{prefix}} <a href="#{{name}}">{{name}}</a> ({{occurrence}})</div>
          {{/each}}
+         <h2 id="tree.html">9.2 SPASE information tree in HTML</h2> {{{pdfAddPageItem id="tree.html"}}} <!-- Used for getting page numbers in TOC -->         
+         <div>The SPASE information tree can also be presented in HTML form (<a href='https://spase-group.org/data/model/spase-2.7.0/index.html' target='_blank'>https://spase-group.org/data/model/spase-2.7.0/index.html</a>') so that it is viewable online from a web browser. For better understanding of the HTML form of the SPASE schema tree, it is important to bear in mind the meaning of various symbols and conventions used in the HTML display:</div>
+         <img class="img-left fifty-pct" src="{#asset ./images/icon-container.png @encoding=dataURI}"><p>This symbol indicates that the element at the current level (connected to the left) is a container containing all the information elements listed on the right.</p><br/>
+         <img class="img-left fifty-pct" src="{#asset ./images/icon-choice.png @encoding=dataURI}"><p>This symbol indicates that a choice can be or needs to be made from the elements listed on the right to give a complete description of the element connected on the left.</p><br/>
+         <img class="img-left fifty-pct" src="{#asset ./images/icon-enum-mandatory.png @encoding=dataURI}"><p>This symbol indicates that the element on the immediate right is an enumeration list from which the selection of <b>at least one value</b> is required (as indicated by the linkage of black/dark solid line).</p><br/>
+         <img class="img-left fifty-pct" src="{#asset ./images/icon-enum-optional.png @encoding=dataURI}"><p>This symbol indicates that the element on the immediate right is an enumeration list from which the selection of any number of values (from zero to many) is <b>optional</b> (as indicated by the linkage of a grey/light solid line).</p><br/>
+         <div>The three figures below show the SPASE schema tree in three successive levels of description. First, the top-level display of the SPASE schema tree shows that a SPASE document is a Container. After declaration of the namespace, language, and model version, at least one resource type is required to be chosen from an enumeration list of different resource types (describable by SPASE) for making a description.</div>
+         <img class="full-center" src="{#asset ./images/tree-top.jpg @encoding=dataURI}">
+         <div>Second, clicking on NumericalData, for example, yields the display of the schema for NumericalData also as a Container with only five required and fifteen optional fields.</div>
+         <img class="full-center" src="{#asset ./images/tree-numerical.jpg @encoding=dataURI}">
+         <div>Third, for example, navigating to one more level down to Parameter description (which is optional), we can see that Parameter is also a Container with different description elements. If the parameter description option is exercised, however, only the parameter name and one choice of parameter type are required.</div>
+         <img class="full-center" src="{#asset ./images/tree-parameter.jpg @encoding=dataURI}">
       </div> <!-- Chapter -->
 
       <div style='page-break-before: always;'></div>

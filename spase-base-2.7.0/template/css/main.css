@@ -24,6 +24,16 @@ th, td {
    text-align:center;
 }
 
+/*
+ * example icons
+ */
+.img-left {
+   float: left;
+}
+.fifty-pct {
+  transform: scale(0.5);
+}
+
 .indent {
    margin-left: 2em;
 }
