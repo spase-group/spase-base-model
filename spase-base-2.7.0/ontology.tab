@@ -2,7 +2,7 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.7.0	1.1.0	AccessInformation	RepositoryID	01	1		
 2.7.0	1.1.0	AccessInformation	Availability	02	0		
 2.7.0	1.1.0	AccessInformation	AccessRights	03	0		
-2.7.0	2.7.0	AccessInformation	rightsList	04	0		
+2.7.0	2.7.0	AccessInformation	RightsList	04	0		
 2.7.0	1.1.0	AccessInformation	AccessURL	05	+		
 2.7.0	1.1.0	AccessInformation	Format	06	+		
 2.7.0	1.1.0	AccessInformation	Encoding	07	0		
@@ -554,8 +554,13 @@ Version	Since	Object	Element	Order	Occurrence	Group	Type
 2.7.0	2.3.1	RevisionEvent	ReleaseDate	01	1		
 2.7.0	2.3.1	RevisionEvent	Note	02	1		
 2.7.0	2.3.1	RevisionHistory	RevisionEvent	01	+		
-2.7.0	2.7.0	rightsList	rights	01	+		
-2.7.0	2.3.1	rightsList	Note	02	0		
+2.7.0	2.7.0	Rights	SchemeURI	01	1		https://spdx.org/licenses/
+2.7.0	2.7.0	Rights	RightsIdentifierScheme	02	1		SPDX
+2.7.0	2.7.0	Rights	RightsIdentifier	03	1		
+2.7.0	2.7.0	Rights	RightsURI	04	1		
+2.7.0	2.7.0	Rights	FullName	05	1		
+2.7.0	2.7.0	RightsList	Rights	01	+		
+2.7.0	2.3.1	RightsList	Note	02	0		
 2.7.0	1.1.0	Service	ResourceID	01	1		
 2.7.0	2.7.0	Service	NamingAuthority	02	0		
 2.7.0	2.7.0	Service	ResourceType	03	0		
