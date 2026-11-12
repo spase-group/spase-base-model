@@ -1,0 +1,21 @@
+table.entry {
+   width: 100%;
+   font-size: inherit;
+}
+
+table.entry td.term {
+   width: 50%;
+   font-size: inherit;
+   background-color: #534c47;
+   border-bottom: 1px solid #534c47;
+   color: #ffffff;
+   font-weight: bold;
+   text-align: left;
+}
+
+table.entry td.type {
+   width: 50%;
+   font-size: inherit;
+   text-align: right;
+   border-bottom: 1px solid #534c47;
+}

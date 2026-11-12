@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <style>{#asset ./css/toc.css @encoding=utf8}</style>
+    </head>
+    <body>
+      <div class='toc'>
+         <h1 class='toc-title {{{addClassOnPdfMerge @root "toc-nowrap"}}}'>Table of Contents</h1>
+         <ul>
+            {{#level chapters parent}}
+               <li>
+                  <div class='toc-content {{{addClassOnPdfMerge @root "toc-no-border"}}}'>
+                     <a class='{{{addClassOnPdfMerge @root "toc-nowrap"}}}' href='#{{id}}' data-pdf-outline {{#if parent}}data-pdf-outline-parent='{{parent}}'{{/if}}>{{title}}</a>
+                     <span class="toc-dash"></span>
+                     <span class="toc-page">{{getPage @root id}}</span>
+                  </div>
+               </li>
+            {{/level}}
+         </ul>
+      </div>
+   </body>
+</html>

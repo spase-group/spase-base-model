@@ -1,0 +1,8 @@
+{
+   "name": "SPASE Base Model",
+   "version": "2.8.0",
+   "released": "2026-11-12",
+   "description": "SPASE Base Model",
+   "namespace": "spase",
+   "schemaurl": "http://www.spase-group.org/data/schema"
+}
